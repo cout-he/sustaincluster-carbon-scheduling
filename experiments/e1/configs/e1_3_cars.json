@@ -1,0 +1,19 @@
+{
+  "version": "e1-3-cars-v1",
+  "threshold_g_per_kwh": 137.65,
+  "history_minutes": 120,
+  "risk_breakpoints": [0.5, 1.0],
+  "risk_buffer_steps": [0, 1, 2],
+  "cold_start_buffer_steps": 2,
+  "horizon_steps": 8,
+  "max_pending": 256,
+  "factors": [1.0, 1.25, 1.5, 2.0],
+  "stress_seed": 20261010,
+  "sla_multiplier": 1.5,
+  "arrival_start": "2023-07-01T05:00:00+00:00",
+  "arrival_end": "2023-07-03T05:00:00+00:00",
+  "reference_source_commit": "aae1a1337ec60706a6fcb6346d8ba8b607e5e929",
+  "future_ci": false,
+  "shadow_unknown": "execute",
+  "step_minutes": 15
+}

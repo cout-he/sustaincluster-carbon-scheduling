@@ -133,6 +133,16 @@ class LocalExecutor:
                 raise ValueError('Policy order must preserve every immutable pending task exactly once')
             self.pool.pending_tasks = deque(self.ledger[s.task_id]['task'] for s in ordered)
             context = DecisionContext(time, sample.ci_g_per_kwh)
+            # Optional observed-state notifications. Legacy policies take exactly
+            # their original path; no Task, pool, future arrivals or CI are exposed.
+            if hasattr(self.policy, 'on_step_start'):
+                from .cars_state import ResourceSnapshot, RunningTask, demand
+                self.policy.on_step_start(ResourceSnapshot(time, self.pool.capacity,
+                    (self.pool.available_cores,self.pool.available_gpus,self.pool.available_mem),
+                    ordered, tuple(RunningTask(t.job_name,demand(self.ledger[t.job_name]['spec']),
+                                               t.finish_time,self.ledger[t.job_name]['spec'].sla_deadline)
+                                   for t in self.pool.running_tasks),
+                    tuple(self.ledger[t.job_name]['spec'] for t in incoming)))
             detail = dict(time=time.isoformat(), decision_pending_ids=[s.task_id for s in waiting],
                           ordered_waiting_ids=[s.task_id for s in ordered],
                           policy_deferred_ids=[], capacity_waiting_ids=[], started_ids=[])
@@ -149,6 +159,8 @@ class LocalExecutor:
                     kind, reason = 'capacity_waited', 'capacity_unavailable'
                     detail['capacity_waiting_ids'].append(task.job_name)
                 else:
+                    if hasattr(self.policy, 'on_candidate_resources'):
+                        self.policy.on_candidate_resources(time,tuple(available.values()))
                     decision = self.policy.decide(spec, context)
                     if not isinstance(decision, PolicyDecision) or not isinstance(decision.defer, bool):
                         raise ValueError('Policy must return a validated PolicyDecision')
@@ -158,6 +170,8 @@ class LocalExecutor:
                         self.ledger[task.job_name]['policy_defer_intervals'] += 1
                         kind = 'policy_deferred'
                         detail['policy_deferred_ids'].append(task.job_name)
+                        if hasattr(self.policy, 'on_task_deferred'):
+                            self.policy.on_task_deferred(task.job_name,time + STEP)
                     else:
                         if not self.pool.try_to_schedule_task(task, time, None):
                             raise RuntimeError('Capacity changed between check and allocation')
@@ -167,6 +181,9 @@ class LocalExecutor:
                     self.ledger[task.job_name]['state'] = 'running'
                     self.event(time, task, 'started')
                     detail['started_ids'].append(task.job_name)
+                    if hasattr(self.policy, 'on_task_started'):
+                        from .cars_state import RunningTask, demand
+                        self.policy.on_task_started(RunningTask(task.job_name,demand(spec),task.finish_time,spec.sla_deadline))
                 self.policy_events.append(dict(time=time.isoformat(), task_id=task.job_name, event=kind,
                     reason=reason, policy=self.policy.name, decision_rank=rank,
                     ci_g_per_kwh=sample.ci_g_per_kwh,
