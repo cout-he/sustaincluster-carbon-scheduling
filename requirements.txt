@@ -1,0 +1,13 @@
+pandas
+matplotlib
+seaborn
+tqdm
+psychrolib
+torch
+gymnasium
+pytest
+tensorboard
+PyYAML
+sphinx>=6.0
+furo
+sphinx-autodoc-typehints
