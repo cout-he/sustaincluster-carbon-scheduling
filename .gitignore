@@ -40,12 +40,12 @@ data/**/*.npz
 *.pem
 *.key
 
-# Research publication preparation: append only after approval.
-# These patterns do not remove already tracked upstream objects.
+# Research publication rules approved for this independent source-only copy.
+# Already tracked data-preparation Python source remains versioned.
 .pytest_cache/
 .venv/
 venv/
-env/
+/env/
 miniconda*/
 anaconda*/
 /research_notes/

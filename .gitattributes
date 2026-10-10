@@ -1,6 +1,6 @@
 # Publication-wide LF; historical archives are never renormalized.
 * text=auto eol=lf
-# Research files only; do not renormalize the inherited upstream tree.
+# Explicit research paths; no attributes are applied to the private original tree.
 RESEARCH_README.md text eol=lf
 experiments/e1/** text eol=lf
 tests/e1/** text eol=lf

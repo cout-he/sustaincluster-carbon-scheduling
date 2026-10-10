@@ -1,5 +1,7 @@
 # E1：单数据中心实验底座与三种基线
 
+> **独立发布副本：** 真实数据、完整私有归档和本机路径不随本仓库发布。请先遵循[独立发布版运行说明](../../README.md)，设置外部数据绝对路径、仓库外 YAML 和输出目录。本页使用 `artifacts/smoke-007`、默认相对数据路径及 `--cd .../upstream` 的命令均为原始私有环境的历史示例；尤其指向原始 `upstream` 的 WSL 命令不得在独立发布副本的复现流程中执行。历史归档的来源版本与哈希保持不变。
+
 E1-1A 建立 Immediate/FIFO 底座；E1-1B 在同一 `LocalExecutor` 上增加 EDF with Backfilling 和 Carbon-Threshold/FIFO。复用 `rl_components.task.Task`、`SustainDC` 的资源分配/释放方法、`make_dc_env` 和原有 IT/HVAC 公式。绕过上游 global/deferred queue、跨区域传输、环境随机时间偏移、奖励与 RL 调度；没有训练或参数扫描入口。E1-1A 历史归档保持原样。
 
 ## E1-1B 策略与公平对照
@@ -19,7 +21,7 @@ python -m experiments.e1.compare --frozen-from experiments/e1/artifacts/smoke-00
 
 对照入口恰好执行三次，校验冻结数据/物理配置哈希、共享配置、当前源码一致，并逐字节校验 FIFO 的八份科学文件与历史父归档。`comparison.csv` 同时报告服务量、截止时间状态、两类等待、队列、资源利用率和能碳；逐拍数据留在子目录。窗口总碳排放未按完成量归一，尤其完成数不同时不能单凭总碳排放宣称优劣。
 
-## 运行
+## 运行（原始私有环境的历史示例）
 
 在仓库根目录及已有 `sustaincluster` Python 环境中执行：
 

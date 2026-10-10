@@ -1,0 +1,309 @@
+{
+  "e1-1a": {
+    "default_24h_summary": {
+      "arrived": 2506,
+      "carbon_kg": 6629.623833951842,
+      "carbon_unit": "kgCO2e",
+      "completed": 2385,
+      "deadline_met": 2385,
+      "deadline_missed_completed": 0,
+      "deadline_missed_unfinished": 0,
+      "deadline_right_censored": 121,
+      "energy_unit": "kWh",
+      "horizon": "truncate",
+      "hvac_energy_kwh": 15628.3128401865,
+      "interval_load": "left_boundary_hold",
+      "intervals": 96,
+      "it_energy_kwh": 14753.616627152378,
+      "pending": 0,
+      "power_unit": "kW",
+      "running": 121,
+      "structurally_infeasible": 0,
+      "total_energy_kwh": 30381.92946733888,
+      "transmission_energy_kwh": 0.0
+    },
+    "full_archives_shipped": false,
+    "input_hashes": {
+      "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "dc_config": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_snapshot": "d15940fd38da08b59eb35fafd2890cfbc2aa62f525a63a4748bf7b737fffb2dd",
+      "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "workload_snapshot": "e889a3f4381faf8d120698236ae96cf843b78facc78df90e9ae9fa1dfe72c001",
+      "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+    },
+    "local_archive_label": "smoke-007",
+    "scientific_output_hashes": {
+      "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment.json": "c6f9d263ab3b882f9f264cc391f9cadd7f5278d4c4af9fe3d9af42f5efa1cf5a",
+      "events.jsonl": "673275008986b99bdbfc0570d4ec2928d594f64d033ffcb8acf81982791c1c0c",
+      "intervals.csv": "1ec6cebd0e612bf63895038dd95a959d3eca3c50cef293407274fcc04ee563a1",
+      "ledger.jsonl": "169e281f4aa19353cd67df577c414ef3a59571e95dc96beb64de784126d515ca",
+      "resolved_config.json": "3ccb895fd34a2c6195c60333106d41cf82b4b2fd32d1c23146692858abc4fee9",
+      "summary.json": "65265007dd3ec1229f7465109d52126cf2c868b1a554db09031a5cf4b1e7fdb2",
+      "workload.json": "925ad07dadbae587567425b67fec3e715517095f01d3d8a105d653ba9ab4394c"
+    },
+    "source_sha256": "a26a9ff3a9509f501a6de0c4952b037691be7681bf65f401fbf838c695155546",
+    "summary": {
+      "arrived": 564,
+      "carbon_kg": 1777.095852067595,
+      "carbon_unit": "kgCO2e",
+      "completed": 295,
+      "deadline_met": 295,
+      "deadline_missed_completed": 0,
+      "deadline_missed_unfinished": 0,
+      "deadline_right_censored": 269,
+      "energy_unit": "kWh",
+      "horizon": "truncate",
+      "hvac_energy_kwh": 3789.189617984813,
+      "interval_load": "left_boundary_hold",
+      "intervals": 22,
+      "it_energy_kwh": 3413.1005254048237,
+      "pending": 0,
+      "power_unit": "kW",
+      "running": 269,
+      "structurally_infeasible": 0,
+      "total_energy_kwh": 7202.290143389637,
+      "transmission_energy_kwh": 0.0
+    }
+  },
+  "e1-1b": {
+    "full_archives_shipped": false,
+    "input_hashes": {
+      "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "dc_config": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_snapshot": "d15940fd38da08b59eb35fafd2890cfbc2aa62f525a63a4748bf7b737fffb2dd",
+      "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "workload_snapshot": "e889a3f4381faf8d120698236ae96cf843b78facc78df90e9ae9fa1dfe72c001",
+      "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+    },
+    "local_archive_label": "e1-1b-comparison-001/immediate_fifo",
+    "public_comparison": {
+      "copied_bytes_without_new_simulation": true,
+      "file": "e1-1b-comparison.csv",
+      "sha256": "0e699beeb3a22a3a9d101b0c6392dfda35da1b90b7766495eb37c8231d01ea94"
+    },
+    "scientific_output_hashes": {
+      "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment.json": "c6f9d263ab3b882f9f264cc391f9cadd7f5278d4c4af9fe3d9af42f5efa1cf5a",
+      "events.jsonl": "673275008986b99bdbfc0570d4ec2928d594f64d033ffcb8acf81982791c1c0c",
+      "intervals.csv": "1ec6cebd0e612bf63895038dd95a959d3eca3c50cef293407274fcc04ee563a1",
+      "ledger.jsonl": "169e281f4aa19353cd67df577c414ef3a59571e95dc96beb64de784126d515ca",
+      "policy_events.jsonl": "21eb5b4e329f61d79fdd218a3e3aa4be43cb9ff29427dc0f35913ef2627b9120",
+      "policy_intervals.jsonl": "4c4f32217dd0d07c9a8de614df563704fbffd8c2f1b9d4d16977d58be51551cd",
+      "policy_ledger.jsonl": "265c0e721e2ba460b91fb4e8266eaa0b368ae845e1ac570b3167920ce66746a1",
+      "policy_summary.json": "b674005d97ae25387ee77e10a9d1e3535d1656a56e4b3b0ef37b80979ed0b0fb",
+      "resolved_config.json": "3ccb895fd34a2c6195c60333106d41cf82b4b2fd32d1c23146692858abc4fee9",
+      "summary.json": "65265007dd3ec1229f7465109d52126cf2c868b1a554db09031a5cf4b1e7fdb2",
+      "workload.json": "925ad07dadbae587567425b67fec3e715517095f01d3d8a105d653ba9ab4394c"
+    },
+    "source_sha256": "6e9c39f1afb7452d860ebbcaa0951a26ba7e470afa4fedc371e275fbeae27211",
+    "summary": {
+      "arrived": 564,
+      "carbon_kg": 1777.095852067595,
+      "carbon_unit": "kgCO2e",
+      "completed": 295,
+      "deadline_met": 295,
+      "deadline_missed_completed": 0,
+      "deadline_missed_unfinished": 0,
+      "deadline_right_censored": 269,
+      "energy_unit": "kWh",
+      "horizon": "truncate",
+      "hvac_energy_kwh": 3789.189617984813,
+      "interval_load": "left_boundary_hold",
+      "intervals": 22,
+      "it_energy_kwh": 3413.1005254048237,
+      "pending": 0,
+      "power_unit": "kW",
+      "running": 269,
+      "structurally_infeasible": 0,
+      "total_energy_kwh": 7202.290143389637,
+      "transmission_energy_kwh": 0.0
+    }
+  },
+  "e1-2a": {
+    "full_archives_shipped": false,
+    "independent_checks": {
+      "checks": {
+        "carbon_threshold_fifo": {
+          "cohort": 9943,
+          "intervals": 227,
+          "passed": true,
+          "states": {
+            "completed": 9943,
+            "pending": 0,
+            "running": 0
+          }
+        },
+        "edf_backfill": {
+          "cohort": 9943,
+          "intervals": 227,
+          "passed": true,
+          "states": {
+            "completed": 9943,
+            "pending": 0,
+            "running": 0
+          }
+        },
+        "immediate_fifo": {
+          "cohort": 9943,
+          "intervals": 227,
+          "passed": true,
+          "states": {
+            "completed": 9943,
+            "pending": 0,
+            "running": 0
+          }
+        }
+      },
+      "fairness": {
+        "all_tasks_completed": true,
+        "arrival_end": "2023-07-03T05:00:00+00:00",
+        "arrived": 9943,
+        "common_end": "2023-07-03T13:45:00+00:00",
+        "deadline_denominator": "same finite arrived cohort; censored tasks retained",
+        "equal_resource_hours": true,
+        "equal_workload_carbon_comparison_valid": true,
+        "identical_frozen_inputs": true,
+        "identical_shared_config": true,
+        "idle_included": true,
+        "policy_future_ci_access": false,
+        "resource_hours": {
+          "cores": [
+            480099.30266787746,
+            480099.30266787746,
+            480099.30266787746
+          ],
+          "gpus": [
+            18026.346948274953,
+            18026.346948274953,
+            18026.346948274953
+          ],
+          "mem": [
+            750704.8063400446,
+            750704.8063400446,
+            750704.8063400446
+          ]
+        },
+        "safety_end": "2023-08-02T05:00:00+00:00",
+        "threshold_g_per_kwh": 137.64999999999998,
+        "threshold_source": "selection calibration",
+        "version": "e1-2a-finite-cohort-drain-v1"
+      },
+      "outputs_checked": 43,
+      "paired_shift": {
+        "high_to_low_later_start_tasks": 269,
+        "later_start_tasks": 4428,
+        "lower_start_ci_tasks": 1449,
+        "matched_tasks": 9943,
+        "start_ci_note": "Paired start-CI mechanism diagnostic; not task-level energy/carbon attribution"
+      },
+      "passed": true,
+      "replay_checked": true
+    },
+    "input_hashes": {
+      "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "dc_config": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_snapshot": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "workload_snapshot": "e986fb7938e4fdf265376378172930707b29a866dd2cd293888b53766fd1edf6",
+      "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+    },
+    "local_archive_label": "e1-2a-comparison-002",
+    "public_comparison": {
+      "copied_bytes_without_new_simulation": true,
+      "file": "e1-2a-comparison.csv",
+      "sha256": "83b119551ce9815ec3b0fc84aebf5b46dc332714c55d8d1445a33eb7bb0fb3bf"
+    },
+    "recorded_tests": {
+      "command": "python -m pytest -q -s --ignore=data/electricity_prices/scripts/test_prices.py",
+      "historical_not_rerun_in_git_preparation": true,
+      "passed": 108,
+      "seconds": 200.03
+    },
+    "scientific_output_hashes": {
+      "carbon_threshold_fifo/events.jsonl": "f9878291efe443a1e705d10c212ffc8f54fa02341ab443246b3730e0c0287c5e",
+      "carbon_threshold_fifo/fixed_ledger.json": "074463ecf2af6a7286a58def2dd6238f4dd7cb50b3d61938d0438163054dd4ae",
+      "carbon_threshold_fifo/intervals.csv": "993723a9c860a351c14258bbfbbb412779095d15257f78644e22a380086b6fcb",
+      "carbon_threshold_fifo/ledger.jsonl": "e560b7b9baef635893159ad730ce08b591404d708dbc96bd7295ab90f9ee85ad",
+      "carbon_threshold_fifo/phases.json": "4c83dc16aa90a752360bd801f3cd7abd2253568ea42b88a804774c26e9392a7d",
+      "carbon_threshold_fifo/policy_events.jsonl": "ba5a330aaed698a81a4eb4d793f91372d4bbfd54902cac8e8c85110f575746b4",
+      "carbon_threshold_fifo/policy_intervals.jsonl": "662310a06e3539ac9112cbe46d8a653dd2f6ae989bfd4d0f704399e5eace4a1d",
+      "carbon_threshold_fifo/policy_ledger.jsonl": "2cc0aa6642efb7feb0eaa7b91d5785891d9b151968ea94c92e68ff1e86a57add",
+      "carbon_threshold_fifo/policy_summary.json": "e59c7c549fae8fc18d2cc8eaf9e687b29a5d829886a1bc22aa2ee661142d599f",
+      "carbon_threshold_fifo/resolved_config.json": "10a05e5f9f5af233e591920796b96ccb158a07632b57483915e40cb46b2c829c",
+      "carbon_threshold_fifo/summary.json": "40cdb7377e6b99dbf9195c1a41779c722a99dcf94496072556d6c7327c3d5ab3",
+      "comparison.csv": "83b119551ce9815ec3b0fc84aebf5b46dc332714c55d8d1445a33eb7bb0fb3bf",
+      "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "design.json": "87df495e65b8ec8c630cbee24caa5ef00e025467b864eaa767c18661afb4ab77",
+      "edf_backfill/events.jsonl": "65dc27a13da6086c29c4cb569ecab90d807c6588b00220e59303642ef4d9c37e",
+      "edf_backfill/fixed_ledger.json": "74212a78f1c29d72fc1b4e6e9e8fc7232764ee76ba56efe0fbf13bd81246555e",
+      "edf_backfill/intervals.csv": "ef4b8749e531f58190b550c547fcd0f9aaffe6a3d70ee095af07ee6f08f2dd5d",
+      "edf_backfill/ledger.jsonl": "f88ee547768856ef16e71da35e37b54a88b5998163b0ab3f562da09d85c06c4b",
+      "edf_backfill/phases.json": "1531a97b3fadfeeefd9070715bef34debddcf3d2f3b0e523d1215758e3446302",
+      "edf_backfill/policy_events.jsonl": "8c001d8fbdac43d0b96c97adcd03c1ea247566b1845e7f4133c981f906558f72",
+      "edf_backfill/policy_intervals.jsonl": "6758524172c17d5bc057a7026f178e1cc24e0b60547035f86175b78b366ea44c",
+      "edf_backfill/policy_ledger.jsonl": "a4f660bf431ec9c81e2d9bf127afbb31edd0d8f66ddde5e1753dc1bde3e4d376",
+      "edf_backfill/policy_summary.json": "e78ba7617414098ce886379e4a3062ac982680499532c9ef5b3b53099c340028",
+      "edf_backfill/resolved_config.json": "a9c4e2ad4af72ee4eb32094cab70547a29484f33fc015fe67d09b0e9ccb30ec9",
+      "edf_backfill/summary.json": "a5bf68b14fa1618bcdc6879cdd694d8263880829724330144381902bdc62a6d8",
+      "environment.json": "946bd153b5f53f2719407f1b45a31a0426a8d26f2561be306bb0439aee912da8",
+      "fairness.json": "9f7f8e00ac2d7d95c196d57a43d2c0c5fcba064fc6e1195072d5a29bf678fd09",
+      "immediate_fifo/events.jsonl": "fda4bece4e09ecf23038543550c09898559d9f446687ac9027bf19419086025f",
+      "immediate_fifo/fixed_ledger.json": "74212a78f1c29d72fc1b4e6e9e8fc7232764ee76ba56efe0fbf13bd81246555e",
+      "immediate_fifo/intervals.csv": "ef4b8749e531f58190b550c547fcd0f9aaffe6a3d70ee095af07ee6f08f2dd5d",
+      "immediate_fifo/ledger.jsonl": "f88ee547768856ef16e71da35e37b54a88b5998163b0ab3f562da09d85c06c4b",
+      "immediate_fifo/phases.json": "1531a97b3fadfeeefd9070715bef34debddcf3d2f3b0e523d1215758e3446302",
+      "immediate_fifo/policy_events.jsonl": "aa03fc05136d9a44c6f80e66e346fbb1f9875ae01ad0d816772230a4b06fdec7",
+      "immediate_fifo/policy_intervals.jsonl": "932a87b2951119e2ae721f646f228bbc5a753aaac928dfcc1eecb1dd7ac99ff4",
+      "immediate_fifo/policy_ledger.jsonl": "a4f660bf431ec9c81e2d9bf127afbb31edd0d8f66ddde5e1753dc1bde3e4d376",
+      "immediate_fifo/policy_summary.json": "2a6432e5660a381b80b2e6ea14f182889c3ed9612150ed75b240994f70bfd602",
+      "immediate_fifo/resolved_config.json": "c04e06a702e7cd56ee0f0f5d93ad49ac2945079118a6fdf5d43996f8b60c24d7",
+      "immediate_fifo/summary.json": "a5bf68b14fa1618bcdc6879cdd694d8263880829724330144381902bdc62a6d8",
+      "paired_task_shifts.csv": "b029dd65901aaa066d916fc14c85d99f623e2d7164899bb08c2068c1a2e454be",
+      "resolved_config.json": "c04e06a702e7cd56ee0f0f5d93ad49ac2945079118a6fdf5d43996f8b60c24d7",
+      "selection.json": "3e485f047356ab164f36885ae4d0239d4f9c46c8c466a9c5df37602ac93c4166",
+      "timeseries.csv": "3d6d62a0e241f9f48fc3f5ef5f989061c2457e51dcc36869a86be097504ba989",
+      "workload.json": "650b942626d665fb7e14cb7ff6d6e3f5d28f46fbe0e4d99fe06f7723dac1c772"
+    },
+    "selection": {
+      "ci_basis": "ci_previous_observation_weather_linear_utc",
+      "recorded_before_policy_runs": true,
+      "rule": {
+        "arrival_window_hours": 48,
+        "calibration_end": "2023-07-01T00:00:00Z",
+        "calibration_start": "2023-06-01T00:00:00Z",
+        "candidate_start_range": [
+          "2023-07-01T05:00:00Z",
+          "2023-08-31T05:00:00Z"
+        ],
+        "candidate_stride_hours": 24,
+        "ci_basis": "ci_previous_observation_weather_linear_utc",
+        "fallback": "If no candidate qualifies report data limitation before modifying rule or region",
+        "location": "US-CAL-CISO",
+        "minimum_ci_range_g_per_kwh": 100,
+        "minimum_high_to_low_transitions": 1,
+        "minimum_hours_each_side_of_threshold": 8,
+        "resource_multiplier": 5,
+        "safety_cap_rule": "arrival_end plus 30 days; continuous real CI/weather coverage required; actual common endpoint is maximum observed grid drain boundary",
+        "selection_rule": "earliest qualifying candidate; no strategy runs used for selection",
+        "sla_multiplier": 1.5,
+        "threshold_rule": "median of hourly direct CI in nonoverlapping June calibration period",
+        "version": "e1-2a-selection-v2-causal-ci"
+      },
+      "selected": {
+        "ci_max": 252.82,
+        "ci_min": 118.37,
+        "ci_range": 134.45,
+        "end": "2023-07-03T05:00:00+00:00",
+        "high_hours": 36.0,
+        "high_to_low_transitions": 2,
+        "low_hours": 12.0,
+        "qualifies": true,
+        "start": "2023-07-01T05:00:00+00:00"
+      },
+      "threshold_g_per_kwh": 137.64999999999998,
+      "workload_count": 9943
+    },
+    "source_sha256": "0fad5a4e4dd739676681d24757b1feef5adac2bb98f0b40b77909f8e2a8677d1"
+  }
+}
