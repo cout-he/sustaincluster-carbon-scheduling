@@ -1,0 +1,22 @@
+{
+  "version": "e1-2a-selection-v2-causal-ci",
+  "location": "US-CAL-CISO",
+  "calibration_start": "2023-06-01T00:00:00Z",
+  "calibration_end": "2023-07-01T00:00:00Z",
+  "threshold_rule": "median of hourly direct CI in nonoverlapping June calibration period",
+  "candidate_start_range": [
+    "2023-07-01T05:00:00Z",
+    "2023-08-31T05:00:00Z"
+  ],
+  "candidate_stride_hours": 24,
+  "arrival_window_hours": 48,
+  "minimum_ci_range_g_per_kwh": 100,
+  "minimum_hours_each_side_of_threshold": 8,
+  "minimum_high_to_low_transitions": 1,
+  "selection_rule": "earliest qualifying candidate; no strategy runs used for selection",
+  "sla_multiplier": 1.5,
+  "resource_multiplier": 5,
+  "safety_cap_rule": "arrival_end plus 30 days; continuous real CI/weather coverage required; actual common endpoint is maximum observed grid drain boundary",
+  "fallback": "If no candidate qualifies report data limitation before modifying rule or region",
+  "ci_basis": "ci_previous_observation_weather_linear_utc"
+}

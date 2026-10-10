@@ -1,0 +1,31 @@
+semantics_version: e1-1a-left-boundary-v1
+policy: immediate_fifo
+start: '2023-08-01T05:00:00Z'
+end: '2023-08-02T05:00:00Z'
+timestep_minutes: 15
+seed: 123
+workload:
+  path: data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl
+  schema: alibaba_gpu_12_v1
+  trace_year: 2020
+  resource_multiplier: 5
+  sla_multiplier: 1.5
+environment:
+  carbon_path: data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv
+  weather_path: data/weather/US-CAL-CISO/2023.json
+  interpolation: linear_utc
+  weather_transform: upstream_wet_bulb_0.9
+  weather_time_basis: metadata_fixed_offset
+  noise: false
+datacenter:
+  dc_id: 1
+  location: US-CAL-CISO
+  total_cores: 50000
+  total_gpus: 1000
+  total_mem: 80000
+  dc_config_file: configs/dcs/dc_config.json
+  hvac_setpoint_c: 22
+execution:
+  network: local_zero
+  interval_load: left_boundary_hold
+  horizon: truncate
