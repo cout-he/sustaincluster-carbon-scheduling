@@ -1,0 +1,9 @@
+factor,policy,candidate_checks,double_plan_compares,known_risk_guards,risk_buffer_guards,conservative_fallbacks,pending_limit,bounded_horizon_unknown
+1.0,cars_known_only,23868,13925,0,0,369,369,0
+1.0,cars_full,22782,12839,0,1160,278,278,0
+1.25,cars_known_only,29512,17084,0,0,714,714,0
+1.25,cars_full,27300,14872,0,2540,321,321,0
+1.5,cars_known_only,33594,18813,133,0,1064,1064,0
+1.5,cars_full,30040,15245,119,3532,501,501,0
+2.0,cars_known_only,40353,20804,337,0,2260,2260,0
+2.0,cars_full,36265,16397,18,5915,579,579,0

@@ -1,0 +1,148 @@
+{
+  "data_boundary": "Raw inputs, exact frozen archive, full ledgers/events/logs, PNG/PDF remain local; not self-contained.",
+  "inputs": [
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.0,
+      "realized_factor": 1.0,
+      "source_hashes": {
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "workload_sha256": "e986fb7938e4fdf265376378172930707b29a866dd2cd293888b53766fd1edf6"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.25,
+      "realized_factor": 1.249924570049281,
+      "source_hashes": {
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "workload_sha256": "e7e81439ac13292b5dd76afc170f5af583dd05037769b73d2b115c34cce1204c"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.5,
+      "realized_factor": 1.4999497133661872,
+      "source_hashes": {
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "workload_sha256": "30cf0e805f1abbb38ba08ace92de84888bb5778e360459b7656bcf8367eb1e15"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 2.0,
+      "realized_factor": 2.0,
+      "source_hashes": {
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "workload_sha256": "bde40313b62cd50ce435d560be98b3bb5c7d0c5c49ba5143772ccce1c186e790"
+    }
+  ],
+  "legacy_regression": {
+    "load_1p00": {
+      "files_checked": 37,
+      "historical_provenance_untouched": true,
+      "matched": true,
+      "rule": "byte-identical scientific results; new source/provenance not relabeled as old"
+    },
+    "load_1p25": {
+      "files_checked": 37,
+      "historical_provenance_untouched": true,
+      "matched": true,
+      "rule": "byte-identical scientific results; new source/provenance not relabeled as old"
+    },
+    "load_1p50": {
+      "files_checked": 37,
+      "historical_provenance_untouched": true,
+      "matched": true,
+      "rule": "byte-identical scientific results; new source/provenance not relabeled as old"
+    },
+    "load_2p00": {
+      "files_checked": 37,
+      "historical_provenance_untouched": true,
+      "matched": true,
+      "rule": "byte-identical scientific results; new source/provenance not relabeled as old"
+    }
+  },
+  "original_research_head": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+  "previous_publication_research_sha": "aae1a1337ec60706a6fcb6346d8ba8b607e5e929",
+  "publication_main_sha": "749dc6c1868065c12a71bac71b3ae08a25c45f56",
+  "publication_text_encoding": "UTF-8/LF per existing .gitattributes. Summary hashes describe public LF copies; original research/archive hashes are not rewritten.",
+  "replay": {
+    "campaign_files_checked": 6,
+    "formal_provenance_sha256": "c7ec1dd7445bc9ba5203c67782abecc834db39036732a352374dd4093495a97f",
+    "input_hashes_equal": true,
+    "level_files_checked": {
+      "load_1p00": 136,
+      "load_1p25": 136,
+      "load_1p50": 136,
+      "load_2p00": 136
+    },
+    "pilot_1p50_differences": [],
+    "pilot_1p50_files_checked": 136,
+    "replay_provenance_sha256": "675010ee84fc635ad66159c41fcdc3ef393a0aa9f4daf02b481640c7695bd38e",
+    "runtime_elapsed_not_required_equal": true,
+    "runtime_integrity_files_checked": 10,
+    "scientific_files_checked": 550,
+    "source_and_dependencies_equal": true,
+    "status": "verified"
+  },
+  "schema": "e1-3-public-evidence-v1",
+  "scientific_output_manifest_sha256": "c7ec1dd7445bc9ba5203c67782abecc834db39036732a352374dd4093495a97f",
+  "source_hashes": {
+    "experiments/e1/analyze_cars.py": "ba6545eaf037082d02a3c6ba1b2b0d475c8d9dd2a3021b56f24755130c02f94d",
+    "experiments/e1/cars.py": "8c38fa046c5ee0d28afbb978b535e49fe3f1ee17b1a01afbb917024c08fcc96a",
+    "experiments/e1/cars_experiment.py": "6df44f6ce2363be449af00a571463caebbba3a6d7c7598a3ca8a519eecd09667",
+    "experiments/e1/cars_feasibility.py": "460690f0e1b24987b7df800dea3a9bd6a3af523b84154775cfcb4c9adecec551",
+    "experiments/e1/cars_state.py": "032ada5d6dcb79eb3fcaf90a0c91d98a80e03686ad1cc64688e60adea9fa26d5",
+    "experiments/e1/configs/e1_3_cars.json": "4c11ed66a80d9b34c945944f8dec0ef8958a4a968a09733f775d4b6804b1a6fa",
+    "experiments/e1/engine.py": "966d456b504d7e7f5b2e0a743bdab216d9c9ab35e1160fd70318eb9beb3d5f9f",
+    "tests/e1/test_cars_analysis.py": "6d09541b0d6fbedbbfae9e28b2d05c1e3e1971083efcfd8068239899c1a902b6",
+    "tests/e1/test_cars_experiment.py": "818998657c918efc3e70d4cb68ce34bd58eac022842bac667cbe7636d462e02e",
+    "tests/e1/test_cars_feasibility.py": "774efffa24a645b1d16efa784d8513e6c2400163f9aa999113307f1378f7cc60",
+    "tests/e1/test_cars_policy.py": "c243a1a6af25d3b54835f2fab7306487a1f742e59b2606e9ddd73b09137995a0",
+    "tests/e1/test_cars_state.py": "c42b9b009503be65aa2525548d3aa6821b4c8aeb1cc376dd9ea5dd745a03fc30"
+  },
+  "source_manifest_sha256": "209e89b4aca8edeec764366108e91e5de978833ab741812ee84b981f83ff882b",
+  "summary_hashes": {
+    "E1-3-ablation.csv": "b6f26930f04f7457c14e7350864574a25d9e1c197462f27b12460c156415317d",
+    "E1-3-algorithm-pseudocode.md": "455565d6b58c2e0e2828138927ff71874d99a7a43de82ef90263d23e732bb154",
+    "E1-3-guards.csv": "a1c3caff9180ecc195442bd902e002c72cabbacf4278e4deeb8b28ea8d5122fd",
+    "E1-3-method.md": "30912220107fac5eaf9deaf8fcff835b3489511d5983aec9d1fc1e4bfe9af777",
+    "E1-3-paired-ablation.csv": "b7e785b371d9a260b8f9691c3e839ca18627959328fbd1b07305dafe5122bfd4",
+    "E1-3-representative-decisions.csv": "20e123cc26876ae81daa224790d1789a4c585c2318b9d56ac4ebcd909d422d83",
+    "E1-3-representative-events.csv": "fc2d5e0b6eff4cfdfe1f00869a57cb53c2357fc56dffaa32940d7c7f46296f11",
+    "E1-3-representative-task.csv": "56e3d76be7bf34b8178b469b03bb098be56f6f7a3cb81f747920af2030988f12",
+    "E1-3-runtime.csv": "f5537457d435b63117bb1fa8068ae2013fedd7097b366687ad653c040e1307ea",
+    "E1-3-shadow-risk-task-outcomes.csv": "2fbc5a0beed0a4de54964e52f9c9983c126aa58e1eb64e9d19646088c62e07bc"
+  },
+  "tests": {
+    "publication": {
+      "passed": 185,
+      "seconds": 338.81,
+      "skip_reason": "Private historical smoke and approved E1-2B archive absent in source-only publication",
+      "skipped": 2
+    },
+    "research": {
+      "passed": 187,
+      "seconds": 609.71,
+      "skipped": 0
+    }
+  }
+}
