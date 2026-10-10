@@ -1,0 +1,172 @@
+{
+  "case_sha256": "64032a5faefebaacc9fc109393a1ae0028c9576b6c76332d822f9d324f44d87b",
+  "figure_manifest": {
+    "inferential_statistics": false,
+    "outputs": {
+      "01_carbon.csv": "a178e79533e62a2a4009d84fbec6fcdfe2b8245e0acc5c6930d74fab2e4a9cdb",
+      "01_carbon.pdf": "36afe06c6a0442abbf0c2f68b18e4892eef154e7e7ed74c054f052bfc01ef82a",
+      "01_carbon.png": "571b8277f086930d601f381aa4a74b9e1ee47d1ffb68e6bfaf9567f17042af5c",
+      "02_deadline.csv": "a178e79533e62a2a4009d84fbec6fcdfe2b8245e0acc5c6930d74fab2e4a9cdb",
+      "02_deadline.pdf": "f3db0b521d46c364e5ca6d878ea0b53685d9f189ac7f434db89893d7b9a106c5",
+      "02_deadline.png": "c2a0f643b93fa34d841baea4ef6f789812a6cb8629f6f163adcab71eaaae260d",
+      "03_jct.csv": "a178e79533e62a2a4009d84fbec6fcdfe2b8245e0acc5c6930d74fab2e4a9cdb",
+      "03_jct.pdf": "7deeb62b4faf863fcf0770e0bf4a8c207b5b4f2dbbad56d4169ef9004ad627b9",
+      "03_jct.png": "9c5454d9b32c713f680bf3e1cc2d52b256d49d629513ed6c01d054e026726338",
+      "04_contention.csv": "31359e7ca86b6bef0a951c1d971566eb18c39eb5c64676a726b2ac2987dc8270",
+      "04_contention.pdf": "a2863b1ae1d15eced5af4e1ce4f7657553a8ec0bf57871c9e997aa6bcea04187",
+      "04_contention.png": "2e5925736606a58c72eb7387ddd44274c49e1bd81782304090b16fd57e719e73",
+      "05_task_timeline.csv": "64032a5faefebaacc9fc109393a1ae0028c9576b6c76332d822f9d324f44d87b",
+      "05_task_timeline.pdf": "f653fb34e6a550e41d29cab4b3c57c5878a471d3e327c9bfc40772631728a9aa",
+      "05_task_timeline.png": "44d5f2b290ae7d6a42a0cc781c66f393eeb22010ab31a47a27d33a8516c85414"
+    },
+    "representative_factor": 2.0,
+    "seed_count": 1,
+    "source_comparison_sha256": "3669834f288fe65feb5817d5a4aaaa9df3578cc16ec53cfed8b760bd7f959080",
+    "summary_rows": 12,
+    "synthetic": true,
+    "task_timeline": true,
+    "time_series_rows": 681,
+    "zero_y_axes": true
+  },
+  "input_identities": [
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.0,
+      "tasks": 9943,
+      "workload_sha256": "e986fb7938e4fdf265376378172930707b29a866dd2cd293888b53766fd1edf6"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.25,
+      "tasks": 12428,
+      "workload_sha256": "e7e81439ac13292b5dd76afc170f5af583dd05037769b73d2b115c34cce1204c"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 1.5,
+      "tasks": 14914,
+      "workload_sha256": "30cf0e805f1abbb38ba08ace92de84888bb5778e360459b7656bcf8367eb1e15"
+    },
+    {
+      "common_end": "2023-07-03T13:45:00+00:00",
+      "dc_config_sha256": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+      "environment_sha256": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+      "factor": 2.0,
+      "tasks": 19886,
+      "workload_sha256": "bde40313b62cd50ce435d560be98b3bb5c7d0c5c49ba5143772ccce1c186e790"
+    }
+  ],
+  "regression": {
+    "files_checked": 37,
+    "historical_provenance_untouched": true,
+    "matched": true,
+    "rule": "byte-identical scientific results; new source/provenance not relabeled as old"
+  },
+  "result_sha256": "3669834f288fe65feb5817d5a4aaaa9df3578cc16ec53cfed8b760bd7f959080",
+  "seed": 20261010,
+  "source_sha256": "b546253b9e157d387cd24b5ab6fb6f3e427069f65d31372cf06ed7810a3644c7",
+  "tests": {
+    "publication_passed": 123,
+    "publication_skipped": 1,
+    "research_passed": 124,
+    "skip_reason": "private smoke-007 archive not shipped; passed in research workspace"
+  },
+  "validation": {
+    "checks": [
+      {
+        "factor": 1.0,
+        "intervals": 227,
+        "policy": "immediate_fifo",
+        "tasks": 9943,
+        "verified": true
+      },
+      {
+        "factor": 1.0,
+        "intervals": 227,
+        "policy": "edf_backfill",
+        "tasks": 9943,
+        "verified": true
+      },
+      {
+        "factor": 1.0,
+        "intervals": 227,
+        "policy": "carbon_threshold_fifo",
+        "tasks": 9943,
+        "verified": true
+      },
+      {
+        "factor": 1.25,
+        "intervals": 227,
+        "policy": "immediate_fifo",
+        "tasks": 12428,
+        "verified": true
+      },
+      {
+        "factor": 1.25,
+        "intervals": 227,
+        "policy": "edf_backfill",
+        "tasks": 12428,
+        "verified": true
+      },
+      {
+        "factor": 1.25,
+        "intervals": 227,
+        "policy": "carbon_threshold_fifo",
+        "tasks": 12428,
+        "verified": true
+      },
+      {
+        "factor": 1.5,
+        "intervals": 227,
+        "policy": "immediate_fifo",
+        "tasks": 14914,
+        "verified": true
+      },
+      {
+        "factor": 1.5,
+        "intervals": 227,
+        "policy": "edf_backfill",
+        "tasks": 14914,
+        "verified": true
+      },
+      {
+        "factor": 1.5,
+        "intervals": 227,
+        "policy": "carbon_threshold_fifo",
+        "tasks": 14914,
+        "verified": true
+      },
+      {
+        "factor": 2.0,
+        "intervals": 227,
+        "policy": "immediate_fifo",
+        "tasks": 19886,
+        "verified": true
+      },
+      {
+        "factor": 2.0,
+        "intervals": 227,
+        "policy": "edf_backfill",
+        "tasks": 19886,
+        "verified": true
+      },
+      {
+        "factor": 2.0,
+        "intervals": 227,
+        "policy": "carbon_threshold_fifo",
+        "tasks": 19886,
+        "verified": true
+      }
+    ],
+    "comparison_sha256": "3669834f288fe65feb5817d5a4aaaa9df3578cc16ec53cfed8b760bd7f959080",
+    "units": "kW, kWh, gCO2e/kWh -> kgCO2e",
+    "validator_sha256": "38df5076b97650d2b091dd261c854ace59084d0f6e01d48864c88109fcf79d6b",
+    "verified_policy_runs": 12
+  }
+}

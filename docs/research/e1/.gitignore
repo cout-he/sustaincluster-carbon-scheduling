@@ -4,3 +4,8 @@ results/*
 !results/e1-1b-comparison.csv
 !results/e1-2a-comparison.csv
 !results/evidence-index.json
+
+# E1-2B reviewed aggregate/case/hash evidence only; full archives stay private.
+!results/e1-2b-comparison.csv
+!results/e1-2b-task-case.csv
+!results/e1-2b-evidence.json
