@@ -39,3 +39,27 @@ data/**/*.npz
 !.env.example
 *.pem
 *.key
+
+# Research publication preparation: append only after approval.
+# These patterns do not remove already tracked upstream objects.
+.pytest_cache/
+.venv/
+venv/
+env/
+miniconda*/
+anaconda*/
+/research_notes/
+/experiments/e1/artifacts/
+/experiments/e1/win_pytest_tmp*/
+/data/
+/checkpoints/
+/colab_checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+.env
+.env.*
+!.env.example
+*.pem
+*.key

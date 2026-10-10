@@ -1,0 +1,6 @@
+# Root results/ ignores generated output; admit only reviewed aggregate evidence.
+!results/
+results/*
+!results/e1-1b-comparison.csv
+!results/e1-2a-comparison.csv
+!results/evidence-index.json

@@ -1,2 +1,7 @@
-# Source snapshot files are checked out consistently; scientific archives stay private.
+# Publication-wide LF; historical archives are never renormalized.
 * text=auto eol=lf
+# Research files only; do not renormalize the inherited upstream tree.
+RESEARCH_README.md text eol=lf
+experiments/e1/** text eol=lf
+tests/e1/** text eol=lf
+docs/research/** text eol=lf
