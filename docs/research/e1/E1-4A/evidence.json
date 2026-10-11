@@ -1,0 +1,324 @@
+{
+  "config_sha256": "3b43f70ef499af6ad10f64ee5c84ca031c568df366cb3bef234a83acb1dfe21e",
+  "delivery_csv_sha256": {
+    "common_metrics.csv": "5bf9420b3c3806c23e557b8ee52af54d7952c976104ed539f8a27f62e3a4cfcb",
+    "common_selected_metrics.csv": "95b0b9f052f2e0b48c2c716bff1df846df860a5ef10eeea9c5e0923eaa6b5d63",
+    "first_representative_per_category.csv": "1ff8c80a5dcbb7f2a9e4efc98be484d8c4d6488902e78ee655017bfeb290036e",
+    "guard_counts.csv": "cf6a4b6e2433ec830c5a80de42ed74dc82504736f52344ba613944c2baa30717",
+    "guard_selected_counts.csv": "d9719fa4c0cb24ea5d13a88b8d0c350d0c368ddb74b93165d9418b2562c39da7",
+    "old_predeclared_cases.csv": "99aa2f66aea76c77031b74ccc4d08d99af01d4d9284fc6b8442dbfcabda6a869",
+    "old_unique_predicted_actual_miss.csv": "631401c8536891edc0f3440d116f12f6d0c7a471718a8df900f0c8db7b2cbc61",
+    "paired_miss_sets_full_vs_cap.csv": "da426bb339794b275795fb35ae8ff1d360771a960a069a2555aea2231b445e47",
+    "paired_miss_sets_vs_risk.csv": "bde62fb765545907e185aa3f4ee0588e5eb29fe5daaa87200e146e85c92ffa28",
+    "phases.csv": "2fb337e5171440d0a68788484ded9500ab2e2e53d4922d9096bf1259a8ec4ff6",
+    "runtime.csv": "8f6abb7d9f2a4d3a269b735cf6a8f9b13233add6bd816271f8f900b9ea77f22d",
+    "single_action_intervention_summary.csv": "d444018643766dda33caef81ea0f4145bcaf4120de92fbdddec7515dd8f1c0aa",
+    "start_difference_summary_vs_risk.csv": "ab49bdd6bb90b0c6c825e4c3e728833c94a9598c4785a7d05e87e3f3f3f9c644"
+  },
+  "external_historical_archives_required": true,
+  "final_validation": {
+    "original_e1": {
+      "passed": 225,
+      "seconds": 1147.72,
+      "skipped": 0
+    },
+    "publication_e1": {
+      "passed": 223,
+      "seconds": 648.6,
+      "skipped": 2
+    },
+    "upstream_non_training": {
+      "passed": 2,
+      "seconds": 5.56
+    }
+  },
+  "history_diagnostic": {
+    "interpretation": "Counterfactual incremental miss IDs paired to actual Full outcomes; not probability calibration.",
+    "later_arrivals_definition": "arrival > decision time and arrival <= affected task actual Full start; descriptive only",
+    "loads": {
+      "load_1p50": {
+        "decision_counts": {
+          "candidate_checks": 30040,
+          "cap_execute_guards": 501,
+          "explicit_shadow_risk_guards": 119,
+          "history_risk_buffer_guards": 3532,
+          "other_uncertain_fallbacks": 0,
+          "pending_cap_fallbacks": 501,
+          "pending_limit_status_count": 501,
+          "planner_actual_execution_decisions": 15245,
+          "planner_uncertain_reasons": {
+            "pending_limit": 501
+          },
+          "planner_uncertain_status_count": 501,
+          "queue_limit_all_candidate_checks": 2361,
+          "queue_limit_eligible_candidate_checks": 501,
+          "reason_counts": {
+            "high_ci_defer": 15126,
+            "known_deadline_risk": 119,
+            "known_feasibility_uncertain": 501,
+            "low_ci_execute": 3107,
+            "no_grid_slack": 7655,
+            "risk_buffer_guard": 3532
+          },
+          "risk_only_eligible_candidate_checks": 15746,
+          "uncertain_risk_fallbacks": 0
+        },
+        "explicit_risk_decisions": 119,
+        "planner_replay_disagreements": 0,
+        "predicted_actual_miss_with_later_arrivals_occurrences": 142,
+        "risk_outcomes": {
+          "actual_met_occurrences": 122,
+          "actual_miss_occurrences": 142,
+          "other_outcome_occurrences": 0,
+          "prediction_occurrences": 264,
+          "unique_actual_miss_tasks": 6,
+          "unique_predicted_tasks": 15
+        },
+        "same_step_shadow_start_real_capacity_wait_decisions": 16,
+        "same_step_shadow_start_real_defer_decisions": 111,
+        "same_step_start_set_mismatch_decisions": 111
+      },
+      "load_2p00": {
+        "decision_counts": {
+          "candidate_checks": 36265,
+          "cap_execute_guards": 579,
+          "explicit_shadow_risk_guards": 18,
+          "history_risk_buffer_guards": 5915,
+          "other_uncertain_fallbacks": 0,
+          "pending_cap_fallbacks": 579,
+          "pending_limit_status_count": 579,
+          "planner_actual_execution_decisions": 16397,
+          "planner_uncertain_reasons": {
+            "pending_limit": 579
+          },
+          "planner_uncertain_status_count": 579,
+          "queue_limit_all_candidate_checks": 5751,
+          "queue_limit_eligible_candidate_checks": 579,
+          "reason_counts": {
+            "high_ci_defer": 16379,
+            "known_deadline_risk": 18,
+            "known_feasibility_uncertain": 579,
+            "low_ci_execute": 4091,
+            "no_grid_slack": 9283,
+            "risk_buffer_guard": 5915
+          },
+          "risk_only_eligible_candidate_checks": 16976,
+          "uncertain_risk_fallbacks": 0
+        },
+        "explicit_risk_decisions": 18,
+        "planner_replay_disagreements": 0,
+        "predicted_actual_miss_with_later_arrivals_occurrences": 0,
+        "risk_outcomes": {
+          "actual_met_occurrences": 77,
+          "actual_miss_occurrences": 0,
+          "other_outcome_occurrences": 0,
+          "prediction_occurrences": 77,
+          "unique_actual_miss_tasks": 0,
+          "unique_predicted_tasks": 42
+        },
+        "same_step_shadow_start_real_capacity_wait_decisions": 4,
+        "same_step_shadow_start_real_defer_decisions": 17,
+        "same_step_start_set_mismatch_decisions": 17
+      }
+    },
+    "reference_root": "/mnt/d/A-myprofile/SustainCluster/upstream/research_notes/E1/E1-3/results-001",
+    "schema": "e1-4a-feasibility-audit-v1"
+  },
+  "levels": {
+    "load_1p50": {
+      "fairness": {
+        "all_tasks_completed": true,
+        "arrival_end": "2023-07-03T05:00:00+00:00",
+        "arrived": 14914,
+        "common_end": "2023-07-03T13:45:00+00:00",
+        "deadline_denominator": "same finite arrived cohort; censored tasks retained",
+        "equal_resource_hours": true,
+        "equal_workload_carbon_comparison_valid": true,
+        "identical_frozen_inputs": true,
+        "identical_shared_config": true,
+        "idle_included": true,
+        "policy_future_ci_access": false,
+        "resource_hours": {
+          "cores": [
+            724255.3264160807,
+            724255.3264160807,
+            724255.3264160807,
+            724255.3264160807,
+            724255.3264160807
+          ],
+          "gpus": [
+            27365.757945322726,
+            27365.757945322726,
+            27365.757945322726,
+            27365.757945322726,
+            27365.757945322726
+          ],
+          "mem": [
+            1122848.251079979,
+            1122848.251079979,
+            1122848.251079979,
+            1122848.251079979,
+            1122848.251079979
+          ]
+        },
+        "safety_end": "2023-08-02T05:00:00+00:00",
+        "threshold_g_per_kwh": 137.64999999999998,
+        "threshold_source": "selection calibration",
+        "version": "e1-4a-feasibility-ablation-v1"
+      },
+      "historical_control_regression": {
+        "controls": [
+          "edf_carbon_threshold",
+          "cars_risk_only",
+          "cars_full"
+        ],
+        "files_checked": 36,
+        "historical_provenance_untouched": true,
+        "matched": true,
+        "reference_common_end": "2023-07-03T13:45:00+00:00",
+        "rule": "byte-identical scientific and diagnostics files; no metadata exclusions needed"
+      },
+      "input_hashes": {
+        "ablation_config": "dee336273f658c682548e9e9f40849919e603f9ed2c4aceb20a20c4f57f1ef64",
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "dc_config": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+        "environment_snapshot": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+        "parameters": "2cca41936f50a4d94f47f60c190b70ad9bc9d67a8a5b3288b654e9d11fc845c6",
+        "reference": "b625a9a232f31e63f97877941bd0303c5c9127f1687e2aed68ef13ac8bf7203b",
+        "resolved_config": "16ab858f79f5254a2722936a80d3446dd7083d0fd92bfde0a679c011a6c8129a",
+        "selection": "25638df07818331d5fe2a830348ceae3ee77715d74e40640126759583c0658f5",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_snapshot": "30cf0e805f1abbb38ba08ace92de84888bb5778e360459b7656bcf8367eb1e15",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "provenance_file_sha256": "d710b614f0dff555e30d22b5601bc646003556fc466fc84bb234f5d7e088b911",
+      "runtime_hashes": {
+        "runtime.json": "e7c57337a5cf2b015d675a8a44c6438150b53eb4fdb2cc44d9209e9c35be9297"
+      },
+      "scientific_manifest_sha256": "01720d15d15aef4ecb844b2a4d3fc9e0564baf9af6d39d4db041a2eaf24dddd1",
+      "scientific_outputs": 112,
+      "source_sha256": "495b572c6f5fdbb3cdbd7987a0626d4309e3926fd6f2018410ac76cc272402d6"
+    },
+    "load_2p00": {
+      "fairness": {
+        "all_tasks_completed": true,
+        "arrival_end": "2023-07-03T05:00:00+00:00",
+        "arrived": 19886,
+        "common_end": "2023-07-03T13:45:00+00:00",
+        "deadline_denominator": "same finite arrived cohort; censored tasks retained",
+        "equal_resource_hours": true,
+        "equal_workload_carbon_comparison_valid": true,
+        "identical_frozen_inputs": true,
+        "identical_shared_config": true,
+        "idle_included": true,
+        "policy_future_ci_access": false,
+        "resource_hours": {
+          "cores": [
+            960198.6053357549,
+            960198.6053357549,
+            960198.6053357549,
+            960198.6053357549,
+            960198.6053357549
+          ],
+          "gpus": [
+            36052.69389654991,
+            36052.69389654991,
+            36052.69389654991,
+            36052.69389654991,
+            36052.69389654991
+          ],
+          "mem": [
+            1501409.6126800892,
+            1501409.6126800892,
+            1501409.6126800892,
+            1501409.6126800892,
+            1501409.6126800892
+          ]
+        },
+        "safety_end": "2023-08-02T05:00:00+00:00",
+        "threshold_g_per_kwh": 137.64999999999998,
+        "threshold_source": "selection calibration",
+        "version": "e1-4a-feasibility-ablation-v1"
+      },
+      "historical_control_regression": {
+        "controls": [
+          "edf_carbon_threshold",
+          "cars_risk_only",
+          "cars_full"
+        ],
+        "files_checked": 36,
+        "historical_provenance_untouched": true,
+        "matched": true,
+        "reference_common_end": "2023-07-03T13:45:00+00:00",
+        "rule": "byte-identical scientific and diagnostics files; no metadata exclusions needed"
+      },
+      "input_hashes": {
+        "ablation_config": "dee336273f658c682548e9e9f40849919e603f9ed2c4aceb20a20c4f57f1ef64",
+        "carbon_source": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "dc_config": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+        "environment_snapshot": "cef88789e3a2db24e1d504a9d78ab232cc525d98747b93ccc6d6239352992825",
+        "parameters": "2cca41936f50a4d94f47f60c190b70ad9bc9d67a8a5b3288b654e9d11fc845c6",
+        "reference": "b2fb06cf8e7c2f2d9f1c8dc5b23dbd782dddc8a43c6a213dcedb7d3685c26ebc",
+        "resolved_config": "16ab858f79f5254a2722936a80d3446dd7083d0fd92bfde0a679c011a6c8129a",
+        "selection": "25638df07818331d5fe2a830348ceae3ee77715d74e40640126759583c0658f5",
+        "weather_source": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "workload_snapshot": "bde40313b62cd50ce435d560be98b3bb5c7d0c5c49ba5143772ccce1c186e790",
+        "workload_source": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+      },
+      "provenance_file_sha256": "1d0145b3b160b0f6dd5528cc62331089df94402d71f046b778e44b56650ea165",
+      "runtime_hashes": {
+        "runtime.json": "521b2d58f684a6cdcacbffd5a9a331188323449382dc8ae2db19036f506deb0d"
+      },
+      "scientific_manifest_sha256": "5a99cb2fc23c5e5ffe1427824e73ffc78e90ad933c0937d92c69b048078d3359",
+      "scientific_outputs": 112,
+      "source_sha256": "495b572c6f5fdbb3cdbd7987a0626d4309e3926fd6f2018410ac76cc272402d6"
+    }
+  },
+  "new_files_exact_copy_required": true,
+  "new_source_hashes": {
+    "experiments/e1/diagnose_feasibility.py": "ac0ae077c7f8b893d81dd8cfa77b6b62499bec407e9a750a86c37723b0b5d6c5",
+    "experiments/e1/feasibility_ablations.py": "4cd8d4def6284cd043663b2bda2933016d2888ccdfe15f374d3e6471141444d5",
+    "experiments/e1/feasibility_experiment.py": "6ba4c612a86ac19a198106a18271643fd6f2e93c0fe44200eddaa8f3bad4b944",
+    "experiments/e1/feasibility_intervention.py": "e8dda10dccb4706b5532c38bdc99ab85b0ab3dd72d781d2b9a530de1fc3474de",
+    "tests/e1/test_diagnose_feasibility.py": "602c1774d1176961d29977fcc79ba68caaa775e7c54a639fa65c692c03255806",
+    "tests/e1/test_feasibility_ablations.py": "27e08fbe3023e343e1e08c4e4d430a9309283c691c9b5b7db5ca49832becea90",
+    "tests/e1/test_feasibility_experiment.py": "5eb27d6cee077d0ee74e417cc0f25b2416d8dad4d5de7fd210ab33c11bd6947f",
+    "tests/e1/test_feasibility_intervention.py": "5a5e08d18279f97855398e94d1edb3c8e54cdd12e066033725e01a973fcfd062"
+  },
+  "new_tests": 38,
+  "original_head": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+  "original_preservation": {
+    "changed": 0,
+    "old_files_checked": 81212,
+    "original_git_bytes_unchanged": true
+  },
+  "public_historical_byte_replay_requires_original_source_bytes": true,
+  "publication_parent": "ff09c06ebac789716416abc4771f238b629cf39d",
+  "reference_stage": "E1-3/results-001",
+  "schema": "e1-4a-publication-evidence-v1",
+  "single_action_intervention": {
+    "candidate_189_copy1_outcome_control": "met",
+    "candidate_189_copy1_outcome_single_defer": "met",
+    "candidate_189_copy1_start_control": "2023-07-01T10:15:00+00:00",
+    "candidate_189_copy1_start_single_defer": "2023-07-01T11:00:00+00:00",
+    "changed_tasks": 13,
+    "control_missed": 129,
+    "delta_carbon_kg": 0.006221922238182742,
+    "included_in_five_policy_comparison": false,
+    "met_to_missed": 2,
+    "missed_to_met": 3,
+    "protected_17470_35_outcome_control": "missed",
+    "protected_17470_35_outcome_single_defer": "missed",
+    "protected_17470_35_start_control": "2023-07-01T11:15:00+00:00",
+    "protected_17470_35_start_single_defer": "2023-07-01T11:15:00+00:00",
+    "protected_17470_35_unchanged": true,
+    "single_defer_missed": 128
+  },
+  "source_sha256": "495b572c6f5fdbb3cdbd7987a0626d4309e3926fd6f2018410ac76cc272402d6",
+  "strict_replay": {
+    "complete": true,
+    "runtime_excluded_from_scientific_comparison": true,
+    "scientific_files_equal": 231
+  },
+  "validation_note": "Actual final test counts are recorded in validation.md; runtime is descriptive under concurrent load."
+}

@@ -1,0 +1,11 @@
+load,policy,both_missed,risk_only_met_policy_missed,risk_only_missed_policy_met,both_met,other_outcome_pair
+load_1p50,edf_carbon_threshold,48,164,46,14656,0
+load_1p50,cars_risk_only,94,0,0,14820,0
+load_1p50,cars_full,93,36,1,14784,0
+load_1p50,risk_cap_only,94,0,0,14820,0
+load_1p50,risk_shadow_only,94,7,0,14813,0
+load_2p00,edf_carbon_threshold,746,763,49,18328,0
+load_2p00,cars_risk_only,795,0,0,19091,0
+load_2p00,cars_full,693,118,102,18973,0
+load_2p00,risk_cap_only,705,81,90,19010,0
+load_2p00,risk_shadow_only,768,17,27,19074,0

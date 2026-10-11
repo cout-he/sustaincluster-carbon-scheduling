@@ -1,0 +1,11 @@
+load,policy,task_count,comparable_start_count,earlier_count,later_count,same_count,unobserved_start_count,mean_delta_minutes,median_delta_minutes,min_delta_minutes,max_delta_minutes
+load_1p50,edf_carbon_threshold,14914,14914,55,4439,10420,0,4.935295695319834,0.0,-30.0,75.0
+load_1p50,cars_risk_only,14914,14914,0,0,14914,0,0.0,0.0,0.0,0.0
+load_1p50,cars_full,14914,14914,626,59,14229,0,-0.7191229717044387,0.0,-45.0,60.0
+load_1p50,risk_cap_only,14914,14914,527,0,14387,0,-0.6275982298511465,0.0,-30.0,0.0
+load_1p50,risk_shadow_only,14914,14914,9,19,14886,0,0.010057663939922221,0.0,-45.0,30.0
+load_2p00,edf_carbon_threshold,19886,19886,171,7892,11823,0,7.398923866036408,0.0,-135.0,135.0
+load_2p00,cars_risk_only,19886,19886,0,0,19886,0,0.0,0.0,0.0,0.0
+load_2p00,cars_full,19886,19886,774,290,18822,0,-0.4850145831238057,0.0,-150.0,120.0
+load_2p00,risk_cap_only,19886,19886,721,258,18907,0,-0.4299507190988635,0.0,-150.0,120.0
+load_2p00,risk_shadow_only,19886,19886,121,92,19673,0,-0.07241275269033491,0.0,-135.0,120.0

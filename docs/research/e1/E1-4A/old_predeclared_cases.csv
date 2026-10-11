@@ -1,0 +1,9 @@
+load,rule,selected,time,task_id,reason,full_outcome,risk_only_outcome,same_step_start_set_mismatch,planner_replay_agrees
+load_1p50,first_known_risk,True,2023-07-01T10:15:00+00:00,3ba8a8e0067288f8/2023-07-01T09:15:00+00:00/17471/29,known_deadline_risk,met,met,False,True
+load_1p50,first_pending_cap_fallback,True,2023-07-01T09:30:00+00:00,3ba8a8e0067288f8/2023-07-01T09:30:00+00:00/17472/51,known_feasibility_uncertain,met,met,True,True
+load_1p50,first_history_buffer_guard,True,2023-07-01T05:00:00+00:00,3ba8a8e0067288f8/2023-07-01T05:00:00+00:00/17454/4,risk_buffer_guard,met,met,True,
+load_1p50,historical_17475_189_copy1_1015,True,2023-07-01T10:15:00+00:00,3ba8a8e0067288f8/2023-07-01T10:15:00+00:00/17475/189~e1-2b-20261010-copy1,known_deadline_risk,met,met,True,True
+load_2p00,first_known_risk,True,2023-07-02T11:00:00+00:00,3ba8a8e0067288f8/2023-07-02T10:30:00+00:00/17572/14~e1-2b-20261010-copy1,known_deadline_risk,met,met,False,True
+load_2p00,first_pending_cap_fallback,True,2023-07-01T09:30:00+00:00,3ba8a8e0067288f8/2023-07-01T08:45:00+00:00/17469/5,known_feasibility_uncertain,met,met,True,True
+load_2p00,first_history_buffer_guard,True,2023-07-01T05:00:00+00:00,3ba8a8e0067288f8/2023-07-01T05:00:00+00:00/17454/4,risk_buffer_guard,met,met,True,
+load_2p00,historical_17475_189_copy1_1015,False,,,,,,,

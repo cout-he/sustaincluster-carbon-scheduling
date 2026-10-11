@@ -1,0 +1,11 @@
+load,policy,candidate_checks,history_risk_buffer_guards,cap_execute_guards,explicit_shadow_risk_guards,uncertain_risk_fallbacks,queue_limit_all_candidate_checks,queue_limit_eligible_candidate_checks,planner_reported_status_decisions,planner_status_bypass_count,planner_actual_execution_decisions,planner_actual_safe_count,planner_actual_risk_count,planner_actual_uncertain_count
+load_1p50,edf_carbon_threshold,36385,0,0,0,0,7975,3000,0,0,0,0,0,0
+load_1p50,cars_risk_only,31839,4183,0,0,0,4712,2154,0,0,0,0,0,0
+load_1p50,cars_full,30040,3532,501,119,0,2361,501,15746,501,15245,15126,119,0
+load_1p50,risk_cap_only,31215,3679,527,0,0,2460,527,0,0,0,0,0,0
+load_1p50,risk_shadow_only,31645,4157,0,8,2154,4712,2154,16739,2154,14585,14577,8,0
+load_2p00,edf_carbon_threshold,46995,0,0,0,0,22181,8394,0,0,0,0,0,0
+load_2p00,cars_risk_only,37802,6490,0,0,0,9194,3234,0,0,0,0,0,0
+load_2p00,cars_full,36265,5915,579,18,0,5751,579,16976,579,16397,16379,18,0
+load_2p00,risk_cap_only,36271,5922,579,0,0,5783,579,0,0,0,0,0,0
+load_2p00,risk_shadow_only,37696,6445,0,58,3204,9093,3204,17868,3204,14664,14606,58,0

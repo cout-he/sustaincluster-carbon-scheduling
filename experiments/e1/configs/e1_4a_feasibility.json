@@ -1,0 +1,22 @@
+{
+  "version": "e1-4a-feasibility-ablation-v1",
+  "policies": ["edf_carbon_threshold", "cars_risk_only", "cars_full", "risk_cap_only", "risk_shadow_only"],
+  "required_factors": [1.5, 2.0],
+  "optional_factors": [1.0, 1.25],
+  "reference_publication_commit": "ff09c06ebac789716416abc4771f238b629cf39d",
+  "parameters_source": "sealed_e1_3_archive",
+  "frozen_parameters": true,
+  "future_ci": false,
+  "cap_count_basis": "current_candidate_pending",
+  "cap_condition": "pending>max_pending",
+  "shadow_uncertain": "risk_only_decision",
+  "representative_selection": "historical_case_plus_first_chronological_per_guard",
+  "historical_case_task_id": "3ba8a8e0067288f8/2023-07-01T10:15:00+00:00/17475/189~e1-2b-20261010-copy1",
+  "intervention": {
+    "factor": 1.5,
+    "time": "2023-07-01T10:15:00+00:00",
+    "task_id": "3ba8a8e0067288f8/2023-07-01T10:15:00+00:00/17475/189~e1-2b-20261010-copy1",
+    "override": "defer_once",
+    "separate_from_baselines": true
+  }
+}

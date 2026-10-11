@@ -1,0 +1,3 @@
+load,full_missed,cap_only_missed,both_missed,cap_met_full_missed,cap_missed_full_met,net_missed_full_minus_cap
+load_1p50,129,94,93,36,1,35
+load_2p00,811,786,765,46,21,25
