@@ -92,3 +92,10 @@ Only the independent publication directory may be pushed to the personal GitHub
 repository after explicit approval. The original `upstream` directory and its
 branches must not be pushed. No upstream fetch/clone, force-push or mirror is part
 of this procedure. Local commit preparation does not authorize the first push.
+
+
+## E1-5A: verified stepwise Gymnasium environment
+
+[E1-5A summary](docs/research/e1/E1-5A/E1-5A-summary.md) documents one persistent execution kernel and `Discrete(3)` modes: existing EDF, EDF+Carbon, RiskOnly. No policy training or learned task-level delay budget is included. See [API/40-feature observation/reward](docs/research/e1/E1-5A/E1-5A-rl-interface.md), [fixed-mode equivalence](docs/research/e1/E1-5A/E1-5A-fixed-action-equivalence.md), [tests](docs/research/e1/E1-5A/E1-5A-tests.md), and [proposed data split](docs/research/e1/E1-5A/E1-5A-data-split.md).
+
+Run `python -m pytest -q tests/e1 -p no:cacheprovider` in the compatible environment. Historical `python -m experiments.e1.rl_validation --output <new-output-directory>` requires external sealed E1-3/E1-4A archives and compatible original non-kernel source bytes. This source-only publication intentionally excludes those raw inputs, full ledgers and archives; synthetic tests run without them and two private-archive tests skip. Source refactoring does not rewrite old provenance or weaken strict historical replay.

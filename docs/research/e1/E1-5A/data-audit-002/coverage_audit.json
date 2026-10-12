@@ -1,0 +1,798 @@
+{
+  "schema": "e1-5a-readonly-data-coverage-audit-v1",
+  "root": "D:\\A-myprofile\\SustainCluster\\upstream",
+  "runtime": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda\\python.exe",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "source_hashes_before": {
+    "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+    "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+    "data/weather/US-CAL-CISO/2023.json": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5"
+  },
+  "source_hashes_after": {
+    "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+    "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+    "data/weather/US-CAL-CISO/2023.json": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5"
+  },
+  "sources_unchanged": true,
+  "workload_coverage": {
+    "rows": 37552,
+    "first": "2020-01-01T00:00:00+00:00",
+    "last": "2021-01-26T23:45:00+00:00",
+    "timezone": "UTC",
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "expected_rows_in_inclusive_extent": 37632,
+    "missing_rows": 80,
+    "missing_ranges": [
+      {
+        "first": "2020-01-06T04:30:00+00:00",
+        "last": "2020-01-06T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-07T07:30:00+00:00",
+        "last": "2020-01-07T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-13T00:15:00+00:00",
+        "last": "2020-01-13T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-13T05:45:00+00:00",
+        "last": "2020-01-13T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-20T01:15:00+00:00",
+        "last": "2020-01-20T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-21T05:30:00+00:00",
+        "last": "2020-01-21T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-27T07:15:00+00:00",
+        "last": "2020-01-27T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-01-27T21:15:00+00:00",
+        "last": "2020-01-27T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-02-11T05:45:00+00:00",
+        "last": "2020-02-11T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-02-18T06:15:00+00:00",
+        "last": "2020-02-18T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-02-24T04:30:00+00:00",
+        "last": "2020-02-24T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-02-25T07:30:00+00:00",
+        "last": "2020-02-25T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-02T00:15:00+00:00",
+        "last": "2020-03-02T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-02T05:45:00+00:00",
+        "last": "2020-03-02T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-09T01:15:00+00:00",
+        "last": "2020-03-09T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-10T05:30:00+00:00",
+        "last": "2020-03-10T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-16T07:15:00+00:00",
+        "last": "2020-03-16T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-16T21:15:00+00:00",
+        "last": "2020-03-16T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-03-31T05:45:00+00:00",
+        "last": "2020-03-31T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-07T06:15:00+00:00",
+        "last": "2020-04-07T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-13T04:30:00+00:00",
+        "last": "2020-04-13T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-14T07:30:00+00:00",
+        "last": "2020-04-14T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-20T00:15:00+00:00",
+        "last": "2020-04-20T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-20T05:45:00+00:00",
+        "last": "2020-04-20T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-27T01:15:00+00:00",
+        "last": "2020-04-27T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-04-28T05:30:00+00:00",
+        "last": "2020-04-28T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-05-04T07:15:00+00:00",
+        "last": "2020-05-04T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-05-04T21:15:00+00:00",
+        "last": "2020-05-04T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-05-19T05:45:00+00:00",
+        "last": "2020-05-19T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-05-26T06:15:00+00:00",
+        "last": "2020-05-26T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-01T04:30:00+00:00",
+        "last": "2020-06-01T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-02T07:30:00+00:00",
+        "last": "2020-06-02T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-08T00:15:00+00:00",
+        "last": "2020-06-08T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-08T05:45:00+00:00",
+        "last": "2020-06-08T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-15T01:15:00+00:00",
+        "last": "2020-06-15T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-16T05:30:00+00:00",
+        "last": "2020-06-16T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-22T07:15:00+00:00",
+        "last": "2020-06-22T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-06-22T21:15:00+00:00",
+        "last": "2020-06-22T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-07T05:45:00+00:00",
+        "last": "2020-07-07T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-14T06:15:00+00:00",
+        "last": "2020-07-14T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-20T04:30:00+00:00",
+        "last": "2020-07-20T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-21T07:30:00+00:00",
+        "last": "2020-07-21T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-27T00:15:00+00:00",
+        "last": "2020-07-27T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-07-27T05:45:00+00:00",
+        "last": "2020-07-27T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-08-03T01:15:00+00:00",
+        "last": "2020-08-03T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-08-04T05:30:00+00:00",
+        "last": "2020-08-04T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-08-10T07:15:00+00:00",
+        "last": "2020-08-10T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-08-10T21:15:00+00:00",
+        "last": "2020-08-10T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-08-25T05:45:00+00:00",
+        "last": "2020-08-25T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-01T06:15:00+00:00",
+        "last": "2020-09-01T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-07T04:30:00+00:00",
+        "last": "2020-09-07T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-08T07:30:00+00:00",
+        "last": "2020-09-08T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-14T00:15:00+00:00",
+        "last": "2020-09-14T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-14T05:45:00+00:00",
+        "last": "2020-09-14T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-21T01:15:00+00:00",
+        "last": "2020-09-21T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-22T05:30:00+00:00",
+        "last": "2020-09-22T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-28T07:15:00+00:00",
+        "last": "2020-09-28T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-09-28T21:15:00+00:00",
+        "last": "2020-09-28T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-10-13T05:45:00+00:00",
+        "last": "2020-10-13T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-10-20T06:15:00+00:00",
+        "last": "2020-10-20T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-10-26T04:30:00+00:00",
+        "last": "2020-10-26T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-10-27T07:30:00+00:00",
+        "last": "2020-10-27T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-02T00:15:00+00:00",
+        "last": "2020-11-02T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-02T05:45:00+00:00",
+        "last": "2020-11-02T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-09T01:15:00+00:00",
+        "last": "2020-11-09T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-10T05:30:00+00:00",
+        "last": "2020-11-10T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-16T07:15:00+00:00",
+        "last": "2020-11-16T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-11-16T21:15:00+00:00",
+        "last": "2020-11-16T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-01T05:45:00+00:00",
+        "last": "2020-12-01T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-08T06:15:00+00:00",
+        "last": "2020-12-08T06:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-14T04:30:00+00:00",
+        "last": "2020-12-14T04:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-15T07:30:00+00:00",
+        "last": "2020-12-15T07:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-21T00:15:00+00:00",
+        "last": "2020-12-21T00:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-21T05:45:00+00:00",
+        "last": "2020-12-21T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-28T01:15:00+00:00",
+        "last": "2020-12-28T01:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2020-12-29T05:30:00+00:00",
+        "last": "2020-12-29T05:30:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2021-01-04T07:15:00+00:00",
+        "last": "2021-01-04T07:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2021-01-04T21:15:00+00:00",
+        "last": "2021-01-04T21:15:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2021-01-19T05:45:00+00:00",
+        "last": "2021-01-19T05:45:00+00:00",
+        "count": 1
+      },
+      {
+        "first": "2021-01-26T06:15:00+00:00",
+        "last": "2021-01-26T06:15:00+00:00",
+        "count": 1
+      }
+    ],
+    "columns": [
+      "interval_15m",
+      "tasks_matrix"
+    ],
+    "off_15minute_grid": 0,
+    "invalid_matrix_shape_rows": 0,
+    "empty_matrix_rows": 0
+  },
+  "carbon_2023": {
+    "rows": 8760,
+    "first": "2023-01-01T00:00:00+00:00",
+    "last": "2023-12-31T23:00:00+00:00",
+    "timezone": "UTC",
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "nonfinite_values": 0,
+    "expected_rows_in_inclusive_extent": 8760,
+    "missing_rows": 0,
+    "missing_ranges": [],
+    "data_estimated_true_rows": 2,
+    "data_source_counts": {
+      "caiso.com": 8757,
+      "Electricity Maps Estimation": 2,
+      "Electricity Maps Estimation; caiso.com": 1
+    }
+  },
+  "weather_2023": {
+    "rows": 8760,
+    "first": "2023-01-01T07:00:00+00:00",
+    "last": "2024-01-01T06:00:00+00:00",
+    "timezone": "UTC",
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "nonfinite_values": 0,
+    "expected_rows_in_inclusive_extent": 8760,
+    "missing_rows": 0,
+    "missing_ranges": [],
+    "source_timezone": "America/Los_Angeles",
+    "utc_offset_seconds": -25200,
+    "source_labels_naive": true,
+    "interpretation": "metadata_fixed_offset",
+    "timezone_abbreviation": "GMT-7"
+  },
+  "available_environment_inventory": [
+    {
+      "rows": 8760,
+      "first": "2021-01-01T00:00:00+00:00",
+      "last": "2021-12-31T23:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "carbon",
+      "path": "data/carbon_intensity/US-CAL-CISO/2021/US-CAL-CISO_2021_hourly.csv",
+      "bytes": 749784
+    },
+    {
+      "rows": 8760,
+      "first": "2022-01-01T00:00:00+00:00",
+      "last": "2022-12-31T23:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "carbon",
+      "path": "data/carbon_intensity/US-CAL-CISO/2022/US-CAL-CISO_2022_hourly.csv",
+      "bytes": 749572
+    },
+    {
+      "rows": 8760,
+      "first": "2023-01-01T00:00:00+00:00",
+      "last": "2023-12-31T23:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "carbon",
+      "path": "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv",
+      "bytes": 749471
+    },
+    {
+      "rows": 8784,
+      "first": "2024-01-01T00:00:00+00:00",
+      "last": "2024-12-31T23:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8784,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "carbon",
+      "path": "data/carbon_intensity/US-CAL-CISO/2024/US-CAL-CISO_2024_hourly.csv",
+      "bytes": 748986
+    },
+    {
+      "rows": 8784,
+      "first": "2020-01-01T07:00:00+00:00",
+      "last": "2021-01-01T06:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8784,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "weather",
+      "path": "data/weather/US-CAL-CISO/2020.json",
+      "bytes": 913038,
+      "utc_offset_seconds": -25200,
+      "source_timezone": "America/Los_Angeles"
+    },
+    {
+      "rows": 8760,
+      "first": "2021-01-01T07:00:00+00:00",
+      "last": "2022-01-01T06:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "weather",
+      "path": "data/weather/US-CAL-CISO/2021.json",
+      "bytes": 911379,
+      "utc_offset_seconds": -25200,
+      "source_timezone": "America/Los_Angeles"
+    },
+    {
+      "rows": 8760,
+      "first": "2022-01-01T07:00:00+00:00",
+      "last": "2023-01-01T06:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "weather",
+      "path": "data/weather/US-CAL-CISO/2022.json",
+      "bytes": 912064,
+      "utc_offset_seconds": -25200,
+      "source_timezone": "America/Los_Angeles"
+    },
+    {
+      "rows": 8760,
+      "first": "2023-01-01T07:00:00+00:00",
+      "last": "2024-01-01T06:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8760,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "weather",
+      "path": "data/weather/US-CAL-CISO/2023.json",
+      "bytes": 912513,
+      "utc_offset_seconds": -25200,
+      "source_timezone": "America/Los_Angeles"
+    },
+    {
+      "rows": 8784,
+      "first": "2024-01-01T07:00:00+00:00",
+      "last": "2025-01-01T06:00:00+00:00",
+      "timezone": "UTC",
+      "duplicate_timestamps": 0,
+      "invalid_timestamps": 0,
+      "nonfinite_values": 0,
+      "expected_rows_in_inclusive_extent": 8784,
+      "missing_rows": 0,
+      "missing_ranges": [],
+      "kind": "weather",
+      "path": "data/weather/US-CAL-CISO/2024.json",
+      "bytes": 913824,
+      "utc_offset_seconds": -25200,
+      "source_timezone": "America/Los_Angeles"
+    }
+  ],
+  "windows": {
+    "train": {
+      "arrival_start": "2023-05-01T05:00:00+00:00",
+      "arrival_end_exclusive": "2023-05-03T05:00:00+00:00",
+      "arrival_hours": 48,
+      "safety_end": "2023-06-02T05:00:00+00:00",
+      "max_drain_hours": 720,
+      "mapped_trace_start": "2020-05-01T05:00:00+00:00",
+      "mapped_trace_last_bucket": "2020-05-03T04:45:00+00:00",
+      "required_15minute_arrival_buckets": 192,
+      "absent_covered_buckets": 0,
+      "absent_bucket_ranges": [],
+      "task_count": 5542,
+      "distinct_source_identities": 5533,
+      "duplicate_source_identity_count": 9,
+      "task_schema_errors": 0,
+      "invalid_numeric_task_count": 0,
+      "nonpositive_duration_task_count": 0,
+      "oversize_task_count_at_resource_multiplier_5": 0,
+      "max_duration_min": 392.9,
+      "carbon_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-05-01T05:00:00+00:00",
+        "last_required": "2023-06-02T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "weather_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-05-01T05:00:00+00:00",
+        "last_required": "2023-06-02T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "carbon_estimated_true_points_in_envelope": 0
+    },
+    "validation": {
+      "arrival_start": "2023-07-08T05:00:00+00:00",
+      "arrival_end_exclusive": "2023-07-10T05:00:00+00:00",
+      "arrival_hours": 48,
+      "safety_end": "2023-08-09T05:00:00+00:00",
+      "max_drain_hours": 720,
+      "mapped_trace_start": "2020-07-08T05:00:00+00:00",
+      "mapped_trace_last_bucket": "2020-07-10T04:45:00+00:00",
+      "required_15minute_arrival_buckets": 192,
+      "absent_covered_buckets": 0,
+      "absent_bucket_ranges": [],
+      "task_count": 8708,
+      "distinct_source_identities": 8445,
+      "duplicate_source_identity_count": 263,
+      "task_schema_errors": 0,
+      "invalid_numeric_task_count": 0,
+      "nonpositive_duration_task_count": 0,
+      "oversize_task_count_at_resource_multiplier_5": 0,
+      "max_duration_min": 393.23333333333335,
+      "carbon_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-07-08T05:00:00+00:00",
+        "last_required": "2023-08-09T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "weather_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-07-08T05:00:00+00:00",
+        "last_required": "2023-08-09T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "carbon_estimated_true_points_in_envelope": 0
+    },
+    "test": {
+      "arrival_start": "2023-09-09T05:00:00+00:00",
+      "arrival_end_exclusive": "2023-09-11T05:00:00+00:00",
+      "arrival_hours": 48,
+      "safety_end": "2023-10-11T05:00:00+00:00",
+      "max_drain_hours": 720,
+      "mapped_trace_start": "2020-09-09T05:00:00+00:00",
+      "mapped_trace_last_bucket": "2020-09-11T04:45:00+00:00",
+      "required_15minute_arrival_buckets": 192,
+      "absent_covered_buckets": 0,
+      "absent_bucket_ranges": [],
+      "task_count": 6723,
+      "distinct_source_identities": 6577,
+      "duplicate_source_identity_count": 146,
+      "task_schema_errors": 0,
+      "invalid_numeric_task_count": 0,
+      "nonpositive_duration_task_count": 0,
+      "oversize_task_count_at_resource_multiplier_5": 0,
+      "max_duration_min": 393.26666666666665,
+      "carbon_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-09-09T05:00:00+00:00",
+        "last_required": "2023-10-11T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "weather_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-09-09T05:00:00+00:00",
+        "last_required": "2023-10-11T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "carbon_estimated_true_points_in_envelope": 0
+    },
+    "seen_e1_2a_e1_3": {
+      "arrival_start": "2023-07-01T05:00:00+00:00",
+      "arrival_end_exclusive": "2023-07-03T05:00:00+00:00",
+      "arrival_hours": 48,
+      "safety_end": "2023-08-02T05:00:00+00:00",
+      "max_drain_hours": 720,
+      "mapped_trace_start": "2020-07-01T05:00:00+00:00",
+      "mapped_trace_last_bucket": "2020-07-03T04:45:00+00:00",
+      "required_15minute_arrival_buckets": 192,
+      "absent_covered_buckets": 0,
+      "absent_bucket_ranges": [],
+      "task_count": 9943,
+      "distinct_source_identities": 9193,
+      "duplicate_source_identity_count": 750,
+      "task_schema_errors": 0,
+      "invalid_numeric_task_count": 0,
+      "nonpositive_duration_task_count": 0,
+      "oversize_task_count_at_resource_multiplier_5": 0,
+      "max_duration_min": 392.65,
+      "carbon_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-07-01T05:00:00+00:00",
+        "last_required": "2023-08-02T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "weather_arrival_plus_drain": {
+        "required_hourly_points": 769,
+        "missing_hourly_points": 0,
+        "nonfinite_hourly_points": 0,
+        "first_required": "2023-07-01T05:00:00+00:00",
+        "last_required": "2023-08-02T05:00:00+00:00",
+        "pass_complete_finite_hourly_coverage": true
+      },
+      "carbon_estimated_true_points_in_envelope": 0
+    }
+  },
+  "pairwise_source_identity_intersection_counts": {
+    "train__validation": 0,
+    "train__test": 0,
+    "train__seen_e1_2a_e1_3": 0,
+    "validation__test": 0,
+    "validation__seen_e1_2a_e1_3": 0,
+    "test__seen_e1_2a_e1_3": 0
+  },
+  "source_identity_definition": "raw fields job_name,start_time,end_time,start_dt; excludes shifted bucket/stable ID",
+  "early_calibration": {
+    "start": "2023-04-01T00:00:00+00:00",
+    "end_exclusive": "2023-05-01T00:00:00+00:00",
+    "hourly_points": 720,
+    "required_hourly_points": 720,
+    "missing_points": 0,
+    "nonfinite_points": 0,
+    "data_estimated_true_points": 0,
+    "rule": "median of early April hourly direct CI",
+    "threshold_g_per_kwh": 161.075,
+    "threshold_hex": "0x1.4226666666666p+7",
+    "role": "new split historical calibration; distinct from E1-3 legacy June threshold"
+  },
+  "policies_executed": false,
+  "training_executed": false,
+  "not_a_real_2023_workload": true,
+  "not_independent_full_year_trace": true
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "e1-5a-validation-summary-v1",
+  "training_performed": false,
+  "performance_claim": false,
+  "source_sha256": "2df222b9ea7bfbc1520ff70a02dbe7414940ff0d07167e64f8e77217cca7c18e",
+  "source_files": 155,
+  "historical_runs": 14,
+  "fixed_action_runs": 6,
+  "direct_policy_runs": 8,
+  "all_historical_numerical_fields_exact": true,
+  "all_eight_result_files_byte_identical_runs": 12,
+  "serialization_only_runs": [
+    {
+      "factor": "1.5",
+      "policy": "edf_backfill",
+      "files": [
+        "intervals.csv"
+      ]
+    },
+    {
+      "factor": "2.0",
+      "policy": "edf_backfill",
+      "files": [
+        "intervals.csv"
+      ]
+    }
+  ],
+  "serialization_cells": [
+    {
+      "factor": "1.5",
+      "action": "0",
+      "changed_cells": 36,
+      "columns": {
+        "used_cores": 12,
+        "used_gpus": 12,
+        "used_mem": 12
+      },
+      "old": "0",
+      "new": "0.0"
+    },
+    {
+      "factor": "2.0",
+      "action": "0",
+      "changed_cells": 36,
+      "columns": {
+        "used_cores": 12,
+        "used_gpus": 12,
+        "used_mem": 12
+      },
+      "old": "0",
+      "new": "0.0"
+    }
+  ],
+  "intervals_per_fixed_action": 227,
+  "tests": {
+    "full-tests-001": {
+      "result": "276 passed in 1233.85s (0:20:33)",
+      "log_sha256": "699e611eec66665d252b977e1de3ea9edbe9d881dc3b33ec070b38d7eff1aa56"
+    },
+    "publication-tests-001": {
+      "result": "274 passed, 2 skipped in 685.14s (0:11:25)",
+      "log_sha256": "40fa3b36dc5cbda8152fa5b415370fea3d2998f090898f04d57725d5bc49fd61"
+    }
+  },
+  "random_rollout": {
+    "seed": 20261012,
+    "intervals": 215,
+    "arrived": 14914,
+    "completed": 14914,
+    "pending": 0,
+    "running": 0,
+    "deadline_missed_completed": 53,
+    "penalized_unique_task_count": 53,
+    "carbon_kg": 16034.173603923107,
+    "it_energy_kwh": 35843.19944017375,
+    "hvac_energy_kwh": 50609.97409966255,
+    "total_energy_kwh": 86453.1735398363,
+    "observation_end": "2023-07-03T10:45:00+00:00",
+    "drained_at": "2023-07-03T10:45:00+00:00",
+    "reward_sum": -23.722173603923107,
+    "action_counts": {
+      "0": 67,
+      "1": 73,
+      "2": 75
+    },
+    "terminated": true,
+    "truncated": false,
+    "comparison_role": "API/conservation smoke only; own drain endpoint"
+  },
+  "integrity": {
+    "outputs_checked": 144,
+    "output_hashes_verified": true,
+    "same_preexecution_source_freeze": true,
+    "random_miss_ids_exact_unique": true,
+    "reward_carbon_equals_accounting_carbon": true,
+    "reward_terms_reconstruct_return": true
+  },
+  "commands": [
+    "python -m pytest -q tests/e1 -p no:cacheprovider",
+    "python -m experiments.e1.rl_validation --e1-3 research_notes/E1/E1-3/results-001 --e1-4a research_notes/E1/E1-4A/results-001 --output research_notes/E1/E1-5A/results-001 --seed 20261012"
+  ],
+  "historical_runtime_inventory": {
+    "same_python": true,
+    "same_dependencies": true
+  }
+}

@@ -68,6 +68,7 @@ class LocalExecutor:
         self.ledger, self.events, self.steps = {}, [], []
         self.policy_events, self.policy_steps = [], []
         self.has_run = False
+        self.finished, self.sample, self.current_arrivals = False, None, ()
         self.drain, self.drained_at, self.observed_end = drain, None, environment.end
 
     def event(self, time, task, kind):
@@ -92,17 +93,60 @@ class LocalExecutor:
                 self.ledger[key]['state'] != 'running' for key in running):
             raise RuntimeError('Task queue/state mismatch')
 
-    def run(self, stop_at_drain=False):
+    def start(self, stop_at_drain=False, until=None):
+        """Prepare arrivals/releases/enqueue, suspend BEFORE policy or physics.
+
+        `until` is an exclusive interaction cutoff. Only already-arrived tasks
+        enter a partial result; the cutoff performs the usual completion flush.
+        """
         if self.has_run:
             raise RuntimeError('Executor instances are single-use; construct fresh state for replay')
         self.has_run = True
         if stop_at_drain and not self.drain:
             raise ValueError('Stopping at drain requires explicit finite-cohort drain mode')
+        self._until = self.environment.end if until is None else utc_time(until, True)
+        if not self.environment.start < self._until <= self.environment.end:
+            raise ValueError('Interaction cutoff outside environmental coverage')
+        self.observed_end = self.environment.start
+        self._iterator = self._execute(stop_at_drain)
+        self.sample = next(self._iterator)
+        return self.sample
+
+    def advance(self, policy=None):
+        """Execute one prepared interval, then prepare the next observed boundary.
+
+        A replacement policy changes only the eligibility mode for that interval.
+        The returned record is its actual energy/resource integral. The same
+        pool, Task objects and power model remain alive throughout the iterator.
+        """
+        if not self.has_run or self.finished:
+            raise RuntimeError('Advance requires a live prepared executor')
+        previous = len(self.steps)
+        try:
+            self.sample = self._iterator.send(policy)
+        except StopIteration:
+            self.sample, self.current_arrivals, self.finished = None, (), True
+        if len(self.steps) != previous + 1:
+            raise RuntimeError('Each advance must account for exactly one interval')
+        return self.steps[-1]
+
+    def run(self, stop_at_drain=False):
+        self.start(stop_at_drain)
+        while not self.finished:
+            self.advance()
+        return self.result()
+
+    def _execute(self, stop_at_drain):
+        # Single execution path shared by batch run() and interactive advance().
         arrivals = {}
         for spec in self.specs:
             arrivals.setdefault(spec.arrival_time, []).append(spec)
         for sample in self.environment.samples:
             time = sample.time
+            if time >= self._until:
+                self.observed_end = self._until
+                break
+            self.observed_end = time
             incoming = []
             # Arrival is recorded first, but every completion releases capacity
             # before either old or new pending tasks can start at this boundary.
@@ -124,6 +168,10 @@ class LocalExecutor:
             for task in incoming:
                 self.pool.pending_tasks.append(task)
                 self.event(time, task, 'enqueued')
+            self.current_arrivals = tuple(self.ledger[t.job_name]['spec'] for t in incoming)
+            selected_policy = yield sample
+            if selected_policy is not None:
+                self.policy = selected_policy
             # Every strategy receives ALL unstarted tasks, including old backlog.
             waiting = tuple(self.ledger[t.job_name]['spec'] for t in self.pool.pending_tasks)
             ordered = tuple(self.policy.order(waiting))
@@ -200,19 +248,22 @@ class LocalExecutor:
             detail.update(pending_end_ids=[t.job_name for t in self.pool.pending_tasks],
                           running_ids=[t.job_name for t in self.pool.running_tasks])
             self.policy_steps.append(detail)
+        else:
+            self.observed_end = self._until
         # T is exclusively a completion flush: no arrivals, starts, power or drain.
         self.release(self.observed_end)
         self.check_ownership()
-        if len(self.ledger) != len(self.specs):
+        if self.observed_end >= self.workload.end and len(self.ledger) != len(self.specs):
             raise RuntimeError('An arrived task is missing from the ledger')
-        if self.drain and self.drained_at is None and not (self.pool.pending_tasks or self.pool.running_tasks):
+        if self.drain and self.observed_end >= self.workload.end and self.drained_at is None and not (
+                self.pool.pending_tasks or self.pool.running_tasks):
             self.drained_at = self.observed_end
-        return self.result()
+        # result() is serialized by callers; finalization never adds another step.
 
     def extend_idle(self, endpoint):
         """Continue the same physical state to a common endpoint, with no scheduling."""
         endpoint = utc_time(endpoint, True)
-        if not self.has_run or not self.drain or self.drained_at is None or (
+        if not self.finished or not self.drain or self.drained_at is None or (
                 self.pool.pending_tasks or self.pool.running_tasks):
             raise ValueError('Idle extension requires a completed drain run')
         if endpoint < self.observed_end or endpoint > self.environment.end:
@@ -228,8 +279,12 @@ class LocalExecutor:
         return self.result()
 
     def result(self):
+        if not self.steps:
+            raise RuntimeError('Result requires at least one accounted interval')
         rows, policy_rows = [], []
         for spec in self.specs:
+            if spec.task_id not in self.ledger:
+                continue  # Interactive prefixes do not reveal/count future tasks.
             entry, task = self.ledger[spec.task_id], self.ledger[spec.task_id]['task']
             state = entry['state']
             if state == 'completed':

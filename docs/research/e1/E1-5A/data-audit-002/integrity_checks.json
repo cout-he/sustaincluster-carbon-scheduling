@@ -1,0 +1,28 @@
+{
+  "original_workload_timestamp_dtype": "datetime64[ns, UTC]",
+  "original_naive_workload_timestamp_count": 0,
+  "windows": {
+    "train": {
+      "iana_timezone_offsets_in_entire_envelope": [
+        -25200
+      ],
+      "negative_numeric_resource_or_bandwidth_tasks": 0
+    },
+    "validation": {
+      "iana_timezone_offsets_in_entire_envelope": [
+        -25200
+      ],
+      "negative_numeric_resource_or_bandwidth_tasks": 0
+    },
+    "test": {
+      "iana_timezone_offsets_in_entire_envelope": [
+        -25200
+      ],
+      "negative_numeric_resource_or_bandwidth_tasks": 0
+    }
+  },
+  "estimated_ci_timestamps": [
+    "2023-08-17 23:00:00",
+    "2023-11-05 09:00:00"
+  ]
+}

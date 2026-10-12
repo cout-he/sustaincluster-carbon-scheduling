@@ -1,0 +1,31 @@
+{
+  "schema": "e1-5a-mode-env-v1",
+  "stage": "environment_validation_no_training",
+  "actions": ["edf_backfill", "edf_carbon_threshold", "cars_risk_only"],
+  "timestep_minutes": 15,
+  "history_minutes": 120,
+  "future_ci": false,
+  "default_stop_at_drain": false,
+  "reward": {
+    "alpha": 1.0, "beta": 1.0, "gamma": 10.0,
+    "carbon_scale_kg": 1000.0, "wait_scale_task_minutes": 15000.0,
+    "deadline_scale_tasks": 1000.0, "terminal_scale_tasks": 1000.0,
+    "terminal_weight": 10.0
+  },
+  "observation_normalization": {
+    "ci_g_per_kwh": 1000.0, "count_tasks": 1000.0,
+    "slack_minutes": 120.0, "work_minutes": 120.0, "elapsed_hours": 24.0
+  },
+  "threshold_roles": {
+    "historical_equivalence_only": 137.64999999999998,
+    "new_split_early_calibration": 161.075,
+    "calibration_start_utc": "2023-04-01T00:00:00Z",
+    "calibration_end_exclusive_utc": "2023-05-01T00:00:00Z",
+    "rule": "median of 720 historical hourly CI observations",
+    "fit_on_validation_or_test": false
+  },
+  "split_manifest": "research_notes/E1/E1-5A/data_split.json",
+  "historical_validation_seed": 20261012,
+  "formal_evaluation": "finite cohort, real Drain, common endpoint with persistent idle power",
+  "configuration_role": "documented defaults; pass reward/normalization explicitly to CarbonSchedulingEnv, historical driver imports sealed parameters"
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "e1-5a-data-split-proposal-v1",
+  "status": "coverage_verified_proposal_not_experiment_frozen",
+  "audit_date": "2026-10-12",
+  "root": "D:/A-myprofile/SustainCluster/upstream",
+  "audit_record": "research_notes/E1/E1-5A/data-audit-002/coverage_audit.json",
+  "audit_integrity_record": "research_notes/E1/E1-5A/data-audit-002/integrity_checks.json",
+  "writes_scope": "research_notes/E1/E1-5A/ only",
+  "policies_executed": false,
+  "training_executed": false,
+  "timezone": "UTC",
+  "arrival_interval": "left_closed_right_open",
+  "arrival_hours": 48,
+  "timestep_minutes": 15,
+  "drain_cap_hours": 720,
+  "environment_endpoint_check": "hourly source observations required through safety_end inclusive; no wrap/extrapolation/tail replication",
+  "sources": {
+    "workload": {
+      "path": "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl",
+      "sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "rows": 37552,
+      "first": "2020-01-01T00:00:00Z",
+      "last": "2021-01-26T23:45:00Z",
+      "missing_15minute_buckets_in_extent": 80,
+      "duplicate_timestamps": 0,
+      "source_timestamp_dtype": "datetime64[ns, UTC]",
+      "schema": "alibaba_gpu_12_v1",
+      "trace_year": 2020,
+      "mapping": "simulation timestamp replace(year=2020), retain month/day/hour/minute",
+      "provenance_limit": "existing approximately 7-week trace block repeatedly shifted; not independently observed annual or real-2023 arrivals",
+      "absent_bucket_rule": "existing loader treats covered absent bucket as no arrivals; proposed formal windows require zero absent buckets"
+    },
+    "carbon": {
+      "path": "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv",
+      "sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "rows": 8760,
+      "first": "2023-01-01T00:00:00Z",
+      "last": "2023-12-31T23:00:00Z",
+      "missing_hours": 0,
+      "nonfinite_values": 0,
+      "duplicate_timestamps": 0,
+      "data_estimated_true_rows_global": 2,
+      "data_estimated_true_rows_formal_envelopes_and_calibration": 0,
+      "policy_sampling": "latest observation with timestamp <= now; hourly availability at timestamp is a simulation assumption"
+    },
+    "weather": {
+      "path": "data/weather/US-CAL-CISO/2023.json",
+      "sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "column": "hourly.temperature_2m",
+      "rows": 8760,
+      "first_utc": "2023-01-01T07:00:00Z",
+      "last_utc": "2024-01-01T06:00:00Z",
+      "missing_hours": 0,
+      "nonfinite_values": 0,
+      "duplicate_timestamps": 0,
+      "labels_naive": true,
+      "source_timezone": "America/Los_Angeles",
+      "utc_offset_seconds": -25200,
+      "time_basis": "metadata_fixed_offset",
+      "all_formal_envelope_iana_offsets_seconds": [-25200],
+      "physical_model_sampling": "real corresponding temperature linear interpolation; 0.9*temperature wet-bulb proxy; not policy features"
+    }
+  },
+  "windows": {
+    "train": {
+      "arrival_start": "2023-05-01T05:00:00Z",
+      "arrival_end": "2023-05-03T05:00:00Z",
+      "safety_end": "2023-06-02T05:00:00Z",
+      "task_count": 5542,
+      "distinct_raw_identities": 5533,
+      "within_window_duplicate_raw_identity_count": 9,
+      "arrival_buckets_present_required": [192, 192],
+      "carbon_hourly_points_present_required": [769, 769],
+      "weather_hourly_points_present_required": [769, 769],
+      "stress_seeds_reserved": [510001, 510002, 510003]
+    },
+    "validation": {
+      "arrival_start": "2023-07-08T05:00:00Z",
+      "arrival_end": "2023-07-10T05:00:00Z",
+      "safety_end": "2023-08-09T05:00:00Z",
+      "task_count": 8708,
+      "distinct_raw_identities": 8445,
+      "within_window_duplicate_raw_identity_count": 263,
+      "arrival_buckets_present_required": [192, 192],
+      "carbon_hourly_points_present_required": [769, 769],
+      "weather_hourly_points_present_required": [769, 769],
+      "stress_seeds_reserved": [520001, 520002, 520003]
+    },
+    "test": {
+      "arrival_start": "2023-09-09T05:00:00Z",
+      "arrival_end": "2023-09-11T05:00:00Z",
+      "safety_end": "2023-10-11T05:00:00Z",
+      "task_count": 6723,
+      "distinct_raw_identities": 6577,
+      "within_window_duplicate_raw_identity_count": 146,
+      "arrival_buckets_present_required": [192, 192],
+      "carbon_hourly_points_present_required": [769, 769],
+      "weather_hourly_points_present_required": [769, 769],
+      "stress_seeds_reserved": [530001, 530002, 530003],
+      "holdout_status": "source quality audited only; no policy outcomes or training/model selection from this window"
+    }
+  },
+  "selection_rules": {
+    "chronological_order": "early calibration < Train < Validation < Test",
+    "all_formal_arrival_plus_cap_envelopes_pairwise_disjoint": true,
+    "criteria": ["calendar isolation", "complete arrival buckets", "continuous finite environment through fixed cap", "zero cross-window raw identity intersections"],
+    "forbidden_criteria": ["policy carbon/DMR/JCT/return", "winning policy", "test CI quantiles", "post-training threshold tuning"],
+    "rejected_test_candidate": {
+      "arrival_start": "2023-09-08T05:00:00Z",
+      "arrival_end": "2023-09-10T05:00:00Z",
+      "reason": "one absent workload bucket at mapped trace 2020-09-08T07:30:00Z; shift one calendar day for coverage only",
+      "audit_record_preserved": "research_notes/E1/E1-5A/data-audit-001/coverage_audit.json"
+    },
+    "raw_identity_fields": ["job_name", "start_time", "end_time", "start_dt"],
+    "pairwise_raw_identity_intersections_including_seen_window": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0,
+      "train__seen_e1_2a_e1_3": 0,
+      "validation__seen_e1_2a_e1_3": 0,
+      "test__seen_e1_2a_e1_3": 0
+    },
+    "do_not_deduplicate_within_window": true,
+    "zero_intersection_is_not_statistical_independence": true
+  },
+  "seen_information": {
+    "legacy_arrival_start": "2023-07-01T05:00:00Z",
+    "legacy_arrival_end": "2023-07-03T05:00:00Z",
+    "legacy_environment_safety_end": "2023-08-02T05:00:00Z",
+    "legacy_ci_candidate_start_range": ["2023-07-01T05:00:00Z", "2023-08-31T05:00:00Z"],
+    "legacy_candidate_arrival_hours": 48,
+    "legacy_last_candidate_arrival_end": "2023-09-02T05:00:00Z",
+    "legacy_stress_seed": 20261010,
+    "new_test_avoids_legacy_arrival_environment_and_candidate_ci": true
+  },
+  "threshold_roles": {
+    "new_formal_split": {
+      "calibration_start": "2023-04-01T00:00:00Z",
+      "calibration_end": "2023-05-01T00:00:00Z",
+      "rule": "median of 720 early-calibration hourly direct CI observations; freeze unchanged across all formal splits",
+      "threshold_g_per_kwh": 161.075,
+      "threshold_float_hex": "0x1.4226666666666p+7",
+      "calibration_missing_nonfinite_estimated_counts": [0, 0, 0],
+      "validation_test_fitting_forbidden": true
+    },
+    "legacy_e1_3_action_equivalence_only": {
+      "calibration_start": "2023-06-01T00:00:00Z",
+      "calibration_end": "2023-07-01T00:00:00Z",
+      "threshold_g_per_kwh": 137.64999999999998,
+      "use_in_new_formal_training_forbidden": true
+    }
+  },
+  "normalization_proposal": {
+    "resource_capacity": [50000, 1000, 80000],
+    "time_unit": "minutes",
+    "ci_scale_g_per_kwh": 1000,
+    "count_scale": 1000,
+    "nonnegative_bounded_transform": "x/(1+x) after division by declared unit scale",
+    "engineering_constants_need_no_distribution_fitting": true,
+    "any_empirical_mean_std_quantile_fit_source": "Train only; freeze before Validation and Test"
+  },
+  "information_access": {
+    "policy_allowed": ["now", "current available CI", "already arrived task declared duration/demand/deadline", "current resources/running tasks", "causal arrival history", "stable ID for identity/tie-break only"],
+    "offline_only_not_policy_features": ["future arrivals", "full-window task_count/max_duration", "future CI/weather", "environment tail through cap", "raw original start/end/weekday metadata", "source row/index/hash", "other policies' paired outcomes", "future returns/final drain outcomes"],
+    "weather_linear_interpolation_only_for_physical_accounting": true,
+    "declared_duration_usage_known_at_arrival_is_simulation_oracle_assumption": true,
+    "learning_seed_must_be_separate_from_stress_seed": true,
+    "physical_reset_seed_is_not_independent_replication": true,
+    "stress_seed_results_do_not_increase_independent_real_trace_sample_size": true
+  },
+  "freeze_in_future_stage": [
+    "final split windows and immutable workload/environment snapshots with hashes",
+    "arrival mapping/schema and absent-bucket rule",
+    "stress load levels, reserved seed acceptance, clone identity manifests",
+    "learning initialization/sampling seeds separately from stress seeds",
+    "exact threshold float and normalization transform",
+    "policy/context API allowed fields and future-field rejection contract",
+    "15min nonpreemptive semantics and declared-duration observation assumption",
+    "no arrivals after fixed 48h cohort; fixed 30-day cap",
+    "censored/incomplete termination and common idle accounting",
+    "Train-only fitted parameters and Validation model selection rule",
+    "all model/parameter selection locked before final Test evaluation"
+  ]
+}
