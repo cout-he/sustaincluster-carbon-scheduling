@@ -1,0 +1,425 @@
+{
+  "audit_script_sha256": "0b75d1121dc689c9239a3303414c2b02f2aead53e7ad4571389398102efc5ad5",
+  "engine_e1_5a_sha256": "01ed38ba8a513fb4e0a60bf707f4160a0f7f45674eaf29ff32103421006f9ef8",
+  "formal_test_evaluated": false,
+  "pending": [],
+  "precheck": [
+    {
+      "all_tasks_completed": true,
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "equivalent_fixed_actions": {
+        "0": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_backfill"
+        },
+        "1": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_carbon_threshold"
+        },
+        "2": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "cars_risk_only"
+        }
+      },
+      "factor": 1.0,
+      "output_manifest_sha256": "7bbf88c346dbe5bdfaacbfdff4d453c779de89c3c981678dd25fe197ac578046",
+      "runs": [
+        {
+          "carbon_kg": 9602.215576638204,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 12,
+          "intervals": 228,
+          "ledger_sha256": "d03cdcf6eb9f6d62c6253acf496e780f8934742a10e014f342e5449f53a85bff",
+          "missed": 0,
+          "policy": "edf_backfill",
+          "tasks": 5542
+        },
+        {
+          "carbon_kg": 9530.58647395207,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "67ddba2280b5d6bdd421a672515822bcfca407d34ddeaec30c01ab91d2dab929",
+          "missed": 0,
+          "policy": "edf_carbon_threshold",
+          "tasks": 5542
+        },
+        {
+          "carbon_kg": 9533.35338161996,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "4bd5bba3e85c572d1b82819c506cafe84ad7cb18c8c30413e71aaef100990829",
+          "missed": 0,
+          "policy": "cars_risk_only",
+          "tasks": 5542
+        },
+        {
+          "carbon_kg": 9602.215576638204,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 12,
+          "intervals": 228,
+          "ledger_sha256": "d03cdcf6eb9f6d62c6253acf496e780f8934742a10e014f342e5449f53a85bff",
+          "missed": 0,
+          "policy": "fixed_action_0",
+          "tasks": 5542
+        },
+        {
+          "carbon_kg": 9530.58647395207,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "67ddba2280b5d6bdd421a672515822bcfca407d34ddeaec30c01ab91d2dab929",
+          "missed": 0,
+          "policy": "fixed_action_1",
+          "tasks": 5542
+        },
+        {
+          "carbon_kg": 9533.35338161996,
+          "completed": 5542,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "4bd5bba3e85c572d1b82819c506cafe84ad7cb18c8c30413e71aaef100990829",
+          "missed": 0,
+          "policy": "fixed_action_2",
+          "tasks": 5542
+        }
+      ],
+      "scientific_files_verified": 65,
+      "split": "train"
+    },
+    {
+      "all_tasks_completed": true,
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "equivalent_fixed_actions": {
+        "0": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_backfill"
+        },
+        "1": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_carbon_threshold"
+        },
+        "2": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "cars_risk_only"
+        }
+      },
+      "factor": 1.5,
+      "output_manifest_sha256": "2f64810d75bd5cb333ef85bfa4cb88e090432ae941a0ac800e18e7ecbaa385eb",
+      "runs": [
+        {
+          "carbon_kg": 11537.214732585213,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 12,
+          "intervals": 228,
+          "ledger_sha256": "63a5ca4614f905886f2e78a15d61f22c2b9884e4fbd42e74596bd23e10421e67",
+          "missed": 153,
+          "policy": "edf_backfill",
+          "tasks": 8313
+        },
+        {
+          "carbon_kg": 11391.920613783794,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "12238960aea814af497f8004c223d6f5ea7865a61e2c3b77561c65617b5c9e7f",
+          "missed": 236,
+          "policy": "edf_carbon_threshold",
+          "tasks": 8313
+        },
+        {
+          "carbon_kg": 11408.937262809992,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "ebca342bcedf06b23e93b91a1139d54c3ea9955c66152271c910c398bd8a3248",
+          "missed": 194,
+          "policy": "cars_risk_only",
+          "tasks": 8313
+        },
+        {
+          "carbon_kg": 11537.214732585213,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 12,
+          "intervals": 228,
+          "ledger_sha256": "63a5ca4614f905886f2e78a15d61f22c2b9884e4fbd42e74596bd23e10421e67",
+          "missed": 153,
+          "policy": "fixed_action_0",
+          "tasks": 8313
+        },
+        {
+          "carbon_kg": 11391.920613783794,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "12238960aea814af497f8004c223d6f5ea7865a61e2c3b77561c65617b5c9e7f",
+          "missed": 236,
+          "policy": "fixed_action_1",
+          "tasks": 8313
+        },
+        {
+          "carbon_kg": 11408.937262809992,
+          "completed": 8313,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "ebca342bcedf06b23e93b91a1139d54c3ea9955c66152271c910c398bd8a3248",
+          "missed": 194,
+          "policy": "fixed_action_2",
+          "tasks": 8313
+        }
+      ],
+      "scientific_files_verified": 65,
+      "split": "train"
+    },
+    {
+      "all_tasks_completed": true,
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "equivalent_fixed_actions": {
+        "0": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_backfill"
+        },
+        "1": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "edf_carbon_threshold"
+        },
+        "2": {
+          "all_execution_fields_exact": true,
+          "comparison": "all dataclass result fields, exact numbers; no tolerance",
+          "policy": "cars_risk_only"
+        }
+      },
+      "factor": 2.0,
+      "output_manifest_sha256": "d0042abb90517c7f1f4ca21e64d4096be2e7c30717a306f0168ce4515ecae2c0",
+      "runs": [
+        {
+          "carbon_kg": 13555.204797632805,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 11,
+          "intervals": 228,
+          "ledger_sha256": "1496221791bd080f642f9cc8fa701654c7258509e36f34de2a06a06d39ca89cf",
+          "missed": 779,
+          "policy": "edf_backfill",
+          "tasks": 11084
+        },
+        {
+          "carbon_kg": 13407.561802171083,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "bf0dce2a53fc3c54171bf5ecc67008aadae37bdcbfc70b567e0b4d945b6f9b60",
+          "missed": 838,
+          "policy": "edf_carbon_threshold",
+          "tasks": 11084
+        },
+        {
+          "carbon_kg": 13408.320376202451,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "aa77a3dd24b17aa01ae7e4a650510eb4ce45f9f6b50723732bb272e9166d08a4",
+          "missed": 853,
+          "policy": "cars_risk_only",
+          "tasks": 11084
+        },
+        {
+          "carbon_kg": 13555.204797632805,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 11,
+          "intervals": 228,
+          "ledger_sha256": "1496221791bd080f642f9cc8fa701654c7258509e36f34de2a06a06d39ca89cf",
+          "missed": 779,
+          "policy": "fixed_action_0",
+          "tasks": 11084
+        },
+        {
+          "carbon_kg": 13407.561802171083,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "bf0dce2a53fc3c54171bf5ecc67008aadae37bdcbfc70b567e0b4d945b6f9b60",
+          "missed": 838,
+          "policy": "fixed_action_1",
+          "tasks": 11084
+        },
+        {
+          "carbon_kg": 13408.320376202451,
+          "completed": 11084,
+          "energy_carbon_resource_arithmetic_verified": true,
+          "idle_intervals": 0,
+          "intervals": 228,
+          "ledger_sha256": "aa77a3dd24b17aa01ae7e4a650510eb4ce45f9f6b50723732bb272e9166d08a4",
+          "missed": 853,
+          "policy": "fixed_action_2",
+          "tasks": 11084
+        }
+      ],
+      "scientific_files_verified": 65,
+      "split": "train"
+    }
+  ],
+  "source_files_verified": 161,
+  "source_sha256": "7411a1a01680c4338b0b87cc108ecb92a805941e1cfc840436079453ee86720f",
+  "source_unchanged": true,
+  "training": [
+    {
+      "checkpoint_sha256": "4fa2b7160f46e95de3eab4156a440c0e542b245880566eb4ff588f38dfcc6088",
+      "elapsed_seconds": 31.132185777000018,
+      "episodes": 4,
+      "parameter_sha256": "ab735dbf69f19fc9937dd5e0bfd17fc707f179ce17f4d3a92869730f7f9be52d",
+      "partial_episode_steps": 148,
+      "peak_rss_kib": 944672.0,
+      "pilot_resource_gate_satisfied": true,
+      "probe_predictions_verified": 256,
+      "reward_unique_deadline_and_component_arithmetic_verified": true,
+      "seed": 55100,
+      "steps": 1024,
+      "training_config_sha256": "d249cc53b0d5faf0eb04b0c62797a0c4b5aa5b06c64b145fb4fb543a78f50e58"
+    },
+    {
+      "checkpoint_sha256": "cd3d7b533fdfca455947ff00171d60da2c94dd114dcfc5b1ffbdeefa4a191d3e",
+      "elapsed_seconds": 548.178202414,
+      "episodes": 94,
+      "parameter_sha256": "8a172f4e75348bfad2e055759b6750be76d5858e4609ba8c3761ae8219e5a80e",
+      "partial_episode_steps": 65,
+      "peak_rss_kib": 946292.0,
+      "pilot_resource_gate_satisfied": true,
+      "probe_predictions_verified": 256,
+      "reward_unique_deadline_and_component_arithmetic_verified": true,
+      "seed": 55101,
+      "steps": 20480,
+      "training_config_sha256": "b4939686fedb782683a3a7681ba680e33865a159ceedffdfff3306fa472b485c"
+    },
+    {
+      "checkpoint_sha256": "d2c0e6cd3765f7bd63814818011586de7ffc8f42d839bcb681049d62ecd024e3",
+      "elapsed_seconds": 571.0477999669997,
+      "episodes": 94,
+      "parameter_sha256": "522792a56fede9109fdc4969d5850de19b331f0684d619b510f513f854caaaa9",
+      "partial_episode_steps": 68,
+      "peak_rss_kib": 947008.0,
+      "pilot_resource_gate_satisfied": true,
+      "probe_predictions_verified": 256,
+      "reward_unique_deadline_and_component_arithmetic_verified": true,
+      "seed": 55102,
+      "steps": 20480,
+      "training_config_sha256": "21619f88f92450ed671b212a373a5d78cd6714029d94aabf8a6f30277fc1412d"
+    },
+    {
+      "checkpoint_sha256": "73d2cc8bb4548d59a57501d56aa3b832c4fb7aadc1fecbe32d883ec4ee3374ac",
+      "elapsed_seconds": 610.474288525,
+      "episodes": 94,
+      "parameter_sha256": "fea70fb9a8fd0960255f7b0b4a5734723f6e1dbdf511ade2377080848a0b90bc",
+      "partial_episode_steps": 1,
+      "peak_rss_kib": 955864.0,
+      "pilot_resource_gate_satisfied": true,
+      "probe_predictions_verified": 256,
+      "reward_unique_deadline_and_component_arithmetic_verified": true,
+      "seed": 55103,
+      "steps": 20480,
+      "training_config_sha256": "ec2ac59e5f6fbd22e5abdf7136d63aa9824e8d1a39dcceba4bd7d0f59c5c2def"
+    }
+  ],
+  "validation": {
+    "all_tasks_completed": true,
+    "common_end": "2023-07-10T12:45:00+00:00",
+    "equivalent_fixed_actions": {},
+    "factor": 2.0,
+    "output_manifest_sha256": "5abb564f80678aefea11acda799eff6e577795bddea31e6ef92df08bade3bd3e",
+    "runs": [
+      {
+        "carbon_kg": 14528.308301167177,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 10,
+        "intervals": 223,
+        "ledger_sha256": "d5bb2f2a48433db16d7fbae389abde9df72c55bc0f856852037181ba956989c2",
+        "missed": 5301,
+        "policy": "edf_backfill",
+        "tasks": 17416
+      },
+      {
+        "carbon_kg": 14428.151257988808,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 0,
+        "intervals": 223,
+        "ledger_sha256": "b91b9b7872f7f4a32248d23a1109f76de47ad81f0cab69ddbdb5afa8d656c81f",
+        "missed": 6842,
+        "policy": "edf_carbon_threshold",
+        "tasks": 17416
+      },
+      {
+        "carbon_kg": 14396.650349242647,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 0,
+        "intervals": 223,
+        "ledger_sha256": "2774324a50bbe52dd22676f6cc9bef6ec55873a80c57ed67b33ba17921dce353",
+        "missed": 5924,
+        "policy": "cars_risk_only",
+        "tasks": 17416
+      },
+      {
+        "carbon_kg": 14504.989410059556,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 10,
+        "intervals": 223,
+        "ledger_sha256": "e36f7060962ea67beeace4e3c0b042527278f28fcf3fc953b94595d56f12cb77",
+        "missed": 5378,
+        "policy": "ppo_v0_55101",
+        "tasks": 17416
+      },
+      {
+        "carbon_kg": 14431.177417390936,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 8,
+        "intervals": 223,
+        "ledger_sha256": "7e1b202a18b841652e70f81d07a673b45f6252af49d41f23f4c894610fb3c984",
+        "missed": 5743,
+        "policy": "ppo_v0_55102",
+        "tasks": 17416
+      },
+      {
+        "carbon_kg": 14457.311789737436,
+        "completed": 17416,
+        "energy_carbon_resource_arithmetic_verified": true,
+        "idle_intervals": 8,
+        "intervals": 223,
+        "ledger_sha256": "aae25ca050ca1a85ec0a0dbe72b500eb3126fe32b7e3ffd4e2e947ecbc2dbfa2",
+        "missed": 5608,
+        "policy": "ppo_v0_55103",
+        "tasks": 17416
+      }
+    ],
+    "scientific_files_verified": 65,
+    "split": "validation"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "candidates": [
+    {
+      "action_log_sha256": "80de1e2c0e3a8ce2d962005ad096f76941173c1e3ab691dd00ffa80207ad6d40",
+      "all_logged_actions_replayed_exactly": true,
+      "checkpoint_sha256": "cd3d7b533fdfca455947ff00171d60da2c94dd114dcfc5b1ffbdeefa4a191d3e",
+      "decisions": 213,
+      "policy": "ppo_v0_55101",
+      "seed": 55101,
+      "training_config_sha256": "b4939686fedb782683a3a7681ba680e33865a159ceedffdfff3306fa472b485c"
+    },
+    {
+      "action_log_sha256": "6a53632331c893c5072172ccf2900aa9fff9e85a5f3e18c4f8c5c20c79ebb454",
+      "all_logged_actions_replayed_exactly": true,
+      "checkpoint_sha256": "d2c0e6cd3765f7bd63814818011586de7ffc8f42d839bcb681049d62ecd024e3",
+      "decisions": 215,
+      "policy": "ppo_v0_55102",
+      "seed": 55102,
+      "training_config_sha256": "21619f88f92450ed671b212a373a5d78cd6714029d94aabf8a6f30277fc1412d"
+    },
+    {
+      "action_log_sha256": "f7a4efa7584044cdee8d470611e41e202b3ba4bdab0c9b547c6e14cb35e48f41",
+      "all_logged_actions_replayed_exactly": true,
+      "checkpoint_sha256": "73d2cc8bb4548d59a57501d56aa3b832c4fb7aadc1fecbe32d883ec4ee3374ac",
+      "decisions": 215,
+      "policy": "ppo_v0_55103",
+      "seed": 55103,
+      "training_config_sha256": "ec2ac59e5f6fbd22e5abdf7136d63aa9824e8d1a39dcceba4bd7d0f59c5c2def"
+    }
+  ],
+  "formal_test_evaluated": false,
+  "script_sha256": "53d928d37130d4169ddd3307a90fc4e9c696b25700436c2067110d76e2de1d45",
+  "simulation_repeated": false,
+  "verification": "current-state 40-vector deterministic actor inference; no simulator transition"
+}

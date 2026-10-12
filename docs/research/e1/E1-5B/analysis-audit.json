@@ -1,0 +1,137 @@
+{
+  "confidence_intervals": "none; three initialization seeds on one deterministic workload/window",
+  "exclusion": "sample-budget tails are retained in original summaries; no seed or complete episode removed",
+  "formal_test_evaluated": false,
+  "partial_episodes_excluded_from_complete_episode_curves": true,
+  "source_script_sha256": "d20c791dff5fc721d25fbdc93a84573cc02a1b2c6ab3a288beb69126d4741114",
+  "train_seeds": [
+    55101,
+    55102,
+    55103
+  ],
+  "validation_fairness": {
+    "all_tasks_completed": true,
+    "arrival_end": "2023-07-10T05:00:00+00:00",
+    "arrived": 17416,
+    "capacity": [
+      50000,
+      1000,
+      80000
+    ],
+    "common_end": "2023-07-10T12:45:00+00:00",
+    "environment_sha256": "1ae071256e280a9b2f56736aa80b88c07385f2e7c0e59865bc9911c2f563c319",
+    "equal_resource_hours": true,
+    "equal_workload_carbon_comparison_valid": true,
+    "factor": 2.0,
+    "formal_test_evaluated": false,
+    "identical_frozen_inputs": true,
+    "idle_included": true,
+    "normalization": {
+      "ci_g_per_kwh": 1000.0,
+      "count_tasks": 1000.0,
+      "elapsed_hours": 24.0,
+      "slack_minutes": 120.0,
+      "work_minutes": 120.0
+    },
+    "parameters": {
+      "arrival_end": "2023-07-10T05:00:00+00:00",
+      "arrival_start": "2023-07-08T05:00:00+00:00",
+      "cold_start_buffer_steps": 2,
+      "factors": [
+        1.0,
+        1.25,
+        1.5,
+        2.0
+      ],
+      "future_ci": false,
+      "history_minutes": 120,
+      "horizon_steps": 8,
+      "max_pending": 256,
+      "reference_source_commit": "aae1a1337ec60706a6fcb6346d8ba8b607e5e929",
+      "risk_breakpoints": [
+        0.5,
+        1.0
+      ],
+      "risk_buffer_steps": [
+        0,
+        1,
+        2
+      ],
+      "shadow_unknown": "execute",
+      "sla_multiplier": 1.5,
+      "step_minutes": 15,
+      "stress_seed": 520001,
+      "threshold_g_per_kwh": 161.075,
+      "version": "e1-3-cars-v1"
+    },
+    "policy_future_ci_access": false,
+    "resource_hours": {
+      "cores": [
+        823404.4403800153,
+        823404.4403800153,
+        823404.4403800153,
+        823404.4403800153,
+        823404.4403800153,
+        823404.4403800153
+      ],
+      "gpus": [
+        45470.136271905445,
+        45470.136271905445,
+        45470.136271905445,
+        45470.136271905445,
+        45470.136271905445,
+        45470.136271905445
+      ],
+      "mem": [
+        1349340.3575792478,
+        1349340.3575792478,
+        1349340.3575792478,
+        1349340.3575792478,
+        1349340.3575792478,
+        1349340.3575792478
+      ]
+    },
+    "reward_config": {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "carbon_scale_kg": 1000.0,
+      "deadline_scale_tasks": 1000.0,
+      "gamma": 10.0,
+      "terminal_scale_tasks": 1000.0,
+      "terminal_weight": 10.0,
+      "wait_scale_task_minutes": 15000.0
+    },
+    "safety_end": "2023-08-09T05:00:00+00:00",
+    "same_frozen_input_sha256": "14f1242c09cf7d8766c2c5ce90363f26c94d0e65759eb3d591137151b09f37ea",
+    "split": "validation",
+    "stress_seed": 520001,
+    "version": "e1-5b-common-window-evaluation-v1",
+    "workload_sha256": "197b577646b89bc5c0c0727d0534b297851fd53a0e61eb7e73ce26f32c6b49de"
+  },
+  "verified_training_artifacts": [
+    {
+      "checkpoint_sha256": "cd3d7b533fdfca455947ff00171d60da2c94dd114dcfc5b1ffbdeefa4a191d3e",
+      "no_duplicate_miss_penalties": true,
+      "no_training_censoring": true,
+      "seed": 55101,
+      "training_log_sha256": "a177c5a874d2feb09b3114acd6aa44d1e2134358c632737cd5bf21801afd1f0d",
+      "validation_actions_sha256": "80de1e2c0e3a8ce2d962005ad096f76941173c1e3ab691dd00ffa80207ad6d40"
+    },
+    {
+      "checkpoint_sha256": "d2c0e6cd3765f7bd63814818011586de7ffc8f42d839bcb681049d62ecd024e3",
+      "no_duplicate_miss_penalties": true,
+      "no_training_censoring": true,
+      "seed": 55102,
+      "training_log_sha256": "d8d1bd52b0453b6f30a1c8eba7738cd69d4dcfc31e41466b9b7499bf1277bb22",
+      "validation_actions_sha256": "6a53632331c893c5072172ccf2900aa9fff9e85a5f3e18c4f8c5c20c79ebb454"
+    },
+    {
+      "checkpoint_sha256": "73d2cc8bb4548d59a57501d56aa3b832c4fb7aadc1fecbe32d883ec4ee3374ac",
+      "no_duplicate_miss_penalties": true,
+      "no_training_censoring": true,
+      "seed": 55103,
+      "training_log_sha256": "880d1ff95515d477df4c0cf8e761ef42c694986448fb885ce0359877d5f0f015",
+      "validation_actions_sha256": "f7a4efa7584044cdee8d470611e41e202b3ba4bdab0c9b547c6e14cb35e48f41"
+    }
+  ]
+}

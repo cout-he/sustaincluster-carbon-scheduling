@@ -1,0 +1,63 @@
+{
+  "schema": "e1-5b-ppo-v0",
+  "starting_publication_commit": "1a5d06003e3ebb83b1b19f2b6a18f000bec2db97",
+  "threshold_g_per_kwh": 161.075,
+  "threshold_calibration": ["2023-04-01T00:00:00Z", "2023-05-01T00:00:00Z"],
+  "windows": {
+    "train": ["2023-05-01T05:00:00Z", "2023-05-03T05:00:00Z", "2023-06-02T05:00:00Z"],
+    "validation": ["2023-07-08T05:00:00Z", "2023-07-10T05:00:00Z", "2023-08-09T05:00:00Z"],
+    "test": ["2023-09-09T05:00:00Z", "2023-09-11T05:00:00Z", "2023-10-11T05:00:00Z"]
+  },
+  "paths": {
+    "workload": "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl",
+    "carbon": "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv",
+    "weather": "data/weather/US-CAL-CISO/2023.json",
+    "physical_model": "configs/dcs/dc_config.json"
+  },
+  "source_sha256": {
+    "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+    "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+    "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+    "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b"
+  },
+  "datacenter": {
+    "dc_id": 1, "location": "US-CAL-CISO", "total_cores": 50000,
+    "total_gpus": 1000, "total_mem": 80000, "hvac_setpoint_c": 22
+  },
+  "resource_multiplier": 5, "sla_multiplier": 1.5, "trace_year": 2020,
+  "stress_seeds": {"train": [510001,510002,510003], "validation": [520001,520002,520003], "test": [530001,530002,530003]},
+  "active_stress_seed_index": 0,
+  "precheck_factors": [1.0, 1.5, 2.0],
+  "load_selection": "highest preregistered Train factor with capacity waiting and distinct SLA or waiting; if absent stop before PPO",
+  "training_input": "one selected Train factor and stress seed 510001, identical for all RL seeds",
+  "validation_input": "same selected factor, held-out Validation window and stress seed 520001",
+  "test_evaluation": false,
+  "rl_seeds": [55101,55102,55103], "smoke_seed": 55100,
+  "budgets": {"smoke": 1024, "pilot": 20480, "candidate": 20480},
+  "pilot_gate": {"maximum_wall_seconds": 7200, "maximum_rss_gib": 8, "all_finite": true, "updated_parameters": true},
+  "pilot_is_candidate_seed_55101": true,
+  "episode": {"stop_at_drain": true, "max_episode_steps": null, "safety_cap_hours_after_arrivals": 720},
+  "ppo": {
+    "learning_rate": 0.0003, "n_steps": 256, "batch_size": 64, "n_epochs": 10,
+    "gamma": 0.99, "gae_lambda": 0.95, "clip_range": 0.2,
+    "ent_coef": 0.0, "vf_coef": 0.5, "max_grad_norm": 0.5,
+    "normalize_advantage": true, "target_kl": null
+  },
+  "policy_kwargs": {"net_arch": [64,64]},
+  "runtime": {"device": "cpu", "torch_threads": 1, "deterministic_algorithms": true, "stable_baselines3": "2.9.0"},
+  "reward": {
+    "alpha": 1.0, "beta": 1.0, "gamma": 10.0,
+    "carbon_scale_kg": 1000.0, "wait_scale_task_minutes": 15000.0,
+    "deadline_scale_tasks": 1000.0, "terminal_scale_tasks": 1000.0, "terminal_weight": 10.0
+  },
+  "normalization": {
+    "ci_g_per_kwh": 1000.0, "count_tasks": 1000.0,
+    "slack_minutes": 120.0, "work_minutes": 120.0, "elapsed_hours": 24.0
+  },
+  "selection": {
+    "require_complete": true, "maximum_deadline_miss_rate": 0.05,
+    "order": ["common_total_carbon_kg", "deadline_miss_rate", "seed", "checkpoint_sha256"],
+    "no_eligible": "no model selected; preserve and report all candidates",
+    "interpretation": "predeclared operational eligibility, not a safety guarantee"
+  }
+}

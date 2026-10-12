@@ -1,0 +1,16 @@
+{
+  "python": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "versions": {
+    "stable-baselines3": "2.9.0",
+    "torch": "2.14.1",
+    "gymnasium": "1.4.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "pytest": "9.1.1",
+    "cloudpickle": "3.1.2"
+  },
+  "sb3_location": "isolated local --no-deps target; runtime installation excluded from Git",
+  "core_dependencies_modified": false
+}

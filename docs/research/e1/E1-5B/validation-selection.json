@@ -1,0 +1,34 @@
+{
+  "candidate_audit": [
+    {
+      "carbon_kg": 14504.989410059556,
+      "complete_cohort": true,
+      "deadline_violation_rate": 0.30879650895728067,
+      "eligible": false,
+      "policy": "ppo_v0_55101",
+      "seed": 55101
+    },
+    {
+      "carbon_kg": 14431.177417390936,
+      "complete_cohort": true,
+      "deadline_violation_rate": 0.3297542489664676,
+      "eligible": false,
+      "policy": "ppo_v0_55102",
+      "seed": 55102
+    },
+    {
+      "carbon_kg": 14457.311789737436,
+      "complete_cohort": true,
+      "deadline_violation_rate": 0.32200275608635737,
+      "eligible": false,
+      "policy": "ppo_v0_55103",
+      "seed": 55103
+    }
+  ],
+  "candidates_considered": 3,
+  "criterion": "complete finite cohort; DMR <= fixed limit; then common carbon, DMR, seed, checkpoint SHA",
+  "max_deadline_violation_rate": 0.05,
+  "selected_policy": null,
+  "status": "no_eligible_candidate",
+  "uses_training_return": false
+}

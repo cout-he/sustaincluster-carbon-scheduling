@@ -1,0 +1,241 @@
+seed,phase,feature,n,minimum,maximum,mean,std,nonfinite_count,abs_ge_099_fraction,boundary_interpretation,constant
+55101,train,ci_current,20480,0.07447684556245804,0.17031727731227875,0.12357332609863078,0.029605949286353957,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,ci_lag1,20480,0.07447684556245804,0.17031727731227875,0.12355149134673411,0.0295901704421451,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,ci_lag2,20480,0.07447684556245804,0.17031727731227875,0.12350990734739753,0.02956004709842022,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,ci_lag3,20480,0.07447684556245804,0.17031727731227875,0.12346690220947494,0.029528784829022818,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,ci_lag4,20480,0.07447684556245804,0.17031727731227875,0.12342294964582834,0.0294967247857678,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,ci_lags_valid_fraction,20480,0.0,1.0,0.9884033203125,0.09253662402449381,0,0.9814453125,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,ci_delta,20480,-0.042053837329149246,0.05234828218817711,2.32069168212945e-05,0.0076349181901390435,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,cpu_utilization,20480,0.0,0.9961209297180176,0.3848720970737986,0.22920127069970725,0,0.004638671875,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,gpu_utilization,20480,0.0,0.9724845886230469,0.38915736109449456,0.2319675473333996,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,mem_utilization,20480,0.0,0.7173340320587158,0.2496210939299317,0.13957372875849583,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,running_count,20480,0.0,0.4475138187408447,0.2368979771316731,0.0880026828653989,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_count,20480,0.0,0.35815146565437317,0.06439975896199712,0.07415932687680468,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_cpu_work,20480,0.0,0.6133073568344116,0.26892706066491884,0.15366248453897732,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_gpu_work,20480,0.0,0.6168608665466309,0.2842816947266783,0.1452606231566461,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_mem_work,20480,0.0,0.5258418917655945,0.20436801660507625,0.11231751680132085,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_cpu_rho,20480,0.0,0.787445604801178,0.27542470026146476,0.16244143868433034,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_gpu_rho,20480,0.0,0.6168608665466309,0.28997607619348853,0.14689710161125138,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_mem_rho,20480,0.0,0.5537531971931458,0.20944187563763988,0.11602175181697282,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,history_effective_fraction,20480,0.0,1.0,0.9791259765625,0.11979165975598302,0,0.962890625,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,history_cold,20480,0.0,1.0,0.004638671875,0.06794964752105845,0,0.004638671875,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,risk_buffer_fraction,20480,0.0,1.0,0.4009765625,0.3818502235179176,0,0.21220703125,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,solo_slack_min,20480,-0.2916523218154907,0.5836987495422363,0.04283776402164108,0.0733440073761461,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,solo_slack_mean,20480,0.0,0.5836987495422363,0.24818158438501997,0.11983103948723026,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,solo_slack_p10,20480,-0.21941065788269043,0.5836987495422363,0.07598942123391908,0.07639772575283828,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,solo_slack_max,20480,0.0,0.6207931637763977,0.45926128747596523,0.18921887738832746,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,urgent_count,20480,0.0,0.3065187335014343,0.03297809942117169,0.05776612522386852,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,deadline_due_count,20480,0.0,0.013806706294417381,7.93926062783612e-05,0.000657339808844909,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,solo_latest_start_passed_count,20480,0.0,0.19871795177459717,0.00499509220278469,0.023711742561226778,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_cpu_demand,20480,0.0,0.5739659667015076,0.06544699091984682,0.10819890689132725,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_gpu_demand,20480,0.0,0.5076292753219604,0.08360317575109129,0.10752478611058579,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_mem_demand,20480,0.0,0.35542821884155273,0.05135316575705815,0.06922576492677403,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_cpu_work,20480,0.0,0.529431164264679,0.07051411983282349,0.10843322315297949,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_gpu_work,20480,0.0,0.4579537808895111,0.07732918059736135,0.1042646947747122,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,pending_mem_work,20480,0.0,0.4226722717285156,0.053179814405510936,0.0748448314692761,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,utc_day_sin,20480,-1.0,1.0,0.08848035038354282,0.7138471831163138,0,0.115234375,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,utc_day_cos,20480,-1.0,1.0,-0.05323447021946777,0.6926467396703179,0,0.092333984375,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,utc_weekday_sin,20480,0.0,0.9749279022216797,0.5466682755388319,0.40938405308140247,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,utc_weekday_cos,20480,-0.22252093255519867,1.0,0.5805823012015026,0.4432636827645815,0,0.352001953125,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,train,elapsed_time,20480,0.0,0.6952381134033203,0.47496264161541146,0.18409217121745416,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,train,arrivals_open,20480,0.0,1.0,0.884423828125,0.3197159995522909,0,0.884423828125,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,ci_current,213,0.0687799155712127,0.1662497967481613,0.12377569904909444,0.03681493195750857,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,ci_lag1,213,0.0687799155712127,0.1662497967481613,0.12381762329121707,0.03685816691512399,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,ci_lag2,213,0.0687799155712127,0.1662497967481613,0.12386138198521213,0.0369029571869871,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,ci_lag3,213,0.0687799155712127,0.1662497967481613,0.12390514067920717,0.036947641336078065,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,ci_lag4,213,0.0687799155712127,0.1662497967481613,0.12394889937320222,0.03699221974696471,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,ci_lags_valid_fraction,213,0.0,1.0,0.9882629107981221,0.09308629135633026,0,0.9812206572769953,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,ci_delta,213,-0.0587526597082614,0.0473650097846984,-5.471746725830225e-05,0.008476366889437335,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,cpu_utilization,213,0.0,0.9622899889945984,0.2595560905977782,0.18296090958528557,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,gpu_utilization,213,0.0,0.9577755928039552,0.6848631688096328,0.2288435267795186,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,mem_utilization,213,0.0,0.6353856325149536,0.2679883733898961,0.13203427769669446,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,running_count,213,0.0,0.5305164456367493,0.2716973154497346,0.10566660530076998,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_count,213,0.0,0.6492458581924438,0.2567411569414984,0.20633490667675594,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_cpu_work,213,0.0,0.4823373258113861,0.21575790488034347,0.12266855642437882,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_gpu_work,213,0.0,0.7836151123046875,0.4124395921301674,0.16767235333177144,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_mem_work,213,0.0,0.4680047035217285,0.22741642945878943,0.10097563655410159,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_cpu_rho,213,0.0,0.4823373258113861,0.2196736161907514,0.12261912797367765,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_gpu_rho,213,0.0,0.7836151123046875,0.4171078165232296,0.1643704329383147,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_mem_rho,213,0.0,0.4680047035217285,0.23170200602409424,0.10126758449248238,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,history_effective_fraction,213,0.0,1.0,0.9788732394366197,0.12049252557935683,0,0.9624413145539906,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,history_cold,213,0.0,1.0,0.004694835680751174,0.06835783933596733,0,0.004694835680751174,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,risk_buffer_fraction,213,0.0,1.0,0.5610328638497653,0.3336142438636272,0,0.29107981220657275,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,solo_slack_min,213,-0.825826108455658,0.1018804386258125,-0.26801976296141256,0.36234686002229655,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,solo_slack_mean,213,-0.554362952709198,0.448681503534317,-0.010958815072204035,0.3182373413783846,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,solo_slack_p10,213,-0.7305338978767395,0.1990210264921188,-0.1875625934993997,0.3320238839020069,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,solo_slack_max,213,0.0,0.6209927797317505,0.4995194645554807,0.17697997913637772,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,urgent_count,213,0.0,0.6409335732460022,0.22097932901987674,0.21265325210692632,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,deadline_due_count,213,0.0,0.5344506502151489,0.12275903795391076,0.1834164766719867,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,solo_latest_start_passed_count,213,0.0,0.6141975522041321,0.16738192014070447,0.22103070303961422,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_cpu_demand,213,0.0,0.6065834760665894,0.1759742055188847,0.17163828299068637,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_gpu_demand,213,0.0,0.8498795628547668,0.3988470213723854,0.3042017435443039,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_mem_demand,213,0.0,0.526037335395813,0.19198253390077555,0.1694687411565138,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_cpu_work,213,0.0,0.5424683690071106,0.16967694481021503,0.16997445258117075,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_gpu_work,213,0.0,0.7924095988273621,0.3855919451387206,0.2788653651356825,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,pending_mem_work,213,0.0,0.5032590627670288,0.19115893248503615,0.16700363790508957,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,utc_day_sin,213,-1.0,1.0,0.08409945785719464,0.7195962483119971,0,0.11737089201877934,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,utc_day_cos,213,-1.0,1.0,-0.03483513599270386,0.6884003356257542,0,0.09389671361502347,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,utc_weekday_sin,213,-0.9749279022216796,0.0,-0.7002363607917034,0.35257156377961874,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,utc_weekday_cos,213,-0.2225209325551986,1.0,0.3941006086801699,0.4796321989491714,0,0.19248826291079812,expected flag/phase/cyclic or physical-utilization boundary,False
+55101,validation,elapsed_time,213,0.0,0.6883116960525513,0.4715080738915874,0.18304272958070206,0,0.0,continuous normalized feature; inspect high fraction,False
+55101,validation,arrivals_open,213,0.0,1.0,0.9014084507042254,0.2981128237819257,0,0.9014084507042254,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,ci_current,20480,0.07447684556245804,0.17031727731227875,0.12356410259089898,0.029611615670463352,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,ci_lag1,20480,0.07447684556245804,0.17031727731227875,0.12354187162891321,0.029595520213439006,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,ci_lag2,20480,0.07447684556245804,0.17031727731227875,0.1234992710138613,0.029564404965537257,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,ci_lag3,20480,0.07447684556245804,0.17031727731227875,0.12345588232674345,0.02953263508425564,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,ci_lag4,20480,0.07447684556245804,0.17031727731227875,0.12341201992676361,0.029500416066129045,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,ci_lags_valid_fraction,20480,0.0,1.0,0.9884033203125,0.09253662402449381,0,0.9814453125,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,ci_delta,20480,-0.042053837329149246,0.05234828218817711,2.3745346916115295e-05,0.007635305349774073,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,cpu_utilization,20480,0.0,0.9961209297180176,0.38491714943552324,0.22921261746918406,0,0.004638671875,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,gpu_utilization,20480,0.0,0.9712465405464172,0.38921504748416336,0.23168023159254003,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,mem_utilization,20480,0.0,0.7173340320587158,0.2496528514357088,0.1393018441525111,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,running_count,20480,0.0,0.43406903743743896,0.23696665929585947,0.08781857559743911,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_count,20480,0.0,0.35815146565437317,0.06453694934620557,0.07424322676378253,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_cpu_work,20480,0.0,0.6133073568344116,0.268968088451129,0.15362829996443614,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_gpu_work,20480,0.0,0.6168608665466309,0.2843096808354403,0.14522429155972413,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_mem_work,20480,0.0,0.5258418917655945,0.20439402752272146,0.1122913481546403,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_cpu_rho,20480,0.0,0.787445604801178,0.27546572804767494,0.16240746051080873,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_gpu_rho,20480,0.0,0.6168608665466309,0.2900040623022505,0.14686008972418207,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_mem_rho,20480,0.0,0.5537531971931458,0.2094678865552851,0.11599528108156816,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,history_effective_fraction,20480,0.0,1.0,0.9791259765625,0.11979165975598302,0,0.962890625,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,history_cold,20480,0.0,1.0,0.004638671875,0.06794964752105845,0,0.004638671875,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,risk_buffer_fraction,20480,0.0,1.0,0.4009765625,0.38185022351791753,0,0.21220703125,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,solo_slack_min,20480,-0.3204982876777649,0.5836987495422363,0.04260357513255144,0.07330910713287256,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,solo_slack_mean,20480,0.0,0.5836987495422363,0.2480667819872906,0.11968069380695474,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,solo_slack_p10,20480,-0.2245640903711319,0.5836987495422363,0.07577595402482303,0.07582293170280864,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,solo_slack_max,20480,0.0,0.6207931637763977,0.4592766266367107,0.189291371397457,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,urgent_count,20480,0.0,0.3122420907020569,0.03306201317578825,0.05785615405162542,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,deadline_due_count,20480,0.0,0.011857707053422928,7.983531263562327e-05,0.0006548933808363062,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,solo_latest_start_passed_count,20480,0.0,0.19871795177459717,0.0049929606184889504,0.023755917480054026,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_cpu_demand,20480,0.0,0.5739659667015076,0.06566693980273897,0.10840000535566982,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_gpu_demand,20480,0.0,0.5064091682434082,0.08388908422223391,0.10756233161216235,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_mem_demand,20480,0.0,0.35542821884155273,0.05147577387268143,0.06937195138592736,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_cpu_work,20480,0.0,0.5293909311294556,0.0707824316694925,0.10873728246142378,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_gpu_work,20480,0.0,0.45641621947288513,0.0775581889827592,0.10426179533188278,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,pending_mem_work,20480,0.0,0.4226722717285156,0.05333433711586579,0.07509931799080238,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,utc_day_sin,20480,-1.0,1.0,0.08834678573766723,0.713896898989264,0,0.115234375,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,utc_day_cos,20480,-1.0,1.0,-0.0529754834366031,0.6926324055832008,0,0.092333984375,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,utc_weekday_sin,20480,0.0,0.9749279022216797,0.5465254638344049,0.4094046808026694,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,utc_weekday_cos,20480,-0.22252093255519867,1.0,0.5807613814162323,0.4431861345984407,0,0.3521484375,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,train,elapsed_time,20480,0.0,0.6971608996391296,0.47492099773457996,0.18407530359377805,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,train,arrivals_open,20480,0.0,1.0,0.8845703125,0.3195397858540504,0,0.8845703125,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,ci_current,215,0.0687799155712127,0.1662497967481613,0.12408773843632184,0.03678452340410695,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,ci_lag1,215,0.0687799155712127,0.1662497967481613,0.12412927268549451,0.036827040074731324,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,ci_lag2,215,0.0687799155712127,0.1662497967481613,0.12417080693466716,0.03686946092739537,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,ci_lag3,215,0.0687799155712127,0.1662497967481613,0.12421234118383981,0.03691178629245531,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,ci_lag4,215,0.0687799155712127,0.1662497967481613,0.1242556928202163,0.03695563298835778,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,ci_lags_valid_fraction,215,0.0,1.0,0.9883720930232558,0.09265917122389086,0,0.9813953488372092,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,ci_delta,215,-0.0587526597082614,0.0473650097846984,-5.4208467562876186e-05,0.008436851447473054,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,cpu_utilization,215,0.0,0.9770132303237916,0.25714161523027607,0.1810455216117191,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,gpu_utilization,215,0.0,0.986630380153656,0.6784923490440083,0.23606855975322721,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,mem_utilization,215,0.0,0.6070424318313599,0.26549545810016434,0.1259573739306276,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,running_count,215,0.0,0.5448338389396667,0.2698700013418877,0.1056445368231897,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_count,215,0.0,0.6619337201118469,0.2784185926668173,0.2108926151654074,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_cpu_work,215,0.0,0.4823373258113861,0.2137508546023868,0.1238410513843718,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_gpu_work,215,0.0,0.7836151123046875,0.40860294476151465,0.1715230530720351,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_mem_work,215,0.0,0.4680047035217285,0.22530092778940533,0.1028487064488195,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_cpu_rho,215,0.0,0.4823373258113861,0.21763014069130254,0.12385599601648936,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_gpu_rho,215,0.0,0.7836151123046875,0.41322774381138555,0.1684329719513464,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_mem_rho,215,0.0,0.4680047035217285,0.2295466385261957,0.10322056255236799,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,history_effective_fraction,215,0.0,1.0,0.9790697674418605,0.1199479335395614,0,0.9627906976744186,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,history_cold,215,0.0,1.0,0.004651162790697674,0.06804064575966416,0,0.004651162790697674,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,risk_buffer_fraction,215,0.0,1.0,0.5558139534883721,0.3363983834138323,0,0.28837209302325584,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,solo_slack_min,215,-0.8330937623977661,0.5041322112083435,-0.34464497943083905,0.36968631117059947,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,solo_slack_mean,215,-0.573256254196167,0.514963686466217,-0.027858428249872013,0.3354601598321893,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,solo_slack_p10,215,-0.7489977478981018,0.5041322112083435,-0.2120686862322632,0.3452461825998195,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,solo_slack_max,215,0.0,0.6209927797317505,0.49959606458974437,0.1798508819857905,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,urgent_count,215,0.0,0.656593382358551,0.2376202088250064,0.22034744704695297,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,deadline_due_count,215,0.0,0.5735607743263245,0.13717713801428502,0.20029472577848528,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,solo_latest_start_passed_count,215,0.0,0.6339678168296814,0.1837839096031953,0.2315939713624585,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_cpu_demand,215,0.0,0.6086483001708984,0.18939244945013767,0.17767338809676236,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_gpu_demand,215,0.0,0.85271817445755,0.43039931182338054,0.3011676193138257,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_mem_demand,215,0.0,0.5340654253959656,0.2109688432800562,0.17466179281969432,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_cpu_work,215,0.0,0.5424648523330688,0.1876285193986151,0.17265391612523362,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_gpu_work,215,0.0,0.8039251565933228,0.4346574331222232,0.27474768002431277,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,pending_mem_work,215,0.0,0.504528820514679,0.2186731022067888,0.16872424951693785,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,utc_day_sin,215,-1.0,1.0,0.08715421696041906,0.7169406632305513,0,0.11627906976744186,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,utc_day_cos,215,-1.0,1.0,-0.04297970339309338,0.6903281546993849,0,0.09302325581395349,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,utc_weekday_sin,215,-0.9749279022216796,0.0,-0.6937225341796875,0.35730820648927747,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,utc_weekday_cos,215,-0.2225209325551986,1.0,0.39973688208779623,0.48092652328027624,0,0.2,expected flag/phase/cyclic or physical-utilization boundary,False
+55102,validation,elapsed_time,215,0.0,0.6903225779533386,0.473538896289849,0.18339084936076383,0,0.0,continuous normalized feature; inspect high fraction,False
+55102,validation,arrivals_open,215,0.0,1.0,0.8930232558139535,0.30908367862020747,0,0.8930232558139535,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,ci_current,20480,0.07447684556245804,0.17031727731227875,0.12368867194963969,0.02959298798209038,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,ci_lag1,20480,0.07447684556245804,0.17031727731227875,0.12366019764740485,0.029576325454446283,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,ci_lag2,20480,0.07447684556245804,0.17031727731227875,0.1236184637331462,0.02954997741950047,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,ci_lag3,20480,0.07447684556245804,0.17031727731227875,0.12357389188982779,0.029521526381501958,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,ci_lag4,20480,0.07447684556245804,0.17031727731227875,0.12352940189739456,0.029493084737673998,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,ci_lags_valid_fraction,20480,0.0,1.0,0.9884765625,0.09231465509025959,0,0.981591796875,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,ci_delta,20480,-0.042053837329149246,0.05234828218817711,3.182603494380487e-05,0.0076314298250657175,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,cpu_utilization,20480,0.0,0.9961209297180176,0.3835724271700201,0.22844237485689742,0,0.00458984375,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,gpu_utilization,20480,0.0,0.9842725396156311,0.38778519290347513,0.23291901257852893,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,mem_utilization,20480,0.0,0.7173340320587158,0.24886931222353184,0.13865896266166808,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,running_count,20480,0.0,0.4538503587245941,0.2361933451283562,0.08826190734928899,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_count,20480,0.0,0.35815146565437317,0.06748260691971382,0.07556063587552873,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_cpu_work,20480,0.0,0.6133073568344116,0.26795635400549145,0.1542626330153157,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_gpu_work,20480,0.0,0.6168608665466309,0.2832700597732128,0.14594568804555708,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_mem_work,20480,0.0,0.5258418917655945,0.20368115559031139,0.11282769298826704,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_cpu_rho,20480,0.0,0.787445604801178,0.2743847037816522,0.1629607505011092,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_gpu_rho,20480,0.0,0.6168608665466309,0.28890386571620186,0.14759849978741374,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_mem_rho,20480,0.0,0.5537531971931458,0.2087001356674591,0.11651069204563928,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,history_effective_fraction,20480,0.0,1.0,0.979296875,0.11937476991960809,0,0.963232421875,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,history_cold,20480,0.0,1.0,0.004638671875,0.06794964752105845,0,0.004638671875,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,risk_buffer_fraction,20480,0.0,1.0,0.399365234375,0.38181258108213423,0,0.211181640625,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,solo_slack_min,20480,-0.3262432813644409,0.5225780606269836,0.03996284983776377,0.07379131387438854,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,solo_slack_mean,20480,0.0,0.5571388006210327,0.24793880494289625,0.11889053847522102,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,solo_slack_p10,20480,-0.22455573081970215,0.5225780606269836,0.07464550463869842,0.0754176105459588,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,solo_slack_max,20480,0.0,0.6207931637763977,0.4622461786842905,0.18871146856000018,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,urgent_count,20480,0.0,0.3131868243217468,0.034218643813636616,0.05825008584774532,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,deadline_due_count,20480,0.0,0.013806706294417381,8.079283086317445e-05,0.0006689453818629556,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,solo_latest_start_passed_count,20480,0.0,0.19871795177459717,0.005059684293576084,0.023940600610004036,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_cpu_demand,20480,0.0,0.5739659667015076,0.06896339261339221,0.10992588890504992,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_gpu_demand,20480,0.0,0.5127052664756775,0.08749773878994346,0.10874563582138885,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_mem_demand,20480,0.0,0.35542821884155273,0.053812930045882015,0.07032550512528436,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_cpu_work,20480,0.0,0.5307637453079224,0.07521249770896218,0.11131392790795289,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_gpu_work,20480,0.0,0.4607735872268677,0.08270539242873269,0.10767524595008636,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,pending_mem_work,20480,0.0,0.4226722717285156,0.0565876597114837,0.07673288252799117,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,utc_day_sin,20480,-1.0,1.0,0.0891257082013908,0.7125237101302743,0,0.11474609375,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,utc_day_cos,20480,-1.0,1.0,-0.05509340403077658,0.6937804231511653,0,0.094091796875,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,utc_weekday_sin,20480,0.0,0.9749279022216797,0.5497149252332747,0.4089318661698296,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,utc_weekday_cos,20480,-0.22252093255519867,1.0,0.5767619232872676,0.4448976521789902,0,0.348876953125,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,train,elapsed_time,20480,0.0,0.6990595459938049,0.47639399894715095,0.1839085303448183,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,train,arrivals_open,20480,0.0,1.0,0.881298828125,0.3234365527742677,0,0.881298828125,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,ci_current,215,0.0687799155712127,0.1662497967481613,0.12408773843632184,0.03678452340410695,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,ci_lag1,215,0.0687799155712127,0.1662497967481613,0.12412927268549451,0.036827040074731324,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,ci_lag2,215,0.0687799155712127,0.1662497967481613,0.12417080693466716,0.03686946092739537,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,ci_lag3,215,0.0687799155712127,0.1662497967481613,0.12421234118383981,0.03691178629245531,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,ci_lag4,215,0.0687799155712127,0.1662497967481613,0.1242556928202163,0.03695563298835778,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,ci_lags_valid_fraction,215,0.0,1.0,0.9883720930232558,0.09265917122389086,0,0.9813953488372092,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,ci_delta,215,-0.0587526597082614,0.0473650097846984,-5.4208467562876186e-05,0.008436851447473054,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,cpu_utilization,215,0.0,0.9819476008415222,0.2571416158575651,0.18431584573880644,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,gpu_utilization,215,0.0,0.9604244232177734,0.6784923476015412,0.23261269682921196,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,mem_utilization,215,0.0,0.6264333724975586,0.26549545863513335,0.12771710054662266,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,running_count,215,0.0,0.535315990447998,0.270220077820772,0.10411877113559048,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_count,215,0.0,0.6562392711639404,0.27388896305373933,0.2083139579806034,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_cpu_work,215,0.0,0.4823373258113861,0.2137508546023868,0.1238410513843718,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_gpu_work,215,0.0,0.7836151123046875,0.40860294476151465,0.1715230530720351,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_mem_work,215,0.0,0.4680047035217285,0.22530092778940533,0.1028487064488195,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_cpu_rho,215,0.0,0.4823373258113861,0.21763014069130254,0.12385599601648936,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_gpu_rho,215,0.0,0.7836151123046875,0.41322774381138555,0.1684329719513464,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_mem_rho,215,0.0,0.4680047035217285,0.2295466385261957,0.10322056255236799,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,history_effective_fraction,215,0.0,1.0,0.9790697674418605,0.1199479335395614,0,0.9627906976744186,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,history_cold,215,0.0,1.0,0.004651162790697674,0.06804064575966416,0,0.004651162790697674,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,risk_buffer_fraction,215,0.0,1.0,0.5558139534883721,0.3363983834138323,0,0.28837209302325584,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,solo_slack_min,215,-0.8330937623977661,0.1018804386258125,-0.3418430138265289,0.35886565795047765,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,solo_slack_mean,215,-0.5733107328414917,0.4249975383281708,-0.03161671441698144,0.3260595591782909,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,solo_slack_p10,215,-0.7428755164146423,0.1939817368984222,-0.21363451708768777,0.3335489299154258,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,solo_slack_max,215,0.0,0.6209927797317505,0.4982742201450259,0.1800016990374499,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,urgent_count,215,0.0,0.6520528793334961,0.23788314810087688,0.21590938656029326,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,deadline_due_count,215,0.0,0.565406322479248,0.13432599209942098,0.1970012131990887,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,solo_latest_start_passed_count,215,0.0,0.6272829174995422,0.1791815691291853,0.23000105132652757,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_cpu_demand,215,0.0,0.607423722743988,0.1851857676777209,0.1747851820445639,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_gpu_demand,215,0.0,0.8558279871940613,0.4253503522554109,0.30142873992794766,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_mem_demand,215,0.0,0.5303731560707092,0.20666508054750604,0.1719946645036396,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_cpu_work,215,0.0,0.5411616563796997,0.18035197458446545,0.1686545886555199,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_gpu_work,215,0.0,0.802315354347229,0.4217270647370538,0.2783523844050053,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,pending_mem_work,215,0.0,0.5068946480751038,0.21055094289355153,0.16655300801497336,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,utc_day_sin,215,-1.0,1.0,0.08715421696041906,0.7169406632305513,0,0.11627906976744186,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,utc_day_cos,215,-1.0,1.0,-0.04297970339309338,0.6903281546993849,0,0.09302325581395349,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,utc_weekday_sin,215,-0.9749279022216796,0.0,-0.6937225341796875,0.35730820648927747,0,0.0,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,utc_weekday_cos,215,-0.2225209325551986,1.0,0.39973688208779623,0.48092652328027624,0,0.2,expected flag/phase/cyclic or physical-utilization boundary,False
+55103,validation,elapsed_time,215,0.0,0.6903225779533386,0.473538896289849,0.18339084936076383,0,0.0,continuous normalized feature; inspect high fraction,False
+55103,validation,arrivals_open,215,0.0,1.0,0.8930232558139535,0.30908367862020747,0,0.8930232558139535,expected flag/phase/cyclic or physical-utilization boundary,False

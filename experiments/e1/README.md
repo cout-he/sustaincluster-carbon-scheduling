@@ -127,3 +127,8 @@ E1-2A 的 CI 使用 `TemporalEnvironment`，每拍只提供时间戳不晚于当
 每策略 `phases.json` 分别统计固定到达窗口、各自排空窗口和公共窗口；`fixed_ledger.json` 重建固定截止时刻状态与等待次数。总表为 `comparison.csv`，逐拍为 `timeseries.csv`，配对开始时间诊断为 `paired_task_shifts.csv`。完成资源小时必须一致；开始时 CI 更低不等于独立的逐任务碳排放归因。有限任务 drain 不代表持续到达的稳态数据中心。
 
 严格回放：`python -m experiments.e1.temporal --replay <归档> --output <新目录>`，核对全部 43 个科学输出、冻结输入、模型、源码和依赖。绘图：`python -m experiments.e1.plot_temporal --experiment <归档> --output <新目录>`，保存四张 PNG/PDF 和全部绘图 CSV。所有入口拒绝已存在输出目录，历史成果不覆盖。
+
+
+## E1-5B: ordinary PPO baseline
+
+Three fixed-budget SB3 PPO candidates use the unchanged E1-5A 40-feature, three-mode environment. See [delivery](../../docs/research/e1/E1-5B/E1-5B-delivery.md), [all Validation results](../../docs/research/e1/E1-5B/E1-5B-validation-report.md), and [reproduction with external data](../../docs/research/e1/E1-5B/E1-5B-reproduce.md). Test remains unevaluated. Ordinary mode selection is a baseline, not the proposed task-level safety method. Full weights, frozen cohorts and training logs remain local.

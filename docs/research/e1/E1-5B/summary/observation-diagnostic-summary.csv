@@ -1,0 +1,7 @@
+seed,phase,features,nonfinite,constant_features,continuous_max_abs_ge_099_fraction,pairwise_absolute_pearson_threshold,pairs_above_threshold
+55101,train,40,0,0,0.0,0.995,0
+55101,validation,40,0,0,0.0,0.995,0
+55102,train,40,0,0,0.0,0.995,0
+55102,validation,40,0,0,0.0,0.995,0
+55103,train,40,0,0,0.0,0.995,0
+55103,validation,40,0,0,0.0,0.995,0

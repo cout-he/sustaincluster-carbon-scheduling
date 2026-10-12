@@ -2,7 +2,7 @@
 
 This research branch builds on [HewlettPackard/sustain-cluster](https://github.com/HewlettPackard/sustain-cluster), baseline `3f6ea95cb835b89ba50b0ef76d66d14b8037643e`. The original [MIT license](LICENSE), copyright and [upstream README](UPSTREAM_README.md) are retained. Research code is in [experiments/e1](experiments/e1/README.md); production scheduling and physical equations are unchanged.
 
-Completed stages: [E1-0 audit](docs/research/e1/E1-0.md), [E1-1A execution foundation](docs/research/e1/E1-1A.md), [E1-1B baselines](docs/research/e1/E1-1B.md), and [E1-2A temporal shifting validation](docs/research/e1/E1-2A.md). No new RL method, training or large parameter scan is included.
+Completed stages: [E1-0 audit](docs/research/e1/E1-0.md), [E1-1A execution foundation](docs/research/e1/E1-1A.md), [E1-1B baselines](docs/research/e1/E1-1B.md), and [E1-2A temporal shifting validation](docs/research/e1/E1-2A.md). Those historical stages included no RL training; later stages are documented below.
 
 The three policies share a single executor, task specifications, resources, backfilling and IT/HVAC model. In the E1-2A finite cohort all policies completed 9943 tasks with zero synthetic-deadline violations. Over a common 56.75h accounting interval including idle tails, Carbon-Threshold emitted 97.013 kgCO2e (0.742%) less than FIFO/EDF, with 21.799min more mean waiting and a 3h longer drain. This one-window model result does not establish general superiority or steady-state benefits.
 
@@ -34,3 +34,8 @@ See [common metrics](docs/research/e1/E1-4A/common_metrics.csv), [guard definiti
 [E1-5A summary](docs/research/e1/E1-5A/E1-5A-summary.md) documents one persistent execution kernel and `Discrete(3)` modes: existing EDF, EDF+Carbon, RiskOnly. No policy training or learned task-level delay budget is included. See [API/40-feature observation/reward](docs/research/e1/E1-5A/E1-5A-rl-interface.md), [fixed-mode equivalence](docs/research/e1/E1-5A/E1-5A-fixed-action-equivalence.md), [tests](docs/research/e1/E1-5A/E1-5A-tests.md), and [proposed data split](docs/research/e1/E1-5A/E1-5A-data-split.md).
 
 Run `python -m pytest -q tests/e1 -p no:cacheprovider` in the compatible environment. Historical `python -m experiments.e1.rl_validation --output <new-output-directory>` requires external sealed E1-3/E1-4A archives and compatible original non-kernel source bytes. This source-only publication intentionally excludes those raw inputs, full ledgers and archives; synthetic tests run without them and two private-archive tests skip. Source refactoring does not rewrite old provenance or weaken strict historical replay.
+
+
+## E1-5B: ordinary PPO baseline
+
+Three fixed-budget SB3 PPO candidates use the unchanged E1-5A 40-feature, three-mode environment. See [delivery](docs/research/e1/E1-5B/E1-5B-delivery.md), [all Validation results](docs/research/e1/E1-5B/E1-5B-validation-report.md), and [reproduction with external data](docs/research/e1/E1-5B/E1-5B-reproduce.md). Test remains unevaluated. Ordinary mode selection is a baseline, not the proposed task-level safety method. Full weights, frozen cohorts and training logs remain local.
