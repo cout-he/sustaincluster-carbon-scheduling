@@ -1,0 +1,792 @@
+{
+  "analysis_summary_sha256": "8b80fb19a29944a7a795ca1317eb9071a7a3799e3aae5b02a93067816a42ade1",
+  "cohorts": [
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 1.0,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900700000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.32196113677018795,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.2892639261193304,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.20858866132569445,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.3151011135311668,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.2855047799624765,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.20439600092336047,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        }
+      },
+      "split": "train",
+      "tasks": 5542,
+      "workload_file_sha256": "00ffbcab7beac2073d6d074c11cefd85ab562c6f2b51882b3e40f8a801a79580",
+      "workload_sha256": "4a2249a1f42ebf7bda6a1388038e03596084b648e2c99e99196220a8be927862"
+    },
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 1.5,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900700000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.47990254069666316,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.45820141566840605,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.3126899250852939,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.47312012715200796,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.4513804793897578,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.30593814401714986,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        }
+      },
+      "split": "train",
+      "tasks": 8313,
+      "workload_file_sha256": "941f455f8fe2bf81f7c127e4ff63ef247465848c74cd99728c21903fc95968c3",
+      "workload_sha256": "5f408a4639113f739b8b3096111af1067edb1793d856db20c040c9380dbbd879"
+    },
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 2.0,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900700000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.643922273540376,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.5785278522386609,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.4171773226513889,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.6302022270623335,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 0.571009559924953,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.40879200184672093,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 0,
+          "verified_witness_count": 0,
+          "violation_rate_lower_bound": 0.0,
+          "witnesses": []
+        }
+      },
+      "split": "train",
+      "tasks": 11084,
+      "workload_file_sha256": "0b16a262b43b6fb4f6e1f130dab3effaeb39d70ae27635f63d0590120c9d5a2b",
+      "workload_sha256": "e110a35f4be9d40327139c7e587aa4c19898b89f290ce43c7a1261eac6e80399"
+    },
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 1.0,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900000000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.23651216775262357,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 1.1164368645177052,
+              "overloaded_interval_count": 9,
+              "reported_minimum_misses_lower_bound": 14
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.18388367645001716,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 14,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.001607717041800643,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 150000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 16845.867823670884,
+              "largest_k_removed_resource_minutes": 18059.28767099913,
+              "minimum_misses_lower_bound": 14,
+              "remaining_after_k_minus_one_resource_minutes": 150619.6618539849,
+              "required_resource_minutes": 167465.52967765578,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 379,
+              "task_id_sha256": "fcac291e2f0834580a093891b34156468ab947e009518486ed51158c5becd209"
+            },
+            {
+              "capacity_resource_minutes": 135000.0,
+              "end_utc": "2023-07-08T20:30:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 14282.27203057282,
+              "largest_k_removed_resource_minutes": 15504.916548845245,
+              "minimum_misses_lower_bound": 12,
+              "remaining_after_k_minus_one_resource_minutes": 135809.24534564087,
+              "required_resource_minutes": 150091.51737621368,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 323,
+              "task_id_sha256": "152a139e0c7a076f9edc2641802cbd2e5c2c3e747359ac9f59b202e0bbf56600"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 15043.689608108638,
+              "largest_k_removed_resource_minutes": 16273.341925989433,
+              "minimum_misses_lower_bound": 12,
+              "remaining_after_k_minus_one_resource_minutes": 166115.6323151734,
+              "required_resource_minutes": 181159.32192328203,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 418,
+              "task_id_sha256": "32d651a335265b4bac46706a3365695a4244d84829f2db28f16f613eb0c0deb6"
+            },
+            {
+              "capacity_resource_minutes": 150000.0,
+              "end_utc": "2023-07-08T20:30:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 13702.738333283,
+              "largest_k_removed_resource_minutes": 14932.390651163794,
+              "minimum_misses_lower_bound": 11,
+              "remaining_after_k_minus_one_resource_minutes": 150082.57128855694,
+              "required_resource_minutes": 163785.30962183993,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 362,
+              "task_id_sha256": "875328721105d15da698631f649c59febda5ea9e29c5e6b9dba2b9de7dd09214"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 9431.770703374472,
+              "largest_k_removed_resource_minutes": 10688.15911539164,
+              "minimum_misses_lower_bound": 8,
+              "remaining_after_k_minus_one_resource_minutes": 165056.86393040817,
+              "required_resource_minutes": 174488.63463378264,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 436,
+              "task_id_sha256": "b3a96548bf58e5d608e05a49dcd8dd72c19d99c4f5033b7af4248f4aa08e97b5"
+            }
+          ]
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.21834804315611758,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 1.0801400269943613,
+              "overloaded_interval_count": 7,
+              "reported_minimum_misses_lower_bound": 10
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.1826754417111572,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 10,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.0011483693155718878,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 150000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 11824.099845142357,
+              "largest_k_removed_resource_minutes": 13053.752163023151,
+              "minimum_misses_lower_bound": 10,
+              "remaining_after_k_minus_one_resource_minutes": 150196.90420401184,
+              "required_resource_minutes": 162021.0040491542,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 353,
+              "task_id_sha256": "dc6093bd7d6c01e52856897da0492d5fa754b02b67b6fb783ea513190956e00b"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 9969.457916689475,
+              "largest_k_removed_resource_minutes": 11225.846328706642,
+              "minimum_misses_lower_bound": 8,
+              "remaining_after_k_minus_one_resource_minutes": 165745.338378091,
+              "required_resource_minutes": 175714.79629478048,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 392,
+              "task_id_sha256": "50171eade7cb814eeb086d780f7116349acfce7e90d79c404c811c2ed6bef785"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 6906.4023753910315,
+              "largest_k_removed_resource_minutes": 8170.493370357199,
+              "minimum_misses_lower_bound": 6,
+              "remaining_after_k_minus_one_resource_minutes": 165861.21624107208,
+              "required_resource_minutes": 172767.61861646312,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 410,
+              "task_id_sha256": "98fb1736904d50327cdfe7cd2cdea0ddce9f9e56c1ec82c65fc35a58f37286c3"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 6223.620115159802,
+              "largest_k_removed_resource_minutes": 7518.93458741225,
+              "minimum_misses_lower_bound": 5,
+              "remaining_after_k_minus_one_resource_minutes": 180237.79074692956,
+              "required_resource_minutes": 186461.41086208937,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 449,
+              "task_id_sha256": "9845987f2fbab61f319060cb3faa6ed65eac526b82deb422e12ce5062c6a2f91"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 1878.6384881406418,
+              "largest_k_removed_resource_minutes": 3579.195098539852,
+              "minimum_misses_lower_bound": 2,
+              "remaining_after_k_minus_one_resource_minutes": 181378.5002142157,
+              "required_resource_minutes": 183257.13870235634,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 435,
+              "task_id_sha256": "785fe605af0e529438b7dae21d0f4cc836be617ab465935f586e92a788b479c1"
+            }
+          ]
+        }
+      },
+      "split": "validation",
+      "tasks": 8708,
+      "workload_file_sha256": "e212476d1751a35198aa78578915e9d4d2fb626226a24702fc6f366ee053e207",
+      "workload_sha256": "48c4cbfa5ffe865ceb8826bec9e05c89019ce40bd5434694b780cac25c74f55b"
+    },
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 1.5,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900000000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.34435752176716855,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 1.6687379748358733,
+              "overloaded_interval_count": 237,
+              "reported_minimum_misses_lower_bound": 92
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.2783688875491234,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 92,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.007043331802174246,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 105054.18607838682,
+              "largest_k_removed_resource_minutes": 106115.99686605805,
+              "minimum_misses_lower_bound": 92,
+              "remaining_after_k_minus_one_resource_minutes": 165639.6388064778,
+              "required_resource_minutes": 270693.8248848646,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 629,
+              "task_id_sha256": "955d5d3c5cae1c5e20e26af0865e38bd7e534d57b609478f2396759af4091837"
+            },
+            {
+              "capacity_resource_minutes": 150000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 99985.20281468943,
+              "largest_k_removed_resource_minutes": 101050.63335429908,
+              "minimum_misses_lower_bound": 88,
+              "remaining_after_k_minus_one_resource_minutes": 150325.49341069156,
+              "required_resource_minutes": 250310.696225381,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 572,
+              "task_id_sha256": "343b067191d0b27846489248290de8541ffccca778e949f3b9fa3fca247ef76e"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 99723.98742357356,
+              "largest_k_removed_resource_minutes": 100794.57778154123,
+              "minimum_misses_lower_bound": 87,
+              "remaining_after_k_minus_one_resource_minutes": 180786.95570759353,
+              "required_resource_minutes": 280510.9431311671,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 690,
+              "task_id_sha256": "f73a73f6097272c3efb3859643b15c5b13514469c7d34e2f9e16581bdc3bc062"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 98849.58018757302,
+              "largest_k_removed_resource_minutes": 99922.33449791785,
+              "minimum_misses_lower_bound": 86,
+              "remaining_after_k_minus_one_resource_minutes": 180566.70589934895,
+              "required_resource_minutes": 279416.286086922,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 711,
+              "task_id_sha256": "59a90309ab67901f9372bd94235208ca7071fb8836f2f7e2a045209f0df93cf5"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 93749.80188810859,
+              "largest_k_removed_resource_minutes": 94824.79320755304,
+              "minimum_misses_lower_bound": 82,
+              "remaining_after_k_minus_one_resource_minutes": 165283.35553932976,
+              "required_resource_minutes": 259033.15742743836,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 654,
+              "task_id_sha256": "cf9ceb2fcad81e6fb23686b3bfb4a166aaa5536f9aec7e2c3cb389111a05789f"
+            }
+          ]
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.3208008542197453,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 1.6138931732991353,
+              "overloaded_interval_count": 193,
+              "reported_minimum_misses_lower_bound": 85
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.2766009783623592,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 85,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.006507426121574031,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 97042.08487392229,
+              "largest_k_removed_resource_minutes": 98112.67523188995,
+              "minimum_misses_lower_bound": 85,
+              "remaining_after_k_minus_one_resource_minutes": 165425.01978043164,
+              "required_resource_minutes": 262467.1046543539,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 590,
+              "task_id_sha256": "06e78c978a54de1868b9c8f0ae232fc3bfe58e784b96b124c8e868f134a3446a"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 96703.43169569368,
+              "largest_k_removed_resource_minutes": 97776.50594163335,
+              "minimum_misses_lower_bound": 84,
+              "remaining_after_k_minus_one_resource_minutes": 180635.42756952107,
+              "required_resource_minutes": 277338.85926521476,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 674,
+              "task_id_sha256": "4ced0fd6ab4929f2caf0ff6cd9f5b3453ae7a31559eb7451b9263d5d3b83c57f"
+            },
+            {
+              "capacity_resource_minutes": 150000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 91949.05255960589,
+              "largest_k_removed_resource_minutes": 93020.95429370993,
+              "minimum_misses_lower_bound": 81,
+              "remaining_after_k_minus_one_resource_minutes": 150134.9234352644,
+              "required_resource_minutes": 242083.9759948703,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 533,
+              "task_id_sha256": "396b7e1a67745bd59b44596f3af01f67cdb8b75b505bb7f927281ba4ad21e347"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 91599.68668073532,
+              "largest_k_removed_resource_minutes": 92674.74428442195,
+              "minimum_misses_lower_bound": 80,
+              "remaining_after_k_minus_one_resource_minutes": 165356.04392499579,
+              "required_resource_minutes": 256955.7306057311,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:15:00+00:00",
+              "task_count": 617,
+              "task_id_sha256": "87108c3e65cdc78e68a9d1250d74c569424ac61d7a644493317bd9499299bf4f"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 91681.86249146203,
+              "largest_k_removed_resource_minutes": 92754.9367374017,
+              "minimum_misses_lower_bound": 80,
+              "remaining_after_k_minus_one_resource_minutes": 180602.36040919437,
+              "required_resource_minutes": 272284.2229006564,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 651,
+              "task_id_sha256": "87474095630bc41bc70a43d9c4d846bbf8ee956bc42ffc7369fc51583942361b"
+            }
+          ]
+        }
+      },
+      "split": "validation",
+      "tasks": 13062,
+      "workload_file_sha256": "1c1375867081e22ea962dce413a6e20ea7bb061d31a5ebaaf5991848ade54914",
+      "workload_sha256": "a9615365e558c8f551ebac84ea43b8cdfdaef013c200e8a2284f3995ecd71959"
+    },
+    {
+      "all_duration_nanoseconds_positive": true,
+      "factor": 2.0,
+      "float_ceil_vs_nanosecond_ceil_difference_count": 0,
+      "intrinsic_impossible_count": 0,
+      "minimum_duration_nanoseconds": 900000000000,
+      "modes": {
+        "occupied_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.47302433550524714,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 2.2328737290354104,
+              "overloaded_interval_count": 3362,
+              "reported_minimum_misses_lower_bound": 177
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.3677673529000343,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 177,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.010163068442811209,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 197232.37904387,
+              "largest_k_removed_resource_minutes": 198235.6197501897,
+              "minimum_misses_lower_bound": 177,
+              "remaining_after_k_minus_one_resource_minutes": 165086.26480269406,
+              "required_resource_minutes": 362318.64384656405,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 836,
+              "task_id_sha256": "b94c95b0ccf49e0085c2d0cd62efacc1451a5e6b143b5d0849b78c753dc7d756"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 197232.37904387,
+              "largest_k_removed_resource_minutes": 198235.6197501897,
+              "minimum_misses_lower_bound": 177,
+              "remaining_after_k_minus_one_resource_minutes": 180170.9496178458,
+              "required_resource_minutes": 377403.3286617158,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 922,
+              "task_id_sha256": "6d999b92d912364064511b924cfd71bb513a726fb6d5093c8990a5dda912fef9"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 196059.75457611788,
+              "largest_k_removed_resource_minutes": 197067.12905929115,
+              "minimum_misses_lower_bound": 175,
+              "remaining_after_k_minus_one_resource_minutes": 180305.0991826999,
+              "required_resource_minutes": 376364.8537588178,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 950,
+              "task_id_sha256": "edeb0cbddfabf4e2b1b1fd5f35d928a2387cf85bba0b25bf78ac24e98c54d8aa"
+            },
+            {
+              "capacity_resource_minutes": 195000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 196059.75457611788,
+              "largest_k_removed_resource_minutes": 197067.12905929115,
+              "minimum_misses_lower_bound": 175,
+              "remaining_after_k_minus_one_resource_minutes": 195389.78399785163,
+              "required_resource_minutes": 391449.5385739695,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 1038,
+              "task_id_sha256": "3e8439a76814d61ff59b05ee3794890801d2a34f69efec5144c1e88624d21f18"
+            },
+            {
+              "capacity_resource_minutes": 255000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 197733.57132614058,
+              "largest_k_removed_resource_minutes": 198764.43382614056,
+              "minimum_misses_lower_bound": 173,
+              "remaining_after_k_minus_one_resource_minutes": 255217.40888048892,
+              "required_resource_minutes": 452950.9802066295,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T16:30:00+00:00",
+              "task_count": 1432,
+              "task_id_sha256": "c163777b79a7b0003326090395d767ba1b362df10a683fac2e8fcf7eef1b97c3"
+            }
+          ]
+        },
+        "raw_deadline": {
+          "independent_grid_matrix_checks": {
+            "cpu": {
+              "maximum_workload_capacity_ratio": 0.43669608631223517,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            },
+            "gpu": {
+              "maximum_workload_capacity_ratio": 2.1602800539887226,
+              "overloaded_interval_count": 3293,
+              "reported_minimum_misses_lower_bound": 172
+            },
+            "mem": {
+              "maximum_workload_capacity_ratio": 0.3653508834223144,
+              "overloaded_interval_count": 0,
+              "reported_minimum_misses_lower_bound": 0
+            }
+          },
+          "minimum_deadline_misses_lower_bound": 172,
+          "verified_witness_count": 5,
+          "violation_rate_lower_bound": 0.009875976113918236,
+          "witnesses": [
+            {
+              "capacity_resource_minutes": 195000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 192998.57165587795,
+              "largest_k_removed_resource_minutes": 194006.50135723376,
+              "minimum_misses_lower_bound": 172,
+              "remaining_after_k_minus_one_resource_minutes": 195008.93488345252,
+              "required_resource_minutes": 388007.50653933047,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 984,
+              "task_id_sha256": "c94ee6bac9be5a92cb0f6e1be3789217ec7b8b451360d54e9a59c7998f43bb93"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 191990.64195452214,
+              "largest_k_removed_resource_minutes": 192998.57165587795,
+              "minimum_misses_lower_bound": 171,
+              "remaining_after_k_minus_one_resource_minutes": 180932.1797696566,
+              "required_resource_minutes": 372922.82172417874,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 898,
+              "task_id_sha256": "ecf4f948810cb9fcbc0aff60002cf68c6822b2ca8c1ff3e82db45d4e3697138c"
+            },
+            {
+              "capacity_resource_minutes": 270000.0,
+              "end_utc": "2023-07-08T21:00:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 193160.75061243938,
+              "largest_k_removed_resource_minutes": 194201.69091512996,
+              "minimum_misses_lower_bound": 168,
+              "remaining_after_k_minus_one_resource_minutes": 270394.40747180476,
+              "required_resource_minutes": 463555.1580842442,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T16:30:00+00:00",
+              "task_count": 1494,
+              "task_id_sha256": "815c1cce3e54976f740e926de6e1a555cb2fe251d7440e37389de463decb3b20"
+            },
+            {
+              "capacity_resource_minutes": 180000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 186485.55185393855,
+              "largest_k_removed_resource_minutes": 187490.8066968169,
+              "minimum_misses_lower_bound": 167,
+              "remaining_after_k_minus_one_resource_minutes": 180028.72555077414,
+              "required_resource_minutes": 366514.2774047127,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T17:45:00+00:00",
+              "task_count": 870,
+              "task_id_sha256": "7360b229196be3fdd6b8f887996190f27d439e2cb6549b4302740600e1022be4"
+            },
+            {
+              "capacity_resource_minutes": 165000.0,
+              "end_utc": "2023-07-08T20:45:00+00:00",
+              "k_and_k_minus_one_certificate_passed": true,
+              "largest_k_minus_one_removed_resource_minutes": 185479.99046878834,
+              "largest_k_removed_resource_minutes": 186485.55185393855,
+              "minimum_misses_lower_bound": 166,
+              "remaining_after_k_minus_one_resource_minutes": 165949.60212077262,
+              "required_resource_minutes": 351429.59258956095,
+              "resource": "gpu",
+              "start_utc": "2023-07-08T18:00:00+00:00",
+              "task_count": 784,
+              "task_id_sha256": "e1d5f416d252a4bf804e358de0e20c96640cf14b58069f0a391c9a02a3a826d0"
+            }
+          ]
+        }
+      },
+      "split": "validation",
+      "tasks": 17416,
+      "workload_file_sha256": "53589b0c72f7eaeb95c30de97c0501d0024a782f70475c6bcd7200dd4c37f9f6",
+      "workload_sha256": "197b577646b89bc5c0c0727d0534b297851fd53a0e61eb7e73ce26f32c6b49de"
+    }
+  ],
+  "feasibility_module_imported": false,
+  "input_manifest_sha256": "1fd1a541742d1e7a20c884018e76509e4e71a870f62f0f439568573febc3943d",
+  "no_test_access": true,
+  "no_training": true,
+  "passed": true,
+  "schema": "e1-5c-independent-witness-verification-v1",
+  "verification_method": "Independent JSON/UTC timing, 2D suffix-prefix workload matrices and sorted witness k/k-1 certificates"
+}

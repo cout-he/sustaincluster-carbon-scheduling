@@ -1,0 +1,19 @@
+split,factor,policy,misses,edf_misses,misses_common_with_edf,additional_missed_tasks_vs_edf,met_tasks_that_edf_missed,net_additional_misses,interpretation
+train,1.0,edf_backfill,0,0,0,0,0,0,paired trajectory association; not per-event causal attribution
+train,1.0,edf_carbon_threshold,0,0,0,0,0,0,paired trajectory association; not per-event causal attribution
+train,1.0,cars_risk_only,0,0,0,0,0,0,paired trajectory association; not per-event causal attribution
+train,1.5,edf_backfill,153,153,153,0,0,0,paired trajectory association; not per-event causal attribution
+train,1.5,edf_carbon_threshold,236,153,153,83,0,83,paired trajectory association; not per-event causal attribution
+train,1.5,cars_risk_only,194,153,152,42,1,41,paired trajectory association; not per-event causal attribution
+train,2.0,edf_backfill,779,779,779,0,0,0,paired trajectory association; not per-event causal attribution
+train,2.0,edf_carbon_threshold,838,779,700,138,79,59,paired trajectory association; not per-event causal attribution
+train,2.0,cars_risk_only,853,779,708,145,71,74,paired trajectory association; not per-event causal attribution
+validation,1.0,edf_backfill,403,403,403,0,0,0,paired trajectory association; not per-event causal attribution
+validation,1.0,edf_carbon_threshold,457,403,393,64,10,54,paired trajectory association; not per-event causal attribution
+validation,1.0,cars_risk_only,439,403,387,52,16,36,paired trajectory association; not per-event causal attribution
+validation,1.5,edf_backfill,2112,2112,2112,0,0,0,paired trajectory association; not per-event causal attribution
+validation,1.5,edf_carbon_threshold,2699,2112,2094,605,18,587,paired trajectory association; not per-event causal attribution
+validation,1.5,cars_risk_only,2575,2112,2092,483,20,463,paired trajectory association; not per-event causal attribution
+validation,2.0,edf_backfill,5301,5301,5301,0,0,0,paired trajectory association; not per-event causal attribution
+validation,2.0,edf_carbon_threshold,6842,5301,5242,1600,59,1541,paired trajectory association; not per-event causal attribution
+validation,2.0,cars_risk_only,5924,5301,5246,678,55,623,paired trajectory association; not per-event causal attribution

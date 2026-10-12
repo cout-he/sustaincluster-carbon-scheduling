@@ -39,3 +39,9 @@ Run `python -m pytest -q tests/e1 -p no:cacheprovider` in the compatible environ
 ## E1-5B: ordinary PPO baseline
 
 Three fixed-budget SB3 PPO candidates use the unchanged E1-5A 40-feature, three-mode environment. See [delivery](docs/research/e1/E1-5B/E1-5B-delivery.md), [all Validation results](docs/research/e1/E1-5B/E1-5B-validation-report.md), and [reproduction with external data](docs/research/e1/E1-5B/E1-5B-reproduce.md). Test remains unevaluated. Ordinary mode selection is a baseline, not the proposed task-level safety method. Full weights, frozen cohorts and training logs remain local.
+
+## E1-5C: workload pressure and SLA feasibility diagnosis
+
+The [E1-5C report](docs/research/e1/E1-5C/E1-5C-report.md) compares three unchanged baselines in six Train/Validation load groups. Validation 1×/1.5× are new exploratory diagnostics; the E1-5B model-selection result is unchanged. All finite cohorts complete with Drain and common idle-inclusive accounting. Train 1.5× and Validation 1× provide realized references below 5% DMR despite resource competition. In Validation 2×, the certified lower bound is only 177/17416 (1.0163%); whether 5% is achievable remains undetermined.
+
+See [all baseline metrics](docs/research/e1/E1-5C/summary-001/baseline-comparison.csv), [pressure evidence](docs/research/e1/E1-5C/pressure-evidence.md), [necessary-condition method](docs/research/e1/E1-5C/feasibility-method.md), [data identities and boundaries](docs/research/e1/E1-5C/E1-5C-data-freeze.md), [reproduction](docs/research/e1/E1-5C/E1-5C-reproduce.md), and [tests](docs/research/e1/E1-5C/E1-5C-tests.md). The [task-level budget and RL interface](docs/research/e1/E1-5C/next-stage-design.md) is a proposal awaiting review; no new algorithm or formal PPO training is included. Test remains sealed. Full raw inputs, historical archives and checkpoints are external requirements and are not distributed here.

@@ -8,3 +8,6 @@ docs/research/** text eol=lf
 
 # E1-5B seals the original DC configuration bytes; JSON values are unchanged.
 configs/dcs/dc_config.json -text -eol
+
+# E1-5C publishes sealed CSV/evidence bytes without newline normalization.
+docs/research/e1/E1-5C/** -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,52 @@
+{
+  "all_18_baselines_complete": true,
+  "diagnostic_manifest_verified_files": 127,
+  "final_report_sha256": "ed99d43a2ddac053ac994be98be2e3bfc65bf1853e1a39c9cb1a2a30970eb79c",
+  "local_log_sha256": {
+    "full-tests-001.txt": "b4c4722f93efb6f0913da573b688f6a544b25ba5e04d1092935e9b4a296ea2b4",
+    "new-unit-002.txt": "4ab0d8a66b4549432f5ebe70332bcb8a5c92416518510df5e5f6bf017f5bea23",
+    "publication-tests-001.txt": "eac1e8435285d8d90f399931a7b678bae714d6b8139c6c1d06d328fc9d74e4f5"
+  },
+  "new_formal_training": false,
+  "old_algorithms_changed": false,
+  "old_files_protected": {
+    "changed": [],
+    "files": 282291,
+    "git_metadata_equal": true,
+    "git_state_equal": true,
+    "skipped_nonregular_equal": true,
+    "state": "verified",
+    "unexpected_additions": []
+  },
+  "private_archive_skips": [
+    "tests/e1/test_cars_experiment.py",
+    "tests/e1/test_policy_runs.py"
+  ],
+  "publication_cwd_summary_replay": {
+    "evidence_sha256": "5477860254938f137db376321eea29e23a55640e5d354a7ec1123d36ee00fd83",
+    "files": 11,
+    "passed": true
+  },
+  "schema": "e1-5c-delivery-verification-v1",
+  "source_result_evidence_sha256": "a5ab53c4475cbe299a385d009a3247fb852fff9fa11bdfa19749d411fa13426e",
+  "test_evaluated": false,
+  "tests": {
+    "new_behavior": {
+      "exit_code": 0,
+      "passed": 53,
+      "seconds": 4.18,
+      "skipped": 0
+    },
+    "original_all": {
+      "exit_code": 0,
+      "passed": 377,
+      "seconds": 1280.2
+    },
+    "publication_e1_and_model": {
+      "exit_code": 0,
+      "passed": 373,
+      "seconds": 732.02,
+      "skipped": 2
+    }
+  }
+}

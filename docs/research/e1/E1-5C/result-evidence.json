@@ -1,0 +1,53 @@
+{
+  "canonical_source_sha256": "8fbdc5efdfce419ea219f686bbb9a4536171478ed659a475b58e95aa67e06afc",
+  "diagnostic_manifest_sha256": "2425cbf569a84b906d059d31f2691f2ba286a4e56aa6729d227e3debc334888e",
+  "diagnostic_output_files_verified": 127,
+  "e1_5b_selection_changed": false,
+  "evidence_files_sha256": {
+    "E1-5C-report.md": "ed99d43a2ddac053ac994be98be2e3bfc65bf1853e1a39c9cb1a2a30970eb79c",
+    "capacity-mask-evidence.csv": "d8f5c467ae808a34b7977070429ec068c86b54097480692cd5108c5fd8ed53a5",
+    "pressure-evidence-audit.json": "dd06d14140182436d63e14fc66877fa15ce488d5d5fe559d2095f840f11223f5",
+    "pressure-timing-evidence.csv": "740a20a61b6b630a37df59fea3fa62254577e7dad7f2fb73993db4aace468fa6",
+    "witness-verification-001.json": "e2f194c67288057c38168e649f3a93e521f6a1798062437e0a9533e9aa3f74a0"
+  },
+  "new_training": false,
+  "numeric_checks": {
+    "baseline_rows": 18,
+    "bounds_direction": true,
+    "bounds_rows": 12,
+    "dmr_counts": true,
+    "energy_sum": true,
+    "paired_net": true,
+    "paired_rows": 18
+  },
+  "passed": true,
+  "preservation": {
+    "changed": [],
+    "files": 282291,
+    "git_metadata_equal": true,
+    "git_state_equal": true,
+    "skipped_nonregular_equal": true,
+    "state": "verified",
+    "unexpected_additions": []
+  },
+  "replay": {
+    "independent_witnesses": true,
+    "pressure_evidence": true,
+    "summary": true
+  },
+  "schema": "e1-5c-result-evidence-v1",
+  "summary_files_sha256": {
+    "summary-001/baseline-comparison.csv": "23b0af93d9a371ff624f9fb8c326d89da9986e84e5122b2b261c17c7b7285ef1",
+    "summary-001/baseline-table.md": "14ffd3439d501d6623807e080c63ba2d3efa8e0934f223fb571f99dfb8426dc2",
+    "summary-001/deadline-slack-summary.csv": "f57e31d433912e82ce7553f7eafb0b41cef8502ca6ed2b28846f12ecd5f9db65",
+    "summary-001/lower-bound-table.md": "abfb19f93169785ef56e92f868c459fb2cc1d0143c8d84509f59c043b13bee95",
+    "summary-001/output-hashes.json": "e73eb4a805971d1dccdbe7535644d9e95b3a3fea72dce7378891a9547fd2d515",
+    "summary-001/paired-miss-comparison.csv": "18fb6e4180543b0c213db2f9543914b2de2dae52c3ac9cafec3eb0901ce7fccd",
+    "summary-001/pressure-table.md": "d9750bf08d5ecbbfc3721a13e3cf3bc24b50310890d084d2a4701796a8c42f14",
+    "summary-001/resource-pressure-summary.csv": "b66f8badbbd6090e3a0a7c38f8d3974022997331ca0da412ca6f9d765e50dbdc",
+    "summary-001/sla-lower-bound-summary.csv": "b099e649ba36490e5264734e2fd6ce4c4fad522dd55143e7888059316b243150",
+    "summary-001/sla-witness-summary.csv": "27ce0b898571f7c98f8f311f0c5969349c2489022e0a268ffd9b3c8b85b5533e",
+    "summary-001/workload-pressure-summary.csv": "42ac619c1106490f254e657814bcada682d74fcceaca3c5d490e207210da375e"
+  },
+  "test_evaluated": false
+}

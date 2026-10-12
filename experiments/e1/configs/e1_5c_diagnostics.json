@@ -1,0 +1,26 @@
+{
+  "schema": "e1-5c-sla-pressure-diagnostics-v1",
+  "starting_publication_commit": "958c14137bfeb30aaf6245a93a3cb693bcb60d20",
+  "e1_5b_config": "experiments/e1/configs/e1_5b_ppo.json",
+  "e1_5b_config_sha256": "d9bc61383558d211aff2d7aa466b7396d12db8bda327b6cb8b519e20b6019e28",
+  "history_root": "research_notes/E1/E1-5B",
+  "historical_groups": [
+    {"split": "train", "factor": 1.0, "bundle": "precheck-001/load-1/input", "group": "precheck-001/load-1/evaluation"},
+    {"split": "train", "factor": 1.5, "bundle": "precheck-001/load-1.5/input", "group": "precheck-001/load-1.5/evaluation"},
+    {"split": "train", "factor": 2.0, "bundle": "precheck-001/load-2/input", "group": "precheck-001/load-2/evaluation"},
+    {"split": "validation", "factor": 2.0, "bundle": "validation-input-001", "group": "validation-001"}
+  ],
+  "new_validation_factors": [1.0, 1.5],
+  "validation_stress_seed": 520001,
+  "policies": ["edf_backfill", "edf_carbon_threshold", "cars_risk_only"],
+  "history_minutes": 120,
+  "sla_target": 0.05,
+  "near_target_upper_dmr": 0.10,
+  "test_evaluation": false,
+  "new_training": false,
+  "new_validation_interpretation": "exploratory E1-5C diagnostics; not E1-5B registered model selection",
+  "feasibility_modes": ["raw_deadline", "occupied_deadline"],
+  "bounds_aggregation": "maximum across intervals/resources and intrinsic-impossibility count; never sum overlapping intervals",
+  "resource_time_unit": "core-minute / GPU-minute / memory-unit-minute",
+  "sla_finish_semantics": "exact start plus raw duration; resource release at next 15-minute boundary"
+}
