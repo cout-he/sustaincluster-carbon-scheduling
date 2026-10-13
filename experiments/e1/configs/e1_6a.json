@@ -1,0 +1,83 @@
+{
+  "schema": "e1-6a-frozen-campaign-v1",
+  "test_evaluation": false,
+  "new_training": false,
+  "sla_target": 0.05,
+  "parameters": {
+    "threshold_g_per_kwh": 161.075,
+    "a_u": 1,
+    "a_q": 1,
+    "a_h": 1,
+    "rho0": 0.5,
+    "k": 1,
+    "K": 8,
+    "cold_buffer_steps": 2,
+    "history_minutes": 120
+  },
+  "policies": [
+    "edf_backfill",
+    "edf_carbon_threshold",
+    "cars_risk_only",
+    "task_risk_full",
+    "task_risk_no_history",
+    "task_risk_no_urgent",
+    "task_risk_no_utilization",
+    "task_risk_max_required"
+  ],
+  "cohorts": [
+    {
+      "split": "train",
+      "factor": 1.0,
+      "input": "research_notes/E1/E1-5B/precheck-001/load-1/input",
+      "reference": "research_notes/E1/E1-5B/precheck-001/load-1/evaluation",
+      "workload_sha256": "4a2249a1f42ebf7bda6a1388038e03596084b648e2c99e99196220a8be927862",
+      "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+      "bundle_manifest_sha256": "bf80a31419983606431775f101141cdf7bb4de69f75180c77553a4b3c31a0d45"
+    },
+    {
+      "split": "train",
+      "factor": 1.5,
+      "input": "research_notes/E1/E1-5B/precheck-001/load-1.5/input",
+      "reference": "research_notes/E1/E1-5B/precheck-001/load-1.5/evaluation",
+      "workload_sha256": "5f408a4639113f739b8b3096111af1067edb1793d856db20c040c9380dbbd879",
+      "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+      "bundle_manifest_sha256": "4e02f1a1525c2de262ce25970674badd2e620177820951cb7c4cf1c1d8f686b6"
+    },
+    {
+      "split": "train",
+      "factor": 2.0,
+      "input": "research_notes/E1/E1-5B/precheck-001/load-2/input",
+      "reference": "research_notes/E1/E1-5B/precheck-001/load-2/evaluation",
+      "workload_sha256": "e110a35f4be9d40327139c7e587aa4c19898b89f290ce43c7a1261eac6e80399",
+      "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+      "bundle_manifest_sha256": "e3d76b2daff040e6d783cd0ce8a81766b98ea996cf02c1111f4fe3529576c77a"
+    },
+    {
+      "split": "validation",
+      "factor": 1.0,
+      "input": "research_notes/E1/E1-5C/diagnostics-001/inputs/validation-1",
+      "reference": "research_notes/E1/E1-5C/diagnostics-001/exploratory_baselines/validation-1",
+      "workload_sha256": "48c4cbfa5ffe865ceb8826bec9e05c89019ce40bd5434694b780cac25c74f55b",
+      "environment_sha256": "1ae071256e280a9b2f56736aa80b88c07385f2e7c0e59865bc9911c2f563c319",
+      "bundle_manifest_sha256": "db65bf311e533991ef4cb2f0698c96570d2ebba0185b963c3bb3c16e656a0a18"
+    },
+    {
+      "split": "validation",
+      "factor": 1.5,
+      "input": "research_notes/E1/E1-5C/diagnostics-001/inputs/validation-1.5",
+      "reference": "research_notes/E1/E1-5C/diagnostics-001/exploratory_baselines/validation-1.5",
+      "workload_sha256": "a9615365e558c8f551ebac84ea43b8cdfdaef013c200e8a2284f3995ecd71959",
+      "environment_sha256": "1ae071256e280a9b2f56736aa80b88c07385f2e7c0e59865bc9911c2f563c319",
+      "bundle_manifest_sha256": "55238b2cedba9326cc46921b2c786bff83350c2faf1e7dd69ab39083fda185ac"
+    },
+    {
+      "split": "validation",
+      "factor": 2.0,
+      "input": "research_notes/E1/E1-5B/validation-input-001",
+      "reference": "research_notes/E1/E1-5B/validation-001",
+      "workload_sha256": "197b577646b89bc5c0c0727d0534b297851fd53a0e61eb7e73ce26f32c6b49de",
+      "environment_sha256": "1ae071256e280a9b2f56736aa80b88c07385f2e7c0e59865bc9911c2f563c319",
+      "bundle_manifest_sha256": "62658e53a8edcf1b4fe74f5b738f7f4628a8defdf271a1b8d848f23c7fc18f02"
+    }
+  ]
+}

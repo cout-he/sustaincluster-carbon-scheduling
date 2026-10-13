@@ -1,0 +1,65 @@
+{
+  "original_analysis_hashes_unchanged": true,
+  "original_dmr_still_not_for_delivery": true,
+  "original_analysis_manifest_sha256": "ff7e0acdcfc0a8c7c69c0221c65127abb95c352dae0de3079c97c724fc551717",
+  "presentation_only": true,
+  "simulation_outputs_modified": false,
+  "source_summary_exact": true,
+  "corrected_dmr_y_limits": [
+    0.0,
+    43.214285714285715
+  ],
+  "maximum_dmr_percent": 39.285714285714285,
+  "all_48_points_in_visible_range": true,
+  "companions_byte_identical": [
+    "carbon-relative-edf.png",
+    "carbon-relative-edf.pdf",
+    "carbon-relative-edf.svg",
+    "high-pressure-pareto.png",
+    "high-pressure-pareto.pdf",
+    "high-pressure-pareto.svg",
+    "first-eligible-buffer-distribution.png",
+    "first-eligible-buffer-distribution.pdf",
+    "first-eligible-buffer-distribution.svg",
+    "buffer-by-demand-category.png",
+    "buffer-by-demand-category.pdf",
+    "buffer-by-demand-category.svg",
+    "figure-source-buffer.csv",
+    "figure-source-resource.csv"
+  ],
+  "fonts": [
+    {
+      "figure": "buffer-by-demand-category",
+      "pdf_minimum_pt": 6.0,
+      "pdf_below_5pt": 0,
+      "editable_svg_text_nodes": 50
+    },
+    {
+      "figure": "carbon-relative-edf",
+      "pdf_minimum_pt": 6.0,
+      "pdf_below_5pt": 0,
+      "editable_svg_text_nodes": 27
+    },
+    {
+      "figure": "deadline-miss-rate",
+      "pdf_minimum_pt": 6.0,
+      "pdf_below_5pt": 0,
+      "editable_svg_text_nodes": 29
+    },
+    {
+      "figure": "first-eligible-buffer-distribution",
+      "pdf_minimum_pt": 6.0,
+      "pdf_below_5pt": 0,
+      "editable_svg_text_nodes": 51
+    },
+    {
+      "figure": "high-pressure-pareto",
+      "pdf_minimum_pt": 6.0,
+      "pdf_below_5pt": 0,
+      "editable_svg_text_nodes": 52
+    }
+  ],
+  "corrected_dmr_png_sha256": "3e46e5307b19078b0ee4d6c5941a8410ca082b0cd62f559ba2a1bbf5ff7ff451",
+  "corrected_dmr_pdf_sha256": "8bad236e05148ddafa7b6a08e43f4f1c41d0ba24a78aad9a587f313b676bfe4f",
+  "corrected_dmr_svg_sha256": "fa6e5a784c7880764b6180265023a15117ca7bc2ec2fbac56c7d2c6693f770f5"
+}

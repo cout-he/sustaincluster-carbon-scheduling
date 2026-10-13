@@ -1,0 +1,12 @@
+{
+  "files": 225228,
+  "captured_files": 225229,
+  "declared_new_files_seen_during_capture": [
+    "tests/e1/test_task_risk_state.py"
+  ],
+  "original_capture_sha256": "28e6b9d3a7382b59b2a688a7d48e29cb304c0a0fca7d4a5b1db9bb3a8319b7c1",
+  "changed": [],
+  "unexpected_additions": [],
+  "git_metadata_equal": true,
+  "git_state_equal": true
+}

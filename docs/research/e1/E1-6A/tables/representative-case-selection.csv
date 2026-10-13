@@ -1,0 +1,19 @@
+split,factor,case,found,task_id,selection_rule
+train,1.0,added_miss,False,,first lexical stable_id in preregistered category
+train,1.0,avoided_miss,False,,first lexical stable_id in preregistered category
+train,1.0,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-05-02T02:00:00+00:00/11694/1,first lexical stable_id in preregistered category
+train,1.5,added_miss,True,3ba8a8e0067288f8/2023-05-02T14:30:00+00:00/11744/0,first lexical stable_id in preregistered category
+train,1.5,avoided_miss,True,3ba8a8e0067288f8/2023-05-02T14:30:00+00:00/11744/15,first lexical stable_id in preregistered category
+train,1.5,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-05-02T02:00:00+00:00/11694/1,first lexical stable_id in preregistered category
+train,2.0,added_miss,True,3ba8a8e0067288f8/2023-05-02T14:30:00+00:00/11744/24,first lexical stable_id in preregistered category
+train,2.0,avoided_miss,True,3ba8a8e0067288f8/2023-05-02T14:15:00+00:00/11743/29,first lexical stable_id in preregistered category
+train,2.0,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-05-02T02:00:00+00:00/11694/1,first lexical stable_id in preregistered category
+validation,1.0,added_miss,True,3ba8a8e0067288f8/2023-07-08T18:15:00+00:00/18178/55,first lexical stable_id in preregistered category
+validation,1.0,avoided_miss,True,3ba8a8e0067288f8/2023-07-08T18:15:00+00:00/18178/48,first lexical stable_id in preregistered category
+validation,1.0,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-07-08T05:00:00+00:00/18125/13,first lexical stable_id in preregistered category
+validation,1.5,added_miss,True,3ba8a8e0067288f8/2023-07-08T16:30:00+00:00/18171/30,first lexical stable_id in preregistered category
+validation,1.5,avoided_miss,True,3ba8a8e0067288f8/2023-07-08T16:30:00+00:00/18171/2,first lexical stable_id in preregistered category
+validation,1.5,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-07-08T05:00:00+00:00/18125/22,first lexical stable_id in preregistered category
+validation,2.0,added_miss,True,3ba8a8e0067288f8/2023-07-08T08:15:00+00:00/18138/34~e1-2b-520001-copy1,first lexical stable_id in preregistered category
+validation,2.0,avoided_miss,True,3ba8a8e0067288f8/2023-07-08T08:30:00+00:00/18139/16,first lexical stable_id in preregistered category
+validation,2.0,changedstart_sameoutcome,True,3ba8a8e0067288f8/2023-07-08T05:00:00+00:00/18125/22,first lexical stable_id in preregistered category

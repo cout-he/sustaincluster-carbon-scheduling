@@ -1,0 +1,52 @@
+{
+  "all_passed": true,
+  "analysis_manifest_sha256": "ff7e0acdcfc0a8c7c69c0221c65127abb95c352dae0de3079c97c724fc551717",
+  "campaign_freeze_sha256": "a0ab6cf0090deb510d2a547535f7b10b441cd85a345a6f074212cefee8b1c6c8",
+  "cohorts": [
+    {
+      "all_eight_completed": true,
+      "arrived": 5542,
+      "factor": 1.0,
+      "split": "train"
+    },
+    {
+      "all_eight_completed": true,
+      "arrived": 8313,
+      "factor": 1.5,
+      "split": "train"
+    },
+    {
+      "all_eight_completed": true,
+      "arrived": 11084,
+      "factor": 2.0,
+      "split": "train"
+    },
+    {
+      "all_eight_completed": true,
+      "arrived": 8708,
+      "factor": 1.0,
+      "split": "validation"
+    },
+    {
+      "all_eight_completed": true,
+      "arrived": 13062,
+      "factor": 1.5,
+      "split": "validation"
+    },
+    {
+      "all_eight_completed": true,
+      "arrived": 17416,
+      "factor": 2.0,
+      "split": "validation"
+    }
+  ],
+  "detailed_receipt_sha256": "cabf477f96e4cf751a05c6c89a572081cedbd2bbdb08952a3cae6221f52f56dd",
+  "formal_test_evaluated": false,
+  "groups": 6,
+  "policies": 8,
+  "report_sha256": "f553a350352b8c993b4a4925d1731f763463db783558e61916e6958e7f302918",
+  "rows": 48,
+  "schema": "e1-6a-independent-verification-published-summary-v1",
+  "source_unchanged": true,
+  "verification": "stdlib-only independent ledger SLA, actual running capacity, releases, IT/HVAC/CI integral, resource hours, task identities, waits/JCT and scientific hashes"
+}

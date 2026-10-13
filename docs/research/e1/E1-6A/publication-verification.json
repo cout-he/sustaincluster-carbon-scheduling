@@ -1,0 +1,51 @@
+{
+  "schema": "e1-6a-publication-verification-v1",
+  "original_e1": {
+    "passed": 440,
+    "seconds": 989.24
+  },
+  "original_model": {
+    "passed": 1,
+    "seconds": 1.99
+  },
+  "publication_suite": {
+    "passed": 439,
+    "skipped": 2,
+    "failed": 0,
+    "seconds": 277.83,
+    "scope": "tests/e1 tests/test_model.py",
+    "log_sha256": "ffde9e2d33e826eb44a3341a33753d36ea85975042b9f7c5c450af1682eb3361"
+  },
+  "skips": [
+    "Private historical archive is an external data dependency",
+    "Historical local artifact is not shipped with source; compare CLI checks it when supplied"
+  ],
+  "publication_plot_tests": {
+    "passed": 3,
+    "log_sha256": "bdc9b181f1598dcf2e4f935f9700733db8007149095444a0324d1b540dd04eb7"
+  },
+  "original_scientific_replay_exact": true,
+  "full_cohort_runs": 48,
+  "independent_scientific_checks_passed": true,
+  "original_225228_files_unchanged": true,
+  "original_git_unchanged": true,
+  "formal_test_evaluated": false,
+  "research_ppo_training": false,
+  "private_data_not_published": true,
+  "publication_is_real_data_self_contained": false,
+  "commit_push": "Confirmed by subsequent Git receipt and canonical remote commit, not asserted in advance.",
+  "post_staging_driver_tests": {
+    "passed": 8,
+    "skipped": 2,
+    "failed": 0,
+    "seconds": 15.13,
+    "log_sha256": "efad92eecc6c0b7230d29c5205c89aa01c4c685d4b2261b7591a2d170ec5fc42"
+  },
+  "staged_payload": {
+    "files": 41,
+    "bytes_before_this_receipt_update": 612845,
+    "largest_bytes": 87054,
+    "exact_source_configuration_test_bytes": true,
+    "secret_pattern_check_passed": true
+  }
+}

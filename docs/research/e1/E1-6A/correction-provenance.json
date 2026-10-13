@@ -1,0 +1,33 @@
+{
+  "presentation_only": true,
+  "simulation_outputs_modified": false,
+  "source_summary_sha256": "098f252c9579d5885dd5b7f6593699161e221ea56d47172cb33bb374397ae0be",
+  "renderer_sha256": "1fecd6dc4c4f9e65ef91c18b862e0460360ec816dcb60d71d86dc95fbd9c6c84",
+  "rows": 48,
+  "all_plotted_points_visible": true,
+  "y_limits": [
+    0.0,
+    43.214285714285715
+  ],
+  "fix": "Shared upper bound from all cohorts, set after plotting both panels.",
+  "outputs": {
+    "buffer-by-demand-category.pdf": "fe51d70962a5ff31a2a186886dbdfb968ebfbc23ad71f6012eb26820ac413e41",
+    "buffer-by-demand-category.png": "e3524201571a6cd0deb87a89975ea9f28a6df508712366b3c299ac65f02e51d3",
+    "buffer-by-demand-category.svg": "361c7e2503692d5b523205fb6e78740b1b5b66898ec6835ea534cfdc8920fa37",
+    "carbon-relative-edf.pdf": "80a241b76bc3830c4b2df33453523da445a72274c9cd260a7d7d6eaec15fb1a4",
+    "carbon-relative-edf.png": "19e799ff044f6a03de85feeb34cf0458ab4559c45f61c206fe63d0ca9fb3a0f5",
+    "carbon-relative-edf.svg": "ba5b80edc4692c3635c54eb7c7489f4d41e884846dd525cc5a0b7b262d669770",
+    "deadline-miss-rate.pdf": "8bad236e05148ddafa7b6a08e43f4f1c41d0ba24a78aad9a587f313b676bfe4f",
+    "deadline-miss-rate.png": "3e46e5307b19078b0ee4d6c5941a8410ca082b0cd62f559ba2a1bbf5ff7ff451",
+    "deadline-miss-rate.svg": "fa6e5a784c7880764b6180265023a15117ca7bc2ec2fbac56c7d2c6693f770f5",
+    "figure-source-buffer.csv": "1553b93c69439b75db271e9c7f6e2c11027438fb38cf010a6df0b18c0398ee46",
+    "figure-source-resource.csv": "2d4ce886dcde91f1962cfc2d2af5e2c401160f75475af80ec2f8a504176b9e5c",
+    "figure-source-summary.csv": "098f252c9579d5885dd5b7f6593699161e221ea56d47172cb33bb374397ae0be",
+    "first-eligible-buffer-distribution.pdf": "76188617d0953b230ef073474931cca5d574d66160f5932d173febcbd756cb94",
+    "first-eligible-buffer-distribution.png": "36567022c6f5901fdcc9a61dc7129617d8827299ca31ed75aac1c5981bc57f15",
+    "first-eligible-buffer-distribution.svg": "d4506a237ed1c1faecb6f419e7ee83752ebb60639177432810a8cf7df3423de0",
+    "high-pressure-pareto.pdf": "65fafc74c8362cc4f600030ba8e320738ba0cd5ccaa6ffbe62e001212e66bf5e",
+    "high-pressure-pareto.png": "9d1bef81e3cb1f6a57c29355c4b7ab64b651e72371bb9adf2f4677083eea845d",
+    "high-pressure-pareto.svg": "4de3b00fbc4da4723bed94eca62c50d464e2e93fe17e55e25569f9c02def1267"
+  }
+}
