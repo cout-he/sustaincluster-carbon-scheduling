@@ -1,0 +1,13 @@
+group,seed,partial_episode_steps,budget_ends_mid_episode,reason
+plain,55101,202,True,partial budget-ending episodes excluded; never silently treated as completed
+plain,55102,96,True,partial budget-ending episodes excluded; never silently treated as completed
+plain,55103,17,True,partial budget-ending episodes excluded; never silently treated as completed
+state,55101,5,True,partial budget-ending episodes excluded; never silently treated as completed
+state,55102,73,True,partial budget-ending episodes excluded; never silently treated as completed
+state,55103,58,True,partial budget-ending episodes excluded; never silently treated as completed
+shield,55101,4,True,partial budget-ending episodes excluded; never silently treated as completed
+shield,55102,199,True,partial budget-ending episodes excluded; never silently treated as completed
+shield,55103,186,True,partial budget-ending episodes excluded; never silently treated as completed
+combined,55101,213,True,partial budget-ending episodes excluded; never silently treated as completed
+combined,55102,64,True,partial budget-ending episodes excluded; never silently treated as completed
+combined,55103,24,True,partial budget-ending episodes excluded; never silently treated as completed

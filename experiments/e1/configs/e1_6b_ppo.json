@@ -1,0 +1,137 @@
+{
+  "ppo": {
+    "learning_rate": 0.0003,
+    "n_steps": 256,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "normalize_advantage": true,
+    "target_kl": null
+  },
+  "policy_kwargs": {
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "runtime": {
+    "device": "cpu",
+    "torch_threads": 1,
+    "deterministic_algorithms": true,
+    "stable_baselines3": "2.9.0"
+  },
+  "reward": {
+    "alpha": 1.0,
+    "beta": 1.0,
+    "gamma": 10.0,
+    "carbon_scale_kg": 1000.0,
+    "wait_scale_task_minutes": 15000.0,
+    "deadline_scale_tasks": 1000.0,
+    "terminal_scale_tasks": 1000.0,
+    "terminal_weight": 10.0
+  },
+  "normalization": {
+    "ci_g_per_kwh": 1000.0,
+    "count_tasks": 1000.0,
+    "slack_minutes": 120.0,
+    "work_minutes": 120.0,
+    "elapsed_hours": 24.0
+  },
+  "schema": "e1-6b-adaptive-ppo-v1",
+  "starting_publication_commit": "d4be4d681bf04dfd2d2c7c9de341d2455270f89d",
+  "threshold_g_per_kwh": 161.075,
+  "observation_schema": "e1-6b-adaptive-delay-env-v1",
+  "observation_dimensions": 83,
+  "action_slack_minutes": [
+    null,
+    60,
+    30,
+    15
+  ],
+  "rl_seeds": [
+    55101,
+    55102,
+    55103
+  ],
+  "smoke_seed": 55100,
+  "budgets": {
+    "smoke": 1024,
+    "formal": 20480
+  },
+  "risk_parameters": {
+    "a_u": 1,
+    "a_q": 1,
+    "a_h": 1,
+    "rho0": 0.5,
+    "k": 1,
+    "K": 8,
+    "cold_buffer_steps": 2,
+    "history_minutes": 120
+  },
+  "groups": {
+    "plain": {
+      "risk_state": false,
+      "risk_filter": false
+    },
+    "state": {
+      "risk_state": true,
+      "risk_filter": false
+    },
+    "shield": {
+      "risk_state": false,
+      "risk_filter": true
+    },
+    "combined": {
+      "risk_state": true,
+      "risk_filter": true
+    }
+  },
+  "scenes": [
+    {
+      "split": "train",
+      "factor": 1.5,
+      "input": "research_notes/E1/E1-5B/precheck-001/load-1.5/input",
+      "manifest_sha256": "4e02f1a1525c2de262ce25970674badd2e620177820951cb7c4cf1c1d8f686b6"
+    },
+    {
+      "split": "train",
+      "factor": 2,
+      "input": "research_notes/E1/E1-5B/precheck-001/load-2/input",
+      "manifest_sha256": "e3d76b2daff040e6d783cd0ce8a81766b98ea996cf02c1111f4fe3529576c77a"
+    }
+  ],
+  "scene_sampling": {
+    "rule": "seed_mod_2_initial_then_alternate",
+    "episode_proportions": [
+      0.5,
+      0.5
+    ],
+    "step_proportions": "reported_not_forced"
+  },
+  "smoke_gate": {
+    "maximum_wall_seconds_per_model": 720,
+    "maximum_rss_gib": 4,
+    "finite": true,
+    "updated_parameters": true,
+    "checkpoint_roundtrip": true
+  },
+  "formal_gate": {
+    "maximum_wall_seconds_per_model": 14400,
+    "maximum_rss_gib": 6
+  },
+  "episode": {
+    "stop_at_drain": true,
+    "max_episode_steps": null
+  },
+  "test_evaluation": false,
+  "validation_role": "development",
+  "selection": {
+    "maximum_deadline_miss_rate": 0.05,
+    "keep_all_candidates": true
+  }
+}

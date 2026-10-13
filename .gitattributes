@@ -18,3 +18,7 @@ docs/research/e1/E1-6A/** -text -eol whitespace=blank-at-eol,blank-at-eof,space-
 # Preserve frozen E1-6A configuration bytes and the sealed test's trailing blank line.
 experiments/e1/configs/e1_6a.json -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/e1/test_task_risk.py whitespace=-blank-at-eof
+
+# Preserve sealed E1-6B configuration and curated evidence bytes only.
+experiments/e1/configs/e1_6b_ppo.json -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/e1/E1-6B/** -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

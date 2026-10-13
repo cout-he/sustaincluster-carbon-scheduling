@@ -1,0 +1,28 @@
+factor,seed,contrast,coefficients,delta_misses,delta_dmr_percentage_points,delta_carbon_kg,delta_jct_minutes,interpretation
+1.0,55101,state_with_filter,"{""combined"": 1, ""shield"": -1}",0.0,0.0,0.0,0.0,matched training seed; one frozen workload; no single-event causal claim
+1.0,55101,filter_with_state,"{""combined"": 1, ""state"": -1}",0.0,0.0,0.0,0.0,matched training seed; one frozen workload; no single-event causal claim
+1.0,55101,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",0.0,0.0,-15.829324169850224,2.2909967845659196,matched training seed; one frozen workload; no single-event causal claim
+1.0,55102,state_with_filter,"{""combined"": 1, ""shield"": -1}",-9.0,-0.10335323840146987,17.613945633140247,-0.8423288929719774,matched training seed; one frozen workload; no single-event causal claim
+1.0,55102,filter_with_state,"{""combined"": 1, ""state"": -1}",5.0,0.05741846577859422,0.16917226650184602,-0.14297197978869747,matched training seed; one frozen workload; no single-event causal claim
+1.0,55102,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-1.0,-0.01148369315571926,15.149418986733508,-0.7303628847037089,matched training seed; one frozen workload; no single-event causal claim
+1.0,55103,state_with_filter,"{""combined"": 1, ""shield"": -1}",0.0,0.0,0.0,0.0,matched training seed; one frozen workload; no single-event causal claim
+1.0,55103,filter_with_state,"{""combined"": 1, ""state"": -1}",-20.0,-0.22967386311437757,53.840812287542576,-8.037436839687643,matched training seed; one frozen workload; no single-event causal claim
+1.0,55103,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-19.0,-0.218190169958659,45.86334412290853,-7.14687643546165,matched training seed; one frozen workload; no single-event causal claim
+1.5,55101,state_with_filter,"{""combined"": 1, ""shield"": -1}",60.0,0.45934772622875375,5.5420403968109895,1.5365181442351883,matched training seed; one frozen workload; no single-event causal claim
+1.5,55101,filter_with_state,"{""combined"": 1, ""state"": -1}",63.0,0.4823151125401909,3.2803138135823247,1.4607257694074463,matched training seed; one frozen workload; no single-event causal claim
+1.5,55101,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",82.0,0.627775225845964,-12.174679627843943,3.6288470372071657,matched training seed; one frozen workload; no single-event causal claim
+1.5,55102,state_with_filter,"{""combined"": 1, ""shield"": -1}",2.0,0.015311590874292347,15.027777371155025,-0.6580156178226844,matched training seed; one frozen workload; no single-event causal claim
+1.5,55102,filter_with_state,"{""combined"": 1, ""state"": -1}",1.0,0.007655795437147561,-0.22859179820807185,-0.22163527790537785,matched training seed; one frozen workload; no single-event causal claim
+1.5,55102,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-34.0,-0.2602970448629588,13.078616828734084,-1.5675241157556314,matched training seed; one frozen workload; no single-event causal claim
+1.5,55103,state_with_filter,"{""combined"": 1, ""shield"": -1}",0.0,0.0,0.0,0.0,matched training seed; one frozen workload; no single-event causal claim
+1.5,55103,filter_with_state,"{""combined"": 1, ""state"": -1}",-340.0,-2.602970448629613,17.886130476943435,-13.113229214515385,matched training seed; one frozen workload; no single-event causal claim
+1.5,55103,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-240.0,-1.8373909049150206,18.878652126109955,-11.652503445107953,matched training seed; one frozen workload; no single-event causal claim
+2.0,55101,state_with_filter,"{""combined"": 1, ""shield"": -1}",22.0,0.12632062471290562,-3.7395116192074056,0.02325447864032526,matched training seed; one frozen workload; no single-event causal claim
+2.0,55101,filter_with_state,"{""combined"": 1, ""state"": -1}",-20.0,-0.11483693155718844,4.519410950937527,-0.7424207625172414,matched training seed; one frozen workload; no single-event causal claim
+2.0,55101,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",20.0,0.11483693155718844,-4.625347131033777,1.7828433624253535,matched training seed; one frozen workload; no single-event causal claim
+2.0,55102,state_with_filter,"{""combined"": 1, ""shield"": -1}",-6.0,-0.034451079467151535,0.472862840304515,-0.09474046853466689,matched training seed; one frozen workload; no single-event causal claim
+2.0,55102,filter_with_state,"{""combined"": 1, ""state"": -1}",-31.0,-0.17799724391364125,1.6764131252039078,-0.6020326136885501,matched training seed; one frozen workload; no single-event causal claim
+2.0,55102,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-31.0,-0.17799724391364125,0.429927136774495,0.47111851171337094,matched training seed; one frozen workload; no single-event causal claim
+2.0,55103,state_with_filter,"{""combined"": 1, ""shield"": -1}",1.0,0.005741846577861365,0.0829811467356194,0.047370234267333444,matched training seed; one frozen workload; no single-event causal claim
+2.0,55103,filter_with_state,"{""combined"": 1, ""state"": -1}",-1159.0,-6.65480018373909,31.817324445240956,-22.227836472209475,matched training seed; one frozen workload; no single-event causal claim
+2.0,55103,state_filter_interaction,"{""combined"": 1, ""plain"": 1, ""shield"": -1, ""state"": -1}",-1052.0,-6.04042259990813,31.03445855877908,-18.477836472209475,matched training seed; one frozen workload; no single-event causal claim
