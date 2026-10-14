@@ -1,0 +1,6 @@
+# Install into a new isolated --target directory; never upgrade the E1 environment.
+ortools==9.14.6206
+protobuf==6.31.1
+immutabledict==4.2.1
+absl-py==2.3.1
+# Reuse the existing audited numpy2.2.6 / pandas2.3.3 / Python3.10 runtime.
