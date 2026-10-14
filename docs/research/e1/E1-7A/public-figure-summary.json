@@ -1,0 +1,97 @@
+{
+  "figures": [
+    {
+      "name": "A-resource-timeline",
+      "caption": "Conditional A2 comparison; fixed background is included. Display selected by largest verified local miss reduction.",
+      "files": {
+        "A-resource-timeline.png": "00a93e787fef43f4b0e9e30655b2949a0a8f57ca08a77ef57c163df557c55ea6",
+        "A-resource-timeline.pdf": "6ab2577b574d4bdaffe0c3e27b5134bf4539f4e0f4db62e17654fdec83524a29",
+        "A-resource-timeline.svg": "e1c22f4933f5afba4d6e220270df338fcd14eb240e4ce038f1dbd34a2d99d5a3"
+      },
+      "source_csv": "A-resource-timeline.csv",
+      "source_csv_sha256": "171ed393f1e994bb8c2e0ef935b34d443b1c4be6364591d6e0edbd63e4f2c46c"
+    },
+    {
+      "name": "A-task-timeline",
+      "caption": "All selected A2 candidates; raw finish determines SLA, grid release determines occupancy. Minimum-miss objective has no JCT/carbon secondary objective.",
+      "files": {
+        "A-task-timeline.png": "714cfe5e335a9774a3003584b4ed55c644b3d82cbeec6f1b4a7c9d6607ebc03b",
+        "A-task-timeline.pdf": "358b0c3820c0b76083f3812434aa72ae4f94a4f1c0143616bdc0ba0aa5c1efb8",
+        "A-task-timeline.svg": "a0cb7c1fbeab654bdef043d94b2d28334757ee2cd440006601476103ad2f9768"
+      },
+      "source_csv": "A-task-timeline.csv",
+      "source_csv_sha256": "e68138e6728a20e2bde9c8f0057672270cc691176cb55d36f080476e3a8e6d87"
+    },
+    {
+      "name": "B-physical-decomposition",
+      "caption": "Actual persistent IT/HVAC physical replay; identical 57-hour public accounting window and all tasks completed. One deterministic load per level.",
+      "files": {
+        "B-physical-decomposition.png": "68e68b96287b509ce9b962e49567534abb41156fbf5fa832d581d521e0b6d872",
+        "B-physical-decomposition.pdf": "2aa48c7a275fedf3f93fbbb76e73472ff71ef6cc7fe0dcaf0062dd64a1ffd3b2",
+        "B-physical-decomposition.svg": "a5183ff250660d6df3ced56b6ede4e79efa1d9c25b819cf72533d6c549f9ba38"
+      },
+      "source_csv": "B-physical-decomposition.csv",
+      "source_csv_sha256": "e240ac776861b3b72b2e550011797d0efd70456c32f9766f6e9dcab514924b34"
+    },
+    {
+      "name": "B-ci-time",
+      "caption": "All 48 complete observed hours have four identical CI values; no synthetic forecasts or repeated tail.",
+      "files": {
+        "B-ci-time.png": "e6a2dc8751279aba3f1a58519aafa1b3c2ed339f312b04577504034ff3f7b7e1",
+        "B-ci-time.pdf": "cc1dfd6b4612df4559351a242132a7bfb659d2336217bad8ce9aee272449c82d",
+        "B-ci-time.svg": "6a6834cc68461389bc9899bf0cf46882fa7ed5f69a2c126899003b685140b135"
+      },
+      "source_csv": "B-ci-time.csv",
+      "source_csv_sha256": "09412ce7fa3fd33e3ade35d666e275a6b409a7ec1485da06eeb5d47caa24d72e"
+    },
+    {
+      "name": "C-load-1.5-cpu_tight",
+      "caption": "Same physical and scheduler prefix; only specified action differs, followed by EDF. Full common-window data retained in CSV; this crop is for display.",
+      "files": {
+        "C-load-1.5-cpu_tight.png": "3d89a44f4b155d8dd048feaa037fdde969a6f010673270b75078cffcfd8211c4",
+        "C-load-1.5-cpu_tight.pdf": "b56fe80541e077bdf3c9553bc48b19a9b05ad515bc390626cef95a985220486b",
+        "C-load-1.5-cpu_tight.svg": "9526630eef1cfbf02fd566e4a95ff4b21d476f9476a94238b09f77acaac7cedc"
+      },
+      "source_csv": "C-load-1.5-cpu_tight.csv",
+      "source_csv_sha256": "1da946a55fd164d209809712ebe667a186b816f47dbe63526aa664ebe0baed05"
+    },
+    {
+      "name": "C-risk-scatter",
+      "caption": "All registered single-defer pairs. Index maps to CSV; descriptive only, no fit or significance claim.",
+      "files": {
+        "C-risk-scatter.png": "58ae11bec496c7b239c860f515ea23a1dbcaab0eca463d2515d8252f30c8c183",
+        "C-risk-scatter.pdf": "755c9f9ff43f1df1dab6738fc2284f8eb9dde8e63e3d16c3a3d05878428d43cb",
+        "C-risk-scatter.svg": "e04ee5dc43f77454b324102c82d1853d30bb2fa03cab07077579d556c10a2324"
+      },
+      "source_csv": "C-risk-scatter.csv",
+      "source_csv_sha256": "e49f5316d9f124cbf38f9f3faef14ee5c0905de3958216c3d6b32c2d90de6e42"
+    },
+    {
+      "name": "C-load-1.5-gpu_tight",
+      "caption": "Same physical and scheduler prefix; only specified action differs, followed by EDF. Full common-window data retained in CSV; this crop is for display.",
+      "files": {
+        "C-load-1.5-gpu_tight.png": "c74767a284f257ff66f021c86af98a23e2b7b152b50a4b8e7c0fdf4880f26db7",
+        "C-load-1.5-gpu_tight.pdf": "1a9221e8ccacaae9afdda632a719dec632cdbd17712894b1d44fa33a099f3d79",
+        "C-load-1.5-gpu_tight.svg": "31c7037bfdfa7a71669f54664d9cd4b5bf885c37427bc27182e4da709642d976"
+      },
+      "source_csv": "C-load-1.5-gpu_tight.csv",
+      "source_csv_sha256": "c11a52148b0729a268a72349e9c3c17465627f4b66841bdbb415996e7287f39b"
+    },
+    {
+      "name": "C-load-1.5-long_slack",
+      "caption": "Same physical and scheduler prefix; only specified action differs, followed by EDF. Full common-window data retained in CSV; this crop is for display.",
+      "files": {
+        "C-load-1.5-long_slack.png": "0eddc169cbb7b2934741f4b0a2be31753f459089109db703e143c8f340326a5e",
+        "C-load-1.5-long_slack.pdf": "c245eeaa68bc4a85d38e2cae4492afe3863c70722e6b9442c2310098a13cc279",
+        "C-load-1.5-long_slack.svg": "5341d65804c580e3c574cb2a846b49f7f301686e48e4fe74ecf957b89c1efca0"
+      },
+      "source_csv": "C-load-1.5-long_slack.csv",
+      "source_csv_sha256": "ac1700a5252e8defc051fdbfcffcb42f391a6eade5780bf2885397898e47ca81"
+    }
+  ],
+  "full_images_and_source_curves_private": true,
+  "actual_export_qa_passed": true,
+  "minimum_font_pt": 7,
+  "png_dpi": 300,
+  "description": "Hashes and captions only; 8 PNG/PDF/SVG and raw plotting CSV stay local."
+}

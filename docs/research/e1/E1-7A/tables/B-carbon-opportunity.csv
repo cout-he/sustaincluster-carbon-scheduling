@@ -1,0 +1,4 @@
+factor,eligible,high_current_ci,negative_predicted_it_count,high_ci_with_gain,high_ci_without_gain,same_start_ci_fraction,positive_proxy_gain,negative_proxy_gain,zero_proxy_gain,mean_duration_minutes,mean_grid_occupied_minutes,offline_clairvoyant_diagnostic,is_cluster_carbon_result
+1.0,4484,1414,0,690,724,0.7437555753791257,2334,1991,159,103.09587686915971,111.28473475279682,True,False
+1.5,6408,1981,0,1074,907,0.7454744069912609,3474,2701,233,103.1366531053302,111.33525802959221,True,False
+2.0,8076,2495,0,1370,1125,0.7667161961367014,4360,3402,314,103.09587686915971,111.28473475279682,True,False

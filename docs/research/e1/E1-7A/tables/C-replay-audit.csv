@@ -1,0 +1,13 @@
+case_id,scientific_branch_files_exact,paired_feature_files_exact,canonical_core_and_full_exact,historical_control_files_verified
+load-1.5-gpu_tight,16,6,True,5
+load-1.5-cpu_tight,16,6,True,5
+load-1.5-history_high,16,6,True,5
+load-1.5-history_low,16,6,True,5
+load-1.5-short_slack,16,6,True,5
+load-1.5-long_slack,16,6,True,5
+load-2-gpu_tight,16,6,True,5
+load-2-cpu_tight,16,6,True,5
+load-2-history_high,16,6,True,5
+load-2-history_low,16,6,True,5
+load-2-short_slack,16,6,True,5
+load-2-long_slack,16,6,True,5

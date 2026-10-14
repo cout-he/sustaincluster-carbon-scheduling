@@ -1,0 +1,313 @@
+{
+  "schema": "e1-7a-public-selection-summary-v1",
+  "split": "train",
+  "test_access": false,
+  "selection_payload_sha256": "e62b7eddcde17ee80c5eb3300b36c3a2ff4880a8899c24adc0f6fbd8b9b6c361",
+  "config_sha256": "b7bf0bb8129e509475cc4d962f779b7ebab5ee9b3f99f2eaed9d8b19f77ff987",
+  "selector_sha256": "ad14a6743f95ea2c744d5bec16f6fe19ed4d6cae834dbdde47dcaf990e0737a4",
+  "selected_before_outcomes": true,
+  "input_identities": [
+    {
+      "factor": 1.0,
+      "identity": {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "bf80a31419983606431775f101141cdf7bb4de69f75180c77553a4b3c31a0d45",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 1.0,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "cd474281e1dc51f8016994846fdc1fe17827dc7a39e0f367ae74fa729cc34642",
+          "workload.json": "00ffbcab7beac2073d6d074c11cefd85ab562c6f2b51882b3e40f8a801a79580"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 5542,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "4a2249a1f42ebf7bda6a1388038e03596084b648e2c99e99196220a8be927862"
+      },
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "eligible_snapshots": 192,
+      "eligible_candidates": 4484
+    },
+    {
+      "factor": 1.5,
+      "identity": {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "4e02f1a1525c2de262ce25970674badd2e620177820951cb7c4cf1c1d8f686b6",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 1.5,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "26c9e38f613377ecf0cf97d124094eff922e608cc7050ea4e9a387874a3ac205",
+          "workload.json": "941f455f8fe2bf81f7c127e4ff63ef247465848c74cd99728c21903fc95968c3"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 8313,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "5f408a4639113f739b8b3096111af1067edb1793d856db20c040c9380dbbd879"
+      },
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "eligible_snapshots": 192,
+      "eligible_candidates": 6408
+    },
+    {
+      "factor": 2.0,
+      "identity": {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "e3d76b2daff040e6d783cd0ce8a81766b98ea996cf02c1111f4fe3529576c77a",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 2.0,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "1d9fd1d7c27d7e9d8d6c8ba43c31687d043f3c65b3854f8dae30c26e459b6c36",
+          "workload.json": "0b16a262b43b6fb4f6e1f130dab3effaeb39d70ae27635f63d0590120c9d5a2b"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 11084,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "e110a35f4be9d40327139c7e587aa4c19898b89f290ce43c7a1261eac6e80399"
+      },
+      "common_end": "2023-05-03T14:00:00+00:00",
+      "eligible_snapshots": 192,
+      "eligible_candidates": 8074
+    }
+  ],
+  "A_cases": [
+    {
+      "case_id": "load-1-cpu_high",
+      "factor": 1.0,
+      "category": "cpu_high",
+      "time": "2023-05-01T10:45:00+00:00",
+      "selected_ids_sha256": "a901e93615751609d55ea943c80bb9930d6f90f2d2323c7b683b96303c747257",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-1-gpu_high",
+      "factor": 1.0,
+      "category": "gpu_high",
+      "time": "2023-05-02T14:45:00+00:00",
+      "selected_ids_sha256": "cfb90e0c56d60ced906ba2cc3a0c31ae112fcaed6bf808a347c941ad7ba4afd0",
+      "candidate_count": 22
+    },
+    {
+      "case_id": "load-1-low_pressure",
+      "factor": 1.0,
+      "category": "low_pressure",
+      "time": "2023-05-01T05:00:00+00:00",
+      "selected_ids_sha256": "f6dcf6517ac506ec0423e1d23afa2ff3426693143cc7a87bb7b4d8675015b9c2",
+      "candidate_count": 18
+    },
+    {
+      "case_id": "load-1.5-cpu_high",
+      "factor": 1.5,
+      "category": "cpu_high",
+      "time": "2023-05-01T10:30:00+00:00",
+      "selected_ids_sha256": "ca2ce7d983e180a920b0ed03e5d30a52e03c040a1f6db3d8a96039eef25d3140",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-1.5-gpu_high",
+      "factor": 1.5,
+      "category": "gpu_high",
+      "time": "2023-05-02T14:45:00+00:00",
+      "selected_ids_sha256": "230c4246d1519c31686406948cdc73ae894f803eac201a630b962c9836423c63",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-1.5-queue_long",
+      "factor": 1.5,
+      "category": "queue_long",
+      "time": "2023-05-01T11:00:00+00:00",
+      "selected_ids_sha256": "3d6fc0c5d5d0d40dbb559347d806e2d3f90dca32aea7adabc292081cd9af35ec",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-1.5-low_pressure",
+      "factor": 1.5,
+      "category": "low_pressure",
+      "time": "2023-05-01T05:00:00+00:00",
+      "selected_ids_sha256": "1d2ded47295a44d7327bdc63d47dac86629aba724b8cfbb196a68cb45062e22f",
+      "candidate_count": 27
+    },
+    {
+      "case_id": "load-2-cpu_high",
+      "factor": 2.0,
+      "category": "cpu_high",
+      "time": "2023-05-01T10:30:00+00:00",
+      "selected_ids_sha256": "aac9dcdf0d506d0012530ebf993c211fb40c8b0f72540824eb427ca404e4a07e",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-2-gpu_high",
+      "factor": 2.0,
+      "category": "gpu_high",
+      "time": "2023-05-02T16:45:00+00:00",
+      "selected_ids_sha256": "217412a093348a4f22f9e6193530049b5e570b329a9df1a09ddc49177546a4af",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-2-queue_long",
+      "factor": 2.0,
+      "category": "queue_long",
+      "time": "2023-05-01T11:00:00+00:00",
+      "selected_ids_sha256": "13d3ea503e32e2c1e16917ccac615480400dc033c991c4edbde34da083d47600",
+      "candidate_count": 40
+    },
+    {
+      "case_id": "load-2-low_pressure",
+      "factor": 2.0,
+      "category": "low_pressure",
+      "time": "2023-05-01T05:00:00+00:00",
+      "selected_ids_sha256": "9c00388c9517c31e4b158d6e75c32c112aec9817c398632d3d6a50a543874bdf",
+      "candidate_count": 36
+    }
+  ],
+  "C_cases": [
+    {
+      "case_id": "load-1.5-gpu_tight",
+      "factor": 1.5,
+      "category": "gpu_tight",
+      "time": "2023-05-02T14:45:00+00:00",
+      "task_id_sha256": "6f8984621e35c4143856a77a4aa864f1d1cc8577d2eb9a40b2cbc3320bab3bc2"
+    },
+    {
+      "case_id": "load-1.5-cpu_tight",
+      "factor": 1.5,
+      "category": "cpu_tight",
+      "time": "2023-05-03T03:30:00+00:00",
+      "task_id_sha256": "5b3b7913d9892040bc2751b536e638af7932ad5d0d46e6fc6285df3464f18b71"
+    },
+    {
+      "case_id": "load-1.5-history_high",
+      "factor": 1.5,
+      "category": "history_high",
+      "time": "2023-05-01T05:15:00+00:00",
+      "task_id_sha256": "19c6e5d5c01078695f86a2f394c470ea7d7c9ff13d666a211406626c412fd16d"
+    },
+    {
+      "case_id": "load-1.5-history_low",
+      "factor": 1.5,
+      "category": "history_low",
+      "time": "2023-05-02T04:30:00+00:00",
+      "task_id_sha256": "639debfd268708426e45d6e7ad984b89b56646e6b7a291426ba3702bba108daf"
+    },
+    {
+      "case_id": "load-1.5-short_slack",
+      "factor": 1.5,
+      "category": "short_slack",
+      "time": "2023-05-01T05:00:00+00:00",
+      "task_id_sha256": "589280c0af6cdb1cb83167bf59a230872433f2bb5a0fd6986cbf1d3eeab6800b"
+    },
+    {
+      "case_id": "load-1.5-long_slack",
+      "factor": 1.5,
+      "category": "long_slack",
+      "time": "2023-05-01T10:00:00+00:00",
+      "task_id_sha256": "68699e11946b2f5e125f9c9f38bc77a5a632dcc82cbc623b0bc619d9b5727852"
+    },
+    {
+      "case_id": "load-2-gpu_tight",
+      "factor": 2.0,
+      "category": "gpu_tight",
+      "time": "2023-05-02T15:30:00+00:00",
+      "task_id_sha256": "b9a1c725a359ff1c35198e8eaf48e47d850fc68b03cf651f4aedd67bd1629914"
+    },
+    {
+      "case_id": "load-2-cpu_tight",
+      "factor": 2.0,
+      "category": "cpu_tight",
+      "time": "2023-05-03T03:45:00+00:00",
+      "task_id_sha256": "865ab32edeb82f8d7ad654ab6a9bf2ea3fa8dd4fa89e7d33bb2cd5ff12ab9b8e"
+    },
+    {
+      "case_id": "load-2-history_high",
+      "factor": 2.0,
+      "category": "history_high",
+      "time": "2023-05-01T05:15:00+00:00",
+      "task_id_sha256": "19c6e5d5c01078695f86a2f394c470ea7d7c9ff13d666a211406626c412fd16d"
+    },
+    {
+      "case_id": "load-2-history_low",
+      "factor": 2.0,
+      "category": "history_low",
+      "time": "2023-05-02T04:30:00+00:00",
+      "task_id_sha256": "639debfd268708426e45d6e7ad984b89b56646e6b7a291426ba3702bba108daf"
+    },
+    {
+      "case_id": "load-2-short_slack",
+      "factor": 2.0,
+      "category": "short_slack",
+      "time": "2023-05-01T05:00:00+00:00",
+      "task_id_sha256": "589280c0af6cdb1cb83167bf59a230872433f2bb5a0fd6986cbf1d3eeab6800b"
+    },
+    {
+      "case_id": "load-2-long_slack",
+      "factor": 2.0,
+      "category": "long_slack",
+      "time": "2023-05-01T10:00:00+00:00",
+      "task_id_sha256": "68699e11946b2f5e125f9c9f38bc77a5a632dcc82cbc623b0bc619d9b5727852"
+    }
+  ],
+  "missing_categories": [
+    {
+      "category": "queue_long",
+      "experiment": "A",
+      "factor": 1.0,
+      "reason": "no eligible distinct snapshot"
+    }
+  ],
+  "boundary": "Derivative omits full pending IDs, task payloads and CI/weather; not the full replay manifest."
+}

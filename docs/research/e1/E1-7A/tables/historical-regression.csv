@@ -1,0 +1,10 @@
+factor,policy,exact_scientific_files,passed
+1.0,edf_backfill,8,True
+1.0,edf_carbon_threshold,8,True
+1.0,cars_risk_only,8,True
+1.5,edf_backfill,8,True
+1.5,edf_carbon_threshold,8,True
+1.5,cars_risk_only,8,True
+2.0,edf_backfill,8,True
+2.0,edf_carbon_threshold,8,True
+2.0,cars_risk_only,8,True
