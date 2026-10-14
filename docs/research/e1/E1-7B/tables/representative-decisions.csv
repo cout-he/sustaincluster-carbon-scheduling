@@ -1,0 +1,4 @@
+policy,time,ci,defer,reason,gain_it,gain_total,buffer
+m0,2023-05-01T05:00:00+00:00,159.32,False,carbon_gain_insufficient,,,2
+m2,2023-05-01T05:00:00+00:00,159.32,True,carbon_gain_positive,0.0005569763413544168,0.0020751264582920216,2
+m2,2023-05-01T05:15:00+00:00,159.32,False,deadline_guard,,,2

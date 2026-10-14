@@ -1,0 +1,7 @@
+split,factor,same_id_time_events,decision_changed,caveat,m2_valid,it_total_sign_changes,positive_gains,negative_gains,zero_gains
+train,1.0,14199,1194,different policy trajectories; matched ID/time does not ensure identical background,12100,2157,11321,779,0
+train,1.5,18933,1461,different policy trajectories; matched ID/time does not ensure identical background,15553,3037,14501,1052,0
+train,2.0,22123,1441,different policy trajectories; matched ID/time does not ensure identical background,17029,3112,15816,1213,0
+validation,1.0,17152,1503,different policy trajectories; matched ID/time does not ensure identical background,13107,2828,11942,1165,0
+validation,1.5,21836,1825,different policy trajectories; matched ID/time does not ensure identical background,13542,3123,12912,630,0
+validation,2.0,22367,986,different policy trajectories; matched ID/time does not ensure identical background,10470,2578,9938,532,0

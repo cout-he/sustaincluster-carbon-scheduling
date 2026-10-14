@@ -1,0 +1,7 @@
+node,description
+Known state,Current tasks/resources/CI/weather
+Forecast,Causal CI + weather persistence
+Gain,Train IT + HVAC; NOW vs +15min
+Guard,RiskOnly buffer; no SLA guarantee
+PPO,0 immediate / 1 moderate / 2 positive
+Executor,Original LocalExecutor + real IT/HVAC

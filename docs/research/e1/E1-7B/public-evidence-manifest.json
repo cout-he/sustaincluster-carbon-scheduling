@@ -1,0 +1,99 @@
+{
+  "all_completed": true,
+  "evidence": {
+    "calibration-003": {
+      "freeze.json": "5496552690d79a644f67f24cbade97aaec08c235f55913d2eb8e67218a1123e4",
+      "provenance.json": "61f15c0be6974f25c4d56e2fe24bbfec888fdacbc8ecd559848030f57f25076e",
+      "run_status.json": "fe98b2f5a65feed1f5a505b35e0430617dc7228c31b45c0581e653ed1b5d97a8"
+    },
+    "paired-analysis-002": {
+      "provenance.json": "ceff2f880fb0ccfde37dfdb36e6516a5304ce2aa5591fbaa94466179762b2f6c",
+      "run_status.json": "27edca24048b98d306dfe608acf6fceab771eac0e935f4905a5f442756e6e9f8"
+    },
+    "power-domain-001": {
+      "provenance.json": "960f4b9be015371861d7deeda84460c5e72acdd70f22170422be8af9269da3a1",
+      "run_status.json": "0559e585cff0199021d8e2ae3b9bf4a007b86bdcb74dc99d3452f2561c0e7945"
+    },
+    "protection": {
+      "authorized_changed_files": [
+        "experiments/e1/engine.py"
+      ],
+      "authorized_compatibility_hook_verified": true,
+      "authorized_new_porcelain_paths": [],
+      "changed": [
+        "experiments/e1/engine.py"
+      ],
+      "git_metadata_equal": true,
+      "git_state_equal": true,
+      "old_files": 226216,
+      "passed": true,
+      "raw_git_after": {
+        "branch": "research/e1-carbon-deadline",
+        "head": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+        "main": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+        "status": "M evaluate_sustaincluster_agent.ipynb\n?? .gitattributes\n?? RESEARCH_README.md\n?? docs/research/\n?? experiments/\n?? requirements-e1-diagnostics.txt\n?? requirements-e1-ppo.txt\n?? research_notes/\n?? tests/e1/"
+      },
+      "raw_git_before": {
+        "branch": "research/e1-carbon-deadline",
+        "head": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+        "main": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+        "status": "M evaluate_sustaincluster_agent.ipynb\n?? .gitattributes\n?? RESEARCH_README.md\n?? docs/research/\n?? experiments/\n?? requirements-e1-diagnostics.txt\n?? requirements-e1-ppo.txt\n?? research_notes/\n?? tests/e1/"
+      },
+      "scope": "metadata-all; current code/config/test and M0 content SHA; no Test payload reads",
+      "unexpected_additions": [],
+      "unexpected_changed_files": []
+    },
+    "rl-interface-003": {
+      "interface-result.json": "55b5be8d84f9f1e2460a42bb89506abae294affe798bd6047379e10e4f1d3d5d",
+      "output-hashes.json": "7164f40cf299495e5fddc3e6784edeac1ba904307902beaa1715a0de8f28faf4",
+      "run_status.json": "1d42fbee39b7a91387dee7a522d8b59d6f3db51c71f470ad052de814d60798b9"
+    },
+    "test_logs": {
+      "full-tests-003.txt": "c6527f5bf68f0cb4d1292a8af691b9afdaa07016a573c31d65431ae18f3429e2",
+      "publication-tests-001.txt": "c02befeca7a20cec935be8010e92ab42ed5568eeb8b5dc49beedff5ffcb56a08",
+      "unit-tests-005.txt": "a9f861d2ad535f185225a4f38e8d7f52708b78d748cee63c957d07489e91e999"
+    },
+    "train-002": {
+      "freeze.json": "5496552690d79a644f67f24cbade97aaec08c235f55913d2eb8e67218a1123e4",
+      "provenance.json": "36d4aea994dfe4b496703fbc272d111ca82105d03f54a3097dc69ba9fe60b677",
+      "run_status.json": "c93c0fe0c8b071c7e89b072e68877aceb60a0aec5274544cea1ef301fc20112f"
+    },
+    "train-replay-001": {
+      "freeze.json": "5496552690d79a644f67f24cbade97aaec08c235f55913d2eb8e67218a1123e4",
+      "provenance.json": "4c576b0cc1b4e519ab965800edb86143ae474a89bb0a6037c1056fbd2dcdcafe",
+      "replay-receipt.json": "e65ea9c92ae531ba9d6a712ff7491832e9d34a9fd70a4fb32fbbc4783a6e291b",
+      "run_status.json": "aa71b17ccb9a56477605754e4257e011d78e54c4ef14833e5e71d18d3248c68e"
+    },
+    "validation-001": {
+      "freeze.json": "5496552690d79a644f67f24cbade97aaec08c235f55913d2eb8e67218a1123e4",
+      "provenance.json": "32455cd8df7f7b4a4a79d15335fea800344a17a73209a1ac8ba6fbeb116671ea",
+      "run_status.json": "f21a4885f98d615483b348ed3bdc97fc4b7053cd3c707104aaa8f4b3b313b576"
+    }
+  },
+  "figure_manifest_sha256": "5d32216e2275be0cbc949fed25c52991bb106f69c1e8befbe24c25af6a4f6747",
+  "figures_report_sha256": "6d5b407b2c370aae4eff42f02fba8161184e9fc1ef096a1788aef335398a9034",
+  "formal_ppo": false,
+  "historical_regression_files": 144,
+  "model_freeze_sha256": "5496552690d79a644f67f24cbade97aaec08c235f55913d2eb8e67218a1123e4",
+  "own_reports": {
+    "E1-7B-ablation.md": "1b3361cb177a49fcdd3ce979e0de4bddd7daa8943e677c3038f0028df6a2a466",
+    "E1-7B-ci-forecast.md": "28c73fbca4495aa14009fac12302215fa67e6e974cfdbc99130571627bb9377b",
+    "E1-7B-code-adaptation.md": "9a7a6ee1eca17e66a17370ddc38b88a90cf00a8c7b7c1b7719a26a59142b616e",
+    "E1-7B-delivery.md": "e028e600e24111e6ea210dcd437e9d0b233dfcfd28020390884892065630cade",
+    "E1-7B-experiments.md": "103237b95849104a406915308aecf71e0c27739df1ab3cc0a5d524577edabba4",
+    "E1-7B-figure-contract.md": "86e99a6bb8e16f6411de6a6db43174d6c757a6e727124d82cb03da8175df6ba7",
+    "E1-7B-figures.md": "6d5b407b2c370aae4eff42f02fba8161184e9fc1ef096a1788aef335398a9034",
+    "E1-7B-implementation-plan.md": "b760d53086792e7cd63aa3d5b7bbe4578f61f2371548613eb3ed24c8ec37b1b1",
+    "E1-7B-method.md": "c5ca6631a40a9371122795bbcc34b3a03ea4cfa9ddc7132638deb97252fce454",
+    "E1-7B-policy-and-rl-interface.md": "8dd3b243729acd0b657f9381a54d35757734cceb457c703a1d0242412f547912",
+    "E1-7B-power-surrogate.md": "89a4e0346b1504ff88c1d71a3c17ec35d6bff9d971fe32311cfa487c391334c8",
+    "E1-7B-reproduce.md": "b24a3ea161912ad1c51f0a98c92c365de19d0d5eec6ebd2aadacb566861d2fcf",
+    "E1-7B-review.md": "5729814a2b3ca00bb2f4bd8d41c649dd71ea230935fa20f9a952448ce0c85998",
+    "E1-7B-tests.md": "cc56b65ad86c718d38417bd4bfd78a65ccb02fc42626a3161e90afb7ef690924",
+    "PUBLICATION.md": "ef6ee17fb29c420e08c985a820d2ee02dbbc4428c9ef4d24c8de2dc95c411b25",
+    "README.md": "74a3a49de3d24f6c1784b618401ea3bc7e48b1df4010b6f3f140cd0c3e0d8b1f"
+  },
+  "schema": "e1-7b-evidence-v1",
+  "source_commit": "afe9d89b87b609c5bd69eb7ecd4050c5d1180e53",
+  "test_access": false
+}

@@ -1,0 +1,25 @@
+{
+  "calibration_rows_sha256": "2f724f2e2aa4a96da0add577302ddc71ee200b887441466c87ccdb444944bb1f",
+  "fit_role": "train",
+  "hvac": {
+    "clipped": 0,
+    "condition": 558.0398148039769,
+    "mae": 27.11724018925823,
+    "rank": 5,
+    "rmse": 35.33050012007897,
+    "samples": 2052
+  },
+  "it": {
+    "condition": 22.662725180003992,
+    "mae": 2.319666620047275,
+    "rank": 4,
+    "rmse": 3.163228897534332,
+    "samples": 228
+  },
+  "model_kind": "static quadratic HVAC, alpha=0; not physical inertia",
+  "propagated_hvac": {
+    "mae": 27.91895893406354,
+    "rmse": 39.87176404954351
+  },
+  "version": "e1-7b-power-surrogate-v1"
+}

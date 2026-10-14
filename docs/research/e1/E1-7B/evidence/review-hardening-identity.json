@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "model": true,
+    "moderate_threshold_kg": true,
+    "input_identities": true,
+    "prehistory_sha256": true,
+    "fit_report_sha256": true,
+    "positive_samples": true,
+    "opportunities.jsonl": true,
+    "forecast-summary.csv": true,
+    "forecast-points.csv": true,
+    "fit-report.json": true
+  },
+  "parameter_tuning": false
+}

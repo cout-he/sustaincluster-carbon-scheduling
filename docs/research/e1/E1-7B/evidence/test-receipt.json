@@ -1,0 +1,26 @@
+{
+  "schema": "e1-7b-public-test-receipt-v1",
+  "source_commit": "afe9d89b87b609c5bd69eb7ecd4050c5d1180e53",
+  "command": "python -m pytest tests/e1 tests/test_model.py -q",
+  "logs": [
+    {
+      "source_log": "full-tests-003.txt",
+      "source_sha256": "c6527f5bf68f0cb4d1292a8af691b9afdaa07016a573c31d65431ae18f3429e2",
+      "exact_ascii_pytest_summary": "729 passed in 1069.16s (0:17:49)"
+    },
+    {
+      "source_log": "publication-tests-001.txt",
+      "source_sha256": "c02befeca7a20cec935be8010e92ab42ed5568eeb8b5dc49beedff5ffcb56a08",
+      "exact_ascii_pytest_summary": "727 passed, 2 skipped in 578.90s (0:09:38)"
+    },
+    {
+      "source_log": "unit-tests-005.txt",
+      "source_sha256": "a9f861d2ad535f185225a4f38e8d7f52708b78d748cee63c957d07489e91e999",
+      "exact_ascii_pytest_summary": "86 passed in 8.25s"
+    }
+  ],
+  "private_archive_skips": 2,
+  "test_access": false,
+  "formal_ppo": false,
+  "note": "UTF-8 derivative of recorded pytest summaries; raw mixed-encoding WSL logs remain local."
+}

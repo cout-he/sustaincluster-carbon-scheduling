@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "factor": 1.0,
+      "file": "ledger.jsonl",
+      "sha256": "4bd5bba3e85c572d1b82819c506cafe84ad7cb18c8c30413e71aaef100990829",
+      "split": "train"
+    },
+    {
+      "factor": 1.0,
+      "file": "intervals.csv",
+      "sha256": "6048fe813ea31e95f220371f85f2b69e46c8895f10fffa94c06efc2b24e551da",
+      "split": "train"
+    },
+    {
+      "factor": 1.5,
+      "file": "ledger.jsonl",
+      "sha256": "ebca342bcedf06b23e93b91a1139d54c3ea9955c66152271c910c398bd8a3248",
+      "split": "train"
+    },
+    {
+      "factor": 1.5,
+      "file": "intervals.csv",
+      "sha256": "b3ae1d6c9b399c08b38574612761e6f9e30cd5fdb21407c3b0ef101f212820d7",
+      "split": "train"
+    },
+    {
+      "factor": 2.0,
+      "file": "ledger.jsonl",
+      "sha256": "aa77a3dd24b17aa01ae7e4a650510eb4ce45f9f6b50723732bb272e9166d08a4",
+      "split": "train"
+    },
+    {
+      "factor": 2.0,
+      "file": "intervals.csv",
+      "sha256": "9815fe0da1945a947d0f1310597153ae342ba2410ff92749e1e4e95a315470db",
+      "split": "train"
+    },
+    {
+      "factor": 1.0,
+      "file": "ledger.jsonl",
+      "sha256": "46b7bbaaebefde42cdcdc058d5d5fa4af4bd6ac1f349a97fbc925aac57b09e17",
+      "split": "validation"
+    },
+    {
+      "factor": 1.0,
+      "file": "intervals.csv",
+      "sha256": "ce0b826c0f56112c1e60631b0cd911768215d13540832885d5a8d62f87a94117",
+      "split": "validation"
+    },
+    {
+      "factor": 1.5,
+      "file": "ledger.jsonl",
+      "sha256": "06a38ee5a5451e9f4efa733da89efef9a3e7887d2d7718f3bf4f2099667ec060",
+      "split": "validation"
+    },
+    {
+      "factor": 1.5,
+      "file": "intervals.csv",
+      "sha256": "40fccbf0df589dd73eeefe8cb503fec67831d6267bf88dbc707166aea2ea35bf",
+      "split": "validation"
+    },
+    {
+      "factor": 2.0,
+      "file": "ledger.jsonl",
+      "sha256": "2774324a50bbe52dd22676f6cc9bef6ec55873a80c57ed67b33ba17921dce353",
+      "split": "validation"
+    },
+    {
+      "factor": 2.0,
+      "file": "intervals.csv",
+      "sha256": "d537b1010db1b38c307d507098a3dce2a6ad314b30ceeeeca28577384ec54289",
+      "split": "validation"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,151 @@
+{
+  "payload": {
+    "config_sha256": "86a93b3429fb0100c1276f3ef88ea35b19e2989f7ecc7e349cc1a4ce68e3226a",
+    "fit_report_sha256": "2240cd5434ce19fa31744128f79dbb5d2989debf3b9b9af97d435731f558d7be",
+    "fit_role": "train",
+    "input_identities": [
+      {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "bf80a31419983606431775f101141cdf7bb4de69f75180c77553a4b3c31a0d45",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 1.0,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "cd474281e1dc51f8016994846fdc1fe17827dc7a39e0f367ae74fa729cc34642",
+          "workload.json": "00ffbcab7beac2073d6d074c11cefd85ab562c6f2b51882b3e40f8a801a79580"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 5542,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "4a2249a1f42ebf7bda6a1388038e03596084b648e2c99e99196220a8be927862"
+      },
+      {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "4e02f1a1525c2de262ce25970674badd2e620177820951cb7c4cf1c1d8f686b6",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 1.5,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "26c9e38f613377ecf0cf97d124094eff922e608cc7050ea4e9a387874a3ac205",
+          "workload.json": "941f455f8fe2bf81f7c127e4ff63ef247465848c74cd99728c21903fc95968c3"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 8313,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "5f408a4639113f739b8b3096111af1067edb1793d856db20c040c9380dbbd879"
+      },
+      {
+        "base_tasks": 5542,
+        "bundle_manifest_sha256": "e3d76b2daff040e6d783cd0ce8a81766b98ea996cf02c1111f4fe3529576c77a",
+        "capacity": [
+          50000,
+          1000,
+          80000
+        ],
+        "config_sha256": "65e4f2fce03fbef88c16dac980cdf1104a2ca547a787802604e0e9242d5d7228",
+        "environment_sha256": "5aa2e4016f39c2230fa462349c7d1316e364d9364c9d4791feb3a580732bdb3c",
+        "factor": 2.0,
+        "files": {
+          "config.json": "9f4d7032a8a4f3b493c903ab946f0b82833f84fa70f706aea3f94c0a4a440cde",
+          "dc_config.json": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "environment.json": "2444b2bf2e06b274791f5de5d22977db80a46f577ee26c18960d460ec73ca56d",
+          "parameters.json": "f1eaa0dd0e9910346ed2eb4d8f79b94d19fe236d6d5372d1e5e2263647510ca6",
+          "stress.json": "1d9fd1d7c27d7e9d8d6c8ba43c31687d043f3c65b3854f8dae30c26e459b6c36",
+          "workload.json": "0b16a262b43b6fb4f6e1f130dab3effaeb39d70ae27635f63d0590120c9d5a2b"
+        },
+        "raw_source_sha256": {
+          "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+          "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+          "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+          "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+        },
+        "schema": "e1-5b-input-bundle-v1",
+        "split": "train",
+        "stress_seed": 510001,
+        "tasks": 11084,
+        "test_evaluation": false,
+        "threshold_g_per_kwh": 161.075,
+        "workload_sha256": "e110a35f4be9d40327139c7e587aa4c19898b89f290ce43c7a1261eac6e80399"
+      }
+    ],
+    "model": {
+      "alpha": 0.0,
+      "capacity": [
+        50000,
+        1000,
+        80000
+      ],
+      "hvac_coefficients": [
+        709.3680732899232,
+        -1639.1563994606395,
+        2632.9607986899114,
+        -3776.389081637319,
+        5897.080879538983
+      ],
+      "hvac_max_kw": 7060.462433101236,
+      "it_fit_range": [
+        477.4531333333336,
+        906.5416686268776
+      ],
+      "it_intercept_kw": 481.74219482679314,
+      "it_slopes": [
+        0.006057597263255481,
+        0.20170296669591486,
+        0.00030406553348940197
+      ],
+      "temperature_fit_range": [
+        9.2,
+        14.9
+      ],
+      "version": "e1-7b-power-surrogate-v1"
+    },
+    "moderate_definition": "positive M2 gains at all guard-eligible actual EDF candidates in Train three loads",
+    "moderate_threshold_kg": 0.030622302469263302,
+    "positive_samples": 12852,
+    "prehistory_sha256": {
+      "1": "a29aae0d4d0ea65cdbdf3599755422c026032d0c56afb480aad3780a57ce7663",
+      "1.5": "a29aae0d4d0ea65cdbdf3599755422c026032d0c56afb480aad3780a57ce7663",
+      "2": "a29aae0d4d0ea65cdbdf3599755422c026032d0c56afb480aad3780a57ce7663"
+    },
+    "schema": "e1-7b-calibration-v1",
+    "source_sha256": "5638fdb53cd7c20a11927b2776ed05a1418c1d9651ca00ad3c1c94c060c2be59",
+    "test_access": false
+  },
+  "sha256": "4f5ddb269277fb4f9207777c00dc0b2b512a32a0acc429f584137cea3ba42a24"
+}

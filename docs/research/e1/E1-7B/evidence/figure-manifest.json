@@ -1,0 +1,42 @@
+{
+  "script_sha256": "f7c495700dba7213441ad18965dab3fc6affc70d6e2ffb49be3cea40ba60ceb2",
+  "source_csv_sha256": {
+    "architecture.csv": "6f9304b87696afe49ffe7153711a985d679d62b09f77c65e99e61d4cf26d39b3",
+    "comparison.csv": "7701cb59ac205bbebfd860f5d9682f75e23bdb7261d1b7018d2c096cf280d51c",
+    "decision-changes.csv": "262ff5f4f21fee69d2c556451e03c578a6b889ada5aa1b73a7199b3dda2a26a3",
+    "forecast-development-validation.csv": "922700a58b61af5aae6913cae3a9cbd5aca462f1a3e48dec58821931263e1b04",
+    "forecast-errors.csv": "1f98cd649a11d1229e45731c83467ac9b1f0d03ad081561c46e6423219679e1d",
+    "gain-distribution.csv": "cb2cae4a4a65872b9e3413236bf65ae43cc6216cd7b077b433e633836963a869",
+    "power-model-quality.csv": "d7b2b6c1755bb62396bbe3c0685e31f06b8272ee9a4a9324b23f0dbc58a7c97b",
+    "registered-predictions.csv": "8fd7bde0df48bc8556b892bd8de6fdb14820a0a3d979aba0d7daebabb5c59265",
+    "representative-decisions.csv": "f2e80de1500a6ed247028dbfcefa968631743ede348e5f2861a1710cbc7383f5",
+    "representative-task.csv": "f1295884b3a6992a92cb85e2364971bb956523727d663915b9b3c201600022bc",
+    "runtime.csv": "a529d72ee6679f066e1e973b4f1bbc3ba27ca684a9562ce3b675dcdc7dd877d4",
+    "start-deviation.csv": "29edd7290a72d167616db14b0f21f0dcc824d657ac4ee0dbd8528a89101b1e99"
+  },
+  "outputs": {
+    "figure1-architecture.pdf": "064a5255f83f1cf3be3d4ed8be3fe511d57ad62cd7dd1e88a2f28005327577b3",
+    "figure1-architecture.png": "fb560b92baee5cc1af3669716672e69549b3d319cd4c35256493c5436b7d2097",
+    "figure1-architecture.svg": "8155910abf6657306ab345db81c6a592e3207bae3cc8f34679595dff135d2dc4",
+    "figure2-ci-errors.pdf": "ecffd93d6762c95528905d584e27ccc36f3ae0d6c88a2e60acf2fb33d88844ef",
+    "figure2-ci-errors.png": "cb911f3d7ac363ba34fdd8ddfd3d76761593827581ef478ae4f8733189c6ae4d",
+    "figure2-ci-errors.svg": "c68b384aab74d2f1bd70abb811c5e0be5f9f0ca2b24b7774eecb5781f5872314",
+    "figure3-gain-vs-total.pdf": "1f115d88fb20e4dee1c31c76af6decf802d7961b013a2e4f4749ded0b4c79308",
+    "figure3-gain-vs-total.png": "5cdc0f85c51ba2003573c30aa5e71354b5450e1c2e4aae34b6ee970ff89c0285",
+    "figure3-gain-vs-total.svg": "f8466cdf5db8a4fee5dfc4b4d9b54e46f66866c28c2c5a7bbc50f520be16b9eb",
+    "figure4-fixed-policy-tradeoff.pdf": "04d2049125b382474b24168775fcd5124df550f369568fc6b645ddf94def6989",
+    "figure4-fixed-policy-tradeoff.png": "11195d0306f15febe4f5924ddfa156da3e9af4f48946ee6f41f0eddf07f27137",
+    "figure4-fixed-policy-tradeoff.svg": "fe8747924c00f31c3b1696d2b4f655e392ed5ffea05579ac3f97ed978f407f39",
+    "figure5-task-timeline.pdf": "4d165768c9c38fa4469f669e03d6abbbe1dbc7bd2d31910cdccd792c10025763",
+    "figure5-task-timeline.png": "8b5b16b035912c8a3bd8a8c770334ac10bf1aedc13c9a3dbb76e652f9b391c3f",
+    "figure5-task-timeline.svg": "c91b934e5fa7b5ffd589ab6ffcb75f5a9838b5c6812df05f2740a70fa443a1ca",
+    "figure6-overhead.pdf": "36bce6f0c9742fa753e6636d52f4de1a0c3417849a5deaae13a14041d17ce223",
+    "figure6-overhead.png": "690931df894778c2707371c707a7498a93ffdfdb6531f73df5291eaf76db76a1",
+    "figure6-overhead.svg": "bf280dd95aca1ba00a6ae2d128c93f890e613d80342e481396a9f4515fe84f51"
+  },
+  "backend": "python",
+  "dpi": 300,
+  "font_floor_pt": 7,
+  "data": "all registered observations; identical CI copies plotted once, M0 equals RiskOnly",
+  "statistics": "one deterministic run per scenario; no independent seeds/CI replicates or significance inference"
+}

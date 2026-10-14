@@ -1,0 +1,60 @@
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure1-architecture.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 21,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure2-ci-errors.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 34,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure3-gain-vs-total.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 31,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure4-fixed-policy-tradeoff.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 62,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure5-task-timeline.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 13,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
+{
+  "pdf": "D:\\A-myprofile\\SustainCluster\\upstream\\research_notes\\E1\\E1-7B\\figures-002\\figure6-overhead.pdf",
+  "auditable": true,
+  "minimum_required_pt": 7.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 32,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
