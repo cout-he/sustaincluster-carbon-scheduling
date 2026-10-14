@@ -181,6 +181,9 @@ class LocalExecutor:
                 raise ValueError('Policy order must preserve every immutable pending task exactly once')
             self.pool.pending_tasks = deque(self.ledger[s.task_id]['task'] for s in ordered)
             context = DecisionContext(time, sample.ci_g_per_kwh)
+            # Optional causal sensor: current scalars only, never the calendar.
+            if hasattr(self.policy, 'on_step_environment'):
+                self.policy.on_step_environment(sample)
             # Optional observed-state notifications. Legacy policies take exactly
             # their original path; no Task, pool, future arrivals or CI are exposed.
             if hasattr(self.policy, 'on_step_start'):
@@ -245,6 +248,9 @@ class LocalExecutor:
             power = self.power_model.measure(*fractions, sample)
             self.steps.append(interval_record(time, sample, power, self.pool.capacity, used,
                                               len(self.pool.pending_tasks), len(self.pool.running_tasks)))
+            if hasattr(self.policy, 'on_interval_completed'):
+                from types import MappingProxyType
+                self.policy.on_interval_completed(MappingProxyType(dict(self.steps[-1])))
             detail.update(pending_end_ids=[t.job_name for t in self.pool.pending_tasks],
                           running_ids=[t.job_name for t in self.pool.running_tasks])
             self.policy_steps.append(detail)
