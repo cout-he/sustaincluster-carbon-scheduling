@@ -136,6 +136,13 @@ class dc_gymenv(gym.Env):
         
         self.info = {
             'dc_ITE_total_power_kW': 0,
+            'dc_CRAC_fan_power_kW': 0,
+            'dc_CT_fan_power_kW': 0,
+            'dc_CRAC_thermal_load_kW': 0,
+            'dc_CW_pump_electric_power_kW': 0,
+            'dc_CT_pump_electric_power_kW': 0,
+            'dc_joint_full_hvac_v1_power_kW': 0,
+            'dc_joint_full_total_v1_power_kW': 0,
             'dc_CT_total_power_kW': 0,
             'dc_Compressor_total_power_kW': 0,
             'dc_HVAC_total_power_kW': 0,
@@ -229,6 +236,15 @@ class dc_gymenv(gym.Env):
         # Update info dictionary with GPU information
         self.info = {
             'dc_ITE_total_power_kW': data_center_total_ITE_Load / 1e3,
+            # Additive, unit-explicit fields. Historical totals and the old
+            # mislabelled pump fields below retain their original meaning.
+            'dc_CRAC_fan_power_kW': self.CRAC_Fan_load / 1e3,
+            'dc_CT_fan_power_kW': self.CT_Cooling_load / 1e3,
+            'dc_CRAC_thermal_load_kW': self.CRAC_Cooling_load / 1e3,
+            'dc_CW_pump_electric_power_kW': self.CW_pump_load / 1e3,
+            'dc_CT_pump_electric_power_kW': self.CT_pump_load / 1e3,
+            'dc_joint_full_hvac_v1_power_kW': (self.CRAC_Fan_load + self.CT_Cooling_load + self.Compressor_load + self.CW_pump_load + self.CT_pump_load) / 1e3,
+            'dc_joint_full_total_v1_power_kW': (data_center_total_ITE_Load + self.CRAC_Fan_load + self.CT_Cooling_load + self.Compressor_load + self.CW_pump_load + self.CT_pump_load) / 1e3,
             'dc_CT_total_power_kW': self.CT_Cooling_load / 1e3,
             'dc_Compressor_total_power_kW': self.Compressor_load / 1e3,
             'dc_HVAC_total_power_kW': (self.CT_Cooling_load + self.Compressor_load) / 1e3,
