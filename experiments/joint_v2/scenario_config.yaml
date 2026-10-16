@@ -1,0 +1,21 @@
+{
+  "schema": "joint-v2-scenario-protocol-v1",
+  "seed": 20261016,
+  "train_environment_start": "2023-01-02T05:00:00Z",
+  "train_environment_end_exclusive": "2023-06-01T05:00:00Z",
+  "arrival_hours": 24,
+  "max_train_base_fragments": 16,
+  "development_starts": ["2023-06-05T05:00:00Z", "2023-06-20T05:00:00Z"],
+  "safety_tail_days": 30,
+  "maximum_environment_end": "2023-08-09T05:00:00Z",
+  "resource_pressure_factors": [0.75, 1.0, 1.25],
+  "sla_multipliers": [1.5, 2.0],
+  "resource_multiplier": 5.0,
+  "capacity": [50000, 1000, 80000],
+  "validation_bundle": "research_notes/E1/E1-5C/diagnostics-001/inputs/validation-1",
+  "test_access": false,
+  "sampler": {"max_high_pressure_probability": 0.15, "high_pressure_threshold": 1.0,
+    "stage0_high_load_weight": 0.1, "stage0_tight_deadline_weight": 0.2},
+  "augmentation": "multiply CPU/GPU/MEM demands only; retain every original task, arrival and duration; SLA changes are synthetic",
+  "source_independence": "original 1970 bucket and full raw-job fingerprints; disjoint selected base bucket sets; environmental remappings and augmentations are not independent observations"
+}
