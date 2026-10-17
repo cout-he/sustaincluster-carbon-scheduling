@@ -1,0 +1,48 @@
+{
+  "purpose": "engineering_acceptance_only",
+  "formal_budget_counted": false,
+  "episodes": [
+    {
+      "episode": 1,
+      "physical_steps": 120,
+      "scenario": "train-20230403T0500-r0.75-s1.5",
+      "arrived": 4891,
+      "completed": 4891,
+      "dmr": 0.0,
+      "temperature_violations": 0,
+      "fine_estimation_count": 1182,
+      "risk_unreliable_count": 4793,
+      "task_actions": 5007,
+      "task_ppo_updates": 4
+    },
+    {
+      "episode": 2,
+      "physical_steps": 241,
+      "scenario": "train-20230203T0500-r1-s2",
+      "arrived": 3001,
+      "completed": 3001,
+      "dmr": 0.0,
+      "temperature_violations": 0,
+      "fine_estimation_count": 808,
+      "risk_unreliable_count": 2877,
+      "task_actions": 3185,
+      "task_ppo_updates": 4
+    }
+  ],
+  "forecaster_audit": {
+    "calibration_label_end": "2023-05-04T04:45:00+00:00",
+    "calibration_origin_start": "2023-04-03T16:00:00+00:00",
+    "calibration_rmse_g_per_kwh": 29.915895939554265,
+    "calibration_vectors": 281,
+    "eligible_ci_sha256": "2374d5923869dccb39800a6b25dfbd3b4e5002b350448b6c45a804a2eaee556e",
+    "fit_label_end": "2023-04-03T15:45:00+00:00",
+    "fit_origin_start": "2023-01-02T06:45:00+00:00",
+    "fit_rows": 1108,
+    "fitting_rule": "chronological_80_percent_with_target_embargo",
+    "input_rule": "train_arrival_window_excluding_drain_tail",
+    "role": "train",
+    "unique_environments": 16,
+    "unique_observations": 1536
+  },
+  "test_access": false
+}

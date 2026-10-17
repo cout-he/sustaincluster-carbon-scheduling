@@ -1,0 +1,5 @@
+# Figure provenance and QA
+
+Method-framework is a conceptual diagram of the implemented causal information flow. It contains no experimental values. Python/matplotlib exports editable SVG and PDF and a600dpi PNG preview, at180.3mm width. The minimum PDF text size is7pt; static preflight has0failures. The final rendered diagram was inspected after moving the top box clear of the title and adding physical feedback to the critic.
+
+Acceptance training curves are local under research_notes/joint_v3/acceptance-001/figures. They depict only two actual engineering episodes on different Train scenarios; they do not establish convergence or a formal method effect. No smoothing, invented replicate or imputation is applied. Sources are the committed acceptance episodes.csv. Final formal plots use each job's actual episodes.csv and complete evaluation result CSVs; missing results remain absent. Sample standard deviation is shown only once all three real frozen seeds are available. PDF/SVG are the vector deliverables; PNG is a preview, not a claimed journal-specific raster submission format.

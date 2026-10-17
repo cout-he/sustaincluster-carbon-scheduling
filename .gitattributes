@@ -29,3 +29,8 @@ docs/research/e1/E1-7B/** -text -eol whitespace=blank-at-eol,blank-at-eof,space-
 # Preserve the V2 acceptance configuration and source bytes used by resume manifests.
 experiments/joint_v2/training_config.yaml -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 experiments/joint_v2/ppo.py whitespace=-blank-at-eof
+
+# V3 generated figure exports retain exact binary bytes.
+docs/research/joint/figures-v3/*.png -text -eol
+docs/research/joint/figures-v3/*.pdf -text -eol
+docs/research/joint/figures-v3/*.svg whitespace=-blank-at-eol

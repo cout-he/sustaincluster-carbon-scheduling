@@ -1,0 +1,208 @@
+{
+  "analysis": {
+    "aggregate_rows": 0,
+    "evaluation_files": 0,
+    "expected_seeds": [
+      20261017,
+      20261018,
+      20261019
+    ],
+    "figures": [],
+    "missing_values": "blank; never imputed",
+    "per_seed_rows": 0,
+    "protocol_sha256": "21cfad68aa4ce8252f0fc9ace4b38485f41a8b44b42076c3360dbe10bfeff446",
+    "role": "development",
+    "scenario_rows": 0,
+    "schema": "rac-mappo-actual-analysis-v1",
+    "sources": [],
+    "standard_deviation_rule": "sample std only after all three distinct frozen seeds complete",
+    "test_access": false,
+    "training_runs": 0
+  },
+  "campaign": "/mnt/d/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v3/formal-001",
+  "jobs": [
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "full-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "full"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "full-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "full"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "full-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "full"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_queue_risk-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "no_queue_risk"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_queue_risk-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "no_queue_risk"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_queue_risk-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "no_queue_risk"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_carbon_features-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "no_carbon_features"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_carbon_features-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "no_carbon_features"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_carbon_features-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "no_carbon_features"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_robust-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "no_robust"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_robust-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "no_robust"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_robust-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "no_robust"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "independent_critic-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "independent_critic"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "independent_critic-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "independent_critic"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "independent_critic-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "independent_critic"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_teacher-20261017",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261017,
+      "variant": "no_teacher"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_teacher-20261018",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261018,
+      "variant": "no_teacher"
+    },
+    {
+      "checkpoint_pointers": {},
+      "completed_episodes": 0,
+      "job": "no_teacher-20261019",
+      "phase": "pending",
+      "physical_steps": 0,
+      "result": null,
+      "seed": 20261019,
+      "variant": "no_teacher"
+    }
+  ],
+  "source_identity": "968d4650f11b3ec16beacc0b10ffd25f849265b15b94736963876d4ae65030c4",
+  "status": "prepared",
+  "test_access": false
+}
