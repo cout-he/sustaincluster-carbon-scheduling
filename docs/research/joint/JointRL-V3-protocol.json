@@ -214,7 +214,7 @@
   "maximum_concurrency": 3,
   "pool": "/mnt/d/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v2/scenarios-001",
   "pool_manifest_sha256": "327e941eaa715aa9d25a30601502183cae27c1e7a83b0da7f31e2c0e251775ca",
-  "protocol_sha256": "b884b9be437cf27c8102e2fb7caa44e0cfd3bde395704328c9e83b4731a02ebf",
+  "protocol_sha256": "b0762a157cb9f1dd4c18a84a34256b89de9ae3a8ebf9136c2598cd376e3db1c9",
   "schema": "rac-mappo-finite-pipeline-v1",
   "seeds": [
     20261017,
@@ -335,7 +335,7 @@
     "experiments/joint_v3/config.yaml": "499e3693a1fb54b9bbc02fb93eee08e8f38f49baef754d125dff7a94e3175857",
     "experiments/joint_v3/critics.py": "4de6c459b929084a25a1ac5046f54e38c6e7b42b50075400b22643eb94fa9cd0",
     "experiments/joint_v3/env.py": "fc3cf3847f6d9cc8ce8ed03d13f6db4642b00b45792097a00790e8099c4a35a1",
-    "experiments/joint_v3/evaluate.py": "2fdd53817abec7f6564fceedb5a3745205f071b85b97b6dd8689f7d58d82ce5b",
+    "experiments/joint_v3/evaluate.py": "2c5ce26bb6ac4f96514320501aadb0a971e2b6032e5a08a3e89860c311adcc24",
     "experiments/joint_v3/figures.py": "bec2a2f2af552349b10c0600623be1f60e70c05cc29089708cd82b6df4a466bf",
     "experiments/joint_v3/mappo.py": "1dee64a7995db9c14f0b4198c85c6ce212f0ad754485e21452a55e43813e650f",
     "experiments/joint_v3/mechanism_audit.py": "246da5d80c367dd7eb5a20ae1068597d186f58349576ea2846c6543e6b718c2a",
@@ -347,7 +347,7 @@
     "experiments/joint_v3/reward.py": "6450368df46b948f835c091b18ddc9b091fed3b46f7f36946f377e990a658ee9",
     "experiments/joint_v3/risk_estimator.py": "8dcf3d60614160d718da783ef79d12689d138c2cb7983984416ad4488ee0ee3d",
     "experiments/joint_v3/teacher.py": "da5210de02eeec8596d377c22fd7e911f52238a7404bf82e5237150f8cab3d3a",
-    "experiments/joint_v3/test_once.py": "e51c86090e3faed4e9242e470fd69eac23e4440ddfea16d7c9211e5d63d8ad8c",
+    "experiments/joint_v3/test_once.py": "387f937065a16430a2c8fc60427ff18be06cc1278a5aa82462103db9a7965745",
     "experiments/joint_v3/train.py": "e38a60cd19263a0fcec51f985c2d333b06d3136c30508ec00fff340a77a79d68",
     "experiments/joint_v3/uncertainty.py": "4ea58293457020df463961de43dcabe97f0eb96a3d7e7326c17560cb684976d1",
     "rl_components/task.py": "f6116d6c0c8d6474c8c316fa1f790deb84e9016811970bdabf76dc8cb743b6e9",
@@ -367,7 +367,16 @@
     "utils/utils_cf.py": "e32101b577c52c22278296d02a669f4a681dd5847157540c8abf2585c5c38965",
     "utils/workload_utils.py": "db779547296511998029e6636b62feec7028b8282b580ca43b24277f52a05130"
   },
-  "source_identity": "968d4650f11b3ec16beacc0b10ffd25f849265b15b94736963876d4ae65030c4",
+  "source_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+  "source_migrations": [
+    {
+      "certificate": "guard-migration-001/certificate.json",
+      "kind": "evaluation_and_test_identity_guards_only",
+      "new_source": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+      "old_source": "968d4650f11b3ec16beacc0b10ffd25f849265b15b94736963876d4ae65030c4",
+      "previous_protocol_sha256": "b884b9be437cf27c8102e2fb7caa44e0cfd3bde395704328c9e83b4731a02ebf"
+    }
+  ],
   "test_access": false,
   "variants": [
     "full",

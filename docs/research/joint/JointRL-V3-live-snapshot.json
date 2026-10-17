@@ -1,0 +1,204 @@
+{
+  "as_of_utc": "2026-10-17T07:14:20.380527+00:00",
+  "jobs": [
+    {
+      "checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 16,
+        "config_identity": "7da3b5cc18032217514660907954236f1eae198c2827d0299723e4741421fb09",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "9f4fb445446b04a1ca8686291087c9ead7786f0f6eebb351bbbb8848a23779e9.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "9f4fb445446b04a1ca8686291087c9ead7786f0f6eebb351bbbb8848a23779e9"
+      },
+      "committed_elapsed_seconds": 877.1293341410001,
+      "cooling_18_fraction": 0.982421875,
+      "cooling_states": 4096,
+      "development_best": {
+        "all_work_accounted": true,
+        "arrived": 5684,
+        "carbon_kg": 157743.31564116804,
+        "censored": 0,
+        "completed": 5684,
+        "deadline_key": [
+          0,
+          0,
+          0,
+          0.0,
+          157743.31564116804
+        ],
+        "deadline_misses": 0,
+        "dmr": 0.0,
+        "feasible": true,
+        "incremental_carbon_kg": 3375.779144490267,
+        "scenario_ids": [
+          "development-20230605T0500-r1-s1.5",
+          "development-20230620T0500-r1-s1.5"
+        ],
+        "temperature_violations": 0,
+        "unfinished": 0
+      },
+      "episodes": 26,
+      "job_id": "full-20261017",
+      "last_training_episode": {
+        "arrived": 3745,
+        "carbon_kg": 95810.5114460366,
+        "completed": 3745,
+        "dmr": 0.0,
+        "incremental_carbon_kg": 2016.5434052349938,
+        "temperature_violations": 0
+      },
+      "latest_checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 26,
+        "config_identity": "7da3b5cc18032217514660907954236f1eae198c2827d0299723e4741421fb09",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "468d32f945475fe77c83053c3b5ee37d6c97e39b80c66a81cdf41328b8a35631.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "468d32f945475fe77c83053c3b5ee37d6c97e39b80c66a81cdf41328b8a35631"
+      },
+      "physical_steps": 3047,
+      "seed": 20261017,
+      "selected_episode": 16,
+      "task_teacher_actions": {
+        "1": 5
+      },
+      "task_teacher_samples": 5,
+      "variant": "full"
+    },
+    {
+      "checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 16,
+        "config_identity": "409fd296969ff6106d364f9b5bc6a3af9ad9665fb7cd5a159989205d8470002a",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "8ea29aff5e13edc7fa684dd24885c669ebea387edd991537a9c862ed082a43b3.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "8ea29aff5e13edc7fa684dd24885c669ebea387edd991537a9c862ed082a43b3"
+      },
+      "committed_elapsed_seconds": 878.593226749,
+      "cooling_18_fraction": 0.982421875,
+      "cooling_states": 4096,
+      "development_best": {
+        "all_work_accounted": true,
+        "arrived": 5684,
+        "carbon_kg": 157740.82072093379,
+        "censored": 0,
+        "completed": 5684,
+        "deadline_key": [
+          0,
+          0,
+          0,
+          0.0,
+          157740.82072093379
+        ],
+        "deadline_misses": 0,
+        "dmr": 0.0,
+        "feasible": true,
+        "incremental_carbon_kg": 3373.2842242559814,
+        "scenario_ids": [
+          "development-20230605T0500-r1-s1.5",
+          "development-20230620T0500-r1-s1.5"
+        ],
+        "temperature_violations": 0,
+        "unfinished": 0
+      },
+      "episodes": 28,
+      "job_id": "full-20261018",
+      "last_training_episode": {
+        "arrived": 4891,
+        "carbon_kg": 78901.97425101552,
+        "completed": 4891,
+        "dmr": 0.0,
+        "incremental_carbon_kg": 1191.8607736262293,
+        "temperature_violations": 0
+      },
+      "latest_checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 28,
+        "config_identity": "409fd296969ff6106d364f9b5bc6a3af9ad9665fb7cd5a159989205d8470002a",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "ba6f06afc0bd7d6758d3bcf22de3694ece105237fb8b0035808b71ac494c28b8.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "ba6f06afc0bd7d6758d3bcf22de3694ece105237fb8b0035808b71ac494c28b8"
+      },
+      "physical_steps": 3319,
+      "seed": 20261018,
+      "selected_episode": 16,
+      "task_teacher_actions": {
+        "1": 5
+      },
+      "task_teacher_samples": 5,
+      "variant": "full"
+    },
+    {
+      "checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 1,
+        "config_identity": "8aa22dd9cb6fea811f5b72b1f117a7143598b240d189212858f943a49ddd5908",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "0522d98706069116583a164cb89c36582e62be105c066c29439aa3631250d449.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "0522d98706069116583a164cb89c36582e62be105c066c29439aa3631250d449"
+      },
+      "committed_elapsed_seconds": 876.2291770970002,
+      "cooling_18_fraction": 0.982421875,
+      "cooling_states": 4096,
+      "development_best": {
+        "all_work_accounted": true,
+        "arrived": 5684,
+        "carbon_kg": 157740.82072093379,
+        "censored": 0,
+        "completed": 5684,
+        "deadline_key": [
+          0,
+          0,
+          0,
+          0.0,
+          157740.82072093379
+        ],
+        "deadline_misses": 0,
+        "dmr": 0.0,
+        "feasible": true,
+        "incremental_carbon_kg": 3373.2842242559814,
+        "scenario_ids": [
+          "development-20230605T0500-r1-s1.5",
+          "development-20230620T0500-r1-s1.5"
+        ],
+        "temperature_violations": 0,
+        "unfinished": 0
+      },
+      "episodes": 21,
+      "job_id": "full-20261019",
+      "last_training_episode": {
+        "arrived": 2367,
+        "carbon_kg": 115357.5459669587,
+        "completed": 2367,
+        "dmr": 0.0,
+        "incremental_carbon_kg": 2456.053781035045,
+        "temperature_violations": 0
+      },
+      "latest_checkpoint": {
+        "code_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+        "completed_episodes": 21,
+        "config_identity": "8aa22dd9cb6fea811f5b72b1f117a7143598b240d189212858f943a49ddd5908",
+        "data_identity": "84ce8bdea6628571b92da3937841f1de02a88ce0dbc1c2330601dc7f0d3eebec",
+        "file": "bedbb2693eafed28c9c45c7989a73cbe760fbfea3db8e3731474f1443fc27adf.pt",
+        "schema": "rac-mappo-v3.1",
+        "sha256": "bedbb2693eafed28c9c45c7989a73cbe760fbfea3db8e3731474f1443fc27adf"
+      },
+      "physical_steps": 2461,
+      "seed": 20261019,
+      "selected_episode": 1,
+      "task_teacher_actions": {
+        "1": 5
+      },
+      "task_teacher_samples": 5,
+      "variant": "full"
+    }
+  ],
+  "origin": "strictly_validated_immutable_checkpoint_generations",
+  "pipeline_stage": "running",
+  "source_identity": "571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2",
+  "test_access": false
+}

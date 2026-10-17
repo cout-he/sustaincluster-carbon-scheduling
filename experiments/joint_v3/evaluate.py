@@ -5,7 +5,7 @@ import csv
 import json
 from dataclasses import replace
 from pathlib import Path
-from experiments.e1.contracts import file_hash
+from experiments.e1.contracts import content_hash, file_hash
 from experiments.joint_v2.checkpoint import CheckpointStore, atomic_json
 from experiments.joint_v2.env import V2Env
 from experiments.joint_v2.ppo import IPPOAgent
@@ -44,10 +44,16 @@ def load_model(folder, alias='best_feasible', *, check_code=True):
     root = Path(folder)
     cfg = load_config(root/'config.json')
     meta = json.loads((root/'identity.json').read_text(encoding='utf8'))
-    if check_code and meta['code_identity'] != code_identity()['sha256']:
+    if content_hash(cfg) != meta['config_identity']:
+        raise ValueError('Frozen trained config identity changed')
+    # Keep the historical keyword for call compatibility; source verification
+    # is mandatory for every model that can reach a formal evaluation.
+    if meta['code_identity'] != code_identity()['sha256']:
         raise ValueError('Frozen trained source identity changed')
     store = Store(root/'checkpoints', meta['config_identity'], meta['data_identity'], meta['code_identity'])
     state = store.load(alias)
+    if cfg != state.get('config'):
+        raise ValueError('Checkpoint config differs from frozen trained config')
     return RACSystem.from_state(state['system']), CIForecaster.from_state(state['forecaster']), cfg, state
 
 

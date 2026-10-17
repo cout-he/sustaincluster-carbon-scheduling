@@ -1,10 +1,12 @@
 # JointRL-V3训练交付记录
 
-本文件由真实运行记录生成；当前流水线状态：`prepared`。未结束的训练、未生成的对照与消融均不计为完成。
+本文件由真实运行记录生成；当前流水线状态：`running`。未结束的训练、未生成的对照与消融均不计为完成。
+
+本次表格取自 2026-10-17 15:14:20（UTC+8）严格校验的不可变 checkpoint；此前一次中断的 run-result 仍保留用于审计，当前累计进度以本表和 `JointRL-V3-live-snapshot.json` 为准。身份防护修复、迁移证书、已验证恢复和暂时最佳 Development 数值见 [恢复记录](JointRL-V3-guard-resume.md)。训练继续运行，完整预算及正式对照/消融尚未完成。
 
 ## 冻结身份与预算
 
-- 源码身份：`968d4650f11b3ec16beacc0b10ffd25f849265b15b94736963876d4ae65030c4`。
+- 源码身份：`571c0501d26153eb0f0a6013784ebd408a170493eedf569c426e733d2dfaced2`。
 - 场景池manifest SHA256：`327e941eaa715aa9d25a30601502183cae27c1e7a83b0da7f31e2c0e251775ca`。
 - 随机种子：20261017、20261018、20261019。
 - 完整方法及五个机制消融分别训练，每组3个种子，共18个有限作业。每作业目标65,536物理步、上限21,600秒；数据加载、预测器拟合、辅助初始化、训练和开发选择均计时。仅提交完整Episode；余量不足时丢弃尾部，实际步数可能小于目标。
@@ -13,24 +15,24 @@
 
 | 训练版本 | 种子 | 当前阶段 | 已提交物理步/目标 | 完整Episode |
 |---|---:|---|---:|---:|
-| full | 20261017 | pending | 0/65,536 | 0 |
-| full | 20261018 | pending | 0/65,536 | 0 |
-| full | 20261019 | pending | 0/65,536 | 0 |
-| no_queue_risk | 20261017 | pending | 0/65,536 | 0 |
-| no_queue_risk | 20261018 | pending | 0/65,536 | 0 |
-| no_queue_risk | 20261019 | pending | 0/65,536 | 0 |
-| no_carbon_features | 20261017 | pending | 0/65,536 | 0 |
-| no_carbon_features | 20261018 | pending | 0/65,536 | 0 |
-| no_carbon_features | 20261019 | pending | 0/65,536 | 0 |
-| no_robust | 20261017 | pending | 0/65,536 | 0 |
-| no_robust | 20261018 | pending | 0/65,536 | 0 |
-| no_robust | 20261019 | pending | 0/65,536 | 0 |
-| independent_critic | 20261017 | pending | 0/65,536 | 0 |
-| independent_critic | 20261018 | pending | 0/65,536 | 0 |
-| independent_critic | 20261019 | pending | 0/65,536 | 0 |
-| no_teacher | 20261017 | pending | 0/65,536 | 0 |
-| no_teacher | 20261018 | pending | 0/65,536 | 0 |
-| no_teacher | 20261019 | pending | 0/65,536 | 0 |
+| full | 20261017 | training | 3,047/65,536 | 26 |
+| full | 20261018 | training | 3,319/65,536 | 28 |
+| full | 20261019 | training | 2,461/65,536 | 21 |
+| no_queue_risk | 20261017 | queued | 0/65,536 | 0 |
+| no_queue_risk | 20261018 | queued | 0/65,536 | 0 |
+| no_queue_risk | 20261019 | queued | 0/65,536 | 0 |
+| no_carbon_features | 20261017 | queued | 0/65,536 | 0 |
+| no_carbon_features | 20261018 | queued | 0/65,536 | 0 |
+| no_carbon_features | 20261019 | queued | 0/65,536 | 0 |
+| no_robust | 20261017 | queued | 0/65,536 | 0 |
+| no_robust | 20261018 | queued | 0/65,536 | 0 |
+| no_robust | 20261019 | queued | 0/65,536 | 0 |
+| independent_critic | 20261017 | queued | 0/65,536 | 0 |
+| independent_critic | 20261018 | queued | 0/65,536 | 0 |
+| independent_critic | 20261019 | queued | 0/65,536 | 0 |
+| no_teacher | 20261017 | queued | 0/65,536 | 0 |
+| no_teacher | 20261018 | queued | 0/65,536 | 0 |
+| no_teacher | 20261019 | queued | 0/65,536 | 0 |
 
 ## 命令与恢复
 
