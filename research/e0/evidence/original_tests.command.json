@@ -1,0 +1,18 @@
+{
+  "id": "original_tests",
+  "command": [
+    "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--tb=short",
+    "--basetemp=research/e0/.tmp/pytest-original"
+  ],
+  "cwd": "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1",
+  "started_utc": "2026-10-17T08:58:50.500462+00:00",
+  "elapsed_seconds": 7.24107880005613,
+  "exit_code": 0,
+  "timeout_seconds": 300,
+  "output": "evidence/original_tests.txt"
+}

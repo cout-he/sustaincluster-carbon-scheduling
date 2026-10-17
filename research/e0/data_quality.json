@@ -1,0 +1,350 @@
+{
+  "checked_utc": "2026-10-17T08:59:45.202239+00:00",
+  "duration_seconds": 2.2556242998689413,
+  "source_commit": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+  "manifest_files_checked": 379,
+  "all_manifest_hashes_match": true,
+  "configured_environment_year": 2023,
+  "configured_datacenter_locations": [
+    "US-CAL-CISO",
+    "DE-LU",
+    "CL-SIC",
+    "SG",
+    "AU-NSW"
+  ],
+  "configured_environment_files": [
+    {
+      "path": "data/carbon_intensity/US-CAL-CISO/2023/US-CAL-CISO_2023_hourly.csv",
+      "rows": 8760,
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 54.47,
+      "max": 331.67
+    },
+    {
+      "path": "data/electricity_prices/standardized/US-CAL-CISO/2023/US-CAL-CISO_electricity_prices_2023.csv",
+      "rows": 8760,
+      "column": "Price (USD/MWh)",
+      "time_start": "2023-01-01 00:00:00+00:00",
+      "time_end": "2023-12-31 23:00:00+00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": -19.009359999999997,
+      "max": 1045.45225
+    },
+    {
+      "path": "data/weather/US-CAL-CISO/2023.json",
+      "rows": 8760,
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "fields": {
+        "temperature_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "relative_humidity_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "cloudcover": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "windspeed_10m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        }
+      }
+    },
+    {
+      "path": "data/carbon_intensity/DE-LU/2023/DE-LU_2023_hourly.csv",
+      "rows": 8760,
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 84.4,
+      "max": 639.97
+    },
+    {
+      "path": "data/electricity_prices/standardized/DE-LU/2023/DE-LU_electricity_prices_2023.csv",
+      "rows": 8760,
+      "column": "Price (USD/MWh)",
+      "time_start": "2023-01-01 00:00:00+00:00",
+      "time_end": "2023-12-31 23:00:00+00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": -484.39918,
+      "max": 523.9485679999998
+    },
+    {
+      "path": "data/weather/DE-LU/2023.json",
+      "rows": 8760,
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "fields": {
+        "temperature_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "relative_humidity_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "cloudcover": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "windspeed_10m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        }
+      }
+    },
+    {
+      "path": "data/carbon_intensity/CL-SIC/2023/CL-SIC_2023_hourly.csv",
+      "rows": 8760,
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 40.56,
+      "max": 473.17
+    },
+    {
+      "path": "data/electricity_prices/standardized/CL-SIC/2023/CL-SIC_electricity_prices_2023.csv",
+      "rows": 8760,
+      "column": "Price (USD/MWh)",
+      "time_start": "2023-01-01 00:00:00+00:00",
+      "time_end": "2023-12-31 23:00:00+00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 23.1336,
+      "max": 445.0262040000002
+    },
+    {
+      "path": "data/weather/CL-SIC/2023.json",
+      "rows": 8760,
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "fields": {
+        "temperature_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "relative_humidity_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "cloudcover": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "windspeed_10m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        }
+      }
+    },
+    {
+      "path": "data/carbon_intensity/SG/2023/SG_2023_hourly.csv",
+      "rows": 8760,
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 338.23,
+      "max": 380.05
+    },
+    {
+      "path": "data/electricity_prices/standardized/SG/2023/SG_electricity_prices_2023.csv",
+      "rows": 8760,
+      "column": "Price (USD/MWh)",
+      "time_start": "2023-01-01 00:00:00+00:00",
+      "time_end": "2023-12-31 23:00:00+00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 57.17825700000097,
+      "max": 3361.23
+    },
+    {
+      "path": "data/weather/SG/2023.json",
+      "rows": 8760,
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "fields": {
+        "temperature_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "relative_humidity_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "cloudcover": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "windspeed_10m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        }
+      }
+    },
+    {
+      "path": "data/carbon_intensity/AU-NSW/2023/AU-NSW_2023_hourly.csv",
+      "rows": 8760,
+      "column": "Carbon Intensity gCO₂eq/kWh (direct)",
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": 140.02,
+      "max": 719.78
+    },
+    {
+      "path": "data/electricity_prices/standardized/AU-NSW/2023/AU-NSW_electricity_prices_2023.csv",
+      "rows": 8760,
+      "column": "Price (USD/MWh)",
+      "time_start": "2023-01-01 00:00:00+00:00",
+      "time_end": "2023-12-31 23:00:00+00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "nonfinite_values": 0,
+      "min": -92.93750000000009,
+      "max": 4748.767083333332
+    },
+    {
+      "path": "data/weather/AU-NSW/2023.json",
+      "rows": 8760,
+      "time_start": "2023-01-01 00:00:00",
+      "time_end": "2023-12-31 23:00:00",
+      "duplicate_timestamps": 0,
+      "monotonic_time": true,
+      "non_hourly_intervals": 0,
+      "fields": {
+        "temperature_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "relative_humidity_2m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "cloudcover": {
+          "length": 8760,
+          "nonfinite_values": 0
+        },
+        "windspeed_10m": {
+          "length": 8760,
+          "nonfinite_values": 0
+        }
+      }
+    }
+  ],
+  "configured_network_cost": {
+    "path": "data/network_cost/aws_transmission_cost_matrix.csv",
+    "shape": [
+      20,
+      20
+    ],
+    "missing_values": 0,
+    "min_finite": 0.0,
+    "max_finite": 0.147,
+    "original_loader_missing_value_behavior": "fillna(0.0); no recovery-time transformation"
+  },
+  "workload": {
+    "path": "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl",
+    "rows": 37552,
+    "columns": [
+      "interval_15m",
+      "tasks_matrix"
+    ],
+    "task_records": 1300144,
+    "task_matrix_width_counts": {
+      "12": 37552
+    },
+    "time_start": "2020-01-01 00:00:00+00:00",
+    "time_end": "2021-01-26 23:45:00+00:00",
+    "unique_intervals": 37552,
+    "duplicate_intervals": 0,
+    "monotonic_time": true,
+    "non_15minute_intervals": 80,
+    "interval_delta_counts": {
+      "0 days 00:15:00": 37471,
+      "0 days 00:30:00": 80
+    },
+    "missing_15minute_slots_within_date_range": 80,
+    "empty_task_matrices": 0,
+    "raw_task_numeric_columns": {
+      "duration_minutes": {
+        "nonfinite_values": 0,
+        "min": 15.0,
+        "max": 393.6666666666667,
+        "negative_values": 0
+      },
+      "cpu_raw": {
+        "nonfinite_values": 0,
+        "min": 0.0,
+        "max": 5193.156188988676,
+        "negative_values": 0
+      },
+      "gpu_raw": {
+        "nonfinite_values": 0,
+        "min": 0.0,
+        "max": 1919.2519014987736,
+        "negative_values": 0
+      },
+      "memory_raw": {
+        "nonfinite_values": 0,
+        "min": 0.0048547503591954,
+        "max": 44.53857651115025,
+        "negative_values": 0
+      },
+      "bandwidth_gb": {
+        "nonfinite_values": 0,
+        "min": 0.0,
+        "max": 143.37822837326857,
+        "negative_values": 0
+      }
+    },
+    "recovery_transformation": "None; only original ZIP member extraction"
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-17T09:07:10.979864+00:00",
+  "elapsed_seconds": 10.255363000091165,
+  "base_sha": "749dc6c1868065c12a71bac71b3ae08a25c45f56",
+  "upstream_sha": "3f6ea95cb835b89ba50b0ef76d66d14b8037643e",
+  "manifest_rows": 122,
+  "exported_files": 121,
+  "baseline_byte_identical": 120,
+  "original_file_changes": [
+    "data/electricity_prices/scripts/test_prices.py"
+  ],
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "release_path": null,
+      "official_manifest_match": true
+    },
+    {
+      "upstream_path": "CODE_OF_CONDUCT.md",
+      "release_path": "CODE_OF_CONDUCT.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "release_path": "LICENSE",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "README.md",
+      "release_path": "UPSTREAM_README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "SECURITY.md",
+      "release_path": "SECURITY.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/dcs/dc_config.json",
+      "release_path": "configs/dcs/dc_config.json",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/env/algorithm_config.yaml",
+      "release_path": "configs/env/algorithm_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/env/datacenters.yaml",
+      "release_path": "configs/env/datacenters.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/env/hvac_train_config_ppo.yaml",
+      "release_path": "configs/env/hvac_train_config_ppo.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/env/reward_config.yaml",
+      "release_path": "configs/env/reward_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/env/sim_config.yaml",
+      "release_path": "configs/env/sim_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/rllib/appo_config.yaml",
+      "release_path": "configs/rllib/appo_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/rllib/dqn_config.yaml",
+      "release_path": "configs/rllib/dqn_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/rllib/impala_config.yaml",
+      "release_path": "configs/rllib/impala_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "configs/rllib/ppo_config.yaml",
+      "release_path": "configs/rllib/ppo_config.yaml",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/__init__.py",
+      "release_path": "data/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/carbon_intensity/README.md",
+      "release_path": "data/carbon_intensity/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": false,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/carbon_intensity/__init__.py",
+      "release_path": "data/carbon_intensity/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/carbon_intensity/analyze_carbon_intensity_data.py",
+      "release_path": "data/carbon_intensity/analyze_carbon_intensity_data.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/README.md",
+      "release_path": "data/electricity_prices/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/analyze_electricity_prices.py",
+      "release_path": "data/electricity_prices/analyze_electricity_prices.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_AU.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_AU.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_BR.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_BR.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_CA_ON.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_CA_ON.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_CL.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_CL.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_EU.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_EU.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_IN.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_IN.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_JP.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_JP.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_KR.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_KR.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_SG.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_SG.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_US_CA.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_US_CA.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_US_NY.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_US_NY.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_US_PA.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_US_PA.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_US_TX.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_US_TX.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/extract_prices_ZA.py",
+      "release_path": "data/electricity_prices/scripts/extract_prices_ZA.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/plot_prices_standardized.py",
+      "release_path": "data/electricity_prices/scripts/plot_prices_standardized.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/standardize_prices_to_utc_usd.py",
+      "release_path": "data/electricity_prices/scripts/standardize_prices_to_utc_usd.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/electricity_prices/scripts/test_prices.py",
+      "release_path": "data/electricity_prices/scripts/test_prices.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "verified_credential_externalization_only"
+    },
+    {
+      "upstream_path": "data/network_cost/network_delay.py",
+      "release_path": "data/network_cost/network_delay.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/weather/README.md",
+      "release_path": "data/weather/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/weather/__init__.py",
+      "release_path": "data/weather/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/weather/analyze_weather_data.py",
+      "release_path": "data/weather/analyze_weather_data.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/weather/extract_weather_data.py",
+      "release_path": "data/weather/extract_weather_data.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/README.md",
+      "release_path": "data/workload/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/__init__.py",
+      "release_path": "data/workload/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/alibaba_2020_dataset/alibaba_utils.py",
+      "release_path": "data/workload/alibaba_2020_dataset/alibaba_utils.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/alibaba_2020_dataset/analyze_alibaba2020GPU.py",
+      "release_path": "data/workload/alibaba_2020_dataset/analyze_alibaba2020GPU.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/alibaba_2020_dataset/extract_dataset_from_dfas.py",
+      "release_path": "data/workload/alibaba_2020_dataset/extract_dataset_from_dfas.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "data/workload/alibaba_2020_dataset/plot_alibaba_workload_stats.py",
+      "release_path": "data/workload/alibaba_2020_dataset/plot_alibaba_workload_stats.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/__init__.py",
+      "release_path": "envs/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/env_config.py",
+      "release_path": "envs/env_config.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/README.md",
+      "release_path": "envs/sustaindc/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/__init__.py",
+      "release_path": "envs/sustaindc/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/battery_env.py",
+      "release_path": "envs/sustaindc/battery_env.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/battery_model.py",
+      "release_path": "envs/sustaindc/battery_model.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/datacenter_model.py",
+      "release_path": "envs/sustaindc/datacenter_model.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/dc_gym.py",
+      "release_path": "envs/sustaindc/dc_gym.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/sustaindc_env.py",
+      "release_path": "envs/sustaindc/sustaindc_env.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/sustaindc/timeloadshifting_env.py",
+      "release_path": "envs/sustaindc/timeloadshifting_env.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "envs/task_scheduling_env.py",
+      "release_path": "envs/task_scheduling_env.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "eval_rllib.py",
+      "release_path": "eval_rllib.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "evaluate_sustaincluster_agent.py",
+      "release_path": "evaluate_sustaincluster_agent.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "metadata/carbon_intensity.jsonld",
+      "release_path": "metadata/carbon_intensity.jsonld",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "metadata/electricity_prices.jsonld",
+      "release_path": "metadata/electricity_prices.jsonld",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "metadata/network_costs.jsonld",
+      "release_path": "metadata/network_costs.jsonld",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "metadata/weather.jsonld",
+      "release_path": "metadata/weather.jsonld",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "metadata/workload_trace.jsonld",
+      "release_path": "metadata/workload_trace.jsonld",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "release_path": "requirements.txt",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/README.md",
+      "release_path": "rewards/README.md",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/__init__.py",
+      "release_path": "rewards/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/base_reward.py",
+      "release_path": "rewards/base_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/__init__.py",
+      "release_path": "rewards/predefined/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/carbon_emissions_reward.py",
+      "release_path": "rewards/predefined/carbon_emissions_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/composite_reward.py",
+      "release_path": "rewards/predefined/composite_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/efficiency_reward.py",
+      "release_path": "rewards/predefined/efficiency_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/energy_consumption_reward.py",
+      "release_path": "rewards/predefined/energy_consumption_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/energy_price_reward.py",
+      "release_path": "rewards/predefined/energy_price_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/sla_penalty_reward.py",
+      "release_path": "rewards/predefined/sla_penalty_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/timeliness_reward.py",
+      "release_path": "rewards/predefined/timeliness_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/transmission_cost_reward.py",
+      "release_path": "rewards/predefined/transmission_cost_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/predefined/transmission_emissions_reward.py",
+      "release_path": "rewards/predefined/transmission_emissions_reward.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/registry_utils.py",
+      "release_path": "rewards/registry_utils.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rewards/reward_registry.py",
+      "release_path": "rewards/reward_registry.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rl_components/__init__.py",
+      "release_path": "rl_components/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rl_components/agent_net.py",
+      "release_path": "rl_components/agent_net.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rl_components/replay_buffer.py",
+      "release_path": "rl_components/replay_buffer.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rl_components/rollout_storage.py",
+      "release_path": "rl_components/rollout_storage.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "rl_components/task.py",
+      "release_path": "rl_components/task.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/generate_table1_metrics.py",
+      "release_path": "scripts/generate_table1_metrics.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/generate_table1_metrics_parallel.py",
+      "release_path": "scripts/generate_table1_metrics_parallel.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/plot_figures_table1.py",
+      "release_path": "scripts/plot_figures_table1.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/plot_outletvsfan.py",
+      "release_path": "scripts/plot_outletvsfan.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/plot_training_progression_SAC.py",
+      "release_path": "scripts/plot_training_progression_SAC.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/plots_temperature.py",
+      "release_path": "scripts/plots_temperature.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "scripts/plots_utilization.py",
+      "release_path": "scripts/plots_utilization.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "simulation/__init__.py",
+      "release_path": "simulation/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "simulation/cluster_manager.py",
+      "release_path": "simulation/cluster_manager.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "tests/__init__.py",
+      "release_path": "tests/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "tests/test_env_setup.py",
+      "release_path": "tests/test_env_setup.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "tests/test_model.py",
+      "release_path": "tests/test_model.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "tests/test_training_loop.py",
+      "release_path": "tests/test_training_loop.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_SAC_agent.py",
+      "release_path": "train_SAC_agent.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_hvac_ppo_agent.py",
+      "release_path": "train_hvac_ppo_agent.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_rl_agent.py",
+      "release_path": "train_rl_agent.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_rllib_appo.py",
+      "release_path": "train_rllib_appo.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_rllib_impala.py",
+      "release_path": "train_rllib_impala.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "train_rllib_ppo.py",
+      "release_path": "train_rllib_ppo.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/__init__.py",
+      "release_path": "utils/__init__.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/checkpoint_manager.py",
+      "release_path": "utils/checkpoint_manager.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/config_loader.py",
+      "release_path": "utils/config_loader.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/config_logger.py",
+      "release_path": "utils/config_logger.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/dc_config.py",
+      "release_path": "utils/dc_config.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/dc_config_reader.py",
+      "release_path": "utils/dc_config_reader.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/make_envs.py",
+      "release_path": "utils/make_envs.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/managers.py",
+      "release_path": "utils/managers.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/running_stats.py",
+      "release_path": "utils/running_stats.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/state_aggregation.py",
+      "release_path": "utils/state_aggregation.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/task_assignment_strategies.py",
+      "release_path": "utils/task_assignment_strategies.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/transmission_cost_loader.py",
+      "release_path": "utils/transmission_cost_loader.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/transmission_region_mapper.py",
+      "release_path": "utils/transmission_region_mapper.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/utils_cf.py",
+      "release_path": "utils/utils_cf.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    },
+    {
+      "upstream_path": "utils/workload_utils.py",
+      "release_path": "utils/workload_utils.py",
+      "official_manifest_match": true,
+      "baseline_byte_identical": true,
+      "workspace_status": "official_content_match"
+    }
+  ]
+}

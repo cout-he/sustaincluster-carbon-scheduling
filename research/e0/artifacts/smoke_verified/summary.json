@@ -1,0 +1,206 @@
+[
+  {
+    "run": "local_only",
+    "status": "passed",
+    "steps": 1,
+    "elapsed_seconds": 2.7185750999487936,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-01 05:15:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "cohort_sequence_sha256": "df5ed2c182dcd8fb37fcba72cf14dfaf4950652e0c77cb5298d69c85efcf1435",
+    "incoming_tasks": 6,
+    "tasks_started": 6,
+    "tasks_finished": 0,
+    "sla_met": 0,
+    "sla_violated": 0,
+    "site_energy_kwh": 1400.5611686907646,
+    "site_emissions_kg": 486.88546137131993,
+    "site_energy_cost_usd": 95.99683482841736,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": 0.0,
+    "final_running_tasks": 6,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "manual_local_replay",
+    "status": "passed",
+    "steps": 1,
+    "elapsed_seconds": 2.661650500027463,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-01 05:15:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "cohort_sequence_sha256": "df5ed2c182dcd8fb37fcba72cf14dfaf4950652e0c77cb5298d69c85efcf1435",
+    "incoming_tasks": 6,
+    "tasks_started": 0,
+    "tasks_finished": 0,
+    "sla_met": 0,
+    "sla_violated": 0,
+    "site_energy_kwh": 1400.5611686907646,
+    "site_emissions_kg": 486.88546137131993,
+    "site_energy_cost_usd": 95.99683482841736,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": -1.2514626709093195,
+    "final_running_tasks": 0,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 6
+  },
+  {
+    "run": "local_only_direct",
+    "status": "passed",
+    "steps": 1,
+    "elapsed_seconds": 2.665018399944529,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-01 05:15:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "cohort_sequence_sha256": "df5ed2c182dcd8fb37fcba72cf14dfaf4950652e0c77cb5298d69c85efcf1435",
+    "incoming_tasks": 6,
+    "tasks_started": 6,
+    "tasks_finished": 0,
+    "sla_met": 0,
+    "sla_violated": 0,
+    "site_energy_kwh": 1400.5611686907646,
+    "site_emissions_kg": 486.88546137131993,
+    "site_energy_cost_usd": 95.99683482841736,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": 0.0,
+    "final_running_tasks": 6,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  }
+]

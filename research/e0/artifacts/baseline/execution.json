@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-10-17T09:01:01.997833+00:00",
+  "argv": [
+    "research/e0/run_baselines.py",
+    "--steps",
+    "96",
+    "--output",
+    "research/e0/artifacts/baseline"
+  ],
+  "command": "'D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\.venv\\Scripts\\python.exe' research/e0/run_baselines.py --steps 96 --output research/e0/artifacts/baseline",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:12:53) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cwd_before": "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1",
+  "repository_root": "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1",
+  "config": {
+    "simulation_config": "configs/env/sim_config.yaml",
+    "datacenter_config": "configs/env/datacenters.yaml",
+    "reward_config": "configs/env/reward_config.yaml",
+    "seed": 42,
+    "steps": 96,
+    "timestep_minutes": 15,
+    "shuffle_datacenters": false,
+    "single_action_mode": false,
+    "disable_defer_action": true,
+    "strategies": [
+      "local_only",
+      "priority_order",
+      "round_robin",
+      "lowest_carbon",
+      "lowest_price",
+      "manual_local_replay",
+      "local_only_repeat",
+      "local_only_direct"
+    ],
+    "cluster_init_day_rule": "int(month * 30.5), preserved from train_rl_agent.make_env",
+    "notes": "Original input extraction, task_scale=5 and group_size=1, physical models and rewards are unchanged. manual_local_replay is a fixed per-task origin action diagnostic, not a trained algorithm. local_only_direct is a control using original cluster.step; all other rows use original TaskSchedulingEnv.step."
+  },
+  "requested_steps": 96,
+  "input_sha256": {
+    "configs/env/sim_config.yaml": "9ff37fab598b22ec6a8dbfb42028ca93d74021c3672bb69fb2458d15db6aba44",
+    "configs/env/datacenters.yaml": "c3721b04da11badc5984799377536ebfc1692309da491f426d0eb5b697b11ab8",
+    "configs/env/reward_config.yaml": "9b46e2033aecd2eb8fb452dceff9d156cf81b1431e00cc7046d4c90d6c10cea3",
+    "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+  },
+  "status": "passed",
+  "finished_utc": "2026-10-17T09:01:29.571336+00:00",
+  "elapsed_seconds": 27.572736399946734
+}

@@ -3,7 +3,8 @@ from openelectricity import OEClient
 from openelectricity.types import DataMetric, UnitFueltechType, UnitStatusType
 
 import os
-os.environ["OPENELECTRICITY_API_KEY"] = "oe_3ZkCohwCqoHRL535ay6JtgTC"
+if not os.environ.get("OPENELECTRICITY_API_KEY"):
+    raise RuntimeError("Set OPENELECTRICITY_API_KEY externally before running this acquisition example")
 
 # Calculate date range
 end_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)

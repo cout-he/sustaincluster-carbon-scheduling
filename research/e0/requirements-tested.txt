@@ -1,0 +1,16 @@
+# Observed E0 runtime versions. Torch is an inherited development build; see environment.md.
+numpy==2.4.4
+pandas==2.3.3
+torch==2.14.0.dev20260620+cu130
+gymnasium==1.0.0
+pytest==8.3.5
+psychrolib==2.5.0
+tensorboard==2.19.0
+PyYAML==6.0.3
+matplotlib==3.11.0
+tqdm==4.68.3
+pytz==2025.2
+cloudpickle==3.1.2
+farama-notifications==0.0.6
+protobuf==7.35.1
+grpcio==1.84.0

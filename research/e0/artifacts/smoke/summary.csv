@@ -1,0 +1,4 @@
+run,status,elapsed_seconds,error
+local_only,failed,2.74224209995009,AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'
+manual_local_replay,failed,2.663502899929881,AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'
+local_only_direct,failed,2.6752983999904245,AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'

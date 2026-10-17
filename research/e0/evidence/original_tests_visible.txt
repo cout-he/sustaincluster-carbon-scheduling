@@ -1,0 +1,14 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.15, pytest-8.3.5, pluggy-1.7.0 -- D:\A-myprofile\SustainCluster\rl-scheduling-v1\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\A-myprofile\SustainCluster\rl-scheduling-v1
+collecting ... collected 3 items
+
+tests/test_env_setup.py::test_environment_runs Warning: sim_config not passed to TaskSchedulingEnv. Defaulting single_action_mode to False.
+TaskSchedulingEnv initialized with single_action_mode: False, aggregation: average, disable_defer_action: False
+PASSED
+tests/test_model.py::test_actor_critic_forward PASSED
+tests/test_training_loop.py::test_train_loop_runs_short D:\anaconda\envs\llama_factory\python.exe: can't open file 'D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\train_SAC_single_action.py': [Errno 2] No such file or directory
+PASSED
+
+============================== 3 passed in 5.65s ==============================

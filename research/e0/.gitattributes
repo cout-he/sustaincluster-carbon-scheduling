@@ -1,0 +1,4 @@
+# Preserve executed evidence bytes, including CSV newlines and recorded hashes.
+artifacts/** -text -whitespace
+evidence/** -text -whitespace
+*.csv -text -whitespace

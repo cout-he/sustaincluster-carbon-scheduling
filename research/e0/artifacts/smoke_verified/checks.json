@@ -1,0 +1,15 @@
+[
+  {
+    "check": "identical_incoming_cohorts_across_successful_runs",
+    "passed": true,
+    "runs": [
+      "local_only",
+      "manual_local_replay",
+      "local_only_direct"
+    ]
+  },
+  {
+    "check": "local_only_step_exact_equality_with_local_only_direct",
+    "passed": true
+  }
+]

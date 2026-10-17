@@ -1,0 +1,19 @@
+{
+  "id": "original_tests_visible",
+  "command": [
+    "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests",
+    "-s",
+    "-vv",
+    "--tb=short",
+    "--basetemp=research/e0/.tmp/pytest-original-visible"
+  ],
+  "cwd": "D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1",
+  "started_utc": "2026-10-17T08:59:10.409143+00:00",
+  "elapsed_seconds": 6.182833000086248,
+  "exit_code": 0,
+  "timeout_seconds": 300,
+  "output": "evidence/original_tests_visible.txt"
+}

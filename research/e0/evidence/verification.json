@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-17T09:02:45.212613+00:00",
+  "elapsed_seconds": 0.030425400007516146,
+  "runs": 8,
+  "steps": 768,
+  "datacenter_rows": 3840,
+  "checks": "all summary sums, all per-step DC sums, cohorts, exact repeat/direct equality",
+  "baseline_artifacts": {
+    "checks.json": {
+      "bytes": 530,
+      "sha256": "3f2208168949d75135d1c3c1f7252e7cf5406907b1b3d2a8af011241b41eb022"
+    },
+    "datacenters.csv": {
+      "bytes": 933562,
+      "sha256": "132f1d5a3e18045b788ecfce6896a500174a873dd9c5fb748a1c1922fd271ea3"
+    },
+    "execution.json": {
+      "bytes": 2304,
+      "sha256": "576302a99a2d5263c2e619c0fbaff9a98c8dacba0e3cb1b2a1f14b113dc28228"
+    },
+    "steps.csv": {
+      "bytes": 229319,
+      "sha256": "32e89ec5009c5512af31e3d340e3d3b5997908b0a9d0f722bb77de8d86f41f7d"
+    },
+    "summary.csv": {
+      "bytes": 3590,
+      "sha256": "ae25376c375807fa22e68b1e1d5a938c8fcd407e2007d0788d3ddf94e180afb2"
+    },
+    "summary.json": {
+      "bytes": 17220,
+      "sha256": "04bd6b551a69163017bff01772e8fe24ac3066061d0d246a9af8da7b313880e6"
+    }
+  }
+}

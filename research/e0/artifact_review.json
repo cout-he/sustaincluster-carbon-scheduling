@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-17T09:04:45.873098+00:00",
+  "scope": "Independent table recomputation and Git candidate boundary review; no simulation rerun",
+  "baseline_step_rows": 768,
+  "baseline_site_rows": 3840,
+  "run_count": 8,
+  "all_site_rollups_and_summary_totals_match": true,
+  "max_abs_site_rollup_error": 0.0,
+  "every_step_task_count_conservation": true,
+  "every_step_cohort_hash_equality": true,
+  "all_cohort_sequence_hashes_match": true,
+  "site_emissions_g_to_kg_conversion_matches": true,
+  "site_usd_per_mwh_to_cost_conversion_matches": true,
+  "tracked_candidate_files_over_5MiB": [],
+  "tracked_candidate_raw_input_files": [],
+  "credential_pattern_findings_paths_only": [],
+  "credential_scan_limit": "Common token patterns in candidate UTF-8 text files, not a proof about all history or secret types"
+}

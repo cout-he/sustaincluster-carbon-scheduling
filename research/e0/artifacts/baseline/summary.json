@@ -1,0 +1,586 @@
+[
+  {
+    "run": "local_only",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.949692300055176,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2368,
+    "sla_violated": 0,
+    "site_energy_kwh": 154291.5298007903,
+    "site_emissions_kg": 48653.46678009631,
+    "site_energy_cost_usd": 14507.27080304944,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "priority_order",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.9035958000458777,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2368,
+    "sla_violated": 0,
+    "site_energy_kwh": 146382.8886683732,
+    "site_emissions_kg": 44743.593224897784,
+    "site_energy_cost_usd": 13016.600695869985,
+    "transmission_energy_kwh": 440.7100836089195,
+    "transmission_emissions_kg": 157.72649162763776,
+    "transmission_cost_usd": 653.796333891432,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "round_robin",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.8687529999297112,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2368,
+    "sla_violated": 0,
+    "site_energy_kwh": 154001.9130506466,
+    "site_emissions_kg": 48542.24243865855,
+    "site_energy_cost_usd": 14260.679658972851,
+    "transmission_energy_kwh": 421.43603745589246,
+    "transmission_emissions_kg": 137.07474469896655,
+    "transmission_cost_usd": 538.1300058854503,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "lowest_carbon",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.9717272000852972,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2321,
+    "sla_violated": 47,
+    "site_energy_kwh": 156477.01565744638,
+    "site_emissions_kg": 45589.23811468604,
+    "site_energy_cost_usd": 14104.078112764902,
+    "transmission_energy_kwh": 422.36633659178295,
+    "transmission_emissions_kg": 156.58930602022707,
+    "transmission_cost_usd": 568.4929914438047,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "lowest_price",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 3.03011059993878,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2316,
+    "sla_violated": 52,
+    "site_energy_kwh": 156932.6721226577,
+    "site_emissions_kg": 47823.374908070444,
+    "site_energy_cost_usd": 13583.165909096806,
+    "transmission_energy_kwh": 420.8892501233091,
+    "transmission_emissions_kg": 137.81193637245022,
+    "transmission_cost_usd": 552.3946826319878,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "manual_local_replay",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.896794500062242,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2496,
+    "tasks_finished": 2342,
+    "sla_met": 1847,
+    "sla_violated": 495,
+    "site_energy_kwh": 154071.78135740414,
+    "site_emissions_kg": 48559.59752224604,
+    "site_energy_cost_usd": 14502.490024188277,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": -3484.6673174953926,
+    "final_running_tasks": 154,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 10
+  },
+  {
+    "run": "local_only_repeat",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.893637100001797,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2368,
+    "sla_violated": 0,
+    "site_energy_kwh": 154291.5298007903,
+    "site_emissions_kg": 48653.46678009631,
+    "site_energy_cost_usd": 14507.27080304944,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  },
+  {
+    "run": "local_only_direct",
+    "status": "passed",
+    "steps": 96,
+    "elapsed_seconds": 2.9663168000988662,
+    "task_start_utc": "2023-08-01 05:00:00+00:00",
+    "task_end_exclusive_utc": "2023-08-02 05:00:00+00:00",
+    "cluster_random_init_day": 238,
+    "cluster_random_init_hour": 18,
+    "initial_physical_clocks": {
+      "DC1": {
+        "local_day": 238,
+        "local_hour": 11.0,
+        "timezone_shift": -7,
+        "ci_index": 22892,
+        "weather_index": 22892,
+        "price_index": 22892
+      },
+      "DC2": {
+        "local_day": 238,
+        "local_hour": 19.0,
+        "timezone_shift": 1,
+        "ci_index": 22924,
+        "weather_index": 22924,
+        "price_index": 22924
+      },
+      "DC3": {
+        "local_day": 238,
+        "local_hour": 13.0,
+        "timezone_shift": -5,
+        "ci_index": 22900,
+        "weather_index": 22900,
+        "price_index": 22900
+      },
+      "DC4": {
+        "local_day": 239,
+        "local_hour": 2.0,
+        "timezone_shift": 8,
+        "ci_index": 22952,
+        "weather_index": 22952,
+        "price_index": 22952
+      },
+      "DC5": {
+        "local_day": 239,
+        "local_hour": 5.0,
+        "timezone_shift": 11,
+        "ci_index": 22964,
+        "weather_index": 22964,
+        "price_index": 22964
+      }
+    },
+    "negative_controls_passed": [
+      "reject_wrong_carbon_units",
+      "reject_resource_bookkeeping_error",
+      "reject_wrong_weighted_reward"
+    ],
+    "cohort_sequence_sha256": "b9f022a827d01737aa723edb1580211165e7d4351bbfd1c0b2449588d74f78f8",
+    "incoming_tasks": 2506,
+    "tasks_started": 2506,
+    "tasks_finished": 2368,
+    "sla_met": 2368,
+    "sla_violated": 0,
+    "site_energy_kwh": 154291.5298007903,
+    "site_emissions_kg": 48653.46678009631,
+    "site_energy_cost_usd": 14507.27080304944,
+    "transmission_energy_kwh": 0.0,
+    "transmission_emissions_kg": 0.0,
+    "transmission_cost_usd": 0.0,
+    "reward": 0.0,
+    "final_running_tasks": 138,
+    "final_pending_tasks": 0,
+    "final_in_transit_tasks": 0
+  }
+]

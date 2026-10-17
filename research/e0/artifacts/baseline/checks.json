@@ -1,0 +1,24 @@
+[
+  {
+    "check": "identical_incoming_cohorts_across_successful_runs",
+    "passed": true,
+    "runs": [
+      "local_only",
+      "priority_order",
+      "round_robin",
+      "lowest_carbon",
+      "lowest_price",
+      "manual_local_replay",
+      "local_only_repeat",
+      "local_only_direct"
+    ]
+  },
+  {
+    "check": "local_only_step_exact_equality_with_local_only_repeat",
+    "passed": true
+  },
+  {
+    "check": "local_only_step_exact_equality_with_local_only_direct",
+    "passed": true
+  }
+]

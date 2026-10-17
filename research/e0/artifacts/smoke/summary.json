@@ -1,0 +1,23 @@
+[
+  {
+    "run": "local_only",
+    "status": "failed",
+    "elapsed_seconds": 2.74224209995009,
+    "error": "AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 291, in main\n    result = run_one(strategy, settings, classes, sim, dcs, reward, steps, rows, dc_rows)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 212, in run_one\n    initial_clocks = {\n                     ^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 215, in <dictcomp>\n    \"weather_index\": int(dc.weather_manager.time_step), \"price_index\": int(dc.price_manager.time_step)}\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'\n"
+  },
+  {
+    "run": "manual_local_replay",
+    "status": "failed",
+    "elapsed_seconds": 2.663502899929881,
+    "error": "AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 291, in main\n    result = run_one(strategy, settings, classes, sim, dcs, reward, steps, rows, dc_rows)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 212, in run_one\n    initial_clocks = {\n                     ^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 215, in <dictcomp>\n    \"weather_index\": int(dc.weather_manager.time_step), \"price_index\": int(dc.price_manager.time_step)}\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'\n"
+  },
+  {
+    "run": "local_only_direct",
+    "status": "failed",
+    "elapsed_seconds": 2.6752983999904245,
+    "error": "AttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 291, in main\n    result = run_one(strategy, settings, classes, sim, dcs, reward, steps, rows, dc_rows)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 212, in run_one\n    initial_clocks = {\n                     ^\n  File \"D:\\A-myprofile\\SustainCluster\\rl-scheduling-v1\\research\\e0\\run_baselines.py\", line 215, in <dictcomp>\n    \"weather_index\": int(dc.weather_manager.time_step), \"price_index\": int(dc.price_manager.time_step)}\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ElectricityPrice_Manager' object has no attribute 'time_step'\n"
+  }
+]
