@@ -1,0 +1,72 @@
+{
+  "schema": "object-validity-audit-A0-v1",
+  "base_branch": "research/joint-v2-training",
+  "base_commit": "bf8a35ef647f19b5ef10ce1b99f723370b7a0732",
+  "audit_branch": "research/object-validity-audit",
+  "start_utc": "2026-10-18T13:03:54+00:00",
+  "deadline_utc": "2026-10-18T13:33:54+00:00",
+  "maximum_wall_seconds": 1800,
+  "allowed_roles": [
+    "train"
+  ],
+  "pool_manifest_sha256": "327e941eaa715aa9d25a30601502183cae27c1e7a83b0da7f31e2c0e251775ca",
+  "data_mutation": false,
+  "production_mutation": false,
+  "training": false,
+  "test_access": false,
+  "july_access": false,
+  "development_access": false,
+  "resource_methods": [
+    "immediate_fifo_backfill",
+    "immediate_edf_backfill"
+  ],
+  "resource_pressure_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "sla_multipliers": [
+    1.5,
+    2.0
+  ],
+  "carbon_threshold_g_per_kwh": 161.075,
+  "threshold_tuning": false,
+  "ideal_carbon_diagnostic": "per_task_full_grid_runtime_CI_integral; capacity_and_queue_ignored; not_achievable_optimum",
+  "physical_scan": "manual_utilization_and_weather; inherited_functions_unchanged; not_measured_data",
+  "physical_utilizations": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "physical_setpoints_c": [
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "physical_ambient_c": [
+    -5,
+    5,
+    15,
+    25,
+    35,
+    40
+  ],
+  "adjustments_implemented": false,
+  "next_stage_requires_user_choice": true,
+  "execution_record": {
+    "resources_completed_runs": 192,
+    "carbon_completed_runs": 54,
+    "physical_function_evaluations": 1440,
+    "unique_physical_conditions": 1350,
+    "tests_passed": 26,
+    "production_files_compared": 145,
+    "production_file_mismatches": 0,
+    "interrupted_by_usage_limit": true,
+    "resumed_at_user_request": true,
+    "resume_scope": "report, aggregate-only figures, synthetic verification; no additional scenario experiment or training",
+    "continuous_wall_within_original_deadline": false,
+    "next_stage_started": false
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schema": "a0-final-artifact-identities-v1",
+  "base_source_sha": "bf8a35ef647f19b5ef10ce1b99f723370b7a0732",
+  "audit_branch": "research/object-validity-audit",
+  "note": "Inherited raw source hashes, final delivered code and aggregate byte hashes. Excludes this manifest. Local attributes seal data/figures.",
+  "files": {
+    "docs/research/object-validity/.gitattributes": {
+      "bytes": 251,
+      "sha256": "ef80e46e6f24ec5c65f35bee40b0f15cf3c042a6deb2c424574232c479146f91"
+    },
+    "docs/research/object-validity/A0-figure-contract.md": {
+      "bytes": 1150,
+      "sha256": "76774511714e847733660e9070579c33082094cccc2696f77af5d1dd94c1f624"
+    },
+    "docs/research/object-validity/A0-plan.md": {
+      "bytes": 3696,
+      "sha256": "9b6d7ba3d44761707aa87063b0dae40a4f34d51fccda8cc53f29696474cc89e9"
+    },
+    "docs/research/object-validity/A0-protocol.json": {
+      "bytes": 1973,
+      "sha256": "3d4d6848ae59fd8855ea521e4668fa7b4fded83fe8dcb0dc2d42c5e980855dfc"
+    },
+    "docs/research/object-validity/A0-research-object-diagnosis.md": {
+      "bytes": 34162,
+      "sha256": "b6cc72ee67a62e59d14526e22aedbd7a9d8ff67ca069735eb270100acc8292f5"
+    },
+    "docs/research/object-validity/A0-statistical-evidence.md": {
+      "bytes": 12139,
+      "sha256": "89f864bdc4eea3827a03f80c07d71d8f8559e9518c28c4b91fe2be9588568501"
+    },
+    "docs/research/object-validity/A0-verification.md": {
+      "bytes": 3125,
+      "sha256": "c129b5bcdf37097480ba771504118a22e047945d763ddcf4d8fa93ea2e25ffe6"
+    },
+    "docs/research/object-validity/data/carbon/ci_by_fragment.csv": {
+      "bytes": 4593,
+      "sha256": "adbd045cf5be95316b97a37ecb824a6b95f1abb397d260fe9caf7037ff2bb29c"
+    },
+    "docs/research/object-validity/data/carbon/ci_summary.json": {
+      "bytes": 1316,
+      "sha256": "954623787b9259a5cc45a48e94fe67b61492ce455f9f3ad01316112bb2119456"
+    },
+    "docs/research/object-validity/data/carbon/metadata.json": {
+      "bytes": 9032,
+      "sha256": "663d6a38b67a851eac6a3b0ac07d1d2fe079c17ce9c361eae5b06104d9272a96"
+    },
+    "docs/research/object-validity/data/carbon/opportunity_by_fragment.csv": {
+      "bytes": 20655,
+      "sha256": "b541b98c560cb0c103728d2b5b01046d31ce7060d0844ae9d3e67c8c10c2ff13"
+    },
+    "docs/research/object-validity/data/carbon/opportunity_groups.csv": {
+      "bytes": 8042,
+      "sha256": "fac03f37de8029138769561a6bcfdb8669e112479aa0f311c2e4a0dae0553dbe"
+    },
+    "docs/research/object-validity/data/carbon/rule_comparison.csv": {
+      "bytes": 33521,
+      "sha256": "20e2009fef8bca9f67634bf601c17545f9dc8e4da271d237a35a51cd7494c94c"
+    },
+    "docs/research/object-validity/data/carbon/rule_pairs.csv": {
+      "bytes": 6369,
+      "sha256": "eb0f5ef279e0928b211fc101d9399deec9cc638bc47a4070d244d29de2bc51c5"
+    },
+    "docs/research/object-validity/data/input-provenance.json": {
+      "bytes": 174875,
+      "sha256": "0a2e667af77212a018c4e4075997cbfaba8444dd258e9f5223c07450f6bb848a"
+    },
+    "docs/research/object-validity/data/physics/effective-physical-configuration.csv": {
+      "bytes": 6495,
+      "sha256": "e3988aef19b051479b28befbc886290f4a025b03307084789b6f7f1be67c40b1"
+    },
+    "docs/research/object-validity/data/physics/physical-probes.csv": {
+      "bytes": 795679,
+      "sha256": "c612fbb382ea15bc3b3f533e0bb134be89b96dc8bc39f4764681799f64d92df7"
+    },
+    "docs/research/object-validity/data/physics/physics-summary.json": {
+      "bytes": 10564,
+      "sha256": "38a07ef6771b0e018dce0aaff507daf406f2b78c400d60069e940745a81016e0"
+    },
+    "docs/research/object-validity/data/physics/setpoint-comparisons.csv": {
+      "bytes": 58695,
+      "sha256": "49db09e815a9e8295348c6ea393373a48aa7ce0d55b943b7c359b6c5c1e1f7a1"
+    },
+    "docs/research/object-validity/data/resources/metadata.json": {
+      "bytes": 15995,
+      "sha256": "fb8e9d2d776aaa2cf31eb86bd70cbf0ef0ff90e36f6926094a8f7a41bb27c7ee"
+    },
+    "docs/research/object-validity/data/resources/pressure-policy-summary.csv": {
+      "bytes": 8325,
+      "sha256": "7fb301062c7cb5f05f025ead985ff01c1a579980edc56d5975022bf648720cf4"
+    },
+    "docs/research/object-validity/data/resources/scenario-summary.csv": {
+      "bytes": 525642,
+      "sha256": "a0dc0a95e3b00515b4df763273e611d9d97737a6efdf0c0854278425d6c54ec6"
+    },
+    "docs/research/object-validity/data/resources/task-distribution-pooled-metadata.json": {
+      "bytes": 24701,
+      "sha256": "9bcd2e86a1116a8dc24758e5bdbb30bf65eaf13bc0dbe333c5f5bb62e2d3ce67"
+    },
+    "docs/research/object-validity/data/resources/task-distribution-pooled.csv": {
+      "bytes": 13715,
+      "sha256": "0fecc3e31f3e9575d742e49ed5ff3718dfa93a97275d1941a43d1c1d7cdb7ae8"
+    },
+    "docs/research/object-validity/data/resources/unconstrained-demand-metadata.json": {
+      "bytes": 10938,
+      "sha256": "edc0c4723c3d41b5563471ad4a956fffb2a224177642f148a35b5517c8a1128b"
+    },
+    "docs/research/object-validity/data/resources/unconstrained-demand-pooled.csv": {
+      "bytes": 3240,
+      "sha256": "e2de2095b86817c710ed0899d0d9dcb9fa045104b495d1010df55d713e95afe1"
+    },
+    "docs/research/object-validity/data/resources/unconstrained-demand.csv": {
+      "bytes": 214199,
+      "sha256": "5dd48e9781d200ca41ae4c08e3f0e1fa469db5f8bab60219fa7af08f96f8a1a0"
+    },
+    "docs/research/object-validity/data/resources/utilization-pooled-metadata.json": {
+      "bytes": 25475,
+      "sha256": "fbc5f5a7be14fa13c4bc71cc6cae8b02b3b5286d8740132d829727220b954bf0"
+    },
+    "docs/research/object-validity/data/resources/utilization-pooled.csv": {
+      "bytes": 8985,
+      "sha256": "e4f6b2e0029aa5ed4d3512f64311832a10dc18dfab8cce097d0dacd2ef4d8b9d"
+    },
+    "docs/research/object-validity/figures/A0-physics-and-rule-boundaries.pdf": {
+      "bytes": 23432,
+      "sha256": "454a1bd08c511ed972f6697dee8c03d7e4429941b9dfa191b34f82cfd6a14d0e"
+    },
+    "docs/research/object-validity/figures/A0-physics-and-rule-boundaries.png": {
+      "bytes": 598547,
+      "sha256": "1c7fb51d57a04f8e725f96c4cd3f6235d7adebad62b3a3709232ec58f6204819"
+    },
+    "docs/research/object-validity/figures/A0-physics-and-rule-boundaries.svg": {
+      "bytes": 52496,
+      "sha256": "2f293f775886ceadd251576267f499713a050fa143d40cf8acd285a18cba64c0"
+    },
+    "docs/research/object-validity/figures/A0-resource-and-flexibility.pdf": {
+      "bytes": 21411,
+      "sha256": "6323294a9110eb0cd51bd24f11a720347f8e5797acb79840042e03340a077cc7"
+    },
+    "docs/research/object-validity/figures/A0-resource-and-flexibility.png": {
+      "bytes": 552182,
+      "sha256": "1d5654f7db0758b8b6056db285e4356ee37829f615ff16dbef71ccbd26a877ee"
+    },
+    "docs/research/object-validity/figures/A0-resource-and-flexibility.svg": {
+      "bytes": 40466,
+      "sha256": "4d2e69a8cc35f4e858d3645aad77bd7d966943dbbfc095b60c46adcc1cb1ca0f"
+    },
+    "docs/research/object-validity/figures/figure-provenance.json": {
+      "bytes": 940,
+      "sha256": "0f6453f504c5fe85ba80a12bc472935d0685c722d1ab2d351527bf2e4b0a4962"
+    },
+    "experiments/object_validity/__init__.py": {
+      "bytes": 167,
+      "sha256": "d6cd027ebfa3240ee7c189251d94d7aae8d7a7ca8331b6c0c6131a31a5ed50f3"
+    },
+    "experiments/object_validity/a0_carbon.py": {
+      "bytes": 20692,
+      "sha256": "a57ae990bd9f02d0a78b054db60662c7ecf81c0ad02fb7370d3905a06647bb17"
+    },
+    "experiments/object_validity/a0_figures.py": {
+      "bytes": 8680,
+      "sha256": "0e9bff364dffd4f98ad6062d345427e4e1f0423d22fbdedae01aaa15589ef145"
+    },
+    "experiments/object_validity/a0_physics.py": {
+      "bytes": 19445,
+      "sha256": "018c327c09aece6bb86ab2d8971d2781726d6ce1f97198202270b032a97b18f3"
+    },
+    "experiments/object_validity/a0_provenance.py": {
+      "bytes": 3300,
+      "sha256": "8e038da526f93dbb5983363c39228f8c89903a40edabe3ce48c7bd8cee1feb47"
+    },
+    "experiments/object_validity/a0_resources.py": {
+      "bytes": 31869,
+      "sha256": "8be301a6c67893f77d96dd2470050a7718e52b665e186a3b0923b0ea81f3ae87"
+    },
+    "experiments/object_validity/a0_tables.py": {
+      "bytes": 9606,
+      "sha256": "82b562f871b632111f88dc3557031e2022ae1bd33ed84031e9d2ca2e83e63a62"
+    },
+    "tests/object_validity/test_carbon.py": {
+      "bytes": 2718,
+      "sha256": "b438b1b3eefa5f63b923d0c13c99b098ff2dfa5539d0981f2f106c3b9f816974"
+    },
+    "tests/object_validity/test_physics.py": {
+      "bytes": 2138,
+      "sha256": "6acb771e60c640f8218f2edb0df38906f91461df025c40fdd54faa2aab0a2653"
+    },
+    "tests/object_validity/test_resources.py": {
+      "bytes": 3255,
+      "sha256": "f26f39cd84100652035e526f7b83a02258f5858711c065207c1b3352714178d3"
+    }
+  },
+  "total_bytes_excluding_manifest": 3428891
+}

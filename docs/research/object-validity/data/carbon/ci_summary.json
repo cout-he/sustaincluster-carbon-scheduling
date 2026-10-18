@@ -1,0 +1,55 @@
+{
+  "arrival_only": true,
+  "ci_g_per_kwh_count": 1536,
+  "ci_g_per_kwh_mean": 206.06674479166668,
+  "ci_g_per_kwh_std_population": 61.234273942695154,
+  "ci_g_per_kwh_min": 80.47,
+  "ci_g_per_kwh_max": 298.4,
+  "ci_g_per_kwh_p5": 96.6,
+  "ci_g_per_kwh_p25": 156.6275,
+  "ci_g_per_kwh_p50": 223.86,
+  "ci_g_per_kwh_p75": 260.5075,
+  "ci_g_per_kwh_p90": 275.42,
+  "ci_g_per_kwh_p95": 282.56,
+  "ci_g_per_kwh_p99": 296.4985000000001,
+  "peak_trough_g_per_kwh": 217.92999999999998,
+  "acf": [
+    {
+      "lag_slots": 1,
+      "lag_minutes": 15,
+      "pairs": 1520,
+      "correlation": 0.9894885118679158
+    },
+    {
+      "lag_slots": 4,
+      "lag_minutes": 60,
+      "pairs": 1472,
+      "correlation": 0.9571722502580317
+    },
+    {
+      "lag_slots": 16,
+      "lag_minutes": 240,
+      "pairs": 1280,
+      "correlation": 0.6075293734903943
+    },
+    {
+      "lag_slots": 32,
+      "lag_minutes": 480,
+      "pairs": 1024,
+      "correlation": 0.1845998621047222
+    },
+    {
+      "lag_slots": 48,
+      "lag_minutes": 720,
+      "pairs": 768,
+      "correlation": 0.35018803987992153
+    },
+    {
+      "lag_slots": 92,
+      "lag_minutes": 1380,
+      "pairs": 64,
+      "correlation": 0.8400652331825421
+    }
+  ],
+  "distinct_source_fragments": 16
+}

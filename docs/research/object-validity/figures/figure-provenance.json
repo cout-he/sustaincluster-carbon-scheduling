@@ -1,0 +1,19 @@
+{
+  "source_sha": "bf8a35ef647f19b5ef10ce1b99f723370b7a0732",
+  "method": "Descriptive aggregate-only figures; no raw/scenario payload read; no inferential error bars.",
+  "inputs": {
+    "data/resources/utilization-pooled.csv": "e4f6b2e0029aa5ed4d3512f64311832a10dc18dfab8cce097d0dacd2ef4d8b9d",
+    "data/resources/pressure-policy-summary.csv": "7fb301062c7cb5f05f025ead985ff01c1a579980edc56d5975022bf648720cf4",
+    "data/carbon/opportunity_groups.csv": "fac03f37de8029138769561a6bcfdb8669e112479aa0f311c2e4a0dae0553dbe",
+    "data/carbon/rule_pairs.csv": "eb0f5ef279e0928b211fc101d9399deec9cc638bc47a4070d244d29de2bc51c5",
+    "data/physics/physical-probes.csv": "c612fbb382ea15bc3b3f533e0bb134be89b96dc8bc39f4764681799f64d92df7",
+    "data/physics/setpoint-comparisons.csv": "49db09e815a9e8295348c6ea393373a48aa7ce0d55b943b7c359b6c5c1e1f7a1"
+  },
+  "backend": "matplotlib",
+  "dpi": 600,
+  "font_sizes_pt": [
+    6,
+    7,
+    8
+  ]
+}

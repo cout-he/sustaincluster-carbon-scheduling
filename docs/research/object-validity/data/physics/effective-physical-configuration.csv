@@ -1,0 +1,49 @@
+parameter,value,unit,evidence,status,interpretation
+logical_cpu_cores,50000,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+logical_gpus,1000,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+logical_memory_gb,80000,GB,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+declared_cpu_server_count,782,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+declared_gpu_server_count,250,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+declared_combined_server_count,782,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+rack_count,32,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+configured_cpu_cores_per_rack,1563,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+configured_gpus_per_rack,32,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+declared_cpu_configs,800,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+declared_gpu_configs,1024,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+instantiated_cpu_server_objects,800,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+represented_cpu_cores,51200,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+instantiated_gpu_power_objects,800,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+gpu_power_object_to_logical_capacity_ratio,0.8,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+configured_gpus_per_server_for_sizing,4,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+actual_gpu_objects_per_server,1,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+max_w_per_rack,17600.0,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+nominal_datacenter_capacity_mw,1.0,MW,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+effective_ct_fan_reference_w,3484456.58145007,W,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+effective_ct_reference_airflow_m3_per_s,80.78541187742512,m3/s,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+loaded_chiller_cop,5.0,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+active_chiller_rated_cop_literal,3.0,count_or_ratio,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+supply_approach_c,5.1499999999999995,degrees_C,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+return_approach_c,-3.1000000000000005,degrees_C,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+memory_background_w,5600.000000000001,W,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+rack_inlet_limit_c,28.0,degrees_C,DC_Config and actual JointPowerModel object inspection,runtime_confirmed,
+json_declared_rack_count,20,racks,configs/dcs/dc_config.json,runtime_confirmed,Overridden by ceil(server_count/25): 32.
+json_CT_FAN_REF_P,1000,W,configs/dcs/dc_config.json,runtime_confirmed,CT sizing overwrites fan reference with a thermal load and feeds it to both fan and chiller.
+json_CT_REFRENCE_AIR_FLOW_RATE,2.8315,m3/s,configs/dcs/dc_config.json,runtime_confirmed,CT sizing overwrites fan reference with a thermal load and feeds it to both fan and chiller.
+json_CHILLER_COP_BASE,5.0,dimensionless,configs/dcs/dc_config.json,runtime_confirmed,Loaded COP=5 is not passed into calculate_chiller_power; active rated_cop=3.
+C_AIR,1006,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+RHO_AIR,1.225,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CRAC_FAN_REF_P,150,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CRAC_SUPPLY_AIR_FLOW_RATE_pu,5.663e-05,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CRAC_REFRENCE_AIR_FLOW_RATE_pu,9.438e-05,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CW_PRESSURE_DROP,300000,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CW_WATER_FLOW_RATE,0.0011,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CW_PUMP_EFFICIENCY,0.87,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CT_PRESSURE_DROP,300000,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CT_WATER_FLOW_RATE,0.0011,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+CT_PUMP_EFFICIENCY,0.87,as_named_in_source,configs/dcs/dc_config.json -> DC_Config -> calculate_HVAC_power,runtime_confirmed,
+vectorized_server_fan_m_coefficient,10,dimensionless,envs/sustaindc/datacenter_model.py:Rack.server_and_fan_init,runtime_confirmed,Hand-tuned multipliers in active vectorized equation; not empirically validated here.
+vectorized_server_fan_c_coefficient,5,dimensionless,envs/sustaindc/datacenter_model.py:Rack.server_and_fan_init,runtime_confirmed,Hand-tuned multipliers in active vectorized equation; not empirically validated here.
+vectorized_server_fan_it_slope,20,dimensionless,envs/sustaindc/datacenter_model.py:Rack.server_and_fan_init,runtime_confirmed,Hand-tuned multipliers in active vectorized equation; not empirically validated here.
+vectorized_cpu_extra_temperature_slope,0.05,1/degrees_C,envs/sustaindc/datacenter_model.py:Rack.compute_instantaneous_pwr_vecd,source_confirmed,Added to fitted CPU slope; causes idle CPU power to exceed declared full-load rating.
+fixed_crac_fan_electric_kw,0.03240343305195208,kW,calculate_HVAC_power,runtime_confirmed,Does not scale with rack count or actual load.
+fixed_each_water_pump_electric_kw,0.37931034482758624,kW,calculate_HVAC_power,runtime_confirmed,Same configured parameters are reused for chilled-water and tower pumps.
