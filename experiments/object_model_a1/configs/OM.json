@@ -1,0 +1,44 @@
+{
+  "schema": "a1-logical-candidate-v1",
+  "candidate_id": "OM",
+  "capacity_version": "a1-om-v1",
+  "mapping_version": "observed_usage_x1_pressure_v1",
+  "logical_capacity": {
+    "cpu": 10000,
+    "gpu": 200,
+    "mem": 16000
+  },
+  "resource_units": {
+    "cpu": "observed vCPU-equivalent (legacy x5 where named)",
+    "gpu": "fluid observed GPU-equivalent (legacy x5 where named); NOT integer reservation",
+    "mem": "observed GB (legacy x5 where named)"
+  },
+  "basis": "Legacy M divided by5 in both workload and capacity; exact normalized-pressure comparator",
+  "memory_basis": "Inherited A0 memory ratio with consistent /5 for observed mapping; workload peak and reserve need independent inventory confirmation",
+  "sla_version": "arrival_plus_multiplier_times_original_duration_v1",
+  "sla_multipliers": [
+    1.5,
+    2.0
+  ],
+  "pressure_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "pressure_semantics": "synthetic multiplication of all three demands only; no added task or altered duration",
+  "allowed_roles": [
+    "train"
+  ],
+  "ci_version": "unchanged_frozen_train_previous_hour_left_hold_v1",
+  "ci_threshold_g_per_kwh": 161.075,
+  "threshold_provenance": "inherited E1 literal; April calibration is not strictly prior to Jan/Mar; no A1 fitting",
+  "power_model": "disabled",
+  "physical_carbon_output": false,
+  "equipment_inventory_status": "conditional_arithmetic_draft_not_calibrated",
+  "system_cpu_reserve": null,
+  "system_memory_reserve_gb": null,
+  "device_power_w": null,
+  "cooling_capacity_w_thermal": null,
+  "final_research_object_frozen": false,
+  "base_source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0"
+}

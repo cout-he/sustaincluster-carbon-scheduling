@@ -1,0 +1,69 @@
+{
+  "schema": "a1-field-evidence-v1",
+  "checked_local_date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "base_source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "read_boundary": {
+    "allowed_payload_roles": ["train"],
+    "annual_pickle_deserialized": false,
+    "raw_trace_csv_read": false,
+    "prohibited_holdout_payload_read": false,
+    "notebook_executed": false,
+    "payload_probe_scope": "One role-checked frozen Train workload; no task values exported"
+  },
+  "official_sources": [
+    {
+      "url": "https://github.com/alibaba/clusterdata/blob/master/cluster-trace-gpu-v2020/README.md",
+      "sections": ["pai_sensor_table", "pai_task_table", "2 Data Files in the Trace"],
+      "remote_commit_sha": null,
+      "remote_revision_limitation": "Public master documentation retrieved on checked_local_date; immutable remote revision was not resolved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/alibaba/clusterdata/master/cluster-trace-gpu-v2020/data/pai_task_table.header",
+      "confirms_fields": ["job_name", "task_name", "inst_num", "plan_cpu", "plan_mem", "plan_gpu", "gpu_type"]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/alibaba/clusterdata/master/cluster-trace-gpu-v2020/data/pai_sensor_table.header",
+      "confirms_fields": ["worker_name", "cpu_usage", "gpu_wrk_util", "avg_mem", "max_mem", "avg_gpu_wrk_mem"]
+    }
+  ],
+  "field_semantics": {
+    "cpu_usage": {"kind": "observed_lifetime_average_usage", "source_unit": "percent_of_one_vCPU_core", "canonical_unit": "used_vCPU_core_equivalent", "canonical_multiplier": 0.01, "is_reservation": false, "is_peak": false},
+    "gpu_wrk_util": {"kind": "observed_lifetime_average_usage", "source_unit": "percent_of_one_GPU_equivalent", "canonical_unit": "used_GPU_equivalent", "canonical_multiplier": 0.01, "is_reservation": false, "is_device_count": false},
+    "avg_mem": {"kind": "observed_lifetime_average_usage", "source_unit": "GB_as_named_by_original_dictionary", "canonical_unit": "GB_as_named_by_original_dictionary", "canonical_multiplier": 1.0, "byte_base_confirmed": null, "is_reservation": false, "is_peak": false},
+    "plan_cpu": {"kind": "requested_per_instance_inherited_from_task", "source_unit": "percent_of_one_vCPU_core", "canonical_multiplier": 0.01, "present_in_frozen_12_field_schema": false},
+    "plan_gpu": {"kind": "requested_per_instance_inherited_from_task", "source_unit": "percent_of_one_GPU_equivalent", "canonical_multiplier": 0.01, "present_in_frozen_12_field_schema": false},
+    "plan_mem": {"kind": "requested_per_instance_inherited_from_task", "source_unit": "GB_as_named_by_original_dictionary", "canonical_multiplier": 1.0, "present_in_frozen_12_field_schema": false}
+  },
+  "local_provenance": {
+    "notebook": {"path": "D:/A-myprofile/SustainCluster/upstream/data/workload/alibaba_2020_dataset/alibaba_analysis.ipynb", "sha256": "957ea2c6c56742e3a7fa72f1a08f93c997c4a1a00d9d25814eacdba13f53bd18", "usage_aggregation_cell": 12, "plan_omission_export_cell": 19, "job_only_bandwidth_merge_cell": 56},
+    "tracked_preprocessing_utility": {"path": "data/workload/alibaba_2020_dataset/alibaba_utils.py", "sha256": "faaa571115cde969885b87ffdfb9bb6100abe1ea3b8d548e32676f822250d08f", "duration_mean_runtime_lines": [56, 60], "duration_minutes_line": 76},
+    "tracked_annual_generator": {"path": "data/workload/alibaba_2020_dataset/extract_dataset_from_dfas.py", "sha256": "5aeae21d7adf8114a3290fcbb505efae13795731bdd81163f8918511138c8d0f", "final_12_columns_lines": [350, 363], "repeat_source_block_lines": [424, 472], "existing_iqr_filter_lines": [285, 305]},
+    "legacy_multiplier": {"path": "utils/workload_utils.py", "lines": [50, 70, 79, 80, 81], "value": 5.0, "origin_commit_observed": "749dc6c", "code_intent": "Simulate tasks five times larger than original", "independent_physical_justification": null},
+    "annual_source": {"path": "data/workload/alibaba_2020_dataset/result_df_full_year_2020.pkl", "frozen_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e", "sha256_recomputed_this_task": false, "stat_bytes": 142336499, "schema_full_payload_verified_this_task": false},
+    "train_probe": {"scenario_id": "train-20230102T0500-r1-s1.5", "role": "train", "scenario_identity_sha256": "2bec27b5105311eccbefba3cbd8093dbe95b19e0d4e6120da28dd2c9bc3cd86a", "workload_file_sha256_from_manifest": "ba5b5f2cde71092f86f443edef4c0d5848899341cadae4290dd95d8d372260a7", "task_count": 2785, "raw_field_lengths_observed": [12], "plan_fields_present": false, "instance_identity_fields_present": false},
+    "raw_or_intermediate_tables_found_by_filename_in_workspace": false
+  },
+  "mapping_options": [
+    {"proposal_id": "legacy-usage-x5", "executable_from_frozen_train": true, "cpu": "5 * raw_fields[5] / 100", "gpu": "5 * raw_fields[6] / 100", "memory": "5 * raw_fields[7]", "interpretation": "Synthetic enlarged observed-usage demand; legacy comparison only", "is_original_requested_demand": false},
+    {"proposal_id": "observed-usage-x1", "executable_from_frozen_train": true, "cpu": "raw_fields[5] / 100", "gpu": "raw_fields[6] / 100", "memory": "raw_fields[7]", "interpretation": "Aggregated mean usage held fixed during declared duration; fluid GPU-equivalent service abstraction", "is_original_requested_demand": false, "whole_gpu_rounding_supported": false},
+    {"proposal_id": "requested-resources-unavailable", "executable_from_frozen_train": false, "cpu": null, "gpu": null, "memory": null, "expected_original_per_instance_conversion": {"cpu": "plan_cpu / 100", "gpu": "plan_gpu / 100", "memory": "plan_mem"}, "missing": ["Train-filtered original task and instance tables", "task_name and instance identity mapping", "uniqueness and multiplicity audit", "missing request policy"], "fill_from_observed_usage_allowed": false}
+  ],
+  "unresolved_assumptions": [
+    "Sensor worker merge multiplicity not verified without original tables",
+    "Task aggregation sums lifetime mean usage while duration is mean instance runtime",
+    "Job-only bandwidth merge may duplicate multiple task roles; occurrence not verified",
+    "Observed average usage does not determine peak capacity reservation",
+    "GPU-equivalent service is divisible; device-level placement and sharing not verified",
+    "Frozen input was historically filtered and repeated; A1 performs no new task removal"
+  ],
+  "required_external_or_raw_evidence": {
+    "true_per_task_requested_resources": null,
+    "gpu_model_and_count_per_host": null,
+    "vcpu_to_physical_core_relation": null,
+    "gpu_sharing_and_memory_partition_mechanism": null,
+    "cpu_system_overhead_reservation": null,
+    "memory_system_overhead_reservation": null,
+    "device_power_calibration": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "a1-demand-mappings-v1",
+  "runnable": {
+    "legacy_usage_x5_pressure_v1": {
+      "cpu": "5*pressure*raw[5]/100",
+      "gpu": "5*pressure*raw[6]/100",
+      "mem": "5*pressure*raw[7]",
+      "interpretation": "Synthetic enlarged observed-use proxy, NOT requests",
+      "independent_basis_for_multiplier5": null
+    },
+    "observed_usage_x1_pressure_v1": {
+      "cpu": "pressure*raw[5]/100",
+      "gpu": "pressure*raw[6]/100",
+      "mem": "pressure*raw[7]",
+      "interpretation": "sensor-field-derived observed-use proxy, held constant over derived task duration as a modeling assumption; not reservations; original instance concurrency is not reconstructed",
+      "fractional_gpu": "continuous GPU-equivalent occupancy; no MIG/timeslicing/device guarantee"
+    }
+  },
+  "blocked": {
+    "requested_plan_v1": {
+      "runnable": false,
+      "required_fields": [
+        "plan_cpu",
+        "plan_gpu",
+        "plan_mem",
+        "job_name",
+        "task_name",
+        "inst_num",
+        "instance identity"
+      ],
+      "reason": "Current 12-field Train payload discards request and per-instance join keys; never infer plan from utilization",
+      "mapping": null
+    }
+  },
+  "evidence": "docs/research/object-validity/A1-field-evidence.md",
+  "original_source_description": "https://github.com/alibaba/clusterdata/blob/master/cluster-trace-gpu-v2020/README.md#pai_sensor_table"
+}
