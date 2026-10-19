@@ -1,5 +1,7 @@
 """Synthetic boundary cases: no source task/environment payload is read."""
 from dataclasses import replace
+import csv
+import json
 from types import SimpleNamespace
 
 import pandas as pd
@@ -97,3 +99,27 @@ def test_remaining_solo_slack_distinguishes_missed_from_zero_slot():
     assert row['observed_remaining_legal_wait_slots_negative_tasks'] == 1
     assert row['observed_remaining_legal_wait_slots_0_tasks'] == 1
     assert row['observed_remaining_legal_wait_slots_ge4_tasks'] == 0
+
+
+def test_fragment_identity_repair_preserves_all_simulation_metrics(tmp_path):
+    from experiments.object_model_a1.rules import repair_fragment_ids
+    from experiments.e1.contracts import file_hash
+    source = tmp_path/'source.csv'
+    source.write_text('scenario_id,source_fragment_id,arrival_start\n'
+                      'train-20230101T0000-r1-s1.5,real-fragment,2023-01-01T00:00:00+00:00\n',encoding='utf8')
+    out = tmp_path/'out'
+    out.mkdir()
+    rows = out/'scenario-summary.csv'
+    rows.write_text('original_scenario_id,arrival_start,source_fragment_id,dmr,deadline_misses\n'
+                    'train-20230101T0000-r0.75-s2,2023-01-01T00:00:00+00:00,,0.125,1\n',encoding='utf8')
+    (out/'metadata.json').write_text(json.dumps({'script_sha256':'producer-rules-hash'}),encoding='utf8')
+    before = file_hash(rows)
+    result = repair_fragment_ids(out,source,'producer-commit')
+    corrected = list(csv.DictReader(rows.open(encoding='utf8')))[0]
+    assert corrected['source_fragment_id'] == 'real-fragment'
+    assert corrected['dmr'] == '0.125'
+    assert corrected['deadline_misses'] == '1'
+    assert result['input_csv_sha256'] == before
+    assert result['non_fragment_columns_sha256_before'] == result['non_fragment_columns_sha256_after']
+    assert result['repaired_rows'] == 1
+    assert json.loads((out/'metadata.json').read_text())['producer_run_rules_sha256'] == 'producer-rules-hash'

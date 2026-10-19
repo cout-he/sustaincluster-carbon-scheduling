@@ -1,0 +1,86 @@
+{
+  "schema": "a1-figure-qa-v1",
+  "source_validation": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 19,
+      "WARN": 1,
+      "FAIL": 0
+    }
+  },
+  "accepted_source_warning": "PNG preview requested; no TIFF required. Editable SVG/PDF also supplied.",
+  "pdf_audits": [
+    {
+      "pdf": "docs\\research\\object-validity\\figures\\a1\\A1-capacity-competition.pdf",
+      "auditable": true,
+      "minimum_required_pt": 6.0,
+      "minimum_found_pt": 6.0,
+      "text_run_count": 113,
+      "below_minimum_count": 0,
+      "below_minimum": [],
+      "warnings": []
+    },
+    {
+      "pdf": "docs\\research\\object-validity\\figures\\a1\\A1-ci-deadline-conflict.pdf",
+      "auditable": true,
+      "minimum_required_pt": 6.0,
+      "minimum_found_pt": 6.0,
+      "text_run_count": 82,
+      "below_minimum_count": 0,
+      "below_minimum": [],
+      "warnings": []
+    }
+  ],
+  "input_and_output_sha_current": true,
+  "visual_inspection": {
+    "status": "Subagent and root panel-by-panel and whole-figure inspection passed; root checked both final PNGs.",
+    "panels": {
+      "capacity_wait": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "deadline": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "utilization": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "competition": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "paired_tradeoff": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "remaining_slack": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      },
+      "long_slack_risk": {
+        "labels_clear": true,
+        "units_explicit": true,
+        "all_selected_source_fragments_retained": true,
+        "inferential_uncertainty": "none: descriptive pooled or per-fragment data only"
+      }
+    },
+    "corrections": "Reserved footer band to clear axes labels; moved line-style explanation out of utilization data region.",
+    "caveats": "Coincident scatter points overlap without jitter; zero-height bars/points remain; Legacy mappings shown only in source tables."
+  },
+  "semantics": "GPU CI exposure is a resource accounting proxy, never kWh or kgCO2; no power model was called."
+}

@@ -7,6 +7,7 @@ import argparse
 from collections import Counter, defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime, timezone
+import csv
 import json
 import math
 import multiprocessing
@@ -96,7 +97,7 @@ def diagnose(scenario, policy_name, capacity, threshold=161.075):
                original_scenario_id=scenario.identity.get('source_scenario_id',scenario.scenario_id),
                original_scenario_identity_sha256=scenario.identity.get('source_scenario_identity_sha256',content_hash(scenario.identity)),
                derived_scenario_identity_sha256=content_hash(scenario.identity),
-               source_fragment_id=scenario.identity.get('source_fragment_sha256', ''),
+               source_fragment_id=scenario.identity.get('source_fragment_id', ''),
                mapped_workload_sha256=scenario.identity.get('derived_workload_sha256') or scenario.workload.sha256,
                original_workload_sha256=scenario.identity.get('source_workload_sha256',scenario.identity.get('workload_sha256', '')),
                original_environment_sha256=scenario.identity.get('source_environment_sha256',scenario.identity.get('environment_sha256', '')),
@@ -318,15 +319,78 @@ def _read_candidate(path):
                 policies=policies,config_path=str(path))
 
 
+def repair_fragment_ids(output, source_csv, diagnostic_source_commit):
+    """Correct only the identity column, using already public A0 Train metadata.
+
+    Producer commit and original file hash remain recorded; every non-fragment
+    CSV cell is hashed before/after to demonstrate no simulation metric changes.
+    No pool, original dataset, environment, simulator or physical model is read.
+    """
+    output, source_csv = Path(output), Path(source_csv)
+    with source_csv.open(encoding='utf8',newline='') as stream:
+        source_rows = list(csv.DictReader(stream))
+    by_start = {}
+    for row in source_rows:
+        start = row['arrival_start']
+        if not row['source_fragment_id']:
+            raise ValueError('Source Train fragment identity is empty')
+        if start in by_start and by_start[start]['source_fragment_id']!=row['source_fragment_id']:
+            raise ValueError('Conflicting source Train fragment identity')
+        by_start[start] = row
+    path = output/'scenario-summary.csv'
+    original_hash = file_hash(path)
+    with path.open(encoding='utf8',newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    other_cells_before = content_hash([{k:v for k,v in row.items() if k!='source_fragment_id'} for row in rows])
+    repaired = 0
+    for row in rows:
+        source = by_start.get(row['arrival_start'])
+        if source is None or row['original_scenario_id'].split('-r')[0]!=source['scenario_id'].split('-r')[0]:
+            raise ValueError('A1 scenario does not match public A0 Train fragment identity')
+        wanted = source['source_fragment_id']
+        if row['source_fragment_id'] not in ('',wanted):
+            raise ValueError('Refusing to replace a conflicting nonempty fragment identity')
+        if row['source_fragment_id']!=wanted:
+            row['source_fragment_id'] = wanted
+            repaired += 1
+    other_cells_after = content_hash([{k:v for k,v in row.items() if k!='source_fragment_id'} for row in rows])
+    if other_cells_before!=other_cells_after:
+        raise RuntimeError('Identity correction attempted to change a simulation metric')
+    write_csv(path,rows)
+    result = dict(schema='a1-source-fragment-identity-repair-v1',rows=len(rows),repaired_rows=repaired,
+        source='already published A0 Train ci_by_fragment.csv, matched by original scenario date and arrival_start',
+        source_metadata_sha256=file_hash(source_csv),input_csv_sha256=original_hash,output_csv_sha256=file_hash(path),
+        non_fragment_columns_sha256_before=other_cells_before,non_fragment_columns_sha256_after=other_cells_after,
+        diagnostic_source_commit=diagnostic_source_commit,postprocess_script_sha256=file_hash(__file__),
+        metrics_replayed=False,simulation_metrics_changed=False,heldout_payloads_read=False)
+    (output/'identity-repair.json').write_text(json.dumps(result,indent=2),encoding='utf8')
+    metadata_path=output/'metadata.json'
+    metadata=json.loads(metadata_path.read_text(encoding='utf8'))
+    metadata.update(diagnostic_source_commit=diagnostic_source_commit,
+        producer_run_rules_sha256=metadata['script_sha256'],
+        current_reproduction_rules_sha256=file_hash(__file__),source_fragment_identity_repair=result)
+    metadata_path.write_text(json.dumps(metadata,indent=2),encoding='utf8')
+    return result
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--pool',required=True)
-    parser.add_argument('--configs',nargs='+',required=True)
+    parser.add_argument('--pool')
+    parser.add_argument('--configs',nargs='+')
     parser.add_argument('--output',required=True)
     parser.add_argument('--source-sha',default=BASE_SHA)
     parser.add_argument('--workers',type=int,default=2)
     parser.add_argument('--max-seconds',type=float,default=1200)
+    parser.add_argument('--repair-source-fragments',help='Identity-only correction using public A0 Train CI metadata; no pool payload read')
+    parser.add_argument('--diagnostic-source-commit',help='Commit containing the exact original producer rules/config adapter')
     args = parser.parse_args(argv)
+    if args.repair_source_fragments:
+        if not args.diagnostic_source_commit:
+            parser.error('--diagnostic-source-commit is required for identity correction')
+        print(json.dumps(repair_fragment_ids(args.output,args.repair_source_fragments,args.diagnostic_source_commit)),flush=True)
+        return
+    if not args.pool or not args.configs:
+        parser.error('--pool and --configs are required for candidate replays')
     started=time.monotonic()
     out=Path(args.output)
     out.mkdir(parents=True,exist_ok=True)

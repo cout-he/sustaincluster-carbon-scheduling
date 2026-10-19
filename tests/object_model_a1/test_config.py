@@ -69,3 +69,11 @@ def test_execution_declarations_cannot_silently_disagree(tmp_path,key,value):
     c=json.loads((CONFIGS/'OM.json').read_text());c[key]=value
     path=tmp_path/'bad.json';path.write_text(json.dumps(c))
     with pytest.raises(ValueError,match='declaration'): load_candidate(path)
+
+
+def test_derived_candidate_does_not_expose_source_statistics_as_new_metrics():
+    s=source();s.statistics={'capacity_pressure':.123,'label':'old'}
+    a=adapt_scenario(s,load_candidate(CONFIGS/'OM.json'))
+    assert 'capacity_pressure' not in a.statistics
+    assert a.statistics['source_statistics']==s.statistics
+    assert a.statistics['derived_statistics_available'] is False

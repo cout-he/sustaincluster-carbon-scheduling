@@ -82,4 +82,6 @@ def adapt_scenario(source,candidate):
         derived_workload_sha256=workload.sha256,physical_model_enabled=False)
     return LogicalScenario('a1-'+candidate['candidate_id']+'-'+source.scenario_id,
         'train',workload,source.environment,capacity,identity,
-        dict(source.parameters,a1_power_model='disabled'),dict(source.statistics,a1_derived=True))
+        dict(source.parameters,a1_power_model='disabled'),
+        dict(source_statistics=dict(source.statistics),a1_derived=True,
+             derived_statistics_available=False))

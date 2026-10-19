@@ -1,0 +1,16 @@
+{
+  "schema": "a1-source-fragment-identity-repair-v1",
+  "rows": 1440,
+  "repaired_rows": 0,
+  "source": "already published A0 Train ci_by_fragment.csv, matched by original scenario date and arrival_start",
+  "source_metadata_sha256": "adbd045cf5be95316b97a37ecb824a6b95f1abb397d260fe9caf7037ff2bb29c",
+  "input_csv_sha256": "68a9267e3d21bd30236771bdc3b9494d6369201d3e98e14084e9bccbd2ea0532",
+  "output_csv_sha256": "68a9267e3d21bd30236771bdc3b9494d6369201d3e98e14084e9bccbd2ea0532",
+  "non_fragment_columns_sha256_before": "297856e3ddda71191f1d7a5fc73bd9c3f0db593ab4af28bede872698ad3ae036",
+  "non_fragment_columns_sha256_after": "297856e3ddda71191f1d7a5fc73bd9c3f0db593ab4af28bede872698ad3ae036",
+  "diagnostic_source_commit": "1620060cac1590047221614c761b79ff1e0a588d",
+  "postprocess_script_sha256": "1ca876bdb04dbb1f28685d17ad963fcdb14669ae7650b5b8f8b53f8300cedfd4",
+  "metrics_replayed": false,
+  "simulation_metrics_changed": false,
+  "heldout_payloads_read": false
+}

@@ -1,0 +1,178 @@
+{
+  "schema": "a1-aggregate-figure-provenance-v1",
+  "source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "base_source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "script_sha256": "56a06e1f79fc993f16a2838a2c3e36743cd2be5adb96e226c0f7b2be4012bd17",
+  "backend": "Python matplotlib",
+  "dpi": 600,
+  "font_sizes_pt": [
+    6,
+    7,
+    8
+  ],
+  "export_contract": "Editable PDF/SVG and requested 600-dpi PNG preview; TIFF submission raster not requested.",
+  "inputs": {
+    "data/a1/rules/metadata.json": "e72822110ba0342dd6baadeb288e3fe414ceea1f42cb2daf36e42e19c78ad0ea",
+    "data/a1/rules/candidate-summary.csv": "e3d7b220f9c7f07cfa14be4bce0351c1db1fe178f6e8e1b7bffc82dd68e74a6e",
+    "data/a1/rules/scenario-summary.csv": "68a9267e3d21bd30236771bdc3b9494d6369201d3e98e14084e9bccbd2ea0532",
+    "data/a1/rules/utilization-pooled.csv": "9b42d7e2de16d9da0ef7489b2e49312c36f273a3e5c3514c68c56cc21f001281",
+    "data/a1/rules/task-types.csv": "eaaf17be6e18a7959c8fae2f8271c25c2160c25e0b00aa6f1b4e8502469605cb"
+  },
+  "outputs": {
+    "A1-capacity-competition.pdf": "0921dfeaea65f21306c96bbf0787c7f8b00635ca120cb2cd41cf9d9dd58bdb40",
+    "A1-capacity-competition.svg": "dc14c713ce8211b92efc602293571afb46d66788b08436ddcf510fb916da12ac",
+    "A1-capacity-competition.png": "1373c270a50aa540b30385c167f55d0421c42b2af54a6452b20a9c0447daedc7",
+    "A1-ci-deadline-conflict.pdf": "ff950b9cbe71a2458757a9256e85d62755d86064c81d4e2f2dd353f2f388ae09",
+    "A1-ci-deadline-conflict.svg": "a1eb908b917b49702516dd4b6235c5d6bb2e7717a06cf27c3bb4b0cc9f811206",
+    "A1-ci-deadline-conflict.png": "df4e63b0f7c6f4dbc120acf5dcae640b73e370d636265d1f42578aca64034f12"
+  },
+  "input_row_counts": {
+    "candidate-summary.csv": 90,
+    "scenario-summary.csv": 1440,
+    "utilization-pooled.csv": 270,
+    "task-types.csv": 540
+  },
+  "observed_row_counts": {
+    "candidate_summary": 54,
+    "scenario_summary": 864,
+    "utilization": 162
+  },
+  "exclusion_rule": "Legacy L/M/H retained in source tables, omitted from figures to avoid cross-mapping absolute comparison",
+  "panels": {
+    "capacity_wait": {
+      "candidate_rows": 18,
+      "sla": 1.5,
+      "policies": [
+        "fifo",
+        "edf"
+      ],
+      "pressures": [
+        0.75,
+        1.0,
+        1.25
+      ],
+      "summary": "pooled task fraction"
+    },
+    "deadline": {
+      "candidate_rows": 18,
+      "policy": "edf",
+      "slas": [
+        1.5,
+        2.0
+      ],
+      "pressures": [
+        0.75,
+        1.0,
+        1.25
+      ],
+      "summaries": [
+        "pooled task fraction",
+        "maximum of 16 fragment DMRs"
+      ]
+    },
+    "utilization": {
+      "rows": 9,
+      "policy": "edf",
+      "pressure": 1.0,
+      "sla": 1.5,
+      "resources": [
+        "cpu",
+        "gpu",
+        "mem"
+      ],
+      "slots_per_row": 1536,
+      "quantile": "numpy linear, pooled slots"
+    },
+    "competition": {
+      "rows": 288,
+      "policy": "edf",
+      "source_fragments": 16,
+      "candidates": [
+        "OL",
+        "OM",
+        "OH"
+      ],
+      "pressures": [
+        0.75,
+        1.0,
+        1.25
+      ],
+      "slas": [
+        1.5,
+        2.0
+      ],
+      "metric": "union of 15-minute intervals with at least one capacity-waited task"
+    },
+    "paired_tradeoff": {
+      "pairs": 288,
+      "candidates": [
+        "OL",
+        "OM",
+        "OH"
+      ],
+      "pressures": [
+        0.75,
+        1.0,
+        1.25
+      ],
+      "slas": [
+        1.5,
+        2.0
+      ],
+      "source_fragments_per_condition": 16,
+      "matching": [
+        "candidate",
+        "pressure",
+        "SLA",
+        "arrival_start",
+        "workload_sha",
+        "environment_sha"
+      ],
+      "formula": "100*(1-threshold_gpu_ci_exposure_proxy/fifo_gpu_ci_exposure_proxy)",
+      "proxy": "observed GPU-equivalent * original-duration hours * CI g/kWh; NOT physical emissions"
+    },
+    "remaining_slack": {
+      "candidate_rows": 12,
+      "pressure": 1.0,
+      "slas": [
+        1.5,
+        2.0
+      ],
+      "policies": [
+        "fifo",
+        "carbon_threshold_fifo"
+      ],
+      "categories": [
+        "negative",
+        "0",
+        "1",
+        "2",
+        "3",
+        "ge4"
+      ],
+      "denominator": "all arrived tasks",
+      "metric": "floor((original initial Slack - observed waiting)/15), negative separately"
+    },
+    "long_slack_risk": {
+      "candidate_rows": 12,
+      "pressure": 1.0,
+      "slas": [
+        1.5,
+        2.0
+      ],
+      "policies": [
+        "fifo",
+        "carbon_threshold_fifo"
+      ],
+      "denominator": "tasks with original initial Slack >=60 minutes",
+      "metrics": [
+        "any capacity wait",
+        "any deadline miss"
+      ]
+    }
+  },
+  "statistics": "Descriptive only; pooled original tasks or equal 15-minute slots as specified. Sixteen source fragments are not independent biological/statistical replicates; no error bars/tests.",
+  "physical_interpretation": "No kWh or kgCO2; CI proxy reductions cannot establish physical carbon savings.",
+  "image_integrity": "Quantitative matplotlib marks only; no raster image manipulation, fitted curves, or sampling.",
+  "visual_qa_status": "Requires panel-by-panel inspection of final exports; automated checks alone are insufficient"
+}

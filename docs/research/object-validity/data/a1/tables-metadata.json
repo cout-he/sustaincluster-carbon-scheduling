@@ -1,0 +1,35 @@
+{
+  "schema": "a1-aggregate-evidence-v1",
+  "source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "base_source_sha": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "generator_sha256": "b95383d86e7b77560ca4c76b860cbfa6e2cd37410ac0460e5c8c52f6f6eb6e9b",
+  "diagnostic_source_commit": "1620060cac1590047221614c761b79ff1e0a588d",
+  "producer_run_rules_sha256": "47a03d37a5b61b2510e8f937e5357307b05ffe44d310df3f374664e5343666d7",
+  "producer_run_adapter_sha256": "28e491e4bdbc81b51e5e7b439687d3816f7477d41bf3eedd08356c01bc2832ee",
+  "current_reproduction_rules_sha256": "1ca876bdb04dbb1f28685d17ad963fcdb14669ae7650b5b8f8b53f8300cedfd4",
+  "input_sha256": {
+    "scenario-summary.csv": "68a9267e3d21bd30236771bdc3b9494d6369201d3e98e14084e9bccbd2ea0532",
+    "candidate-summary.csv": "e3d7b220f9c7f07cfa14be4bce0351c1db1fe178f6e8e1b7bffc82dd68e74a6e",
+    "utilization-pooled.csv": "9b42d7e2de16d9da0ef7489b2e49312c36f273a3e5c3514c68c56cc21f001281",
+    "task-types.csv": "eaaf17be6e18a7959c8fae2f8271c25c2160c25e0b00aa6f1b4e8502469605cb",
+    "metadata.json": "e72822110ba0342dd6baadeb288e3fe414ceea1f42cb2daf36e42e19c78ad0ea"
+  },
+  "input_complete": true,
+  "input_scenario_runs": 1440,
+  "matched_scenario_pairs": 288,
+  "matched_summary_groups": 18,
+  "physics_model_called": false,
+  "source_pool_manifest_sha256": "327e941eaa715aa9d25a30601502183cae27c1e7a83b0da7f31e2c0e251775ca",
+  "output_sha256": {
+    "matched-threshold-pairs.csv": "9615e1558478e393cb924b6e59e18f5150a6ceb3ae37e13725080ce3e909284d",
+    "matched-threshold-summary.csv": "20b729307ff96f7e2b303072cdd71b39895b99ba649591af96e97d604bd85370",
+    "matched-task-type-ci.csv": "cab46c65bd31fbd766e3de90022832d5a22851df54afda228080649a89de9165",
+    "fragment-competition.csv": "6486ae2daacd26aa009cfe5c53a245efeb64e0e47c620af95dc079dccef71e27"
+  },
+  "report_sha256": "487635642d02730f3b0f0a53178dcfabe938409bedc795d079f57b619b1c3d4a",
+  "proxy_units": "separate resource-unit * hour * gCO2e/kWh; NOT physical carbon or energy",
+  "type_weighting": "sum individual task CI integrals / sum original task runtime hours; no resource demand weighting",
+  "comparison": "within-candidate same original scenario and full completed cohort; FIFO versus CT/FIFO",
+  "ratio_aggregation": "ratio of summed separate-resource exposures; no averaging of fragment percentage changes",
+  "output_contains_task_details": false
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "a1-delivery-provenance-v1",
+  "checked_utc": "2026-10-19T06:33:41.872832+00:00",
+  "base_commit": "a754c5ee4bd3922cecd6993d9abb6bfbacdda7e0",
+  "producer_commit": "1620060cac1590047221614c761b79ff1e0a588d",
+  "producer_file_hashes": {
+    "experiments/object_model_a1/rules.py": "47a03d37a5b61b2510e8f937e5357307b05ffe44d310df3f374664e5343666d7",
+    "experiments/object_model_a1/config.py": "28e491e4bdbc81b51e5e7b439687d3816f7477d41bf3eedd08356c01bc2832ee"
+  },
+  "original_tracked_files": 653,
+  "original_tracked_files_changed": [],
+  "pool_manifest_sha256": "327e941eaa715aa9d25a30601502183cae27c1e7a83b0da7f31e2c0e251775ca",
+  "raw_source_hashes_inherited_not_recomputed": {
+    "carbon": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+    "physical_model": "bbe439176605512523a3a0ecd2bd22f18fdb9abf6ae6e782217157beedbf705b",
+    "weather": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+    "workload": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e"
+  },
+  "completed_rule_runs": 1440,
+  "original_scenarios": 96,
+  "derived_candidate_scenarios": 576,
+  "distinct_source_fragments": 16,
+  "tasks_per_pressure_sla_policy_candidate": 52339,
+  "task_executions_total": 4710510,
+  "all_tasks_completed": true,
+  "structurally_infeasible_tasks": 0,
+  "unclassified_capacity_wait_events": 0,
+  "fifo_edf_active_defer_minutes": 0,
+  "source_fragment_repaired_rows": 0,
+  "simulation_csv_bytes_unchanged_by_identity_check": true,
+  "no_physical_power_energy_or_carbon_columns": true,
+  "heldout_payloads_read": false,
+  "trained_models": false,
+  "final_object_frozen": false,
+  "a2_started": false,
+  "note": "All new objects are fluid observed-use proxy scheduling candidates; physical inventory and reservation evidence remain incomplete."
+}
