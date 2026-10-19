@@ -24,10 +24,10 @@
 
 ## Files and verification tasks
 
-- [ ] **Inventory/physics:** `inventory.py`, `physics.py`, `config.json`; tests for counts, reserves, endpoints, coordinate monotonicity, thermal closure, weather/action response, unsafe-action and safe-filter behavior. Write failing tests, implement, run green.
-- [ ] **Data and execution:** `data.py`, `environment.py`; tests for role/hash guard before payload, no future weather, immutable duplicate preservation, boundary release/backfill, capacity-vs-policy attribution, deadlines, incomplete-window accounting, action interface validation and fixed energy/carbon integral. Synthetic fixtures only.
-- [ ] **Acceptance harness:** `acceptance.py`; freeze task/environment hashes, cases and criteria to `acceptance-protocol.json`; test exclusive once marker and matrix cardinality without running real-data simulations. Commit all code/config/protocol and passing engineering checks BEFORE execution.
-- [ ] **One batch:** 3 fragments × 3 capacities × 2 SLA × 4 task policies × 2 HVAC rules =144 workload cases; plus 18 same-window zero-work physical background cases. One exclusive marker, one invocation. No post-outcome parameter edits/replays. CSV summaries/paired effects are public, per-task/timeline files local only.
+- [x] **Inventory/physics:** `inventory.py`, `physics.py`, `config.json`; tests for counts, reserves, endpoints, coordinate monotonicity, thermal closure, weather/action response, unsafe-action and safe-filter behavior. Write failing tests, implement, run green.
+- [x] **Data and execution:** `data.py`, `environment.py`; tests for role/hash guard before payload, no future weather, immutable duplicate preservation, boundary release/backfill, capacity-vs-policy attribution, deadlines, incomplete-window accounting, action interface validation and fixed energy/carbon integral. Synthetic fixtures only.
+- [x] **Acceptance harness:** `acceptance.py`; freeze task/environment hashes, cases and criteria to `acceptance-protocol.json`; test exclusive once marker and matrix cardinality without running real-data simulations. Commit all code/config/protocol and passing engineering checks BEFORE execution.
+- [x] **One batch:** 3 fragments × 3 capacities × 2 SLA × 4 task policies × 2 HVAC rules =144 workload cases; plus 18 same-window zero-work physical background cases. One exclusive marker, one invocation. No post-outcome parameter edits/replays. CSV summaries/paired effects are public, per-task/timeline files local only.
 - [ ] **Report:** independently check saved aggregates/integrals, publish full 144-row summary and 72 matched deferral/cooling pair summaries, describe failures honestly. No inferential statistics on three dependent trace fragments. Push branch. Only on core acceptance pass create `research/algorithms-v1`, research 2–3 methods, no training, push and stop.
 
 ## Predeclared acceptance

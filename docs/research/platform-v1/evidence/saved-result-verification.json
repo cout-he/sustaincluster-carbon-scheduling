@@ -1,0 +1,11 @@
+{
+  "experimental_acceptance": true,
+  "max_independent_heat_residual_kj": 1.5133991837501526e-09,
+  "max_integral_recalculation_error": 0.0,
+  "no_simulation_replay": true,
+  "pooled_method": "task-weight DMR/JCT, additive fixed-window energy/carbon, maximum individual queue, no confidence intervals",
+  "saved_cases_checked": 144,
+  "saved_steps_checked": 41472,
+  "saved_task_executions_checked": 436704,
+  "source_files_equal_execution_hashes": true
+}
