@@ -1,0 +1,22 @@
+{
+  "schema": "single-dc-platform-v1.0",
+  "base_sha": "b18e2ba8af587e4f79ae45a63afe6632926dc954",
+  "mapping": "observed_usage_x1_v1",
+  "capacities": {"OM": [10000, 200, 16000], "OH": [5888, 132, 16000], "OL": [11584, 312, 16000]},
+  "host": {"cpu_reference": "2 x Intel Xeon Gold 6338; SMT not modeled", "cpu_only_reference": "Dell PowerEdge R750 class", "gpu_host_reference": "Dell PowerEdge R750xa class, 4 V100-class PCIe accelerators; representative not OEM-certified SKU", "sockets": 2, "cores_per_socket": 32, "reserved_cores": 4, "dimm_count": 16, "dimm_gib": 16, "reserved_mem_gib": 16, "gpu_per_host": 4, "hosts_per_rack": 20},
+  "power": {"cpu_idle_w": 45, "cpu_reference_full_w": 205, "gpu_idle_w": 25, "gpu_reference_full_w": 250, "dimm_idle_w": 3, "dimm_reference_full_w": 5, "host_other_w": 50, "rack_switch_w": 100, "psu_efficiency": 0.94},
+  "thermal": {"heat_capacity_kj_per_k_host": 500, "ua_w_per_k_host": 2, "coil_sizing_ratio": 1.3, "air_design_delta_k": 10, "air_density_kg_m3": 1.2, "air_cp_kj_kg_k": 1.006, "fan_pressure_pa": 500, "fan_efficiency": 0.65, "water_density_kg_m3": 1000, "water_cp_kj_kg_k": 4.186, "water_delta_k": 5, "pump_pressure_pa": 100000, "pump_efficiency": 0.6, "condenser_fan_electric_fraction_of_coil_rating": 0.02, "condenser_fan_min_speed": 0.2, "carnot_efficiency": 0.35, "evaporator_approach_k": 5, "condenser_approach_k": 10, "minimum_lift_k": 10, "cop_min": 2, "cop_max": 8, "substep_seconds": 60, "supply_min_c": 18, "supply_max_c": 26, "inlet_control_limit_c": 27, "inlet_hard_limit_c": 28, "initial_inlet_c": 24, "outdoor_min_c": -5, "outdoor_max_c": 45},
+  "evaluation": {"step_minutes": 15, "responsibility_hours": 72, "arrival_hours": 24, "terminal_common_hours": 6, "fixed_supply_c": 20, "threshold_warmup_hours": 4, "threshold_history_hours": 24, "sla_multipliers": [1.5, 2.0]},
+  "sources": {
+    "paper": "https://arxiv.org/abs/2511.00117",
+    "cpu": "https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html",
+    "gpu": "https://images.nvidia.com/content/pdf/vgpu/data-sheet/nvidia-v100.pdf",
+    "cpu_host": "https://i.dell.com/sites/csdocuments/product_docs/en/poweredge-r750-spec-sheet.pdf",
+    "gpu_host": "https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-R750xa-spec-sheet.pdf",
+    "thermal_guidance": "https://resourcecenter.ashrae.org/File%20Library/Technical%20Resources/Bookstore/ASHRAE_TC0909_Power_White_Paper_22_June_2016_REVISED.pdf",
+    "carnot": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+    "fan": "https://www.energy.gov/sites/default/files/2013/10/f3/dc_fancasestudy.pdf",
+    "chiller_reference": "https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v24.2.0/EngineeringReference.pdf"
+  },
+  "assumptions": {"hardware": "Reference architecture and equalized utilization; no Alibaba machine reconstruction or placement/VRAM/SMT model. GPU-equivalent sharing is ideal fluid capacity.", "power": "205 W CPU TDP and 250 W GPU board rating are reference design endpoints, not measured full-load watts. GPU 25 W idle is paper precedent. CPU idle, DIMM endpoints, chassis/switch and PSU values are engineering assumptions, not manufacturer measurements.", "thermal": "All thermal mass, UA, pressure drops, efficiencies, sizing margin, approaches and fan reference fraction are explicit uncalibrated engineering assumptions. Reduced Carnot air-cooled chiller; no water tower, humidity/economizer, leakage-temperature or spatial hot-spot model.", "data": "Preserve processed annual lineage and known duplicate rows; usage is not reservation; deadlines synthetic; use existing role-checked Train only; do not unpickle annual data."}
+}

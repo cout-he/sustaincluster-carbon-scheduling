@@ -1,0 +1,89 @@
+[
+  {
+    "fragment": "train-20230501T0500-r1-s1.5",
+    "tasks": 2727,
+    "observations": 288,
+    "max_observed_demand": [
+      51.83411366711773,
+      15.28649357993452,
+      43.95637228794938
+    ],
+    "min_ci": 80.47,
+    "max_ci": 205.28,
+    "min_outdoor": 9.2,
+    "max_outdoor": 15.9,
+    "provenance": {
+      "workload_sha256": "7c333d8891e1907eca706d7defed07d3bdd4ed2ded8c92750d867172556bd7be",
+      "environment_sha256": "935399ce0e7a509772f5d9b73fc5ad539ba5de411c5d44d5d594b48cb6734164",
+      "manifest_sha256": "e0d48207c234644531f82bf2aa2da4ac91b1725f7066a04f0f438ca15ba2802f",
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "role": "train",
+      "start": "2023-05-01T05:00:00+00:00",
+      "arrival_end": "2023-05-02T05:00:00+00:00"
+    }
+  },
+  {
+    "fragment": "train-20230302T0500-r1-s1.5",
+    "tasks": 2498,
+    "observations": 288,
+    "max_observed_demand": [
+      50.380971786833854,
+      17.18816608877792,
+      42.847926826234094
+    ],
+    "min_ci": 110.17,
+    "max_ci": 264.28,
+    "min_outdoor": 2.1,
+    "max_outdoor": 13.6,
+    "provenance": {
+      "workload_sha256": "2b3f81b75b212f3789589b20cdfc433a398d2a252e3f35008024ef58f55110a2",
+      "environment_sha256": "d289b274282576c55bda23b8a2eeb67645cfcb4125a76c80daabb868c16740a7",
+      "manifest_sha256": "dd5ebc6cb95b9e4c759732f7cc3acf2d4e9de42797e6c05597c6c44ef337b29b",
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "role": "train",
+      "start": "2023-03-02T05:00:00+00:00",
+      "arrival_end": "2023-03-03T05:00:00+00:00"
+    }
+  },
+  {
+    "fragment": "train-20230404T0500-r1-s1.5",
+    "tasks": 3873,
+    "observations": 288,
+    "max_observed_demand": [
+      51.83797619047619,
+      18.10826458831484,
+      44.162733983787625
+    ],
+    "min_ci": 105.8,
+    "max_ci": 233.68,
+    "min_outdoor": 2.2,
+    "max_outdoor": 16.0,
+    "provenance": {
+      "workload_sha256": "d6668b76cc8a3133e249ea4c6971dd4349410f845612234a0a24084334d49c07",
+      "environment_sha256": "3bcaaee71448671e99b7f03fc1672bf69f4afa4e0be66eb13c35ff6dc8fb0178",
+      "manifest_sha256": "5032f0771291dc12660c349efc620ae2adca40edbf9b4a902e23fb896a0217ce",
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "role": "train",
+      "start": "2023-04-04T05:00:00+00:00",
+      "arrival_end": "2023-04-05T05:00:00+00:00"
+    }
+  }
+]

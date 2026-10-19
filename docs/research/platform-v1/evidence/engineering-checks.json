@@ -1,0 +1,7 @@
+{
+  "coordinate_checks": 972,
+  "failures": [],
+  "manual_points": 972,
+  "maximum_residual_kj": 1.2842065189033747e-09,
+  "scope": "engineering only, no task/environment data, no acceptance matrix"
+}
