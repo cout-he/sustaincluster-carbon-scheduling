@@ -1,0 +1,324 @@
+{
+  "schema": "SCA-PPO-E1-predeclared-v1",
+  "e0_base_sha": "d913ec334e39394804ca34340fb5e24adb6d66b6",
+  "platform_sha": "e372f502fb58aaa5a742e8efb4ced254507ab298",
+  "pool": "D:/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v2/scenarios-001",
+  "fragments": [
+    "train-20230501T0500-r1-s1.5",
+    "train-20230302T0500-r1-s1.5",
+    "train-20230404T0500-r1-s1.5"
+  ],
+  "capacities": [
+    "OM",
+    "OH",
+    "OL"
+  ],
+  "arms": {
+    "A": "EDF-CG",
+    "B": "CarbonRule-CG",
+    "C": "CarbonRule-DDF-CG"
+  },
+  "cases": [
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OM",
+      "A"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OM",
+      "B"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OM",
+      "C"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OH",
+      "A"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OH",
+      "B"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OH",
+      "C"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OL",
+      "A"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OL",
+      "B"
+    ],
+    [
+      "train-20230501T0500-r1-s1.5",
+      "OL",
+      "C"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OM",
+      "A"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OM",
+      "B"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OM",
+      "C"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OH",
+      "A"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OH",
+      "B"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OH",
+      "C"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OL",
+      "A"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OL",
+      "B"
+    ],
+    [
+      "train-20230302T0500-r1-s1.5",
+      "OL",
+      "C"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OM",
+      "A"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OM",
+      "B"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OM",
+      "C"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OH",
+      "A"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OH",
+      "B"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OH",
+      "C"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OL",
+      "A"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OL",
+      "B"
+    ],
+    [
+      "train-20230404T0500-r1-s1.5",
+      "OL",
+      "C"
+    ]
+  ],
+  "smoke": [
+    "train-20230501T0500-r1-s1.5",
+    "OM"
+  ],
+  "inputs": {
+    "train-20230501T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-05-02T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "935399ce0e7a509772f5d9b73fc5ad539ba5de411c5d44d5d594b48cb6734164",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "e0d48207c234644531f82bf2aa2da4ac91b1725f7066a04f0f438ca15ba2802f",
+      "role": "train",
+      "start": "2023-05-01T05:00:00+00:00",
+      "task_identity_sha256": "c7aa299adc47ebb0f7edea4b01b9a292cf5225ca848f5515cd584d9cacf24398",
+      "tasks": 2727,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "7c333d8891e1907eca706d7defed07d3bdd4ed2ded8c92750d867172556bd7be"
+    },
+    "train-20230302T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-03-03T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "d289b274282576c55bda23b8a2eeb67645cfcb4125a76c80daabb868c16740a7",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "dd5ebc6cb95b9e4c759732f7cc3acf2d4e9de42797e6c05597c6c44ef337b29b",
+      "role": "train",
+      "start": "2023-03-02T05:00:00+00:00",
+      "task_identity_sha256": "7bfca177c4849b6a07f1b4b5a141e70d4f271c4cb5ee25436464217a9a5ed9bc",
+      "tasks": 2498,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "2b3f81b75b212f3789589b20cdfc433a398d2a252e3f35008024ef58f55110a2"
+    },
+    "train-20230404T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-04-05T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "3bcaaee71448671e99b7f03fc1672bf69f4afa4e0be66eb13c35ff6dc8fb0178",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "5032f0771291dc12660c349efc620ae2adca40edbf9b4a902e23fb896a0217ce",
+      "role": "train",
+      "start": "2023-04-04T05:00:00+00:00",
+      "task_identity_sha256": "d7f5fc39bd9b2b66338102e0e5d22cd3f3aae469101a50cc9e74b0e3a539a5c0",
+      "tasks": 3873,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "d6668b76cc8a3133e249ea4c6971dd4349410f845612234a0a24084334d49c07"
+    }
+  },
+  "sla": 1.5,
+  "arrival_minutes": 1440,
+  "horizon_minutes": 4320,
+  "clear_minutes": 3960,
+  "supply_requested_c": 20,
+  "rule": {
+    "name": "V2HistoryPower16",
+    "warmup_minutes": 240,
+    "history_minutes": 1440,
+    "comparison": "current_ci > median(past_ci_in_inclusive_window)",
+    "ranking": "dynamic_it_power_desc_then_edf",
+    "budget": 16,
+    "slack_filter": false
+  },
+  "action_probe_minutes": [
+    0,
+    60,
+    120,
+    180,
+    240,
+    300,
+    360,
+    420,
+    480,
+    540,
+    600,
+    660,
+    720,
+    780,
+    840,
+    900,
+    960,
+    1020,
+    1080,
+    1140,
+    1200,
+    1260,
+    1320,
+    1380,
+    1440,
+    1500,
+    1560,
+    1620,
+    1680,
+    1740,
+    1800,
+    1860,
+    1920,
+    1980,
+    2040,
+    2100
+  ],
+  "action_probe_trajectory": "C_only",
+  "matrix_max_workers": 3,
+  "stop_decision_seconds": 30,
+  "stop_smoke_seconds": 900,
+  "thermal_pair_tolerance_k": 0.05,
+  "criteria": {
+    "hard_inlet_c": 28.0,
+    "max_heat_residual_kj": 1e-05,
+    "max_inlet_c": 27.00000001,
+    "max_integral_error": 1e-07,
+    "max_it_pair_kwh": 1e-07,
+    "max_terminal_pair_k": 0.05,
+    "no_joint_superiority_claim": true,
+    "no_required_carbon_improvement": true,
+    "no_required_oh_dmr": true,
+    "require_complete_tasks": true,
+    "require_feasible_controls": true,
+    "require_independent_saved_verification_all_54": true,
+    "require_no_resource_overflow": true
+  },
+  "e0_source_sha256": {
+    "experiments/sca_ppo/__init__.py": "7e4c88762478c65806f2ee5db6eb0516133022dd157e1f196a57776422667357",
+    "experiments/sca_ppo/adapter.py": "c17aacc1d85c1cfa92482e30a1ca984436b07e3630585405bdb0927cd87f586a",
+    "experiments/sca_ppo/completion_guard.py": "43cb91746f654afc9d394404a5557557c93628f0faeed4b57fcec2a23d2a83c7",
+    "experiments/sca_ppo/deadline_filter.py": "56da1a7db805c0361fd709488bb3b14646e3b28152542eb6968c9647007b19e6",
+    "experiments/sca_ppo/e0_evidence.py": "acc85a9bcf20a9ecfc6ce5c308e9ef6782409720775c46f11e1cc4797f0a7fe7",
+    "experiments/sca_ppo/edf_calendar.py": "3f942b1e60b864e69d21e1bd7c040101caa9ce2139efe2d18f1ccb6ee1bc7255"
+  },
+  "frozen_platform_source_sha256": {
+    "experiments/platform_v1/__init__.py": "1fbedbd9f2b96aeead15f8ae8730a9746a9e88327083206728d0390b469cbc75",
+    "experiments/platform_v1/acceptance.py": "5dd1f1fd07ddb6e1ed06361b77678d1929f849d1a56fd730dd06289fc7b3a3bf",
+    "experiments/platform_v1/config.json": "1d8334fd14af7545f871c548fae02dc615866fb4701b6e79345d3a2ff3bb99b2",
+    "experiments/platform_v1/data.py": "15df85b0951239c90d80621f20254147ebb7eb035e495eedeba8ffc28469faa4",
+    "experiments/platform_v1/environment.py": "9c67c62bfb76216a2b102a039667736ae3da861b93115f2f0c20572cc0c1f268",
+    "experiments/platform_v1/inventory.py": "7c360d6294cbd6b7824fb82aad0f96a85440e657810861a372bde6b9dde038d1",
+    "experiments/platform_v1/physical_checks.py": "519f4f22e7dd1a07b8ff39d196e152f725045ab7efe1e300fffb2685575d75d3",
+    "experiments/platform_v1/physics.py": "2154f2ee830412a8e56a03059b8d77ecff67c9c3fa336a4f19dd6e8cece4f0db",
+    "experiments/platform_v1/verify_saved.py": "05a62c85cfbc355adec5b640be00e51b9ae5265d5a56f0fb4dbccc8c87cd7b91",
+    "experiments/platform_v2/__init__.py": "5fb38411925e093a100d07d91bd83d888ed80c1e9f61566a635018838326ec41",
+    "experiments/platform_v2/acceptance.py": "0103df0bfc0c3dc0b25fe11a2ce7368ef192951d86a74e762aeb97b18e781603",
+    "experiments/platform_v2/chiller.py": "594a2ba941a102c2698742706c4b7554b007156f3864a957a3cb668c6add4d64",
+    "experiments/platform_v2/config.json": "0e97548cc23407c25a0ef97526c77a9d27b1379afe57c51bacca9246d9e89a3f",
+    "experiments/platform_v2/engineering.py": "36e93ddc09ec68d50a25bcc6b7208e886713b4d41d88dcb9b9d39f4a86694b8a",
+    "experiments/platform_v2/environment.py": "88abe367cce8b777f7a273d1d7fdea5ef58c846626ed6345b71278bcfa4e83f0",
+    "experiments/platform_v2/inventory.py": "eaa75e96f93bd82324640461dccccfafe3106591c0ea35ca406bcc6801993477",
+    "experiments/platform_v2/physics.py": "6444e2db7dae531aa00b929539a967d465c9e7739c518fe55efda2333f18497f",
+    "experiments/platform_v2/verification.py": "83c5e77a3dd749a128e757cdcdf4a5b2b641d4890ee5107d5d92cfd9e6ffe35d",
+    "tests/platform_v2/test_acceptance.py": "7d8676d844db0866fee8c81566f6be2a9c0ff5a5c16fba90c7fd3b3c4e6f3923",
+    "tests/platform_v2/test_platform.py": "b58dfd0f0ecd4a82b57b7ed15cea51b05e8c2dcfc1d7d65b42d656d808d06158",
+    "tests/platform_v2/test_verification.py": "9aa2481800182f28326c324ecf1892652228cbdc01cd913757d5c03cf3cd22a3"
+  },
+  "notes": [
+    "27 workload episodes including smoke3,9 common idle backgrounds",
+    "No performance execution before protocol commit",
+    "No PPO,no sealed data,no parameter tuning",
+    "Three Train fragments reused from platform acceptance; no independent generalization claim"
+  ]
+}
