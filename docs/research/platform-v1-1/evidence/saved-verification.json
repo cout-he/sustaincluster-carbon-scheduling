@@ -1,0 +1,12 @@
+{
+  "saved_trajectories": 3240,
+  "matrix_unique_complete": true,
+  "original_csv_hashes_match": true,
+  "protected_and_executed_source_unchanged": true,
+  "no_simulation_replay": true,
+  "postprocessing_only": true,
+  "max_saved_electric_carbon_arithmetic_error": 2.2737367544323206e-13,
+  "max_whole_window_heat_residual_kj": 9.208633855450898e-09,
+  "increasing_cofraction_load_total_energy_violations": 0,
+  "interpretation": "Arithmetic/mechanism checks, NOT real parameter calibration or historical algorithm savings"
+}

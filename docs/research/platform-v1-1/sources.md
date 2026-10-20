@@ -8,6 +8,7 @@
 | [Intel TDP 说明](https://www.intel.com/content/www/us/en/support/articles/000055611/processors.html?wapkw=tdp) | 定义、设计目标与 Turbo/AVX 可短时超 TDP 的说明 | 205 W 不是此观测使用量对应的测量值；240 W 探索点也不是实测 |
 | [NVIDIA V100 数据表](https://images.nvidia.com/content/pdf/vgpu/data-sheet/nvidia-v100.pdf) | 官方两页规格：PCIe 250 W 与 SXM 300 W 应区分 | 没有给本平台 25 W 空闲或分数 GPU 性能/功率依据 |
 | [Dell R750 规格](https://i.dell.com/sites/csdocuments/product_docs/en/poweredge-r750-spec-sheet.pdf) | 双路、32 DIMM 槽、内存类型 | 非 V1 整机认证清单 |
+| [Dell R750xa 规格](https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-R750xa-spec-sheet.pdf) | 双路2U、四个双宽300 W位、1400/1800/2400/2800 W PSU选项；报告撰写时补核对 | 不证明V100具体兼容SKU，也不自动指定V1的PSU冗余/效率曲线 |
 | [Dell R750xa 内存指南](https://www.dell.com/support/manuals/en-sg/poweredge-r750xa/per750xa_ism_pub/system-memory-guidelines?guid=guid-51c3f7cc-c06f-4114-8547-ef319e3fc668&lang=en-us) | 每 CPU 八通道/16 槽，支持 8 GB 单 Rank 与 16 GB 双 Rank RDIMM | 不保证不同通道/Rank 的任务性能不变 |
 | [Dell R750xa 内存规格](https://www.dell.com/support/manuals/en-ng/poweredge-r750xa/per750xa_ts_pub_ism/Memory-specifications?guid=guid-bef42bb9-d278-42fe-a34b-df7508d58f15&lang=en-us) | 8/16 GB 规格及双路最小/最大安装；8 GB 与 BPS 限制 | 不给 DIMM 3/5 W 依据 |
 | [Dell 双路内存安装规则](https://www.dell.com/support/manuals/en-us/powerflex-custom-node/vxf-p-owners-guide-r750/general-memory-module-installation-guidelines?guid=guid-6db30d04-e447-48c6-8748-d6389f356fdb&lang=en-us) | R750 衍生系统官方手册：两路安装匹配、8/16 DIMM 可用，通道配置影响性能 | 不作为已认证的 V1 任意混插方案 |

@@ -1,0 +1,25 @@
+{
+  "source_sha": "46e5af54868ab62b35c1f0eb28a5a32d1a80b908",
+  "protocol_sha256": "325d563413bfcf95e25d7c35c8f7d39a701c13392a7d726e49bd2152d657bd86",
+  "manifest_sha256": "1e39de148432c3d8d4eb3ad6be01a7e1122c732d0622a2d3c072d8b43b1a223e",
+  "python": "3.14.0",
+  "started_utc": "2026-10-20T02:47:17.999129+00:00",
+  "elapsed_seconds": 6.32122199999867,
+  "checks": {
+    "expected_trajectories": 3240,
+    "actual_trajectories": 3240,
+    "no_safe_action_count": 0,
+    "max_filtered_peak_c": 26.999999999924544,
+    "max_first_law_residual_kj": 2.8303475119173527e-09,
+    "max_integral_error_kwh": 2.2737367544323206e-13,
+    "protected_files_unchanged": true,
+    "no_task_or_historical_input": true,
+    "experiment_interpretation": "synthetic sensitivity only, not historical savings or calibration"
+  },
+  "output_sha256": {
+    "capacity-static.csv": "11f59897b98ba123fe383c6236b7bc9dbc6d03f83f0b1c4636a081f91fae4ed5",
+    "memory-static.csv": "03d421d6e0bf796d6cb6f4b9fb6bfb82e1716bfc57da3b06dbd8053f3b13e6c9",
+    "oat-differences.csv": "211e024d76c41dafb66eb3726b7b2b965f0fe90097d5438bc582abb1fdccaec3",
+    "synthetic-cases.csv": "694b7150e921be0e3483ea0a20c406f0c38642ba140c191382e3abab02fa6529"
+  }
+}
