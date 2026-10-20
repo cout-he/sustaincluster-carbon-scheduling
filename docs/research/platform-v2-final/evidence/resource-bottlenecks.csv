@@ -1,0 +1,7 @@
+capacity,policy,tasks,blocked_cpu,blocked_gpu,blocked_mem,competition_minutes,capacity_wait_tasks,capacity_wait_minutes,source_sha
+OM,edf,9098,0.0,606.0,0.0,105.0,266.0,9090.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52
+OM,threshold_edf,9098,0.0,486.0,0.0,90.0,259.0,7290.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52
+OH,edf,9098,1311.0,3746.0,0.0,780.0,1344.0,75855.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52
+OH,threshold_edf,9098,1213.0,3633.0,0.0,795.0,1429.0,72690.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52
+OL,edf,9098,0.0,0.0,0.0,0.0,0.0,0.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52
+OL,threshold_edf,9098,0.0,0.0,0.0,0.0,0.0,0.0,b2478aff6564c7bb0d7fa04468cae6f4328e5b52

@@ -1,0 +1,24 @@
+{
+  "capacity_wait_worse_pairs": 2,
+  "cooling_pairs": 18,
+  "cooling_total_carbon_change_pct_range": [
+    -0.5608575213373042,
+    -0.4161654644220775
+  ],
+  "deferral_pairs": 18,
+  "deferral_total_carbon_change_pct_range": [
+    -0.4809363061227756,
+    -0.050554227125800086
+  ],
+  "dmr_worse_pairs": 8,
+  "max_it_pair_difference_kwh": 0.0,
+  "max_terminal_pair_k": 0.0,
+  "method": "All fixed matrix pairs retained; no confidence intervals; same tasks reused, not 36 independent samples.",
+  "queue_peak_worse_pairs": 16,
+  "start_gpu_peak_worse_pairs": 4,
+  "v1_v2_schedule_matches": 36,
+  "v1_v2_total_energy_change_pct_range": [
+    8.523636965099723,
+    9.204150323608756
+  ]
+}
