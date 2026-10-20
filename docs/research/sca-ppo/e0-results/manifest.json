@@ -1,0 +1,102 @@
+{
+  "schema": "sca-ppo-e0-synthetic-evidence-v1",
+  "frozen_base_sha": "e372f502fb58aaa5a742e8efb4ced254507ab298",
+  "design_sha256": "27d8c948ef71652abb1295049e368351ff6340510c8244c53324dfc8058f8bd9",
+  "generated_utc": "2026-10-20T10:49:03.952943+00:00",
+  "python": "3.14.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "no_real_workload": true,
+  "no_training": true,
+  "synthetic_timing_sizes": [
+    8,
+    32,
+    128
+  ],
+  "repeats": 5,
+  "percentile_method": "nearest-rank ceil(q*n), per-size, all 7 actions pooled",
+  "test_count": 62,
+  "passed": 62,
+  "decision_count": 105,
+  "candidate_check_count": 360,
+  "file_sha256": {
+    "experiments/sca_ppo/__init__.py": "7e4c88762478c65806f2ee5db6eb0516133022dd157e1f196a57776422667357",
+    "experiments/sca_ppo/adapter.py": "c17aacc1d85c1cfa92482e30a1ca984436b07e3630585405bdb0927cd87f586a",
+    "experiments/sca_ppo/completion_guard.py": "43cb91746f654afc9d394404a5557557c93628f0faeed4b57fcec2a23d2a83c7",
+    "experiments/sca_ppo/deadline_filter.py": "56da1a7db805c0361fd709488bb3b14646e3b28152542eb6968c9647007b19e6",
+    "experiments/sca_ppo/e0_evidence.py": "acc85a9bcf20a9ecfc6ce5c308e9ef6782409720775c46f11e1cc4797f0a7fe7",
+    "experiments/sca_ppo/edf_calendar.py": "3f942b1e60b864e69d21e1bd7c040101caa9ce2139efe2d18f1ccb6ee1bc7255",
+    "tests/sca_ppo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/sca_ppo/test_guards.py": "80e5dd0af617a8430266c1d299541bed3189a441c7bf6e802629290d1ef5c2b6"
+  },
+  "timings": {
+    "8": {
+      "reference": {
+        "count": 35,
+        "mean_ms": 0.03587428571428571,
+        "p50_ms": 0.034,
+        "p95_ms": 0.0521,
+        "max_ms": 0.0671
+      },
+      "candidate": {
+        "count": 110,
+        "mean_ms": 0.04090545454545454,
+        "p50_ms": 0.0399,
+        "p95_ms": 0.0477,
+        "max_ms": 0.0583
+      },
+      "decision": {
+        "count": 35,
+        "mean_ms": 0.24138857142857142,
+        "p50_ms": 0.2651,
+        "p95_ms": 0.363,
+        "max_ms": 0.4242
+      }
+    },
+    "32": {
+      "reference": {
+        "count": 35,
+        "mean_ms": 0.27814285714285714,
+        "p50_ms": 0.2728,
+        "p95_ms": 0.336,
+        "max_ms": 0.3443
+      },
+      "candidate": {
+        "count": 130,
+        "mean_ms": 0.29278076923076923,
+        "p50_ms": 0.2845,
+        "p95_ms": 0.345,
+        "max_ms": 0.4711
+      },
+      "decision": {
+        "count": 35,
+        "mean_ms": 1.7553485714285715,
+        "p50_ms": 1.7665,
+        "p95_ms": 3.0385,
+        "max_ms": 3.1458
+      }
+    },
+    "128": {
+      "reference": {
+        "count": 35,
+        "mean_ms": 3.3899028571428573,
+        "p50_ms": 3.3525,
+        "p95_ms": 3.6228,
+        "max_ms": 3.7623
+      },
+      "candidate": {
+        "count": 120,
+        "mean_ms": 3.480770833333333,
+        "p50_ms": 3.4406,
+        "p95_ms": 3.764,
+        "max_ms": 3.9414
+      },
+      "decision": {
+        "count": 35,
+        "mean_ms": 19.0597,
+        "p50_ms": 20.7603,
+        "p95_ms": 31.9178,
+        "max_ms": 31.9215
+      }
+    }
+  }
+}
