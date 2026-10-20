@@ -3,7 +3,7 @@
   "e1_base_sha": "8e50b86fa2ea8ca5797605dc29318e5315a144be",
   "platform_sha": "e372f502fb58aaa5a742e8efb4ced254507ab298",
   "design_sha256": "27d8c948ef71652abb1295049e368351ff6340510c8244c53324dfc8058f8bd9",
-  "data_admission_sha256": "87f55ac69f452755b1ed8faf3ec60e4cb169c320fd6d541340d66bd6b64553c1",
+  "data_admission_sha256": "3a777b16e160f97df16ebf394fc1ab9e2b64f9f8ef80d242c43a1c0943e160f2",
   "pool": "D:/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v2/scenarios-001/scenarios",
   "inputs": {
     "train-20230102T0500-r1-s1.5": {

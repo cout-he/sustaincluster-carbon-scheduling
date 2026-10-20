@@ -255,7 +255,7 @@ def main():
     report = audit_pool(args.pool)
     output = Path(args.output); output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, ensure_ascii=False, allow_nan=False,
-                                 sort_keys=True, indent=2)+'\n', encoding='utf-8')
+                                 sort_keys=True, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps(dict(passed=report['passed'], usable_windows=report['usable_window_count'],
         tasks=report['total_tasks'], train_windows=len(report['train_ids']),
         holdout_windows=len(report['holdout_ids']), output=str(output))))
