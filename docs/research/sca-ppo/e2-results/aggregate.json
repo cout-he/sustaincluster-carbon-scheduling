@@ -1,0 +1,419 @@
+{
+  "schema": "sca-ppo-e2-pilot-evidence-v1",
+  "source_sha": "f194ddfec9e8f758fd7c9d5e73e75c3a480c054d",
+  "protocol_sha256": "b3e9ddd43b27c81f770777e1dcdbfc5a05dffd52bb2949aa4c5cec595f3c7572",
+  "data_admission_sha256": "3a777b16e160f97df16ebf394fc1ab9e2b64f9f8ef80d242c43a1c0943e160f2",
+  "execution": {
+    "schema": "sca-ppo-e2-pilot-execution-v1",
+    "source_sha": "f194ddfec9e8f758fd7c9d5e73e75c3a480c054d",
+    "protocol_sha256": "b3e9ddd43b27c81f770777e1dcdbfc5a05dffd52bb2949aa4c5cec595f3c7572",
+    "data_admission_sha256": "3a777b16e160f97df16ebf394fc1ab9e2b64f9f8ef80d242c43a1c0943e160f2",
+    "status": "completed",
+    "training_steps": 9216,
+    "completed_training_episodes": 32,
+    "errors": [],
+    "seed": 20261020,
+    "torch_version": "2.11.0+cu128",
+    "device": "cpu",
+    "initial_model_fingerprint": "f547629324c5538281e721d87cfbb8c5f72270f67595a5004e441a99bfe301ff",
+    "initial_evaluation_passed": true,
+    "latest_checkpoint": "checkpoints\\episode-032.pt",
+    "final_model_fingerprint": "737aea10914bb8523875c7c0e38ce46d436b228d95116777c07455a6beb14bce",
+    "optimizer_updates": 32,
+    "optimizer_steps": 640,
+    "elapsed_seconds": 48.651518400001805,
+    "evaluation_episodes": 16,
+    "evaluation_steps": 4608,
+    "background_episodes": 16
+  },
+  "evaluation": {
+    "EDF-CG": {
+      "episodes": 4,
+      "task_exposures": 14477,
+      "completed": 14477,
+      "unfinished": 0,
+      "deadline_missed": 151,
+      "deadline_censored": 0,
+      "attempts": 0,
+      "approved": 0,
+      "rejected": 0,
+      "reference_guard_failure_count": 0,
+      "carbon_kg": 3190.2703828923686,
+      "common_idle_carbon_kg": 2749.420502520291,
+      "common_incremental_carbon_kg": 440.84988037207813,
+      "it_kwh": 14009.356827896823,
+      "hvac_kwh": 7648.09379417625,
+      "total_kwh": 21657.450622073073,
+      "capacity_wait_minutes": 10995.0,
+      "policy_wait_minutes": 0.0,
+      "reward_sum": -5.918498803720781,
+      "task_weighted_dmr": 0.010430337777163777,
+      "task_weighted_jct_minutes": 88.13295349719479,
+      "verification_pass_count": 4,
+      "valid_idle_tail_count": 4,
+      "maximum_actual_release_minute": 1740.0,
+      "minimum_actual_release_minute": 1665.0,
+      "selected_action_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rejection_reason_counts": {}
+    },
+    "CarbonRule-DDF-CG": {
+      "episodes": 4,
+      "task_exposures": 14477,
+      "completed": 14477,
+      "unfinished": 0,
+      "deadline_missed": 90,
+      "deadline_censored": 0,
+      "attempts": 1976,
+      "approved": 1339,
+      "rejected": 637,
+      "reference_guard_failure_count": 0,
+      "carbon_kg": 3185.935155116056,
+      "common_idle_carbon_kg": 2749.420502520291,
+      "common_incremental_carbon_kg": 436.51465259576526,
+      "it_kwh": 14009.356827896823,
+      "hvac_kwh": 7648.09379417625,
+      "total_kwh": 21657.450622073073,
+      "capacity_wait_minutes": 9060.0,
+      "policy_wait_minutes": 20010.0,
+      "reward_sum": -5.265146525957652,
+      "task_weighted_dmr": 0.006216757615528079,
+      "task_weighted_jct_minutes": 89.38148565164667,
+      "verification_pass_count": 4,
+      "valid_idle_tail_count": 4,
+      "maximum_actual_release_minute": 1890.0,
+      "minimum_actual_release_minute": 1665.0,
+      "selected_action_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rejection_reason_counts": {
+        "REFERENCE_ON_TIME_SET_LOST": 617,
+        "ORIGINAL_LATE_TOTAL_INCREASED": 25
+      }
+    },
+    "PPO-initial": {
+      "episodes": 4,
+      "task_exposures": 14477,
+      "completed": 14477,
+      "unfinished": 0,
+      "deadline_missed": 138,
+      "deadline_censored": 0,
+      "attempts": 627,
+      "approved": 603,
+      "rejected": 24,
+      "reference_guard_failure_count": 0,
+      "carbon_kg": 3190.4901712282517,
+      "common_idle_carbon_kg": 2749.420502520291,
+      "common_incremental_carbon_kg": 441.06966870796083,
+      "it_kwh": 14009.356827896823,
+      "hvac_kwh": 7648.09379417625,
+      "total_kwh": 21657.450622073073,
+      "capacity_wait_minutes": 10485.0,
+      "policy_wait_minutes": 9000.0,
+      "reward_sum": -5.790696687079608,
+      "task_weighted_dmr": 0.009532361677143055,
+      "task_weighted_jct_minutes": 88.71940096559294,
+      "verification_pass_count": 4,
+      "valid_idle_tail_count": 4,
+      "maximum_actual_release_minute": 1890.0,
+      "minimum_actual_release_minute": 1770.0,
+      "selected_action_counts": [
+        0,
+        28,
+        0,
+        4,
+        314,
+        74,
+        0
+      ],
+      "rejection_reason_counts": {
+        "REFERENCE_ON_TIME_SET_LOST": 24
+      }
+    },
+    "PPO-final": {
+      "episodes": 4,
+      "task_exposures": 14477,
+      "completed": 14477,
+      "unfinished": 0,
+      "deadline_missed": 164,
+      "deadline_censored": 0,
+      "attempts": 6461,
+      "approved": 6361,
+      "rejected": 100,
+      "reference_guard_failure_count": 0,
+      "carbon_kg": 3190.2037605161454,
+      "common_idle_carbon_kg": 2749.420502520291,
+      "common_incremental_carbon_kg": 440.78325799585457,
+      "it_kwh": 14009.356827896823,
+      "hvac_kwh": 7648.09379417625,
+      "total_kwh": 21657.450622073073,
+      "capacity_wait_minutes": 13530.0,
+      "policy_wait_minutes": 95130.0,
+      "reward_sum": -6.047832579958546,
+      "task_weighted_dmr": 0.0113283138771845,
+      "task_weighted_jct_minutes": 94.879171636312,
+      "verification_pass_count": 4,
+      "valid_idle_tail_count": 4,
+      "maximum_actual_release_minute": 1890.0,
+      "minimum_actual_release_minute": 1770.0,
+      "selected_action_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        420
+      ],
+      "rejection_reason_counts": {
+        "REFERENCE_ON_TIME_SET_LOST": 100
+      }
+    }
+  },
+  "training": {
+    "episodes": 32,
+    "task_exposures": 100385,
+    "completed": 100385,
+    "unfinished": 0,
+    "deadline_missed": 0,
+    "deadline_censored": 0,
+    "attempts": 18009,
+    "approved": 14985,
+    "rejected": 3024,
+    "reference_guard_failure_count": 0,
+    "carbon_kg": 38838.397122255265,
+    "common_idle_carbon_kg": 33193.06252204435,
+    "common_incremental_carbon_kg": 5645.334600210918,
+    "it_kwh": 111260.53777569243,
+    "hvac_kwh": 60966.31645179301,
+    "total_kwh": 172226.85422748546,
+    "capacity_wait_minutes": 6360.0,
+    "policy_wait_minutes": 224760.0,
+    "reward_sum": -56.453346002109186,
+    "task_weighted_dmr": 0.0,
+    "task_weighted_jct_minutes": 100.1523367074519,
+    "verification_pass_count": 32,
+    "valid_idle_tail_count": 32,
+    "maximum_actual_release_minute": 2025.0,
+    "minimum_actual_release_minute": 1710.0,
+    "selected_action_counts": [
+      326,
+      444,
+      429,
+      508,
+      531,
+      501,
+      468
+    ],
+    "rejection_reason_counts": {
+      "REFERENCE_ON_TIME_SET_LOST": 3024
+    }
+  },
+  "paired_max_abs_temperature_k": 0.0,
+  "paired_max_abs_thermal_storage_kwh": 0.0,
+  "paired_max_abs_it_kwh": 0.0,
+  "repeated_training_first_last": [
+    {
+      "fragment": "train-20230102T0500-r1-s1.5",
+      "visits": 2,
+      "first_episode": 7,
+      "last_episode": 18,
+      "first_reward": -1.64752572119828,
+      "last_reward": -1.6400983177577382,
+      "delta_reward": 0.007427403440541713
+    },
+    {
+      "fragment": "train-20230103T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 1,
+      "last_episode": 32,
+      "first_reward": -1.679488809747268,
+      "last_reward": -1.6730312336323547,
+      "delta_reward": 0.006457576114913266
+    },
+    {
+      "fragment": "train-20230104T0500-r1-s1.5",
+      "visits": 2,
+      "first_episode": 2,
+      "last_episode": 15,
+      "first_reward": -1.787118508251864,
+      "last_reward": -1.7855357364581346,
+      "delta_reward": 0.0015827717937293428
+    },
+    {
+      "fragment": "train-20230105T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 9,
+      "last_episode": 28,
+      "first_reward": -2.0865797056183712,
+      "last_reward": -2.0851318336167917,
+      "delta_reward": 0.0014478720015795865
+    },
+    {
+      "fragment": "train-20230201T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 3,
+      "last_episode": 26,
+      "first_reward": -1.5316463395212485,
+      "last_reward": -1.5309186327462494,
+      "delta_reward": 0.0007277067749991151
+    },
+    {
+      "fragment": "train-20230202T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 10,
+      "last_episode": 31,
+      "first_reward": -1.6028268462069104,
+      "last_reward": -1.600380956075212,
+      "delta_reward": 0.0024458901316983805
+    },
+    {
+      "fragment": "train-20230203T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 4,
+      "last_episode": 30,
+      "first_reward": -2.1164217510664662,
+      "last_reward": -2.1135510119693235,
+      "delta_reward": 0.0028707390971427493
+    },
+    {
+      "fragment": "train-20230204T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 12,
+      "last_episode": 27,
+      "first_reward": -2.122970933971209,
+      "last_reward": -2.1186435382088953,
+      "delta_reward": 0.004327395762313557
+    },
+    {
+      "fragment": "train-20230301T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 5,
+      "last_episode": 29,
+      "first_reward": -1.4533315314892963,
+      "last_reward": -1.4547202009145044,
+      "delta_reward": -0.0013886694252081
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "visits": 3,
+      "first_episode": 6,
+      "last_episode": 25,
+      "first_reward": -1.3232753138102933,
+      "last_reward": -1.3248074426857008,
+      "delta_reward": -0.0015321288754075457
+    },
+    {
+      "fragment": "train-20230303T0500-r1-s1.5",
+      "visits": 2,
+      "first_episode": 11,
+      "last_episode": 16,
+      "first_reward": -1.8222329542288895,
+      "last_reward": -1.821233318457166,
+      "delta_reward": 0.0009996357717234616
+    },
+    {
+      "fragment": "train-20230304T0500-r1-s1.5",
+      "visits": 2,
+      "first_episode": 8,
+      "last_episode": 14,
+      "first_reward": -2.108657034749555,
+      "last_reward": -2.1143232873606284,
+      "delta_reward": -0.005666252611073563
+    }
+  ],
+  "repeated_training_mean_delta_reward": 0.001641661664745997,
+  "training_update_statistics": {
+    "policy_loss": {
+      "first": -0.009558561135601905,
+      "last": -0.0011052672958208455,
+      "minimum": -0.015838384129709067,
+      "maximum": -0.0011052672958208455,
+      "first8_mean": -0.004938677598493302,
+      "last8_mean": -0.0077887279907498125
+    },
+    "value_loss": {
+      "first": 0.011988640698190365,
+      "last": 0.030897704884409904,
+      "minimum": 0.0071186344139277935,
+      "maximum": 0.03807368465802736,
+      "first8_mean": 0.01212854263333914,
+      "last8_mean": 0.031714973725481994
+    },
+    "entropy": {
+      "first": 1.942780262416171,
+      "last": 1.7868192542080927,
+      "minimum": 1.7844682880319083,
+      "maximum": 1.9436267863173005,
+      "first8_mean": 1.9388864416178855,
+      "last8_mean": 1.848308912162651
+    },
+    "approx_kl": {
+      "first": 0.0006130628036171589,
+      "last": 0.00026528913656994805,
+      "minimum": 0.00010324508067924398,
+      "maximum": 0.0017942151929547787,
+      "first8_mean": 0.0003447806086144275,
+      "last8_mean": 0.0010346288806315144
+    },
+    "clip_fraction": {
+      "first": 0.0,
+      "last": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.012376237817403704,
+      "first8_mean": 0.0,
+      "last8_mean": 0.0028161644104704193
+    },
+    "actor_parameter_delta_l2": {
+      "first": 0.053561963193119344,
+      "last": 0.033063960811116816,
+      "minimum": 0.024077551753677207,
+      "maximum": 0.06875991202260491,
+      "first8_mean": 0.039127875805085935,
+      "last8_mean": 0.051669995724010404
+    },
+    "backbone_parameter_delta_l2": {
+      "first": 0.20448202496296125,
+      "last": 0.11074798926362013,
+      "minimum": 0.08861650625537915,
+      "maximum": 0.20448202496296125,
+      "first8_mean": 0.14884234592866316,
+      "last8_mean": 0.14909467080883834
+    },
+    "parameter_delta_l2": {
+      "first": 0.21523691269082157,
+      "last": 0.11588856076468108,
+      "minimum": 0.09288700576710328,
+      "maximum": 0.21523691269082157,
+      "first8_mean": 0.1592753213191366,
+      "last8_mean": 0.15835598584509866
+    },
+    "reward_conservation_error": {
+      "first": 0.0,
+      "last": 0.0,
+      "minimum": 0.0,
+      "maximum": 4.440892098500626e-16,
+      "first8_mean": 2.7755575615628914e-17,
+      "last8_mean": 1.1102230246251565e-16
+    }
+  },
+  "limitations": [
+    "One seed and32 stochastic training episodes; no confidence intervals or significance claims.",
+    "4 held-out Train windows from2 correlated time components; previously used development data.",
+    "Repeated-window return differences are descriptive, not a controlled improvement estimate.",
+    "No tasks or failed cases excluded. Raw traces and checkpoints remain local."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "saved_accounts": 64,
+  "workload_accounts": 48,
+  "ppo_accounts": 40,
+  "all_saved_verifiers_pass": true,
+  "errors": [],
+  "maximum_reward_conservation_error": 4.440892098500626e-16,
+  "maximum_incremental_sum_error_kg": 0.0,
+  "scope": "Saved arithmetic/ID/wait/horizon audit; actual previews asserted during original execution, no resimulation."
+}
