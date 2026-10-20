@@ -281,8 +281,8 @@
     "no_required_oh_dmr": true,
     "require_complete_tasks": true,
     "require_feasible_controls": true,
-    "require_independent_saved_verification_all_54": true,
-    "require_no_resource_overflow": true
+    "require_no_resource_overflow": true,
+    "require_independent_saved_verification_all_36": true
   },
   "e0_source_sha256": {
     "experiments/sca_ppo/__init__.py": "7e4c88762478c65806f2ee5db6eb0516133022dd157e1f196a57776422667357",
@@ -320,5 +320,10 @@
     "No performance execution before protocol commit",
     "No PPO,no sealed data,no parameter tuning",
     "Three Train fragments reused from platform acceptance; no independent generalization claim"
-  ]
+  ],
+  "pre_execution_clarification": {
+    "previous_protocol_commit": "c100877",
+    "formal_runs_before_clarification": 0,
+    "reason": "E1 has27 workload+9 idle=36 saved traces, not inheritedV2 54; use unchanged verify_result pertrace; no matrix/input/threshold change"
+  }
 }

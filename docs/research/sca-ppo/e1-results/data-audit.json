@@ -1,0 +1,442 @@
+{
+  "aggregate": {
+    "original_job_name": {
+      "duplicate_excess": 273,
+      "maximum_multiplicity": 4,
+      "occurrences": 9098,
+      "repeat_groups": 99,
+      "repeated_occurrences": 372,
+      "unique": 8825
+    },
+    "original_job_start_end": {
+      "duplicate_excess": 180,
+      "maximum_multiplicity": 2,
+      "occurrences": 9098,
+      "repeat_groups": 180,
+      "repeated_occurrences": 360,
+      "unique": 8918
+    },
+    "raw_content": {
+      "duplicate_excess": 0,
+      "maximum_multiplicity": 1,
+      "occurrences": 9098,
+      "repeat_groups": 0,
+      "repeated_occurrences": 0,
+      "unique": 9098
+    }
+  },
+  "all_stable_task_ids_unique": true,
+  "capacities": {
+    "OH": [
+      5888,
+      132,
+      16000
+    ],
+    "OL": [
+      11584,
+      312,
+      16000
+    ],
+    "OM": [
+      10000,
+      200,
+      16000
+    ]
+  },
+  "cross_fragment": [
+    {
+      "fragments": [
+        "train-20230302T0500-r1-s1.5",
+        "train-20230404T0500-r1-s1.5"
+      ],
+      "shared_original_job_name": 0,
+      "shared_original_job_start_end": 0,
+      "shared_raw_content": 0
+    },
+    {
+      "fragments": [
+        "train-20230302T0500-r1-s1.5",
+        "train-20230501T0500-r1-s1.5"
+      ],
+      "shared_original_job_name": 0,
+      "shared_original_job_start_end": 0,
+      "shared_raw_content": 0
+    },
+    {
+      "fragments": [
+        "train-20230404T0500-r1-s1.5",
+        "train-20230501T0500-r1-s1.5"
+      ],
+      "shared_original_job_name": 0,
+      "shared_original_job_start_end": 0,
+      "shared_raw_content": 0
+    }
+  ],
+  "expected_inputs_canonical_sha256": "00afdc60c687e9f8e039e9b7cf9f17e269167cd05ee9d9121b39d6f5bef62090",
+  "fragments": [
+    {
+      "all_tasks_individually_fit_each_capacity": true,
+      "environment": {
+        "causal_previous_hour_hold": true,
+        "hourly_anchors": 72,
+        "loaded_observations": 288,
+        "observation_minute_range": [
+          0,
+          4305
+        ],
+        "observed_minute_range": [
+          0,
+          4260
+        ],
+        "responsibility_hours": 72,
+        "samples_in_72_hours": 288,
+        "samples_in_snapshot": 2976,
+        "source_interpolation": "ci_previous_observation_weather_linear_utc",
+        "transform": "hour_boundary_observations_previous_hold_both_v1",
+        "unique_contiguous_quarter_hours": true,
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200
+      },
+      "fragment_id": "train-20230302T0500-r1-s1.5",
+      "frozen_hashes_and_task_identity_match": true,
+      "maximum_observed_demand": [
+        50.380971786833854,
+        17.18816608877792,
+        42.847926826234094
+      ],
+      "original_identity_repeats": {
+        "all_observed_rows_retained": true,
+        "differing_fields": {
+          "bandwidth_gb": 1
+        },
+        "groups": 1,
+        "same_source_row_groups": 1
+      },
+      "original_job_name": {
+        "duplicate_excess": 1,
+        "maximum_multiplicity": 2,
+        "occurrences": 2498,
+        "repeat_groups": 1,
+        "repeated_occurrences": 2,
+        "unique": 2497
+      },
+      "original_job_start_end": {
+        "duplicate_excess": 1,
+        "maximum_multiplicity": 2,
+        "occurrences": 2498,
+        "repeat_groups": 1,
+        "repeated_occurrences": 2,
+        "unique": 2497
+      },
+      "provenance": {
+        "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+        "arrival_end": "2023-03-03T05:00:00+00:00",
+        "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "environment_sha256": "d289b274282576c55bda23b8a2eeb67645cfcb4125a76c80daabb868c16740a7",
+        "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+        "manifest_sha256": "dd5ebc6cb95b9e4c759732f7cc3acf2d4e9de42797e6c05597c6c44ef337b29b",
+        "role": "train",
+        "start": "2023-03-02T05:00:00+00:00",
+        "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200,
+        "workload_sha256": "2b3f81b75b212f3789589b20cdfc433a398d2a252e3f35008024ef58f55110a2"
+      },
+      "raw_content": {
+        "duplicate_excess": 0,
+        "maximum_multiplicity": 1,
+        "occurrences": 2498,
+        "repeat_groups": 0,
+        "repeated_occurrences": 0,
+        "unique": 2498
+      },
+      "source": {
+        "original_end_time": {
+          "maximum": 3392148.0,
+          "minimum": 3244809.0,
+          "missing": 5
+        },
+        "original_start_dt": {
+          "maximum": "1970-02-08T04:56:58+00:00",
+          "minimum": "1970-02-07T05:00:05+00:00",
+          "missing": 0
+        },
+        "original_start_time": {
+          "maximum": 3329818.0,
+          "minimum": 3243605.0,
+          "missing": 0
+        },
+        "recorded_arrival_slots": 95,
+        "source_row": {
+          "maximum": 5957,
+          "minimum": 5863,
+          "missing": 0
+        },
+        "trace_year": 2020
+      },
+      "stable_source_identity_verified": true,
+      "task_identity_sha256": "7bfca177c4849b6a07f1b4b5a141e70d4f271c4cb5ee25436464217a9a5ed9bc",
+      "tasks": 2498
+    },
+    {
+      "all_tasks_individually_fit_each_capacity": true,
+      "environment": {
+        "causal_previous_hour_hold": true,
+        "hourly_anchors": 72,
+        "loaded_observations": 288,
+        "observation_minute_range": [
+          0,
+          4305
+        ],
+        "observed_minute_range": [
+          0,
+          4260
+        ],
+        "responsibility_hours": 72,
+        "samples_in_72_hours": 288,
+        "samples_in_snapshot": 2976,
+        "source_interpolation": "ci_previous_observation_weather_linear_utc",
+        "transform": "hour_boundary_observations_previous_hold_both_v1",
+        "unique_contiguous_quarter_hours": true,
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200
+      },
+      "fragment_id": "train-20230404T0500-r1-s1.5",
+      "frozen_hashes_and_task_identity_match": true,
+      "maximum_observed_demand": [
+        51.83797619047619,
+        18.10826458831484,
+        44.162733983787625
+      ],
+      "original_identity_repeats": {
+        "all_observed_rows_retained": true,
+        "differing_fields": {
+          "bandwidth_gb": 179
+        },
+        "groups": 179,
+        "same_source_row_groups": 179
+      },
+      "original_job_name": {
+        "duplicate_excess": 267,
+        "maximum_multiplicity": 4,
+        "occurrences": 3873,
+        "repeat_groups": 93,
+        "repeated_occurrences": 360,
+        "unique": 3606
+      },
+      "original_job_start_end": {
+        "duplicate_excess": 179,
+        "maximum_multiplicity": 2,
+        "occurrences": 3873,
+        "repeat_groups": 179,
+        "repeated_occurrences": 358,
+        "unique": 3694
+      },
+      "provenance": {
+        "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+        "arrival_end": "2023-04-05T05:00:00+00:00",
+        "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "environment_sha256": "3bcaaee71448671e99b7f03fc1672bf69f4afa4e0be66eb13c35ff6dc8fb0178",
+        "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+        "manifest_sha256": "5032f0771291dc12660c349efc620ae2adca40edbf9b4a902e23fb896a0217ce",
+        "role": "train",
+        "start": "2023-04-04T05:00:00+00:00",
+        "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200,
+        "workload_sha256": "d6668b76cc8a3133e249ea4c6971dd4349410f845612234a0a24084334d49c07"
+      },
+      "raw_content": {
+        "duplicate_excess": 0,
+        "maximum_multiplicity": 1,
+        "occurrences": 3873,
+        "repeat_groups": 0,
+        "repeated_occurrences": 0,
+        "unique": 3873
+      },
+      "source": {
+        "original_end_time": {
+          "maximum": 6199690.0,
+          "minimum": 6096098.0,
+          "missing": 13
+        },
+        "original_start_dt": {
+          "maximum": "1970-03-13T04:56:33+00:00",
+          "minimum": "1970-03-12T05:00:00+00:00",
+          "missing": 0
+        },
+        "original_start_time": {
+          "maximum": 6180993.0,
+          "minimum": 6094800.0,
+          "missing": 0
+        },
+        "recorded_arrival_slots": 96,
+        "source_row": {
+          "maximum": 9120,
+          "minimum": 9025,
+          "missing": 0
+        },
+        "trace_year": 2020
+      },
+      "stable_source_identity_verified": true,
+      "task_identity_sha256": "d7f5fc39bd9b2b66338102e0e5d22cd3f3aae469101a50cc9e74b0e3a539a5c0",
+      "tasks": 3873
+    },
+    {
+      "all_tasks_individually_fit_each_capacity": true,
+      "environment": {
+        "causal_previous_hour_hold": true,
+        "hourly_anchors": 72,
+        "loaded_observations": 288,
+        "observation_minute_range": [
+          0,
+          4305
+        ],
+        "observed_minute_range": [
+          0,
+          4260
+        ],
+        "responsibility_hours": 72,
+        "samples_in_72_hours": 288,
+        "samples_in_snapshot": 2976,
+        "source_interpolation": "ci_previous_observation_weather_linear_utc",
+        "transform": "hour_boundary_observations_previous_hold_both_v1",
+        "unique_contiguous_quarter_hours": true,
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200
+      },
+      "fragment_id": "train-20230501T0500-r1-s1.5",
+      "frozen_hashes_and_task_identity_match": true,
+      "maximum_observed_demand": [
+        51.83411366711773,
+        15.28649357993452,
+        43.95637228794938
+      ],
+      "original_identity_repeats": {
+        "all_observed_rows_retained": true,
+        "differing_fields": {},
+        "groups": 0,
+        "same_source_row_groups": 0
+      },
+      "original_job_name": {
+        "duplicate_excess": 5,
+        "maximum_multiplicity": 2,
+        "occurrences": 2727,
+        "repeat_groups": 5,
+        "repeated_occurrences": 10,
+        "unique": 2722
+      },
+      "original_job_start_end": {
+        "duplicate_excess": 0,
+        "maximum_multiplicity": 1,
+        "occurrences": 2727,
+        "repeat_groups": 0,
+        "repeated_occurrences": 0,
+        "unique": 2727
+      },
+      "provenance": {
+        "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+        "arrival_end": "2023-05-02T05:00:00+00:00",
+        "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+        "environment_sha256": "935399ce0e7a509772f5d9b73fc5ad539ba5de411c5d44d5d594b48cb6734164",
+        "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+        "manifest_sha256": "e0d48207c234644531f82bf2aa2da4ac91b1725f7066a04f0f438ca15ba2802f",
+        "role": "train",
+        "start": "2023-05-01T05:00:00+00:00",
+        "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+        "weather_source_time_basis": "metadata_fixed_offset",
+        "weather_source_timezone": "America/Los_Angeles",
+        "weather_source_utc_offset_seconds": -25200,
+        "workload_sha256": "7c333d8891e1907eca706d7defed07d3bdd4ed2ded8c92750d867172556bd7be"
+      },
+      "raw_content": {
+        "duplicate_excess": 0,
+        "maximum_multiplicity": 1,
+        "occurrences": 2727,
+        "repeat_groups": 0,
+        "repeated_occurrences": 0,
+        "unique": 2727
+      },
+      "source": {
+        "original_end_time": {
+          "maximum": 4326311.0,
+          "minimum": 4195756.0,
+          "missing": 9
+        },
+        "original_start_dt": {
+          "maximum": "1970-02-19T04:59:34+00:00",
+          "minimum": "1970-02-18T05:02:01+00:00",
+          "missing": 0
+        },
+        "original_start_time": {
+          "maximum": 4280374.0,
+          "minimum": 4194121.0,
+          "missing": 0
+        },
+        "recorded_arrival_slots": 96,
+        "source_row": {
+          "maximum": 11705,
+          "minimum": 11610,
+          "missing": 0
+        },
+        "trace_year": 2020
+      },
+      "stable_source_identity_verified": true,
+      "task_identity_sha256": "c7aa299adc47ebb0f7edea4b01b9a292cf5225ca848f5515cd584d9cacf24398",
+      "tasks": 2727
+    }
+  ],
+  "limitations": [
+    "Known processed duplicate observations are retained; job identities are not unique task rows.",
+    "Original raw timestamps are relative epoch values; 2020 trace buckets are aligned to 2023 arrivals.",
+    "Cross-fragment source comparisons ignore assigned arrival dates and use original job/start/end or all twelve raw fields.",
+    "Repeated exposure to these fixed Train snapshots is development evidence, not independent annual collection.",
+    "Only static individual task fit is checked; this audit does not prove scheduling feasibility."
+  ],
+  "optional_train_base_window_directory_count": 16,
+  "original_schema": {
+    "columns": [
+      "job_name",
+      "start_time",
+      "end_time",
+      "start_dt",
+      "duration_min",
+      "cpu_usage",
+      "gpu_wrk_util",
+      "avg_mem",
+      "avg_gpu_wrk_mem",
+      "bandwidth_gb",
+      "weekday_name",
+      "weekday_num"
+    ],
+    "identity_fields": [
+      "source_job_name",
+      "source_row",
+      "source_task_index",
+      "raw_fields[0:4]"
+    ],
+    "stable_id": "source_sha256[:16]/arrival_time/source_row/source_task_index"
+  },
+  "passed": true,
+  "pool_path": "D:/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v2/scenarios-001",
+  "read_boundary": {
+    "annual_workload_read": false,
+    "original_csv_read": false,
+    "other_window_manifests_read": false,
+    "payload_fragment_ids": [
+      "train-20230302T0500-r1-s1.5",
+      "train-20230404T0500-r1-s1.5",
+      "train-20230501T0500-r1-s1.5"
+    ],
+    "schedules_or_learning_run": false
+  },
+  "schema": "sca-ppo-e1-train-data-audit-v1",
+  "total_tasks": 9098,
+  "v2_configuration_sha256": "0e97548cc23407c25a0ef97526c77a9d27b1379afe57c51bacca9246d9e89a3f",
+  "v2_protocol_sha256": "8969bc598966adb7834fc012aec74f2cbdaf62c6d8c052a98a945cd84173443a"
+}
