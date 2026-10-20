@@ -1,0 +1,323 @@
+{
+  "schema": "sca-ppo-e1-posthoc-forecast-transition-audit-v1",
+  "status": "PASS",
+  "scope": "Deterministic diagnosis of saved C trajectories, no new performance runs or policy changes",
+  "reconstruction": "At t include arrival<=t only; pending actualstart>=t; running actualstart<t and grid_release(actualfinish)>t. Pending future starts/finishes never supplied to calendar.",
+  "interpretation": "Local reference protection does not imply global or cross-policy per-ID/DMR dominance. Arrival-pruned next-state replay isolates known-set augmentation at a boundary; no single prior defer is identified as a cause.",
+  "totals": {
+    "task_count": 27294,
+    "a_deadline_missed": 914,
+    "b_deadline_missed": 1454,
+    "c_deadline_missed": 861,
+    "c_new_miss_vs_a": 98,
+    "a_miss_prevented_by_c": 151,
+    "transition_events": 277,
+    "unique_forecast_loss_tasks": 270,
+    "forecast_loss_tasks_later_recovered": 51,
+    "new_miss_classification": {
+      "earlier_accepted_on_time_then_lost_at_known_set_augmentation": 32,
+      "initial_reference_already_late_never_accepted_on_time": 66
+    },
+    "boundary_checks": {
+      "all": 2583,
+      "with_arrivals": 852,
+      "old_only_suffix_pass": 2583,
+      "without_arrivals": 1731,
+      "no_arrival_suffix_pass": 1731,
+      "with_forecast_loss": 40
+    }
+  },
+  "groups": [
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OH",
+      "task_count": 2498,
+      "a_deadline_missed": 47,
+      "c_deadline_missed": 70,
+      "b_deadline_missed": 112,
+      "c_new_miss_vs_a": 28,
+      "a_miss_prevented_by_c": 5,
+      "transition_events": 35,
+      "unique_forecast_loss_tasks": 35,
+      "forecast_loss_tasks_later_recovered": 5,
+      "new_miss_classification": {
+        "earlier_accepted_on_time_then_lost_at_known_set_augmentation": 9,
+        "initial_reference_already_late_never_accepted_on_time": 19
+      },
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 94,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 193,
+        "no_arrival_suffix_pass": 193,
+        "with_forecast_loss": 4
+      }
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OL",
+      "task_count": 2498,
+      "a_deadline_missed": 0,
+      "c_deadline_missed": 0,
+      "b_deadline_missed": 73,
+      "c_new_miss_vs_a": 0,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 0,
+      "unique_forecast_loss_tasks": 0,
+      "forecast_loss_tasks_later_recovered": 0,
+      "new_miss_classification": {},
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 94,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 193,
+        "no_arrival_suffix_pass": 193
+      }
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OM",
+      "task_count": 2498,
+      "a_deadline_missed": 0,
+      "c_deadline_missed": 0,
+      "b_deadline_missed": 73,
+      "c_new_miss_vs_a": 0,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 0,
+      "unique_forecast_loss_tasks": 0,
+      "forecast_loss_tasks_later_recovered": 0,
+      "new_miss_classification": {},
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 94,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 193,
+        "no_arrival_suffix_pass": 193
+      }
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OH",
+      "task_count": 3873,
+      "a_deadline_missed": 615,
+      "c_deadline_missed": 599,
+      "b_deadline_missed": 672,
+      "c_new_miss_vs_a": 63,
+      "a_miss_prevented_by_c": 79,
+      "transition_events": 135,
+      "unique_forecast_loss_tasks": 129,
+      "forecast_loss_tasks_later_recovered": 17,
+      "new_miss_classification": {
+        "earlier_accepted_on_time_then_lost_at_known_set_augmentation": 18,
+        "initial_reference_already_late_never_accepted_on_time": 45
+      },
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "with_forecast_loss": 27,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OL",
+      "task_count": 3873,
+      "a_deadline_missed": 0,
+      "c_deadline_missed": 0,
+      "b_deadline_missed": 72,
+      "c_new_miss_vs_a": 0,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 0,
+      "unique_forecast_loss_tasks": 0,
+      "forecast_loss_tasks_later_recovered": 0,
+      "new_miss_classification": {},
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OM",
+      "task_count": 3873,
+      "a_deadline_missed": 123,
+      "c_deadline_missed": 62,
+      "b_deadline_missed": 133,
+      "c_new_miss_vs_a": 6,
+      "a_miss_prevented_by_c": 67,
+      "transition_events": 62,
+      "unique_forecast_loss_tasks": 62,
+      "forecast_loss_tasks_later_recovered": 28,
+      "new_miss_classification": {
+        "earlier_accepted_on_time_then_lost_at_known_set_augmentation": 5,
+        "initial_reference_already_late_never_accepted_on_time": 1
+      },
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "with_forecast_loss": 5,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    },
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OH",
+      "task_count": 2727,
+      "a_deadline_missed": 129,
+      "c_deadline_missed": 130,
+      "b_deadline_missed": 193,
+      "c_new_miss_vs_a": 1,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 45,
+      "unique_forecast_loss_tasks": 44,
+      "forecast_loss_tasks_later_recovered": 1,
+      "new_miss_classification": {
+        "initial_reference_already_late_never_accepted_on_time": 1
+      },
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "with_forecast_loss": 4,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    },
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OL",
+      "task_count": 2727,
+      "a_deadline_missed": 0,
+      "c_deadline_missed": 0,
+      "b_deadline_missed": 63,
+      "c_new_miss_vs_a": 0,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 0,
+      "unique_forecast_loss_tasks": 0,
+      "forecast_loss_tasks_later_recovered": 0,
+      "new_miss_classification": {},
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    },
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OM",
+      "task_count": 2727,
+      "a_deadline_missed": 0,
+      "c_deadline_missed": 0,
+      "b_deadline_missed": 63,
+      "c_new_miss_vs_a": 0,
+      "a_miss_prevented_by_c": 0,
+      "transition_events": 0,
+      "unique_forecast_loss_tasks": 0,
+      "forecast_loss_tasks_later_recovered": 0,
+      "new_miss_classification": {},
+      "boundary_checks": {
+        "all": 287,
+        "with_arrivals": 95,
+        "old_only_suffix_pass": 287,
+        "without_arrivals": 192,
+        "no_arrival_suffix_pass": 192
+      }
+    }
+  ],
+  "compact_examples": [
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OH",
+      "task_id": "3ba8a8e0067288f8/2023-03-03T01:45:00+00:00/5945/68",
+      "previous_minute": 1245.0,
+      "boundary_minute": 1260.0,
+      "new_arrival_count": 90,
+      "previous_accepted_start": 1260.0,
+      "previous_accepted_finish": 1320.8,
+      "new_reference_start": 1290.0,
+      "new_reference_finish": 1350.8,
+      "old_only_finish": 1320.8,
+      "deadline_minute": 1336.2,
+      "previous_approved_count": 12,
+      "actual_c_finish": 1350.8,
+      "actual_c_missed": true,
+      "actual_a_missed": false,
+      "c_new_miss_vs_a": true,
+      "first_forecast_loss": true
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OH",
+      "task_id": "3ba8a8e0067288f8/2023-04-04T09:30:00+00:00/9043/5",
+      "previous_minute": 300.0,
+      "boundary_minute": 315.0,
+      "new_arrival_count": 247,
+      "previous_accepted_start": 315.0,
+      "previous_accepted_finish": 466.0,
+      "new_reference_start": 360.0,
+      "new_reference_finish": 511.0,
+      "old_only_finish": 466.0,
+      "deadline_minute": 496.5,
+      "previous_approved_count": 14,
+      "actual_c_finish": 511.0,
+      "actual_c_missed": true,
+      "actual_a_missed": false,
+      "c_new_miss_vs_a": true,
+      "first_forecast_loss": true
+    }
+  ],
+  "blockers": [],
+  "source_and_config_sha256": {
+    "experiments/sca_ppo/edf_calendar.py": "3f942b1e60b864e69d21e1bd7c040101caa9ce2139efe2d18f1ccb6ee1bc7255",
+    "experiments/platform_v2/config.json": "0e97548cc23407c25a0ef97526c77a9d27b1379afe57c51bacca9246d9e89a3f"
+  },
+  "saved_inputs_sha256": {
+    "execution.json": "156273e631df24f91e8b5cc249df1000fc281c043024fdc72ae9ddf8fc7fe8b0",
+    "train-20230302T0500-r1-s1.5__OH/A/result.json": "6fac6d1cd48121ff6d7a2d64feedd266641ee41049a411dd2bfd89f424133119",
+    "train-20230302T0500-r1-s1.5__OH/B/result.json": "e97e6f12d88e4717da3d98e02e76528e31fe88f73c21668460ab8a54f8423246",
+    "train-20230302T0500-r1-s1.5__OH/C/result.json": "a100ff70b9a8d28d4145e31912780eab50a45764e416581b3bafb1f76f38c040",
+    "train-20230302T0500-r1-s1.5__OH/C/decisions.jsonl": "4a61cf0c094a3a296007d9c90a5902c1e86a43a5e2fd976a77fe76199d6adf99",
+    "train-20230302T0500-r1-s1.5__OL/A/result.json": "1d858ffb0eeeb0a4bd2d181a7668699069214c12842ab3a09aa597592c623426",
+    "train-20230302T0500-r1-s1.5__OL/B/result.json": "47879f2d4bdae1639aa2a46b1db95f89f3a93ea0c672f84e8250b205544c117d",
+    "train-20230302T0500-r1-s1.5__OL/C/result.json": "f7c089e9a591eb9d19d9a4389becb1b3d2e9e466659a3d1c9599fff1a6394118",
+    "train-20230302T0500-r1-s1.5__OL/C/decisions.jsonl": "efdb3ac812d28a3dd0ca1e94c9dd86bdbf039de7c013e7f9c8560f6a6d4902c1",
+    "train-20230302T0500-r1-s1.5__OM/A/result.json": "1de682d020ac8332f330b9d9af7cf6f25b3b6314afece73f070b73ba4de05cfd",
+    "train-20230302T0500-r1-s1.5__OM/B/result.json": "8887229d6935205dd670023ad028bf08eee47f069747a8fb2185f02e6fcdae29",
+    "train-20230302T0500-r1-s1.5__OM/C/result.json": "cd5503f4055ca778146ef5aab9d12cd6078bc45500f7810955d7a152e6add38e",
+    "train-20230302T0500-r1-s1.5__OM/C/decisions.jsonl": "449f38687ac7fcc95bf75ba725bf38477da909d1284340872d0c07dc9a69892e",
+    "train-20230404T0500-r1-s1.5__OH/A/result.json": "d2d79ddf2a78f90584ae58cb137672c14aef1ef7a2700ffab9c5cebcc9f4d18e",
+    "train-20230404T0500-r1-s1.5__OH/B/result.json": "d19c01f0a7b348a5822a0f7408318d1d6da0ae017806c75d7f3240cdac8da8b1",
+    "train-20230404T0500-r1-s1.5__OH/C/result.json": "bb6ddd256f6bb6c547446700666b7dbc6e0fd6bca7815c022a9c98ed0c0940c6",
+    "train-20230404T0500-r1-s1.5__OH/C/decisions.jsonl": "d9e7de3fb824d1619c81c461f22b4b2e9dcf241e83df494e7a2c6e2721b7f903",
+    "train-20230404T0500-r1-s1.5__OL/A/result.json": "de907774bc11133ba133558071229c187bb5dc381836438841d291cb27981621",
+    "train-20230404T0500-r1-s1.5__OL/B/result.json": "11c2448de7e1461d13a84126c910764f0e974d2fe2ba5f6e2fce51de69db2da6",
+    "train-20230404T0500-r1-s1.5__OL/C/result.json": "449fad7724729877eac280501bf1215c2d62da99b8e29da337f9d0eac054043c",
+    "train-20230404T0500-r1-s1.5__OL/C/decisions.jsonl": "011aeb951a26c48a5124a9f71f6ef5416ad39e0ed3e24749c9442c23c4fd52f6",
+    "train-20230404T0500-r1-s1.5__OM/A/result.json": "76399ee6ee32e129356f8b848857146ec6a00f13e94aa989a48410ab3f827655",
+    "train-20230404T0500-r1-s1.5__OM/B/result.json": "7acf5b0481f4fee2b2aa71ae6e38673abcfe3b9163c72efa731bd508abffe889",
+    "train-20230404T0500-r1-s1.5__OM/C/result.json": "08fd7a7cb0b41f12e3fbb1962ff69677587f20f56c7c0933f0f4a1bdc4c9aa1d",
+    "train-20230404T0500-r1-s1.5__OM/C/decisions.jsonl": "b2fee8165aa7bbe00d18a8027526143a9974ea423010e2b29446f940f4e4c074",
+    "train-20230501T0500-r1-s1.5__OH/A/result.json": "f3a81b0cf5e622ecd8088922b1c88c2c16f2531d88d6da5a623657878f1c2ff5",
+    "train-20230501T0500-r1-s1.5__OH/B/result.json": "e0ad9380118cb2d28f53b2a07121c3260bd160fc230ce9a1ff6c9ba63d0dfdc5",
+    "train-20230501T0500-r1-s1.5__OH/C/result.json": "fd101cc6d6e2ffa0b7f8b779b3e0b4b33a509cee64ae38b50251f09ee43761bc",
+    "train-20230501T0500-r1-s1.5__OH/C/decisions.jsonl": "6f269e61cbef35468319a073f9b4a5facc79d147a44cab0625692cef8aa0cbe0",
+    "train-20230501T0500-r1-s1.5__OL/A/result.json": "eab1c72ec9b1b29657c2bbeaa3b26d110c896b4f26b6a91cc514637439bd8b0f",
+    "train-20230501T0500-r1-s1.5__OL/B/result.json": "bd9993d42d35a563f2de50cff08b81e2fcc77ce210208c5541b37cadde07be3e",
+    "train-20230501T0500-r1-s1.5__OL/C/result.json": "f9b6aa139d77bf007ac4f16bb83cb6b6c6760829810e5d30495a36ed1d23f46b",
+    "train-20230501T0500-r1-s1.5__OL/C/decisions.jsonl": "376c1b09f3568c3da2a27a1a1b618095c510c7de29c0889cdb75b3ac73bcdb73",
+    "train-20230501T0500-r1-s1.5__OM/A/result.json": "1b34875b1ae86cb3769fc0e3004d69e3ec415bed13374d6574d14bde3922f33e",
+    "train-20230501T0500-r1-s1.5__OM/B/result.json": "5e9ac12335f17f616013586b0eb7f959e960505b551f3253a4ce6eef16bb8c22",
+    "train-20230501T0500-r1-s1.5__OM/C/result.json": "82e21bbada2432fd634df35d0ebc1b54eb5872e60c59cf1ae36479c3afa3e278",
+    "train-20230501T0500-r1-s1.5__OM/C/decisions.jsonl": "e18ec9d4f5c9f0313d926c07a6b41be7153ad5941f9b37c070835548e0d495a8"
+  },
+  "script_sha256": "c03edcf1c543461dd44fd4cea72611c2fadd20932f6595211e93abbdd90c6e1f"
+}

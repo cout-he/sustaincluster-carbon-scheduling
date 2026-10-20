@@ -196,6 +196,69 @@ class AnalysisTests(unittest.TestCase):
             self.assertEqual(report['dmr_by_arm']['B']['tasks'], 4)
             self.assertEqual(report['dmr_by_arm']['B']['task_weighted_dmr'], .75)
 
+    def test_publication_replaces_irreversible_task_id_list_with_count_and_preserves_source(self):
+        with tempfile.TemporaryDirectory(dir=ROOT, prefix='.e1-analysis-test-') as tmp:
+            output = Path(tmp)/'local'; publish = Path(tmp)/'publish'; group = fixture(output)
+            source = group/'B/result.json'; result = json.loads(source.read_text())
+            result['summary']['irreversible_miss_ids'] = ['own', 'indirect', 'future']
+            write_json(source, result); before = source.read_bytes()
+            self.analysis_module().analyze(output, publish)
+            rows = read_csv(publish/'case-summary.csv')
+            self.assertNotIn('irreversible_miss_ids', rows[0])
+            self.assertEqual(next(r['irreversible_miss_count'] for r in rows if r['arm'] == 'B'), '3')
+            self.assertEqual(source.read_bytes(), before)
+
+    def test_ddf_rejection_diagnostics_partition_self_other_and_lateness_overlap(self):
+        with tempfile.TemporaryDirectory(dir=ROOT, prefix='.e1-analysis-test-') as tmp:
+            output = Path(tmp)/'local'; publish = Path(tmp)/'publish'; group = fixture(output)
+            checks = []
+            for identity, victims, reasons, approved in [
+                ('self', ['self'], ['REFERENCE_ON_TIME_SET_LOST'], False),
+                ('other', ['victim'], ['REFERENCE_ON_TIME_SET_LOST'], False),
+                ('both', ['both', 'victim'], ['REFERENCE_ON_TIME_SET_LOST', 'ORIGINAL_LATE_TOTAL_INCREASED'], False),
+                ('late', [], ['ORIGINAL_LATE_TOTAL_INCREASED'], False),
+                ('cg', [], ['COMPLETION_GUARD_REJECTED'], False),
+                ('pass', [], [], True)]:
+                checks.append(dict(minute=0, task_id=identity, lost_on_time_ids=victims,
+                                   reasons=reasons, approved=approved))
+            write_lines(group/'C/candidates.jsonl', checks)
+            report = self.analysis_module().analyze(output, publish)
+            self.assertIn('ddf_rejection_diagnostics', report)
+            ddf = report['ddf_rejection_diagnostics']
+            self.assertEqual(ddf['checks'], 6)
+            self.assertEqual(ddf['rejected'], 5)
+            self.assertEqual(ddf['approved'], 1)
+            self.assertEqual(ddf['self_on_time_loss'], 2)
+            self.assertEqual(ddf['other_on_time_loss'], 2)
+            self.assertEqual(ddf['both'], 1)
+            self.assertEqual(ddf['known_other_only'], 1)
+            self.assertEqual(ddf['original_late_total_increase'], 2)
+            self.assertEqual(ddf['on_time_loss_and_original_late_total_increase'], 1)
+            self.assertEqual(ddf['lateness_without_on_time_loss'], 1)
+            self.assertEqual(sum(ddf['primary_reason_partition'].values()), 5)
+
+    def test_candidate_prefix_harm_restored_by_final_joint_set_remains_uncertain(self):
+        with tempfile.TemporaryDirectory(dir=ROOT, prefix='.e1-analysis-test-') as tmp:
+            output = Path(tmp)/'local'; publish = Path(tmp)/'publish'; group = fixture(output)
+            path = group/'B/decisions.jsonl'
+            decisions = [json.loads(line) for line in path.read_text().splitlines()]
+            decisions[0]['final_lost_on_time_ids'] = ['own']
+            write_lines(path, decisions)
+            report = self.analysis_module().analyze(output, publish)
+            rows = {row['task_id']: row for row in read_csv(output/'task-diagnosis-all.csv')}
+            indirect = rows['indirect']
+            self.assertIn('B_final_joint_reference_harm', indirect)
+            self.assertEqual(indirect['B_known_reference_harm'], 'True')
+            self.assertEqual(indirect['B_final_joint_reference_harm'], 'False')
+            self.assertEqual(indirect['B_prefix_only_reference_harm'], 'True')
+            self.assertEqual(indirect['causal_link_uncertain'], 'True')
+            self.assertEqual(rows['own']['B_final_joint_reference_harm'], 'True')
+            self.assertNotEqual(indirect['evidence_level'], rows['own']['evidence_level'])
+            self.assertEqual(report['victims']['B_new_misses_with_local_reference_harm'], 2)
+            self.assertEqual(report['victims']['B_new_misses_with_final_joint_reference_harm'], 1)
+            self.assertEqual(report['victims']['B_new_misses_with_prefix_only_reference_harm'], 1)
+            self.assertEqual(report['victims']['B_new_misses_causal_link_uncertain'], 2)
+
 
 if __name__ == '__main__':
     unittest.main()

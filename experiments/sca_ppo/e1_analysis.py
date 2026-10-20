@@ -53,7 +53,12 @@ def _case(result, group):
         and summary.get('actual_unfinished_count') == 0
         and summary.get('actual_common_idle_tail_valid') and consistent
         and [s['minute'] for s in result['steps']] == list(range(0, 4320, 15)))
-    return dict(**summary, group_passed=bool(group['passed']), group_errors=group.get('errors', []),
+    # Per-task miss IDs belong in the original local result, not a published
+    # case-level table. Build a new mapping without mutating the saved result.
+    publication = {key: value for key, value in summary.items() if key != 'irreversible_miss_ids'}
+    publication['irreversible_miss_count'] = (len(summary['irreversible_miss_ids'])
+        if 'irreversible_miss_ids' in summary else summary.get('irreversible_miss_count', ledger_misses))
+    return dict(**publication, group_passed=bool(group['passed']), group_errors=group.get('errors', []),
         ledger_tasks=len(tasks), ledger_deadline_missed=ledger_misses,
         summary_ledger_consistent=consistent, valid_case=valid)
 
@@ -126,10 +131,13 @@ def _task_diagnosis(fragment, capacity, results, decisions, checks):
         rescued = bool(new_b and not tasks['C']['deadline_missed'])
         own = bool(tasks['B'] and tasks['B']['policy_wait_minutes'] > 0)
         evidence = harm[identity]
+        final_evidence = [event for event in evidence if event[2] == 'final_joint_set']
+        prefix_evidence = [event for event in evidence if event[2] == 'approved_candidate']
+        prefix_only = bool(prefix_evidence and not final_evidence)
         candidates = sorted({event[1] for event in evidence if event[1] is not None})
         c_related = identity in rejected_victims or bool(set(candidates) & rejected_ids)
         arrival = next((v for arm in ARMS if (v := _arrival(tasks[arm])) is not None), None)
-        uncertain = bool(new_b and not evidence)
+        uncertain = bool(new_b and not final_evidence)
         row = dict(fragment=fragment, capacity=capacity, task_id=identity,
             all_three_task_rows_present=complete, arrival_minute=arrival,
             earliest_AB_actual_divergence_minute=first,
@@ -137,14 +145,18 @@ def _task_diagnosis(fragment, capacity, results, decisions, checks):
             B_new_miss_vs_A=bool(new_b), C_new_miss_vs_A=bool(new_c), C_rescues_B_new_miss=rescued,
             B_own_policy_wait=own, B_indirect_effect_candidate=bool(new_b and not own),
             B_known_reference_harm=bool(evidence),
+            B_final_joint_reference_harm=bool(final_evidence),
+            B_prefix_only_reference_harm=prefix_only,
             B_harm_first_minute=min((e[0] for e in evidence), default=None),
+            B_final_joint_harm_first_minute=min((e[0] for e in final_evidence), default=None),
             B_harm_candidate_ids=candidates, B_harm_proof_types=sorted({e[2] for e in evidence}),
             C_actual_reject_related=c_related,
             C_rejection_directly_lists_victim=identity in rejected_victims,
             C_rejected_B_harm_candidate_ids=sorted(set(candidates) & rejected_ids),
             same_state_C_counterfactual_proven=False,
             causal_link_uncertain=uncertain,
-            evidence_level=('local_known_reference_harm_and_paired_trajectory' if new_b and evidence
+            evidence_level=('final_joint_local_reference_harm_and_paired_trajectory' if new_b and final_evidence
+                else 'candidate_prefix_reference_harm_only_final_link_uncertain' if new_b and prefix_only
                 else 'paired_trajectory_only_causal_link_uncertain' if new_b else 'descriptive_task_comparison'))
         for arm, task in tasks.items():
             for field in ('start_minute', 'finish_minute', 'deadline_minute', 'deadline_missed',
@@ -155,6 +167,8 @@ def _task_diagnosis(fragment, capacity, results, decisions, checks):
         C_new_misses_vs_A=sum(r['C_new_miss_vs_A'] for r in rows),
         C_rescues_B_new_misses=sum(r['C_rescues_B_new_miss'] for r in rows),
         B_new_misses_with_local_reference_harm=sum(r['B_new_miss_vs_A'] and r['B_known_reference_harm'] for r in rows),
+        B_new_misses_with_final_joint_reference_harm=sum(r['B_new_miss_vs_A'] and r['B_final_joint_reference_harm'] for r in rows),
+        B_new_misses_with_prefix_only_reference_harm=sum(r['B_new_miss_vs_A'] and r['B_prefix_only_reference_harm'] for r in rows),
         B_new_misses_with_own_policy_wait=sum(r['B_new_miss_vs_A'] and r['B_own_policy_wait'] for r in rows),
         B_new_misses_without_own_policy_wait=sum(r['B_new_miss_vs_A'] and not r['B_own_policy_wait'] for r in rows),
         B_new_misses_future_at_first_divergence=sum(r['B_new_miss_vs_A'] and r['future_at_first_AB_divergence'] is True for r in rows),
@@ -222,10 +236,51 @@ def _dmr(rows):
         invalid_cases=sum(not row['valid_case'] for row in rows))
 
 
+def _ddf_rejection_diagnostics(checks):
+    """Descriptive C-trajectory rejection flags and an explicit primary partition."""
+    rejected = [check for check in checks if not check['approved']]
+    counts = dict.fromkeys(('self_on_time_loss', 'other_on_time_loss', 'both', 'self_only',
+        'known_other_only', 'known_on_time_loss', 'original_late_total_increase',
+        'completion_guard_rejected', 'on_time_loss_and_original_late_total_increase',
+        'self_loss_and_original_late_total_increase', 'other_loss_and_original_late_total_increase',
+        'known_other_only_and_original_late_total_increase', 'lateness_without_on_time_loss',
+        'neither_on_time_loss_nor_lateness'), 0)
+    partition = dict.fromkeys(('self_only_on_time_loss', 'other_only_on_time_loss',
+        'both_self_and_other_on_time_loss', 'original_late_total_only',
+        'completion_guard_only', 'other_or_missing_reason'), 0)
+    for check in rejected:
+        lost = set(check.get('lost_on_time_ids', []))
+        self_loss = check['task_id'] in lost
+        other_loss = bool(lost-{check['task_id']})
+        late = 'ORIGINAL_LATE_TOTAL_INCREASED' in check.get('reasons', [])
+        cg = 'COMPLETION_GUARD_REJECTED' in check.get('reasons', [])
+        flags = dict(self_on_time_loss=self_loss, other_on_time_loss=other_loss,
+            both=self_loss and other_loss, self_only=self_loss and not other_loss,
+            known_other_only=other_loss and not self_loss, known_on_time_loss=bool(lost),
+            original_late_total_increase=late, completion_guard_rejected=cg,
+            on_time_loss_and_original_late_total_increase=bool(lost) and late,
+            self_loss_and_original_late_total_increase=self_loss and late,
+            other_loss_and_original_late_total_increase=other_loss and late,
+            known_other_only_and_original_late_total_increase=other_loss and not self_loss and late,
+            lateness_without_on_time_loss=late and not lost,
+            neither_on_time_loss_nor_lateness=not lost and not late)
+        for key, flag in flags.items():
+            counts[key] += int(bool(flag))
+        primary = ('both_self_and_other_on_time_loss' if self_loss and other_loss
+            else 'self_only_on_time_loss' if self_loss else 'other_only_on_time_loss' if other_loss
+            else 'original_late_total_only' if late else 'completion_guard_only' if cg
+            else 'other_or_missing_reason')
+        partition[primary] += 1
+    return dict(checks=len(checks), approved=len(checks)-len(rejected), rejected=len(rejected),
+        **counts, primary_reason_partition=partition,
+        primary_reason_rule='Partition self/other known-on-time loss first, then lateness, then CG; overlapping flags are reported separately.',
+        evidence_scope='Actual C candidate checks on its own trajectory; descriptive local reference diagnostics.')
+
+
 def analyze(output, publish):
     """Read local generated results and write small tables plus a local full ledger."""
     output, publish = Path(output).resolve(), Path(publish).resolve()
-    cases, pairs, diagnosis, groups, probes, errors = [], [], [], [], [], []
+    cases, pairs, diagnosis, groups, probes, errors, ddf_checks = [], [], [], [], [], [], []
     folders = sorted(p for p in output.iterdir() if p.is_dir() and '__' in p.name)
     for folder in folders:
         group_file = folder/'group.json'
@@ -257,6 +312,7 @@ def analyze(output, publish):
             summaries[arm] = _case(results[arm], group); cases.append(summaries[arm])
             decisions[arm] = _lines(folder/arm/'decisions.jsonl')
             checks[arm] = _lines(folder/arm/'candidates.jsonl')
+        ddf_checks.extend(checks.get('C', []))
         for left, right in COMPARISONS:
             if left in results and right in results:
                 pairs.append(_pair(fragment, capacity, left, right, summaries, results))
@@ -313,6 +369,7 @@ def analyze(output, publish):
         dmr_by_arm=by_arm, victims=dict(victim_counts), groups=groups,
         full_task_diagnosis_rows=len(diagnosis), representative_task_rows=min(30, len(representative)),
         decision_totals_by_arm=decision_totals,
+        ddf_rejection_diagnostics=_ddf_rejection_diagnostics(ddf_checks),
         action_sampling=dict(states=len(states), expected_states=324,
             complete_seven_action_states=sum(row['complete_seven_actions'] for row in states),
             sampled_actual_trajectory='C', hours='integer hours 0 through 35',
@@ -326,6 +383,8 @@ def analyze(output, publish):
             'An episode without a saved task ledger has unknown task outcomes; DMR denominators count only preserved task rows.',
             'An actual policy wait alone does not prove that a particular deferral caused an observed miss.',
             'B known-reference harm is a local known-task counterfactual; paired A/B trajectories can later diverge.',
+            'Intermediate approved-candidate prefix harm can be restored by the final joint set; prefix-only evidence remains uncertain.',
+            'Final-joint local reference harm is reported separately and does not establish full future-trajectory causation.',
             'C actual rejection evidence comes from its own trajectory and is not a matched-state B/C causal experiment.',
             'Future-at-first-divergence flags require an observed or reconstructible arrival time; unknown remains blank.',
             'The fixed hourly action sample includes empty states; opportunity-conditional denominators are reported separately.'])

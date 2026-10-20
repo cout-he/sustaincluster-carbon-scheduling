@@ -1,0 +1,118 @@
+{
+  "source_sha": "d65076b4397f8301e81f1527c2b9f0520bd23870",
+  "protocol_commit": "d65076b4397f8301e81f1527c2b9f0520bd23870",
+  "protocol_sha256": "3aa44c3edb9cc1188403ed3d79db4412020ef817d3b31a6bde26dd613cf17364",
+  "status": "completed",
+  "no_training": true,
+  "matrix_max_workers": 3,
+  "elapsed_seconds": 16.293649600003846,
+  "workload_episode_count": 27,
+  "idle_background_count": 9,
+  "smoke_passed": true,
+  "errors": [],
+  "verification_scope": "All 27 workload + 9 common idle traces, frozen verify_result per saved trace; no V2 verify_saved matrix call",
+  "source_sha256": {
+    "experiments/sca_ppo/__init__.py": "7e4c88762478c65806f2ee5db6eb0516133022dd157e1f196a57776422667357",
+    "experiments/sca_ppo/adapter.py": "c17aacc1d85c1cfa92482e30a1ca984436b07e3630585405bdb0927cd87f586a",
+    "experiments/sca_ppo/completion_guard.py": "43cb91746f654afc9d394404a5557557c93628f0faeed4b57fcec2a23d2a83c7",
+    "experiments/sca_ppo/deadline_filter.py": "56da1a7db805c0361fd709488bb3b14646e3b28152542eb6968c9647007b19e6",
+    "experiments/sca_ppo/e0_evidence.py": "acc85a9bcf20a9ecfc6ce5c308e9ef6782409720775c46f11e1cc4797f0a7fe7",
+    "experiments/sca_ppo/e1_analysis.py": "e20d20a44adbedddfb2469cec5a1b612babac3bf64c5a2bb4897b76c3a330026",
+    "experiments/sca_ppo/e1_audit.py": "15592a8aaf3eb79a36c22644be59eae6c53f0bc7bfa21e545b8d5dc2e00dea1a",
+    "experiments/sca_ppo/e1_policies.py": "9571101bc8db2a4314e68ee4dc81d0c73b1383807069a123305f04d0bf5dd098",
+    "experiments/sca_ppo/e1_runner.py": "3c5276c3b0fc4e3c8dd76c7356afb82255ef9b03a59bc4c4ba6a90fbe3301386",
+    "experiments/sca_ppo/edf_calendar.py": "3f942b1e60b864e69d21e1bd7c040101caa9ce2139efe2d18f1ccb6ee1bc7255"
+  },
+  "persisted_complete_episode_count": 27,
+  "persisted_error_episode_count": 0,
+  "python": "3.14.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "protocol_first_commit": "c100877e1e5b684fb206e945507e51de8ba7cab8",
+  "original_trace_files_verified": 162,
+  "original_trace_hashes_unchanged": true,
+  "runtime_protected_source_checks": {
+    "experiments/sca_ppo/__init__.py": true,
+    "experiments/sca_ppo/adapter.py": true,
+    "experiments/sca_ppo/completion_guard.py": true,
+    "experiments/sca_ppo/deadline_filter.py": true,
+    "experiments/sca_ppo/e0_evidence.py": true,
+    "experiments/sca_ppo/e1_audit.py": true,
+    "experiments/sca_ppo/e1_policies.py": true,
+    "experiments/sca_ppo/e1_runner.py": true,
+    "experiments/sca_ppo/edf_calendar.py": true
+  },
+  "postprocessing_source_sha256": {
+    "experiments/sca_ppo/e1_analysis.py": "8d49261af90b4f38857a9c21e857eae87d2d0a8f60dfaadc4c4df81e1a3e99cb",
+    "experiments/sca_ppo/e1_audit.py": "15592a8aaf3eb79a36c22644be59eae6c53f0bc7bfa21e545b8d5dc2e00dea1a",
+    "experiments/sca_ppo/e1_policies.py": "9571101bc8db2a4314e68ee4dc81d0c73b1383807069a123305f04d0bf5dd098",
+    "experiments/sca_ppo/e1_runner.py": "3c5276c3b0fc4e3c8dd76c7356afb82255ef9b03a59bc4c4ba6a90fbe3301386",
+    "experiments/sca_ppo/e1_transition_audit.py": "c03edcf1c543461dd44fd4cea72611c2fadd20932f6595211e93abbdd90c6e1f"
+  },
+  "groups": [
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OM",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 2.4123616999713704
+    },
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OL",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 2.4440098999766633
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OM",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 2.5320919000077993
+    },
+    {
+      "fragment": "train-20230501T0500-r1-s1.5",
+      "capacity": "OH",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 2.6428655999479815
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OH",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 4.0303519000299275
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OL",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 3.960897200042382
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OM",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 5.758704599982593
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OL",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 5.847374200006016
+    },
+    {
+      "fragment": "train-20230404T0500-r1-s1.5",
+      "capacity": "OH",
+      "passed": true,
+      "errors": [],
+      "elapsed_seconds": 7.177057399996556
+    }
+  ],
+  "original_artifact_count_including_execution_metadata": 163,
+  "execution_metadata_sha256": "156273e631df24f91e8b5cc249df1000fc281c043024fdc72ae9ddf8fc7fe8b0"
+}
