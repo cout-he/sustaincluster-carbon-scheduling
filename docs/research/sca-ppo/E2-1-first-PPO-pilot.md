@@ -144,3 +144,5 @@ python -m experiments.sca_ppo.e2_pilot --evaluate-checkpoint research_notes/sca-
 图由Python/matplotlib绘制，183mm宽、7pt及以上文字，提供可编辑SVG/PDF和600dpi PNG。四个面板分别呈现全部32回合的实际奖励、value loss、同窗口首访参照的描述性奖励差、全部4窗相对规则的配对碳差；无任务或回合排除。单seed且时间窗相关，不绘制伪造的置信区间，不作统计显著性检验。静态图源检查18项通过、0项失败；两个警告为未导出投稿TIFF、未给出随机重复误差条，因本次是有SVG/PDF/PNG的单seed技术报告而接受。PDF实际最小文字为7pt，四面板及整图已目视核对，无标签碰撞。
 
 大型逐槽、逐任务日志和34个checkpoint只保存在本地忽略目录。Git仅提交源码、预注册、输入身份、汇总CSV/JSON、图及报告；[本地文件清单](/D:/A-myprofile/SustainCluster/sca-ppo-v02/docs/research/sca-ppo/e2-results/local-evidence-manifest.json)记录相对路径、大小及SHA256，不包含原始任务明细。冻结V1/V2和E0源码哈希未改变，未触碰封存数据。
+
+交付字节核验发现原仓库 `docs/research/** text eol=lf` 规则会归一化PNG。新结果目录的局部`.gitattributes`已将PNG/PDF标记为二进制，并封存CSV原字节；修复后以Git对象内容与本地生成文件逐字节比对。此修正只影响结果发布，不重跑训练或改变任何数值。

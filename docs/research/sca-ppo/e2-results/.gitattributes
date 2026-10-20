@@ -1,0 +1,4 @@
+# Preserve binary figures and the exact saved pilot CSV evidence bytes.
+*.png binary -eol
+*.pdf binary -eol
+*.csv -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
