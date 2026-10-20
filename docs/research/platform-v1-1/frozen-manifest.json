@@ -1,0 +1,37 @@
+{
+  "base_sha": "64aa6926b77acf507f03c471322cad63008287d4",
+  "protocol_sha256": "325d563413bfcf95e25d7c35c8f7d39a701c13392a7d726e49bd2152d657bd86",
+  "protected_files": {
+    "docs/research/platform-v1/.gitattributes": "40909b021d54c6c17ee92524133c69611e45ea5e54004b898cf0f3e50128a57b",
+    "docs/research/platform-v1/P1-design-and-plan.md": "3156d6b2fa98931178746a34a6f9007f74a01fcb9d9129e589c6eee654d125ea",
+    "docs/research/platform-v1/P1-platform-rebuild-report.md": "30c3a558106ecfa989e888a37a819e1f38c1f63bd03364bc60899c78256d12a7",
+    "docs/research/platform-v1/acceptance-protocol.json": "3e36ac99db68f9def15d414b7796e926dcfd3773e5c27e3c593ddf731091fc52",
+    "docs/research/platform-v1/evidence/case-summary.csv": "46094aa245224127e5f1f51a66b8aea878e8ac1a029c74cfd7f33a4e39cf2ef3",
+    "docs/research/platform-v1/evidence/engineering-checks.json": "50902f3222c260065be00de4f652f933bf57fd726cd45f00a6daee655c912d83",
+    "docs/research/platform-v1/evidence/execution.json": "9da7ff2133fdd369923dcffc759a641fd6f73c3cc2a42a88b116075354e82b77",
+    "docs/research/platform-v1/evidence/idle-background.csv": "fabed4145664af57253b663dc6de05e5a741fea52bc21ad2dc57c2bfc648356a",
+    "docs/research/platform-v1/evidence/paired-cooling.csv": "175ab0ccb74727f0f71d3e47290315fc1ee29f52566a6bad811457491d96bd4e",
+    "docs/research/platform-v1/evidence/paired-deferral.csv": "440039ae3168f8fa6ef94bfa63f269134e630ca0fc70fdecd078e2b8f51c73eb",
+    "docs/research/platform-v1/evidence/physical-probes.csv": "918fa7c1dfb780c50d2ae69954070909f58d37d2fc2429f6267a3109446dc07a",
+    "docs/research/platform-v1/evidence/pooled-summary.csv": "9f0daf2b4a8e39ff2cda0528782ea74c814aebb17d29df4404f6504b3059e12c",
+    "docs/research/platform-v1/evidence/preflight-inputs.json": "9732ab61c2c20ae41ac66714d8fa417ce2227fc5bc09f4a0c2db9072a54b228f",
+    "docs/research/platform-v1/evidence/saved-result-verification.json": "09e4fa33ebb86e7e265126383193c1e81d401a29089543929b973a2b7d7e9927",
+    "experiments/platform_v1/__init__.py": "1fbedbd9f2b96aeead15f8ae8730a9746a9e88327083206728d0390b469cbc75",
+    "experiments/platform_v1/acceptance.py": "5dd1f1fd07ddb6e1ed06361b77678d1929f849d1a56fd730dd06289fc7b3a3bf",
+    "experiments/platform_v1/config.json": "1d8334fd14af7545f871c548fae02dc615866fb4701b6e79345d3a2ff3bb99b2",
+    "experiments/platform_v1/data.py": "15df85b0951239c90d80621f20254147ebb7eb035e495eedeba8ffc28469faa4",
+    "experiments/platform_v1/environment.py": "9c67c62bfb76216a2b102a039667736ae3da861b93115f2f0c20572cc0c1f268",
+    "experiments/platform_v1/inventory.py": "7c360d6294cbd6b7824fb82aad0f96a85440e657810861a372bde6b9dde038d1",
+    "experiments/platform_v1/physical_checks.py": "519f4f22e7dd1a07b8ff39d196e152f725045ab7efe1e300fffb2685575d75d3",
+    "experiments/platform_v1/physics.py": "2154f2ee830412a8e56a03059b8d77ecff67c9c3fa336a4f19dd6e8cece4f0db",
+    "experiments/platform_v1/verify_saved.py": "05a62c85cfbc355adec5b640be00e51b9ae5265d5a56f0fb4dbccc8c87cd7b91",
+    "tests/platform_v1/test_platform.py": "5642ea88da520b736a7deb6eaf582953a72c643af95aa4d9a432bb4c8c42c051",
+    "tests/platform_v1/test_saved_verification.py": "53b9a0622914345bf541878b97df79d8ba7a1f578d663e24bde3992df01029f6"
+  },
+  "harness_files": {
+    "diagnostics/platform_v1_1/__init__.py": "3fd48faf837665c00b8974149265cb102a20971d414552a1d28e2d9d969cd80a",
+    "diagnostics/platform_v1_1/run.py": "9f7ab9738c4e7b7f0125e42ac6fa25959dc5cea72acd75e162a1e94507490f21",
+    "diagnostics/platform_v1_1/test_validation.py": "7a952714d8f85ad197b96b44619ca4f484c3216c80e2bf88589f33d6364c3d3e"
+  },
+  "created_utc": "2026-10-20T02:46:52.753131+00:00"
+}
