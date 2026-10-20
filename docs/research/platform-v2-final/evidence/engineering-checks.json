@@ -1,0 +1,12 @@
+{
+  "boundary_points": 972,
+  "capacity_shortfall_seen": true,
+  "failures": [],
+  "historical_data_read": false,
+  "max_balance_residual_kj": 1.3278622645884752e-10,
+  "max_chiller_residual_kj": 2.5579538487363607e-10,
+  "safe_infeasibility_seen": true,
+  "safe_probes": 81,
+  "sensitivity_trajectories": 108,
+  "synthetic": true
+}

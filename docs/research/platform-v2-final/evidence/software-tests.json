@@ -1,0 +1,11 @@
+{
+  "commands": [
+    "python -m unittest discover -s tests/platform_v2 -v",
+    "python -m unittest discover -s tests/platform_v1 -v"
+  ],
+  "failures": 0,
+  "formal_integration_marker_existed": false,
+  "scope": "synthetic unit and original V1 regression only; no Train simulation",
+  "v1_regression_tests": 19,
+  "v2_tests": 13
+}
