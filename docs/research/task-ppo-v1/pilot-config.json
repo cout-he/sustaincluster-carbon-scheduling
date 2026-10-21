@@ -1,0 +1,542 @@
+{
+  "schema": "task-ppo-v1-pilot-v1",
+  "base_sha": "865f1ef05cd3f663fe4e0392790854cbff4e9466",
+  "platform_sha": "e372f502fb58aaa5a742e8efb4ced254507ab298",
+  "data_admission_path": "docs/research/sca-ppo/e2-results/data-admission.json",
+  "data_admission_sha256": "3a777b16e160f97df16ebf394fc1ab9e2b64f9f8ef80d242c43a1c0943e160f2",
+  "pool": "D:/A-myprofile/SustainCluster/publication/sustaincluster-carbon-scheduling-001/research_notes/joint_v2/scenarios-001/scenarios",
+  "inputs": {
+    "train-20230102T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-01-03T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "f6224a232fbd1c1a3550f1bb067be80b1ab14bda5a5f88a45852b2e1b83a25b4",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "826ee325469860dd9ab81b5c64705f7559285ef9cbc271f5b76a41b62d8c7e0d",
+      "role": "train",
+      "start": "2023-01-02T05:00:00+00:00",
+      "task_identity_sha256": "51ef2a2f787baebf4fbf962d4a425125c879a130bf6c95a48ce7203a3097efc8",
+      "tasks": 2785,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "ba5b5f2cde71092f86f443edef4c0d5848899341cadae4290dd95d8d372260a7"
+    },
+    "train-20230103T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-01-04T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "f24e83881bd7e7e9d3ba2ed2d5ec5193d89daf06a0049222eeab14d70b782774",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "2511aca2cc960a9db9b4c5e0c87bdcc0db93ce55ec147a4f8bcb9e8122e8da9a",
+      "role": "train",
+      "start": "2023-01-03T05:00:00+00:00",
+      "task_identity_sha256": "2fd54f4512632eab12d932af30f46d5309c0abee7d292153aaf6b69d2d31a43d",
+      "tasks": 2851,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "9b33cf04d4b2aa30ad4416db0e2e0a96d9d8b4c51c64008513d26461bf9a67be"
+    },
+    "train-20230104T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-01-05T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "de620c90bc30cad71ee57042a604c19624ea16f946f5589cf393d86b55eaf0eb",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "6c5032c1fecca385ea38d6293c170fb2d957d44816f020faca6041d89497a4ea",
+      "role": "train",
+      "start": "2023-01-04T05:00:00+00:00",
+      "task_identity_sha256": "9f4244edb7c15cdce4cca3d649ae7347ef262bd934319fc55dc511c4444a2473",
+      "tasks": 2708,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "7d29b3bef379807c38a61edcf23ea6fb1286f92d3890f8c7b81af60b1dceefef"
+    },
+    "train-20230105T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-01-06T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "13ba721c1afb3bdaf30f1483c16fb3515c1b993735b9532a4630e086a96385c2",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "f4f8b62d97e3f20efcfc6ada6a49b734b84c345fb8a6946c74c2075622ec74e6",
+      "role": "train",
+      "start": "2023-01-05T05:00:00+00:00",
+      "task_identity_sha256": "4ddd7e34e17f008e6d7a140a4d8bcb6a5e08c8db42cd63145afaa33f6cb75166",
+      "tasks": 2367,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "6bfb146d5449a497bc637a802afa3e6e417a4294b35f0f8e29922819c1b75a0f"
+    },
+    "train-20230201T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-02-02T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "289007001bb92ceac906b143550cef65da4671e7fdcadebee1f91532ba0dac11",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "edb46ae9a888e828a4a0d15cc7bee74bc9a70a0f94a900025214d043e25e2def",
+      "role": "train",
+      "start": "2023-02-01T05:00:00+00:00",
+      "task_identity_sha256": "200566ef45216c3f7743a567e7f2a093e1492af9528f84388d5f0b33a654fc0a",
+      "tasks": 4094,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "2a99aa158a5037af6ffcc4f4c9cd7f88a1649080eebbd2d3e5d217f1338ce5ab"
+    },
+    "train-20230202T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-02-03T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "2b624493f74ccb3140aed8b582505b37a0e4223a0069515a58229dc203a2f20c",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "17260b6cdb1342c18a059d661c1274f10ef7ce0f9c4bea4c5ef2650dcb085378",
+      "role": "train",
+      "start": "2023-02-02T05:00:00+00:00",
+      "task_identity_sha256": "fa7e2ec96ad2916c4a66871187b538fe5d8f648a3252a24e867fc07bad14eee8",
+      "tasks": 2718,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "6adfece6001e9fee24feccb8bedd44a200abb94d89af6bead7fb6e617f351431"
+    },
+    "train-20230203T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-02-04T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "f6b7fc5f15f3252fb1ad754042b52a4a31393091ca735a5194826e7cb635853f",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "8b8b54e55a65697d4298c732e91db70cfa69a1b08939f4ff915c790b3810c35e",
+      "role": "train",
+      "start": "2023-02-03T05:00:00+00:00",
+      "task_identity_sha256": "5e44c757b2876e26f8c370aaf665e4648d6a69e44271be91c634137840474be5",
+      "tasks": 3001,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "a5929b500e6df2375892447779aca80f46af9f410f4e291bc91140ba0ba2e355"
+    },
+    "train-20230204T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-02-05T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "503c3dff9a2b90bc09513b4a506257bc129663d96e431256102a767191c7a2f6",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "97e3be784239480f77ca1668014008ff9df030ff0e3793549eba8b2f6f6835a3",
+      "role": "train",
+      "start": "2023-02-04T05:00:00+00:00",
+      "task_identity_sha256": "2e59945b614cd077713a830a464713fa5fb49fef924ea2d95393eda27867a04e",
+      "tasks": 4240,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "cfefbcb50ea417e3439130428c2b82106f70b4b4ffabd168341c76d0581e7b3c"
+    },
+    "train-20230301T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-03-02T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "2033ed652779e7bd0b539e6c2c0a3d7d3210a78322afcef1e6084abe38bb634f",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "0ff76aeae45e855adff1d34925b4ab481f6babdf043250e9608ce8446c89e944",
+      "role": "train",
+      "start": "2023-03-01T05:00:00+00:00",
+      "task_identity_sha256": "f68fb7f0dcd4e76539535fc2ef66e78bc2b12bc171abd4569e37704112c00631",
+      "tasks": 2892,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "fe571b14f0820c089893cc2ea7ce40c792584dc7b2a60cb813163aa77d529dba"
+    },
+    "train-20230302T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-03-03T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "d289b274282576c55bda23b8a2eeb67645cfcb4125a76c80daabb868c16740a7",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "dd5ebc6cb95b9e4c759732f7cc3acf2d4e9de42797e6c05597c6c44ef337b29b",
+      "role": "train",
+      "start": "2023-03-02T05:00:00+00:00",
+      "task_identity_sha256": "7bfca177c4849b6a07f1b4b5a141e70d4f271c4cb5ee25436464217a9a5ed9bc",
+      "tasks": 2498,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "2b3f81b75b212f3789589b20cdfc433a398d2a252e3f35008024ef58f55110a2"
+    },
+    "train-20230303T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-03-04T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "b0d1cc0c1b028db1fe3b2a3bdc0e784ded7b5ebafdcfba72b39ac96da8b860e0",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "0a7ab66b0d9e2a29d18a0bd56005833a23c18ae281a95b36903559694c7eb993",
+      "role": "train",
+      "start": "2023-03-03T05:00:00+00:00",
+      "task_identity_sha256": "10b0bed1c40db6b2c7b99ef5cd2de6c2a5b221a1ab94e5e5e533a643c946f0b2",
+      "tasks": 3745,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "10c5444af15cb6636ed37959fd1615ad2c5da89da7845e8febfc2ac9ce1e9a18"
+    },
+    "train-20230304T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-03-05T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "f2c6dbcff683e847a1fd390f5d715a4e8cdb5b754a3b0fd664cf3ff6950bbc69",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "8e9af8ef007958546e851b01abaa139ff33bc33f47916b907705d74b5db9895e",
+      "role": "train",
+      "start": "2023-03-04T05:00:00+00:00",
+      "task_identity_sha256": "4fa02b3f83139440749525006f8845aa28aefdb78c2075fa0c0ad8a729f10f7c",
+      "tasks": 3963,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "872757d561c4972c6ad5c992bfabc402aa21256ffc989216467b09762c0fd62d"
+    },
+    "train-20230403T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-04-04T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "3a9f333022a7693505dcb00682c7acd5ff121d2be053de9e6ef1dc0474411349",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "512b4500ee082ea61e9a1bfa8765ccda34ae9c10f38b6e8bbeffcdad592997d5",
+      "role": "train",
+      "start": "2023-04-03T05:00:00+00:00",
+      "task_identity_sha256": "5300d32b95c4c3235ba87181fbae8155c393b72133be36f278bb435f42bc3761",
+      "tasks": 4891,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "cda7e7dd987ad58107f2d394d2efce637a4a3a7f764f69439718686a4a9df39d"
+    },
+    "train-20230404T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-04-05T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "3bcaaee71448671e99b7f03fc1672bf69f4afa4e0be66eb13c35ff6dc8fb0178",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "5032f0771291dc12660c349efc620ae2adca40edbf9b4a902e23fb896a0217ce",
+      "role": "train",
+      "start": "2023-04-04T05:00:00+00:00",
+      "task_identity_sha256": "d7f5fc39bd9b2b66338102e0e5d22cd3f3aae469101a50cc9e74b0e3a539a5c0",
+      "tasks": 3873,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "d6668b76cc8a3133e249ea4c6971dd4349410f845612234a0a24084334d49c07"
+    },
+    "train-20230501T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-05-02T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "935399ce0e7a509772f5d9b73fc5ad539ba5de411c5d44d5d594b48cb6734164",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "e0d48207c234644531f82bf2aa2da4ac91b1725f7066a04f0f438ca15ba2802f",
+      "role": "train",
+      "start": "2023-05-01T05:00:00+00:00",
+      "task_identity_sha256": "c7aa299adc47ebb0f7edea4b01b9a292cf5225ca848f5515cd584d9cacf24398",
+      "tasks": 2727,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "7c333d8891e1907eca706d7defed07d3bdd4ed2ded8c92750d867172556bd7be"
+    },
+    "train-20230503T0500-r1-s1.5": {
+      "annual_workload_sha256": "3ba8a8e0067288f8d2542752a292f7da04cb79305689ba145cc6060e96cb7f2e",
+      "arrival_end": "2023-05-04T05:00:00+00:00",
+      "carbon_source_sha256": "44bafab775c6b0d4762b1dc971eb293cfea154f80799a5230f9268d32e1ad55b",
+      "environment_sha256": "7969236641626eb1913f3a034b5f1daee0eff2daa993243f32c3d21406e2969c",
+      "environment_transform": "hour_boundary_observations_previous_hold_both_v1",
+      "manifest_sha256": "f9ec191b6c965bf59ca57740d83029c2555b1a971393f4a34ca6964e826cffce",
+      "role": "train",
+      "start": "2023-05-03T05:00:00+00:00",
+      "task_identity_sha256": "c0bc8e27fc639844852059c2b981bf34a1f863101c130d9a39fd8572affd26a4",
+      "tasks": 2986,
+      "weather_source_sha256": "090bddc8a5f4e9edb5f3f193c6c147ed03841337b4bb17c7740f3b63a03cdaf5",
+      "weather_source_time_basis": "metadata_fixed_offset",
+      "weather_source_timezone": "America/Los_Angeles",
+      "weather_source_utc_offset_seconds": -25200,
+      "workload_sha256": "33b8c9d6ae5b683d469d621a0fd6c8db2be07cc49cc9c41be61351a28c77af00"
+    }
+  },
+  "train_ids": [
+    "train-20230102T0500-r1-s1.5",
+    "train-20230103T0500-r1-s1.5",
+    "train-20230104T0500-r1-s1.5",
+    "train-20230105T0500-r1-s1.5",
+    "train-20230201T0500-r1-s1.5",
+    "train-20230202T0500-r1-s1.5",
+    "train-20230203T0500-r1-s1.5",
+    "train-20230204T0500-r1-s1.5",
+    "train-20230301T0500-r1-s1.5",
+    "train-20230302T0500-r1-s1.5",
+    "train-20230303T0500-r1-s1.5",
+    "train-20230304T0500-r1-s1.5"
+  ],
+  "holdout_ids": [
+    "train-20230403T0500-r1-s1.5",
+    "train-20230404T0500-r1-s1.5",
+    "train-20230501T0500-r1-s1.5",
+    "train-20230503T0500-r1-s1.5"
+  ],
+  "seed": 20261021,
+  "device": "cpu",
+  "torch_threads": 1,
+  "capacities": [
+    "OM",
+    "OH"
+  ],
+  "sla": 1.5,
+  "arrival_minutes": 1440,
+  "episode_minutes": 4320,
+  "step_minutes": 15,
+  "clear_minutes": 3960,
+  "training_episodes": 32,
+  "maximum_training_steps": 9216,
+  "training_sequence": [
+    {
+      "fragment": "train-20230304T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230105T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230202T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230204T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230201T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230203T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230204T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230301T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230103T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230304T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230104T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230103T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230105T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230102T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230303T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230104T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230102T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230201T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230203T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230202T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230301T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230303T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230104T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230104T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230103T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230301T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230201T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230302T0500-r1-s1.5",
+      "capacity": "OH"
+    },
+    {
+      "fragment": "train-20230203T0500-r1-s1.5",
+      "capacity": "OM"
+    },
+    {
+      "fragment": "train-20230304T0500-r1-s1.5",
+      "capacity": "OH"
+    }
+  ],
+  "protected_source_sha256": {
+    "experiments/sca_ppo/__init__.py": "7e4c88762478c65806f2ee5db6eb0516133022dd157e1f196a57776422667357",
+    "experiments/sca_ppo/adapter.py": "c17aacc1d85c1cfa92482e30a1ca984436b07e3630585405bdb0927cd87f586a",
+    "experiments/sca_ppo/completion_guard.py": "43cb91746f654afc9d394404a5557557c93628f0faeed4b57fcec2a23d2a83c7",
+    "experiments/sca_ppo/deadline_filter.py": "56da1a7db805c0361fd709488bb3b14646e3b28152542eb6968c9647007b19e6",
+    "experiments/sca_ppo/e0_evidence.py": "acc85a9bcf20a9ecfc6ce5c308e9ef6782409720775c46f11e1cc4797f0a7fe7",
+    "experiments/sca_ppo/edf_calendar.py": "3f942b1e60b864e69d21e1bd7c040101caa9ce2139efe2d18f1ccb6ee1bc7255",
+    "experiments/platform_v1/__init__.py": "1fbedbd9f2b96aeead15f8ae8730a9746a9e88327083206728d0390b469cbc75",
+    "experiments/platform_v1/acceptance.py": "5dd1f1fd07ddb6e1ed06361b77678d1929f849d1a56fd730dd06289fc7b3a3bf",
+    "experiments/platform_v1/config.json": "1d8334fd14af7545f871c548fae02dc615866fb4701b6e79345d3a2ff3bb99b2",
+    "experiments/platform_v1/data.py": "15df85b0951239c90d80621f20254147ebb7eb035e495eedeba8ffc28469faa4",
+    "experiments/platform_v1/environment.py": "9c67c62bfb76216a2b102a039667736ae3da861b93115f2f0c20572cc0c1f268",
+    "experiments/platform_v1/inventory.py": "7c360d6294cbd6b7824fb82aad0f96a85440e657810861a372bde6b9dde038d1",
+    "experiments/platform_v1/physical_checks.py": "519f4f22e7dd1a07b8ff39d196e152f725045ab7efe1e300fffb2685575d75d3",
+    "experiments/platform_v1/physics.py": "2154f2ee830412a8e56a03059b8d77ecff67c9c3fa336a4f19dd6e8cece4f0db",
+    "experiments/platform_v1/verify_saved.py": "05a62c85cfbc355adec5b640be00e51b9ae5265d5a56f0fb4dbccc8c87cd7b91",
+    "experiments/platform_v2/__init__.py": "5fb38411925e093a100d07d91bd83d888ed80c1e9f61566a635018838326ec41",
+    "experiments/platform_v2/acceptance.py": "0103df0bfc0c3dc0b25fe11a2ce7368ef192951d86a74e762aeb97b18e781603",
+    "experiments/platform_v2/chiller.py": "594a2ba941a102c2698742706c4b7554b007156f3864a957a3cb668c6add4d64",
+    "experiments/platform_v2/config.json": "0e97548cc23407c25a0ef97526c77a9d27b1379afe57c51bacca9246d9e89a3f",
+    "experiments/platform_v2/engineering.py": "36e93ddc09ec68d50a25bcc6b7208e886713b4d41d88dcb9b9d39f4a86694b8a",
+    "experiments/platform_v2/environment.py": "88abe367cce8b777f7a273d1d7fdea5ef58c846626ed6345b71278bcfa4e83f0",
+    "experiments/platform_v2/inventory.py": "eaa75e96f93bd82324640461dccccfafe3106591c0ea35ca406bcc6801993477",
+    "experiments/platform_v2/physics.py": "6444e2db7dae531aa00b929539a967d465c9e7739c518fe55efda2333f18497f",
+    "experiments/platform_v2/verification.py": "83c5e77a3dd749a128e757cdcdf4a5b2b641d4890ee5107d5d92cfd9e6ffe35d",
+    "tests/platform_v2/test_acceptance.py": "7d8676d844db0866fee8c81566f6be2a9c0ff5a5c16fba90c7fd3b3c4e6f3923",
+    "tests/platform_v2/test_platform.py": "b58dfd0f0ecd4a82b57b7ed15cea51b05e8c2dcfc1d7d65b42d656d808d06158",
+    "tests/platform_v2/test_verification.py": "9aa2481800182f28326c324ecf1892652228cbdc01cd913757d5c03cf3cd22a3",
+    "experiments/sca_ppo/ppo.py": "c8e11ccff11184d38bf23bce0a573c7af21ee616ea7b8471f13f53ee0f8dd9d7",
+    "experiments/sca_ppo/rl_environment.py": "9f065feb3b8cc52252e32477146cad2696ba341cf9975c5ee85804c8752edb6c",
+    "experiments/sca_ppo/e2_data.py": "7bb1821c3ad4881bb1d6c743ec8787548a8f5eda2ba1a71734770c7f55c077f7",
+    "experiments/sca_ppo/e2_pilot.py": "82c82ec26a597b307e4c0d73a0bb22f9743f10b4bb315451c526dd4f17d7246b",
+    "experiments/sca_ppo/e1_runner.py": "3c5276c3b0fc4e3c8dd76c7356afb82255ef9b03a59bc4c4ba6a90fbe3301386",
+    "experiments/sca_ppo/e1_policies.py": "9571101bc8db2a4314e68ee4dc81d0c73b1383807069a123305f04d0bf5dd098"
+  },
+  "ppo": {
+    "input_dim": 48,
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "action_dim": 2,
+    "learning_rate": 0.0003,
+    "adam_eps": 1e-05,
+    "clip_range": 0.2,
+    "update_epochs": 4,
+    "minibatch_size": 64,
+    "entropy_coef": 0.0,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "gamma": 1.0,
+    "lambda_gae": 0.95,
+    "seed": 20261021
+  },
+  "reward": {
+    "formula": "-(C_total_t-C_common_idle_t)/C_scale-lambda_miss*N_new_irreversible_miss_t",
+    "c_scale_kg": 100.0,
+    "lambda_miss": 0.01,
+    "choice_basis": "One preregistered engineering scale and service preference:100kg per reward unit; one additional miss costs1kg equivalent. Not a calibrated physical constant, not selected on holdout."
+  },
+  "state_schema": "task-ppo-v1-48-physical-scales-v1",
+  "joint_probability": "sum original conditional log-probabilities; float64; one clipped ratio per physical slot",
+  "conditional_entropy": "diagnostic only; coefficient0; not presented as exact joint entropy gradient",
+  "actor_critic": "shared64x64; critic pre-slot global27+21zeros; actor task12+prefix8+queryflag1",
+  "historical": {
+    "label": "MacroPPO-history",
+    "checkpoint": "research_notes/sca-ppo/e2-pilot-001/checkpoints/final.pt",
+    "checkpoint_sha256": "f4568c7110b8ebb06c2119b376183f545d01ce1f1691a4f0f3c6c2c9bb3a99de",
+    "training_source_sha": "f194ddfec9e8f758fd7c9d5e73e75c3a480c054d",
+    "training_episodes": 32,
+    "training_capacities": [
+      "OM"
+    ],
+    "warning": "Historical comparison only, not an action-space-only ablation; different seed/state/entropy and OM-only training"
+  },
+  "evaluation_methods": [
+    "EDF-CG",
+    "CarbonRule-DDF-CG",
+    "MacroPPO-history",
+    "TaskPPO-initial",
+    "TaskPPO-final"
+  ],
+  "evaluation_deterministic": true,
+  "model_selection": "none; use final32 checkpoint regardless holdout scores",
+  "checkpoint_every_episode": true,
+  "stop_on": [
+    "CG failure",
+    "unfinished",
+    "censored",
+    "invalid common idle tail",
+    "preview/action/reward mismatch",
+    "nonfinite loss or parameters",
+    "checkpoint failure",
+    "paired terminal unfairness"
+  ],
+  "read_scope": "Existing16 authorized Train snapshots only; reuse identity-disjoint Jan-Mar12 train and Apr-May4 holdout. No sealed roles or annual/raw data."
+}
