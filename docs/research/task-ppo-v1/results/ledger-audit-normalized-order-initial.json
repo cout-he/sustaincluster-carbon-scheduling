@@ -1,0 +1,33 @@
+{
+  "schema": "task-ppo-v1-saved-ledger-audit",
+  "counts": {
+    "saved_accounts": 104,
+    "actual_saved_physical_steps": 29952,
+    "background_accounts": 32,
+    "saved_verifiers": 104,
+    "workload_accounts": 72,
+    "reward_accounts": 56,
+    "task_joint_physical_slots": 13824,
+    "task_binary_decisions": 331561,
+    "task_joint_sampled_slots": 4886
+  },
+  "maximum_errors": {
+    "per_step_carbon_error_kg": 0.0,
+    "episode_carbon_sum_error_kg": 0.0,
+    "step_reward_error": 0.0,
+    "reward_conservation_error": 8.881784197001252e-16,
+    "reward_summary_sum_error": 8.881784197001252e-16,
+    "incremental_summary_sum_error_kg": 0.0,
+    "joint_log_probability_sum_error": 0.0
+  },
+  "errors": [
+    "evaluations/train-20230503T0500-r1-s1.5__OM/TaskPPO-final/result.json: frozen candidate sequence not in EDF order",
+    "evaluations/train-20230503T0500-r1-s1.5__OM/TaskPPO-initial/result.json: frozen candidate sequence not in EDF order"
+  ],
+  "warnings": [],
+  "partial_error_accounts": [],
+  "passed": false,
+  "partial_decision_accounts": [],
+  "all_observed_accounts_have_verified_full_window": false,
+  "scope": "Only saved arithmetic, IDs and teacher-forced path; original V2 saved verifiers plus runtime preview assertions. No dispatch replay."
+}

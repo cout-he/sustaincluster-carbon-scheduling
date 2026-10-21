@@ -165,8 +165,11 @@ def audit_saved(source):
                 error=abs(expected_log-record['joint_log_prob'])
                 maxima['joint_log_probability_sum_error']=max(maxima['joint_log_probability_sum_error'],error)
                 require(error<1e-10,'joint log-probability is not sum of original conditional logs')
-                keys=[(choice['state'][38],choice['state'][37],choice['task_id']) for choice in choices]
-                require(keys==sorted(keys),'frozen candidate sequence not in EDF order')
+                # Normalization can merge distinct raw deadlines by one ULP.
+                # Exact arrival/ID tie ordering is audited against authorized
+                # source fields by exact_order_audit.py, not reconstructed here.
+                primary=[choice['state'][38] for choice in choices]
+                require(primary==sorted(primary),'normalized EDF primary deadlines not monotone')
             else:require(record['joint_log_prob'] is None,'empty/forced slot pretends to sample joint proposal')
             prefix=[];rejected=0;global_values=record['value_state'][:27]
             for index,choice in enumerate(choices):

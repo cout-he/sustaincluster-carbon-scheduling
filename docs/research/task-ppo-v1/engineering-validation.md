@@ -1,6 +1,6 @@
 # Task-PPO V1：训练前工程准入
 
-2026-10-21。本报告在真实pilot之前提交，尚不包含学习收益。设计见[任务级MDP](/D:/A-myprofile/SustainCluster/sca-ppo-v02/docs/research/task-ppo-v1/task-level-MDP-design.md)，数值及完整32项场景序列见[pilot配置](/D:/A-myprofile/SustainCluster/sca-ppo-v02/docs/research/task-ppo-v1/pilot-config.json)。
+2026-10-21。本报告在真实pilot之前提交，尚不包含学习收益。设计见[任务级MDP](task-level-MDP-design.md)，数值及完整32项场景序列见[pilot配置](pilot-config.json)。
 
 ## 输入与冻结边界
 
@@ -43,3 +43,7 @@ python -u -m experiments.task_ppo.pilot --output research_notes/task-ppo-v1/pilo
 ```
 
 状态：允许按预注册进入首次技术pilot。是否能够学习到有用的任务区分、OH是否产生风险反馈、是否值得扩大训练，均须以真实结果回答。
+
+## 收尾验证补记
+
+完整pilot后新增3项纯人工原始EDF排序审计回归，收尾限定测试为任务级40项、旧SCA108项、V1/V2人工回归32项，合计 **180项全部通过**。原177项为训练准入时的测试口径；新增审计未重新训练或执行调度评价。真实训练与评价结论见[首次pilot报告](first-pilot-report.md)。

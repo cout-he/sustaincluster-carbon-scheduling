@@ -1,0 +1,74 @@
+{
+  "schema": "task-ppo-exact-source-edf-audit-v1",
+  "passed": true,
+  "errors": [],
+  "source_sha": "7dbe02397781a5f5b89ee9c1558e366b7fbbbac6",
+  "protocol_sha256": "097bba7dd4076d56fe5dda7f5d8336f862005faf5d55a3452f1fd4ee98d8c369",
+  "data_admission_sha256": "3a777b16e160f97df16ebf394fc1ab9e2b64f9f8ef80d242c43a1c0943e160f2",
+  "task_accounts": 48,
+  "physical_slots": 13824,
+  "conditional_task_decisions": 331561,
+  "authorized_train_fragment_ids": [
+    "train-20230102T0500-r1-s1.5",
+    "train-20230103T0500-r1-s1.5",
+    "train-20230104T0500-r1-s1.5",
+    "train-20230105T0500-r1-s1.5",
+    "train-20230201T0500-r1-s1.5",
+    "train-20230202T0500-r1-s1.5",
+    "train-20230203T0500-r1-s1.5",
+    "train-20230204T0500-r1-s1.5",
+    "train-20230301T0500-r1-s1.5",
+    "train-20230302T0500-r1-s1.5",
+    "train-20230303T0500-r1-s1.5",
+    "train-20230304T0500-r1-s1.5",
+    "train-20230403T0500-r1-s1.5",
+    "train-20230404T0500-r1-s1.5",
+    "train-20230501T0500-r1-s1.5",
+    "train-20230503T0500-r1-s1.5"
+  ],
+  "explained_normalization_tie_cases": [
+    {
+      "path": "evaluations\\train-20230503T0500-r1-s1.5__OM\\TaskPPO-final\\result.json",
+      "minute": 315.0,
+      "task_ids": [
+        "3ba8a8e0067288f8/2023-05-03T10:15:00+00:00/11823/87",
+        "3ba8a8e0067288f8/2023-05-03T09:15:00+00:00/11819/17"
+      ],
+      "raw_deadlines": [
+        462.54999999999995,
+        462.55
+      ],
+      "raw_arrivals": [
+        315.0,
+        255.0
+      ],
+      "normalized_deadlines": [
+        0.10707175925925926,
+        0.10707175925925926
+      ],
+      "explanation": "Division merges distinct raw primary keys; normalized secondary sort loses original order."
+    },
+    {
+      "path": "evaluations\\train-20230503T0500-r1-s1.5__OM\\TaskPPO-initial\\result.json",
+      "minute": 315.0,
+      "task_ids": [
+        "3ba8a8e0067288f8/2023-05-03T10:15:00+00:00/11823/87",
+        "3ba8a8e0067288f8/2023-05-03T09:15:00+00:00/11819/17"
+      ],
+      "raw_deadlines": [
+        462.54999999999995,
+        462.55
+      ],
+      "raw_arrivals": [
+        315.0,
+        255.0
+      ],
+      "normalized_deadlines": [
+        0.10707175925925926,
+        0.10707175925925926
+      ],
+      "explanation": "Division merges distinct raw primary keys; normalized secondary sort loses original order."
+    }
+  ],
+  "scope": "Read-only original field/identity/arrival check. No simulator, rescheduling, network evaluation or training."
+}

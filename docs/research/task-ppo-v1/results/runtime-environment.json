@@ -1,0 +1,11 @@
+{
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.9",
+  "execution_device": "cpu",
+  "execution_torch_threads": 1,
+  "seed": 20261021,
+  "note": "Version inventory from the unchanged environment used for the completed pilot; device/thread/seed are verified in pilot source/config, not inferred from this analysis process defaults."
+}
