@@ -1,0 +1,4 @@
+# Exact evidence bytes; override the repository-wide research text rule.
+*.png binary -eol
+*.pdf binary -eol
+*.csv -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

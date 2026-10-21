@@ -3,12 +3,15 @@ import copy
 from dataclasses import replace
 import importlib
 import importlib.util
+import itertools
 import math
 import unittest
 from unittest.mock import patch
 
 from experiments.platform_v2.environment import run as run_v2
 from experiments.sca_ppo.rl_environment import RLEpisode, state_vector
+from experiments.sca_ppo.deadline_filter import filter_requests
+from experiments.sca_ppo.edf_calendar import simulate
 from tests.sca_ppo.test_guards import environment, task
 
 
@@ -99,7 +102,64 @@ class TaskEpisodeTests(unittest.TestCase):
         self.assertEqual(len(record['checks']),2)
         self.assertEqual([row['action'] for row in record['task_decisions']],[0,1,1])
         self.assertEqual([row['approved'] for row in record['task_decisions']],[False,True,False])
-        self.assertGreater(record['internal_candidate_checks'],len(record['checks']))
+        self.assertEqual(record['internal_candidate_checks'],len(record['checks']))
+
+    def test_incremental_prefix_uses_one_calendar_per_original_defer_request(self):
+        module=self.api();ep=self.episode([task(f't{i:02}',120) for i in range(20)])
+        calls=[]
+        def counted(*args,**kwargs):
+            calls.append(args[1] if len(args)>1 else frozenset())
+            return simulate(*args,**kwargs)
+        with patch.object(module,'simulate',side_effect=counted), \
+                patch('experiments.sca_ppo.deadline_filter.simulate',side_effect=counted):
+            _,ids=ep.prepare_slot()
+            for _ in ids:ep.propose(1)
+            self.assertEqual(len(calls),1+len(ids))
+            self.assertEqual(ep.env.minute,0.)
+            _,_,record=ep.execute_slot()
+        self.assertEqual(len(record['checks']),20)
+        self.assertEqual(record['internal_candidate_checks'],20)
+        self.assertEqual(record['internal_calendar_plans'],43)
+
+    def test_every_binary_vector_matches_original_filter_request_prefixes_and_final_plan(self):
+        cases=[
+            [task('a',15),task('b',30),task('c',45)],
+            [task('a',45,(5000,0,0)),task('b',60,(2500,0,0)),
+             task('c',120,(2500,0,0)),task('d',120,(5000,0,0)),task('e',75,(10000,0,0))],
+            [task('a',90,(2500,0,0)),task('b',30,(2500,0,0)),
+             task('c',20,(5000,0,0)),task('d',90,(5000,0,0))],
+        ]
+        for jobs in cases:
+            base=self.episode(jobs);_,ids=base.prepare_slot()
+            for bits in itertools.product((0,1),repeat=len(ids)):
+                with self.subTest(tasks=len(jobs),bits=bits):
+                    ep=self.episode(jobs);ep.prepare_slot();requested=[]
+                    for identity,bit in zip(ids,bits):
+                        outcome=ep.propose(bit)
+                        if bit:requested.append(identity)
+                        exact=filter_requests(ep._slot['snapshot'],ep._slot['reference'],tuple(requested))
+                        self.assertEqual(tuple(ep._slot['approved']),exact.approved)
+                        if bit:
+                            check=exact.checks[-1]
+                            self.assertEqual((outcome['approved'],outcome['reasons'],outcome['lost_on_time_ids']),
+                                             (check.approved,check.reasons,check.lost_on_time_ids))
+                    _,_,record=ep.execute_slot()
+                    self.assertEqual(record['approved'],exact.approved)
+                    self.assertEqual(record['actual_started'],exact.preview.started)
+                    self.assertEqual(record['effective_policy_wait'],exact.preview.policy_wait)
+                    self.assertEqual(record['capacity_wait'],exact.preview.capacity_wait)
+
+    def test_incremental_candidate_guard_rejects_only_extension_past_3960(self):
+        ep=self.episode([task('long',3945)])
+        ep.prepare_slot();first=ep.propose(1);self.assertTrue(first['approved'])
+        ep.execute_slot()
+        ep.prepare_slot();second=ep.propose(1)
+        self.assertFalse(second['approved'])
+        self.assertEqual(second['reasons'],('COMPLETION_GUARD_REJECTED',))
+        _,_,record=ep.execute_slot()
+        self.assertEqual(record['proposed'],('long',));self.assertEqual(record['approved'],())
+        self.assertEqual(record['actual_started'],('long',))
+        self.assertFalse(record['failure_latched'])
 
     def test_rejected_request_is_not_replaced_and_all_rejected_is_normal_sampling(self):
         ep=self.episode([task('a',15),task('b',30)])

@@ -538,5 +538,17 @@
     "checkpoint failure",
     "paired terminal unfairness"
   ],
-  "read_scope": "Existing16 authorized Train snapshots only; reuse identity-disjoint Jan-Mar12 train and Apr-May4 holdout. No sealed roles or annual/raw data."
+  "read_scope": "Existing16 authorized Train snapshots only; reuse identity-disjoint Jan-Mar12 train and Apr-May4 holdout. No sealed roles or annual/raw data.",
+  "engineering_revision": {
+    "previous_attempt": "research_notes/task-ppo-v1/pilot-001",
+    "interruption_sha256": "f4eb2c0986d4d95069ee0d5f531f3ea5113dc440ea14d03f5106f42dd47fd820",
+    "comparison_fragment": "train-20230403T0500-r1-s1.5",
+    "comparison_capacity": "OM",
+    "initial_checkpoint": "research_notes/task-ppo-v1/pilot-001/checkpoints/initial.pt",
+    "initial_checkpoint_sha256": "9c703e5dbbf9dbd2795ead7dbabbc580d7a263fe6aa38d8176d6579aa42f40e9",
+    "decisions": "research_notes/task-ppo-v1/pilot-001/evaluations/train-20230403T0500-r1-s1.5__OM/TaskPPO-initial/decisions.jsonl",
+    "decisions_sha256": "9c61d17e921b426d518f1b8b034299187e12217ea5459465c9fcd59b8bd10ff7",
+    "saved_physical_rows": 20,
+    "basis": "Identical DDF conditions/EPS/reference, only redundant prefix revalidation removed; final original full DDF remains authoritative. No outcomes, scales, reward or scene selection adjusted."
+  }
 }

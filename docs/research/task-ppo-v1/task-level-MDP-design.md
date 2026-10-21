@@ -8,7 +8,7 @@
 
 物理时间步始终15min。槽开始冻结真实当前状态及无主动推迟的EDF参考计划，候选仅为该计划本槽启动任务，按 `(deadline,arrival,task_id)` 固定顺序全部处理，不补位。每任务采样二元原提议：0不主动推迟，1申请当前槽推迟；0不保证一定启动，真实容量与回填仍由V2决定。
 
-同槽内部只更新已批准推迟prefix，不释放真实资源、不推进时间、不新增任务或天气观察。申请1时复用 `filter_requests(snapshot,reference,approved+[task_id])`，只保留其中最后候选的批准结果；原始请求顺序另外完整保存。所有候选处理完后，调用原 `ResearchAdapter.decide(obs,proposed=全部原始1请求)`，断言其最终批准集与prefix完全一致，再用原 `execute`执行一次真实15min。内部重复核验只算计算开销，DDF尝试/拒绝按最终原始请求逐个计一次。
+同槽内部只更新已批准推迟prefix，不释放真实资源、不推进时间、不新增任务或天气观察。申请1时复用旧EDF日历对 `approved+[task_id]` 仅模拟一次，以固定参考按时集合、原迟到总超期、原EPS和CG执行原DDF三条件的等价增量判定；原始请求顺序另外完整保存。所有候选处理完后，调用原 `ResearchAdapter.decide(obs,proposed=全部原始1请求)`，断言其最终批准集与prefix完全一致，再用原 `execute`执行一次真实15min。内部重复核验只算计算开销，DDF尝试/拒绝按最终原始请求逐个计一次。
 
 保留严格参考按时集合、原迟到总超期与3960min完成护栏。参考CG失败则锁存回退EDF，不伪造采样；继续完整72h保存失败账本并停止后续训练。未知未来到达的Deadline不在DDF保证内。
 
@@ -48,10 +48,19 @@ PPO与GAE依据：[PPO原论文](https://arxiv.org/abs/1707.06347)、[GAE原论�
 
 技术栈为既有Python3.14/PyTorch2.11 CPU单线程，无新增依赖。复用干净独立worktree `sca-ppo-v02`，只新建分支；旧分支和tag保持。新增文件限于 `experiments/task_ppo/`、`tests/task_ppo/`、`docs/research/task-ppo-v1/`。
 
-- [ ] `joint_ppo.py`：复用旧ActorCritic/GAE/checkpoint接口；新joint batch、物理槽clip、真实反传。人工枚举2候选联合概率、一次GAE、无候选、非法batch、完整checkpoint恢复先RED后GREEN。
-- [ ] `task_environment.py`：48维因果编码、同槽prefix选择、原DDF/CG与一次执行、旧RewardLedger和finish账本。人工联合冲突、回填、CG锁存、全0EDF一致、时间不前进与无未来读取测试。
-- [ ] `pilot.py`与机器配置：加载既有授权Train、OM/OH固定序列、initial/final和历史对照、奖励/资源/责任/末态验证、一次性marker、完整checkpoint和大日志仅本地忽略目录；小型合成全回合反传与保存测试。
+- [x] `joint_ppo.py`：复用旧ActorCritic/GAE/checkpoint接口；新joint batch、物理槽clip、真实反传。人工枚举2候选联合概率、一次GAE、无候选、非法batch、完整checkpoint恢复先RED后GREEN。
+- [x] `task_environment.py`：48维因果编码、同槽prefix选择、原DDF/CG与一次执行、旧RewardLedger和finish账本。人工联合冲突、回填、CG锁存、全0EDF一致、时间不前进与无未来读取测试。
+- [x] `pilot.py`与机器配置：加载既有授权Train、OM/OH固定序列、initial/final和历史对照、奖励/资源/责任/末态验证、一次性marker、完整checkpoint和大日志仅本地忽略目录；小型合成全回合反传与保存测试。
 - [ ] 提交设计、配置、测试及全部运行源码后，运行唯一真实pilot；有正确性阻塞停止，不修改方案重试。
 - [ ] `evidence.py`、报告与图：全部回合、任务加权DMR/JCT、真实碳与增量碳、任务动作/拒绝率；同槽概率差和任务属性关系区分“具备表达能力”和“已学会有效区分”。独立只读复核、提交推送后停止。
 
-重点审阅5类边界：①CG/空候选不伪造actor样本；②全0/全拒绝仍保留原logprob；③联合批准不等于实际主动等待；④变长候选仅影响joint概率而不复制物理时间/GAE；⑤复杂度可能为O(n²)个日历前缀核验，不能为性能静默删候选或换保护条件。
+重点审阅5类边界：①CG/空候选不伪造actor样本；②全0/全拒绝仍保留原logprob；③联合批准不等于实际主动等待；④变长候选仅影响joint概率而不复制物理时间/GAE；⑤初始实现曾重复核验已批准前缀；修订为O(n)个日历调用并保留原DDF完整复核，不删候选或换条件。
+
+
+## 工程修订：保留中断尝试，等价消除冗余
+
+原提交7ad4ab1的首次训练前评价，在首OM场景第20个完整槽出现297候选和55.39秒单槽耗时。原DDF重复核验已批准prefix造成二次日历调用；没有进行任何训练更新。保留pilot-001全部32个背景、3个完整旧方法评价和20个持久化真实槽，中断时尚在纯候选计算，未将不完整episode伪称完成；未捕获的内存prefix不补造。
+
+修订只缓存最初reference的on_time/late集合和总超期，新增候选仅模拟一次联合trial，按原理由顺序、原EPS执行相同三条件；槽末仍调用原ResearchAdapter/DDF全量重放逐项核对。人工枚举与调用计数验证等价。未改变任何状态特征、动作、奖励、hyperparameter、场景、顺序或seed；不是依据分数重新选配置。
+
+工程继续运行保存为pilot-002，独立marker；pilot-001旧marker保持为interrupted_engineering且不删除。继续前固定旧初始checkpoint与20行原决策哈希，首同场景必须逐字段复现其taskID/48维状态/原动作/logprob/批准集/实际row及奖励（仅排除耗时、内部重算计数），且初始模型fingerprint相等，才允许训练。旧尝试不进入主矩阵均值，但其额外计算、完整与部分账本全部单列。

@@ -50,5 +50,14 @@ class PilotTests(unittest.TestCase):
             self.assertGreater(metrics['actor_parameter_delta_l2'],0)
             self.assertNotEqual(before,module.model_fingerprint(trainer.model))
 
+    def test_engineering_continuation_compares_all_saved_semantics(self):
+        module=self.module()
+        row=dict(minute=0,choices=[dict(task_id='a',state=[0]*48,action=1,log_prob=-.5)],
+                 reward=-.2,approved=['a'],slot_seconds=55,internal_candidate_checks=100)
+        changed=copy.deepcopy(row);changed['slot_seconds']=.1;changed['internal_candidate_checks']=1
+        module.compare_saved_prefix([row],[changed])
+        changed['choices'][0]['action']=0
+        with self.assertRaises(AssertionError):module.compare_saved_prefix([row],[changed])
+
 
 if __name__=='__main__':unittest.main()

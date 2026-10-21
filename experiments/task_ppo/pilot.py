@@ -48,6 +48,19 @@ def validate_plan(plan):
         if file_sha(ROOT/relative)!=expected:raise ValueError('Protected source changed: '+relative)
     if file_sha(plan['historical']['checkpoint'])!=plan['historical']['checkpoint_sha256']:
         raise ValueError('Historical checkpoint changed')
+    revision=plan.get('engineering_revision',{})
+    for key,hash_key in [('initial_checkpoint','initial_checkpoint_sha256'),('decisions','decisions_sha256')]:
+        if revision and file_sha(ROOT/revision[key])!=revision[hash_key]:
+            raise ValueError('Preserved engineering evidence changed')
+
+
+def compare_saved_prefix(previous,current):
+    """Pure equality gate: omit only diagnostics intentionally made cheaper."""
+    if len(current)<len(previous):raise AssertionError('Continuation lost saved physical rows')
+    omit={'slot_seconds','internal_candidate_checks','internal_calendar_plans'}
+    for left,right in zip(previous,current):
+        if {k:v for k,v in left.items() if k not in omit}!={k:v for k,v in right.items() if k not in omit}:
+            raise AssertionError('Incremental DDF changed the saved original policy/execution prefix')
 
 
 def rollout(trainer,scenario,inv,cfg,idle,directory,plan,deterministic,label,capacity):
@@ -140,7 +153,7 @@ def execute(output):
         device='cpu',status='running',training_steps=0,completed_training_episodes=0,errors=[],
         source_sha256={str(p.relative_to(ROOT)).replace('\\','/'):file_sha(p)
             for p in sorted((ROOT/'experiments/task_ppo').glob('*.py'))})
-    marker=local/'pilot-once.json'
+    marker=local/(output.name+'-once.json')
     with marker.open('x',encoding='utf-8') as stream:json.dump(metadata,stream,indent=2)
     output.mkdir(exist_ok=False);torch.set_num_threads(1);started=monotonic();training=[];evaluation=[];trainer=None
     try:
@@ -158,6 +171,11 @@ def execute(output):
                 backgrounds[fragment,cap]=idle
         trainer=JointPPOTrainer(plan['ppo'])
         metadata['initial_model_fingerprint']=model_fingerprint(trainer.model)
+        revision=plan.get('engineering_revision')
+        if revision:
+            previous=JointPPOTrainer.load(ROOT/revision['initial_checkpoint'])
+            if model_fingerprint(previous.model)!=metadata['initial_model_fingerprint']:
+                raise RuntimeError('Engineering continuation changed initial policy')
         checkpoint_meta=dict(source_sha=source,protocol_sha256=file_sha(PLAN_PATH),
             data_admission_sha256=plan['data_admission_sha256'],training_sequence=plan['training_sequence'],
             completed_episodes=0,training_steps=0)
@@ -188,6 +206,13 @@ def execute(output):
                 _,row=rollout(trainer,scenario,inv,cfg,idle,group/'TaskPPO-initial',plan,True,'TaskPPO-initial',cap)
                 rows.append(row);evaluation.append(_compact(row))
                 write_csv(output/'evaluation-summary.csv',evaluation);paired_gate(rows,4)
+                if revision and (fragment,cap)==(revision['comparison_fragment'],revision['comparison_capacity']):
+                    old=[json.loads(line) for line in (ROOT/revision['decisions']).read_text(encoding='utf-8').splitlines()]
+                    new=[json.loads(line) for line in (group/'TaskPPO-initial'/'decisions.jsonl').read_text(encoding='utf-8').splitlines()]
+                    compare_saved_prefix(old,new)
+                    metadata['engineering_prefix_equivalence']=dict(passed=True,saved_physical_rows=len(old),
+                        old_decisions_sha256=revision['decisions_sha256'],initial_policy_fingerprint=metadata['initial_model_fingerprint'])
+                    write_json(output/'engineering-equivalence.json',metadata['engineering_prefix_equivalence'])
                 print(f'Task-PPO initial evaluation {fragment[6:14]} {cap} PASS',flush=True)
         if model_fingerprint(trainer.model)!=metadata['initial_model_fingerprint']:
             raise RuntimeError('Initial evaluation changed model parameters')
@@ -245,6 +270,6 @@ def execute(output):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output',default=str(ROOT/'research_notes/task-ppo-v1/pilot-001'))
+    parser.add_argument('--output',default=str(ROOT/'research_notes/task-ppo-v1/pilot-002'))
     args=parser.parse_args()
     if execute(args.output)['status']!='completed':raise SystemExit(2)

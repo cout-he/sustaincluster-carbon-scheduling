@@ -1,0 +1,26 @@
+{
+  "schema": "task-ppo-engineering-interruption-v1",
+  "status": "interrupted_engineering",
+  "source_sha": "7ad4ab18249cb2b1825a15cbbd0f084ece43b251",
+  "training_episodes": 0,
+  "optimizer_updates": 0,
+  "training_steps": 0,
+  "complete_evaluation_accounts": 3,
+  "partial_physical_slots": 20,
+  "partial_next_minute": 300.0,
+  "partial_saved_slot_seconds": 176.80712079978548,
+  "maximum_saved_slot_seconds": 55.39192229998298,
+  "last_saved_candidate_count": 297,
+  "partial_path": "research_notes/task-ppo-v1/pilot-001/evaluations/train-20230403T0500-r1-s1.5__OM/TaskPPO-initial/decisions.jsonl",
+  "partial_sha256": "9c61d17e921b426d518f1b8b034299187e12217ea5459465c9fcd59b8bd10ff7",
+  "initial_checkpoint_sha256": "9c703e5dbbf9dbd2795ead7dbabbc580d7a263fe6aa38d8176d6579aa42f40e9",
+  "reason": "Quadratic recomputation of already approved DDF prefixes; interrupted before any training update.",
+  "preservation": "All original files/marker retained. In-flight pure candidate work and in-memory environment snapshot were not captured; only persisted20 complete physical rows are claimed.",
+  "continuation": "Same seed, all numeric hyperparameters, inputs and32-episode sequence. Equivalent one-trial incremental checks plus original full DDF before every real step. Compare persisted initial20 rows before any training.",
+  "complete_results": [
+    "evaluations/train-20230403T0500-r1-s1.5__OM/CarbonRule-DDF-CG/result.json",
+    "evaluations/train-20230403T0500-r1-s1.5__OM/EDF-CG/result.json",
+    "evaluations/train-20230403T0500-r1-s1.5__OM/MacroPPO-history/result.json"
+  ],
+  "complete_background_accounts": 32
+}

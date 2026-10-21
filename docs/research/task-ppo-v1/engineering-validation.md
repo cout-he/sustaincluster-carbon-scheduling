@@ -10,7 +10,7 @@
 
 ## 人工测试与独立复核
 
-限定人工测试共 **173项通过**：新增任务级33项（joint PPO15、任务环境16、pilot集成2），旧SCA108项，显式V1/V2人工回归32项。没有执行全仓库discovery或真实工作负载工程试跑。
+限定人工测试共 **177项通过**：新增任务级37项（joint PPO15、任务环境19、pilot集成3），旧SCA108项，显式V1/V2人工回归32项。没有执行全仓库discovery或真实工作负载工程试跑。
 
 | 检查 | 证据 |
 |---|---|
@@ -32,14 +32,14 @@
 
 同源同容量对照要求全部任务完成、无censored、CG有效、66–72h共同空闲、末温差≤0.05K、IT能量差≤1e-7kWh。失败回合先保存再停止；NaN/Inf、动作/预演/奖励不一致、无actor更新或checkpoint故障同样停止。不会换seed、删失败或改物理/Deadline/奖励。
 
-重复核验批准前缀可能产生二次日历调用量。本版只记录开销，不静默删候选或改DDF条件。任务最终动作分布/属性依赖与性能收益将在pilot后分别判断，工程测试不预言节碳优势。
+初次训练前评价暴露重复核验批准前缀的二次调用瓶颈，已保留中断证据。修订使用等价的新增候选单次反事实及槽末原DDF全量复核；人工枚举、线性调用计数和前20真实槽继续一致性门禁约束，不删候选或改条件。任务最终动作分布/属性依赖与性能收益将在pilot后分别判断，工程测试不预言节碳优势。
 
 ```powershell
 python -m unittest discover -s tests/task_ppo -t . -q
 python -m unittest discover -s tests/sca_ppo -t . -q
 python -m unittest tests.platform_v1.test_platform tests.platform_v1.test_saved_verification tests.platform_v2.test_platform tests.platform_v2.test_verification tests.platform_v2.test_acceptance -q
 # 唯一真实pilot；已有marker后不得自动重试
-python -u -m experiments.task_ppo.pilot --output research_notes/task-ppo-v1/pilot-001
+python -u -m experiments.task_ppo.pilot --output research_notes/task-ppo-v1/pilot-002
 ```
 
 状态：允许按预注册进入首次技术pilot。是否能够学习到有用的任务区分、OH是否产生风险反馈、是否值得扩大训练，均须以真实结果回答。

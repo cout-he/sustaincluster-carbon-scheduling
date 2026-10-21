@@ -6,7 +6,7 @@ CG remain the original pure reference filters; no future input is loaded here.
 import math
 
 from experiments.sca_ppo.completion_guard import CompletionGuard, HORIZON_MINUTE
-from experiments.sca_ppo.deadline_filter import filter_requests
+from experiments.sca_ppo.deadline_filter import LATENESS_EPS_MINUTES
 from experiments.sca_ppo.edf_calendar import STEP, edf_key, simulate
 from experiments.sca_ppo.rl_environment import (
     RLEpisode, STATE_NAMES as GLOBAL_NAMES, STATE_SCHEMA as GLOBAL_SCHEMA, state_vector,
@@ -84,7 +84,9 @@ class TaskEpisode(RLEpisode):
             self._slot=dict(snapshot=snapshot,reference=reference,tasks=tasks,
                 global_state=global_state,value_state=(*global_state,*([0.]*21)),
                 candidates=candidates,index=0,approved=[],proposed=[],decisions=[],
-                internal_candidate_checks=0,internal_calendar_plans=1)
+                internal_candidate_checks=0,internal_calendar_plans=1,
+                reference_on_time=reference.on_time_ids,reference_late=reference.late_ids,
+                reference_late_total=reference.total_lateness(reference.late_ids))
         if self.env.minute!=self._slot['snapshot'].minute:
             raise AssertionError('Physical time changed during conditional proposal sequence')
         return list(self._slot['value_state']),self._slot['candidates']
@@ -124,16 +126,21 @@ class TaskEpisode(RLEpisode):
         old_prefix=tuple(slot['approved']);approved=False;reasons=();lost=()
         if action_id:
             slot['proposed'].append(identity)
-            trial=filter_requests(slot['snapshot'],slot['reference'],(*old_prefix,identity))
-            slot['internal_candidate_checks']+=len(trial.checks)
-            slot['internal_calendar_plans']+=len(trial.checks)+1
-            check=trial.checks[-1]
-            if check.task_id!=identity:
-                raise AssertionError('DDF checked a different candidate than the frozen EDF position')
-            approved=check.approved;reasons=check.reasons;lost=check.lost_on_time_ids
-            expected=(*old_prefix,identity) if approved else old_prefix
-            if trial.approved!=expected or not all(row.approved for row in trial.checks[:-1]):
-                raise AssertionError('DDF revalidation changed the already approved prefix')
+            # The previous prefix was already checked against this identical
+            # immutable reference. Check only its new joint extension here;
+            # execute_slot still invokes original DDF over every original1.
+            trial=simulate(slot['snapshot'],frozenset((*old_prefix,identity)))
+            slot['internal_candidate_checks']+=1;slot['internal_calendar_plans']+=1
+            lost=tuple(sorted(slot['reference_on_time']-trial.on_time_ids))
+            trial_late=trial.total_lateness(slot['reference_late'])
+            reasons=[]
+            if lost:reasons.append('REFERENCE_ON_TIME_SET_LOST')
+            if trial_late>slot['reference_late_total']+LATENESS_EPS_MINUTES:
+                reasons.append('ORIGINAL_LATE_TOTAL_INCREASED')
+            if not CompletionGuard.accepts(trial):reasons.append('COMPLETION_GUARD_REJECTED')
+            reasons=tuple(reasons);approved=not reasons
+            if approved:
+                assert len(trial.late_ids)<=len(slot['reference_late'])
             if approved:slot['approved'].append(identity)
         record=dict(task_id=identity,state=state,action=action_id,approved=approved,
                     reasons=tuple(reasons),lost_on_time_ids=tuple(lost),
