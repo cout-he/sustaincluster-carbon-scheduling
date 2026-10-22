@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="417.6pt" viewBox="0 0 864 417.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 417.6
+L 864 417.6
+L 864 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 108 321.552
+L 825.12 321.552
+L 825.12 102.312
+L 108 102.312
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mc9c8857aa2" d="M 0 0
+L 0 3
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#mc9c8857aa2" x="205.789091" y="321.552" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="205.789091" y="337.6445" transform="rotate(-0 205.789091 337.6445)">OL（低压力）</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mc9c8857aa2" x="466.56" y="321.552" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="466.56" y="337.6445" transform="rotate(-0 466.56 337.6445)">OM（主场景）</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mc9c8857aa2" x="727.330909" y="321.552" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="727.330909" y="337.6445" transform="rotate(-0 727.330909 337.6445)">OH（高压力）</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="466.56" y="355.818875" transform="rotate(-0 466.56 355.818875)">容量场景</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 108 321.552
+L 825.12 321.552
+" clip-path="url(#p0f36d8ba88)" style="fill: none; stroke: #dde1e4; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_5">
+      <defs>
+       <path id="m7c87227f8d" d="M 0 0
+L -3 0
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7c87227f8d" x="108" y="321.552" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: end" x="101.5" y="326.34825" transform="rotate(-0 101.5 326.34825)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 108 270.933818
+L 825.12 270.933818
+" clip-path="url(#p0f36d8ba88)" style="fill: none; stroke: #dde1e4; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m7c87227f8d" x="108" y="270.933818" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: end" x="101.5" y="275.730068" transform="rotate(-0 101.5 275.730068)">400</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 108 220.315636
+L 825.12 220.315636
+" clip-path="url(#p0f36d8ba88)" style="fill: none; stroke: #dde1e4; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m7c87227f8d" x="108" y="220.315636" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: end" x="101.5" y="225.111886" transform="rotate(-0 101.5 225.111886)">800</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <path d="M 108 169.697455
+L 825.12 169.697455
+" clip-path="url(#p0f36d8ba88)" style="fill: none; stroke: #dde1e4; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m7c87227f8d" x="108" y="169.697455" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: end" x="101.5" y="174.493705" transform="rotate(-0 101.5 174.493705)">1200</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <path d="M 108 119.079273
+L 825.12 119.079273
+" clip-path="url(#p0f36d8ba88)" style="fill: none; stroke: #dde1e4; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m7c87227f8d" x="108" y="119.079273" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: end" x="101.5" y="123.875523" transform="rotate(-0 101.5 123.875523)">1600</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="65.872187" y="211.932" transform="rotate(-90 65.872187 211.932)">候选任务请求次数（次）</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 108 321.552
+L 108 102.312
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 108 321.552
+L 825.12 321.552
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 140.596364 321.552
+L 270.981818 321.552
+L 270.981818 205.889455
+L 140.596364 205.889455
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: #709da8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 401.367273 321.552
+L 531.752727 321.552
+L 531.752727 205.636364
+L 401.367273 205.636364
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: #709da8"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 662.138182 321.552
+L 792.523636 321.552
+L 792.523636 216.645818
+L 662.138182 216.645818
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: #709da8"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 140.596364 205.889455
+L 270.981818 205.889455
+L 270.981818 146.16
+L 140.596364 146.16
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: url(#ha41edd3974); stroke: #725347; stroke-width: 0.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 401.367273 205.636364
+L 531.752727 205.636364
+L 531.752727 146.286545
+L 401.367273 146.286545
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: url(#ha41edd3974); stroke: #725347; stroke-width: 0.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 662.138182 216.645818
+L 792.523636 216.645818
+L 792.523636 146.413091
+L 662.138182 146.413091
+z
+" clip-path="url(#p0f36d8ba88)" style="fill: url(#ha41edd3974); stroke: #725347; stroke-width: 0.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="205.789091" y="267.851587" transform="rotate(-0 205.789091 267.851587)">914</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="205.789091" y="180.155587" transform="rotate(-0 205.789091 180.155587)">472</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="205.789091" y="136.51344" transform="rotate(-0 205.789091 136.51344)">请求 1,386</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="466.56" y="267.725041" transform="rotate(-0 466.56 267.725041)">916</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="466.56" y="180.092314" transform="rotate(-0 466.56 180.092314)">469</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="466.56" y="136.639985" transform="rotate(-0 466.56 136.639985)">请求 1,385</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="727.330909" y="273.229768" transform="rotate(-0 727.330909 273.229768)">829</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="727.330909" y="185.660314" transform="rotate(-0 727.330909 185.660314)">555</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="727.330909" y="136.766531" transform="rotate(-0 727.330909 136.766531)">请求 1,384</text>
+   </g>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle" x="432" y="22.74075" transform="rotate(-0 432 22.74075)">图4 Deadline 保护过滤机制行为统计</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle; fill: #4d555b" x="432" y="44.2656" transform="rotate(-0 432 44.2656)">E1规则实验｜CarbonRule-DDF-CG自身轨迹｜每种容量均汇总相同3个Train片段</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_11">
+    <path d="M 338.4 401.728875
+L 362.4 401.728875
+L 362.4 393.328875
+L 338.4 393.328875
+z
+" style="fill: #709da8"/>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start" x="372" y="401.728875" transform="rotate(-0 372 401.728875)">批准推迟</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 444 401.728875
+L 468 401.728875
+L 468 393.328875
+L 444 393.328875
+z
+" style="fill: url(#ha41edd3974); stroke: #725347; stroke-width: 0.35; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start" x="477.6" y="401.728875" transform="rotate(-0 477.6 401.728875)">拒绝推迟</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0f36d8ba88">
+   <rect x="108" y="102.312" width="717.12" height="219.24"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="ha41edd3974" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#b5836e"/>
+   <path d="M -36 36
+L 36 -36
+M -32 40
+L 40 -32
+M -28 44
+L 44 -28
+M -24 48
+L 48 -24
+M -20 52
+L 52 -20
+M -16 56
+L 56 -16
+M -12 60
+L 60 -12
+M -8 64
+L 64 -8
+M -4 68
+L 68 -4
+M 0 72
+L 72 0
+M 4 76
+L 76 4
+M 8 80
+L 80 8
+M 12 84
+L 84 12
+M 16 88
+L 88 16
+M 20 92
+L 92 20
+M 24 96
+L 96 24
+M 28 100
+L 100 28
+M 32 104
+L 104 32
+M 36 108
+L 108 36
+" style="fill: #725347; stroke: #725347; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>
